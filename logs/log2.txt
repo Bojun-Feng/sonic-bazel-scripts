@@ -1,0 +1,93 @@
+============================================
+[02] Setting up sonic-buildimage Bazel build
+============================================
+[02] sonic-buildimage: https://github.com/Bojun-Feng/sonic-buildimage.git @ ea3849470a67a1af276f3f2807d3b202bcbd7bfa
+[02] Sibling repos: thesayyn @ pinned checkpoint commits
+[02] Cleaning /home/bobo.linux/bazel (except scripts)...
+[02] Cleaning Bazel caches...
+[02] Clean step completed in 0s
+[02] Cloning sonic-buildimage (branch: bazel/master)...
+[02] Checking out pinned commit ea3849470a67a1af276f3f2807d3b202bcbd7bfa...
+[02] Cloned sonic-buildimage in 15s
+[02] Initializing submodules (this takes a while)...
+Submodule path 'platform/barefoot/sonic-platform-modules-arista': checked out '9df243f966a25f1550a85e775e1eb2f81ad1dcdb'
+Submodule path 'platform/broadcom/saibcm-modules-dnx': checked out 'be155cce3ec8451bc98336620f20afa27754c955'
+Submodule path 'platform/broadcom/sonic-platform-modules-arista': checked out '9df243f966a25f1550a85e775e1eb2f81ad1dcdb'
+Submodule path 'platform/broadcom/sonic-platform-modules-nokia': checked out '05abbf606818fc599286a4adb12affe79288580e'
+Submodule path 'platform/broadcom/sonic-platform-modules-nokia/mackinac/fmt': checked out '55a8f6a4be18510aa43d60a54a93c8119abe5450'
+Submodule path 'platform/marvell-prestera/mrvl-prestera': checked out '88f0532a0e6c33d399dc69096da463ce4fcfa8d4'
+Submodule path 'platform/marvell-prestera/sonic-platform-marvell': checked out 'f6224ee910e4a7cdb2cc7c245480ec4e21817a27'
+Submodule path 'platform/marvell-teralynx/mrvl-teralynx': checked out '3c265da04286347f687d88df17bc6373204a6c77'
+Submodule path 'platform/marvell-teralynx/sonic-platform-marvell-teralynx': checked out 'dafbe124ef14e7b9f1e0a52076ce8b8d14c88d6b'
+Submodule path 'platform/mellanox/hw-management/hw-mgmt': checked out '84e1613f1ec3dc71f40a8a28ad059e3a67c8859c'
+Submodule path 'platform/p4/SAI-P4-BM': checked out 'c763924affd416df9c4d3e40d4f8ac1cb2be5fff'
+Submodule path 'platform/p4/SAI-P4-BM/p4-switch/behavioral-model': checked out '75ce6338139d71102c9e056f3d27d7c0047c1bf7'
+Submodule path 'platform/p4/p4-hlir/p4-hlir': checked out '0ab8e58f8a92ee469235028430795088af9cda77'
+Submodule path 'platform/p4/p4-hlir/p4-hlir-v1.1': checked out 'fdee55e2567fe65463f328d70558b5079894b420'
+Submodule path 'platform/p4/p4c-bm/p4c-bm': checked out '5415c4160aff025f27fe45301c62aa9aeb4bab40'
+Submodule path 'platform/vpp': checked out '7df876c936f05de70ac6c0500f44ae112f94ddac'
+Submodule path 'src/dhcpmon': checked out '5636443b72063553654f4ef1e54e96cd9c0085c4'
+Submodule path 'src/dhcprelay': checked out '5b078efac16f7438d9256dc972c3bc5ac9c746e2'
+Submodule path 'src/dhcprelay/gmock_global': checked out '6552faa2a94250ed0192dbd62e608d37fafcc216'
+Submodule path 'src/linkmgrd': checked out '053ce2febbe61c5d3e18aaf69672ce77f771033c'
+Submodule path 'src/ptf': checked out '36a3e3d9ac0447d28161d24028401239d756875f'
+Submodule path 'src/ptf-py3': checked out '978598dd04434b5270495ac0c6466eb2c6c752f5'
+Submodule path 'src/redis-dump-load': checked out '758549795174dc6b3be70810e0e4d6308f80f1a3'
+Submodule path 'src/scapy': checked out '8b63d73a17266bae2a61513ea97ded5283a7ccd3'
+Submodule path 'src/sonic-bmp': checked out 'eb745d304684abbc216f148c8d78fd437c6c5de6'
+Submodule path 'src/sonic-build-infra': checked out '4ea04ee23dad6ac1929f68b989034f5e38ce9d9f'
+Submodule path 'src/sonic-dash-api': checked out '9540fc127c9face3eee36d0ca3f0ead7382e9503'
+Submodule path 'src/sonic-dash-ha': checked out 'f36ffdd8e7e5e9152434fb9e163017fda4ca368f'
+Submodule path 'src/sonic-dash-ha/crates/sonic-dash-api-proto/sonic-dash-api': checked out '54ab2b9895166fc928bf5d88180935eeac7a3dce'
+Submodule path 'src/sonic-dbsyncd': checked out 'b0ea01fb70a668b6d828f98a320a271dc76dc300'
+Submodule path 'src/sonic-frr/frr': checked out '85cf1ed576deed121751e16a64970f8a652a9e1e'
+Submodule path 'src/sonic-genl-packet': checked out '829cc21762aa5a82b6b5b277da9111d7fc399fc8'
+Submodule path 'src/sonic-gnmi': checked out 'd3dd0436fbcc13eee5cf0b0cbd26cf8bb6d39710'
+Submodule path 'src/sonic-host-services': checked out '4b74fd49165ca1bfe5f4ae6ec929d4f26cacb1d9'
+Submodule path 'src/sonic-linux-kernel': checked out '3f93a0d05cb6a67801333a3cf09d1fc6b3eea740'
+Submodule path 'src/sonic-mgmt-common': checked out 'd203d69d7a88f08150fe31db09f8e9c7fe2d8d46'
+Submodule path 'src/sonic-mgmt-framework': checked out '5b9c7a1d71422d0311b5c3d52760836433d3e8f8'
+Submodule path 'src/sonic-p4rt/sonic-pins': checked out 'cc472a45fde9c4f4b4a7ea4b8ae89e44b5f75be2'
+Submodule path 'src/sonic-platform-common': checked out 'e4553835cee71831bbb420959d9b2fe9e449660c'
+Submodule path 'src/sonic-platform-daemons': checked out 'dfca34523ba4add40acdf2f0ff1fd0859c521395'
+Submodule path 'src/sonic-platform-pde': checked out '8b44c3c537b476fc14ef2f057904e4d74d27a188'
+Submodule path 'src/sonic-py-swsssdk': checked out 'fbaee9d128ca995e9c12af144a1b130a003c205c'
+Submodule path 'src/sonic-restapi': checked out '4a564baddf7abe8fb904ed9fbb4f713954a84573'
+Submodule path 'src/sonic-sairedis': checked out 'd82932eec50770708ca689f2c514543bb48d8bee'
+Submodule path 'src/sonic-sairedis/SAI': checked out '4f78485155f989349900e9d2cc4716a2f4b02839'
+Submodule path 'src/sonic-sairedis/SAI/test/ptf': checked out '7494366607e2e4c171439df3585eba3c9769fad8'
+Submodule path 'src/sonic-sairedis/SAI/test/saithrift/ctypesgen': checked out '3d2d9803339503d2988382aa861b47a6a4872c32'
+Submodule path 'src/sonic-snmpagent': checked out '13b975baeba91a4ca334e25dab075c6595df33e2'
+Submodule path 'src/sonic-stp': checked out 'e3626a4dfea8dc71d66beab77376a7cfb20bffe6'
+Submodule path 'src/sonic-swss': checked out '478b70d89e0a3c3c498227ac2c9a6f15f6dfcc03'
+Submodule path 'src/sonic-swss-common': checked out '390b0fecfa1fbafb53cb5fec698254173a4051e6'
+Submodule path 'src/sonic-sysmgr/gnoi': checked out '2b6ff72de5769839fc68bd019f345a184e3b0bf1'
+Submodule path 'src/sonic-utilities': checked out 'd73e79f78d08281e77e6edf7e85151feeab3538e'
+Submodule path 'src/sonic-ztp': checked out 'f8fa833a9de8cc5fa4dcbdbcd62f633a27dc03ca'
+Submodule path 'src/wpasupplicant/sonic-wpa-supplicant': checked out 'fff91558db7b2ffc9a070b85d21b0f2b3ee12e92'
+[02] Submodule init completed in 1m 49s
+[02] Cloning external sibling repos at pinned commits...
+[02] p4runtime @ d6eb7f4 (branch main)
+[02] Cloned p4runtime in 2s
+[02] p4-constraints @ e774995 (branch master)
+[02] Cloned p4-constraints in 0s
+[02] p4c @ b89ed7c6c (branch main)
+[02] Cloned p4c in 9s
+[02] gutil @ 149b358 (branch main)
+[02] Cloned gutil in 1s
+
+============================================
+[02] Setup complete!
+============================================
+
+Directory layout:
+ /home/bobo.linux/bazel/
+ sonic-buildimage/ @ ea3849470a67a1af276f3f2807d3b202bcbd7bfa (Bojun-Feng fork, bazel/master)
+ p4runtime/ @ d6eb7f4
+ p4-constraints/ @ e774995
+ p4c/ @ b89ed7c6c
+ gutil/ @ 149b358
+
+Next: run 03_build.sh to validate the build.
+
+[02] Total elapsed time: 2m 16s

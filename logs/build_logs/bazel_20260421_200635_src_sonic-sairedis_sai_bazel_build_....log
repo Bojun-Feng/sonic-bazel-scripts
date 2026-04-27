@@ -1,0 +1,182 @@
+========================================
+Step: src/sonic-sairedis/SAI: bazel build ...
+Repo: src/sonic-sairedis/SAI
+Started: Tue Apr 21 20:06:35 CDT 2026
+Command: bazel build ...
+========================================
+
+Starting local Bazel server (8.5.1) and connecting to it...
+Computing main repo mapping: 
+Computing main repo mapping: 
+Computing main repo mapping: 
+Loading: 
+Loading: 0 packages loaded
+Loading: 0 packages loaded
+Loading: 3 packages loaded
+    currently loading: meta
+Loading: 3 packages loaded
+    currently loading: meta
+Loading: 3 packages loaded
+    currently loading: meta
+Loading: 3 packages loaded
+    currently loading: meta
+Loading: 3 packages loaded
+    currently loading: meta
+Analyzing: 18 targets (4 packages loaded, 0 targets configured)
+Analyzing: 18 targets (4 packages loaded, 0 targets configured)
+
+Analyzing: 18 targets (56 packages loaded, 116 targets configured)
+[1 / 1] no actions running
+Analyzing: 18 targets (135 packages loaded, 1579 targets configured)
+[1 / 1] no actions running
+WARNING: Download from https://snapshot.debian.org/archive/debian/20251001T023456Z/dists/bookworm/main/Contents-amd64.xz failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian/20251001T023456Z/dists/bookworm/main/binary-amd64/Packages.bz2 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian/20251001T023456Z/dists/bookworm/main/Contents-amd64 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian/20251001T023456Z/dists/bookworm-updates/main/binary-amd64/Packages.gz failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian/20251001T023456Z/dists/bookworm/main/binary-amd64/Packages failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian/20251001T023456Z/dists/bookworm/main/Contents-amd64.bz2 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian/20251001T023456Z/dists/bookworm-updates/main/Contents-amd64.xz failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian/20251001T023456Z/dists/bookworm-updates/main/binary-amd64/Packages.bz2 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian/20251001T023456Z/dists/bookworm-updates/main/binary-amd64/Packages failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian/20251001T023456Z/dists/bookworm-updates/main/Contents-amd64.bz2 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian/20251001T023456Z/dists/bookworm-updates/main/Contents-amd64 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian-security/20251001T023456Z/dists/bookworm-security/main/binary-amd64/Packages.bz2 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian-security/20251001T023456Z/dists/bookworm-security/main/binary-amd64/Packages.gz failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian-security/20251001T023456Z/dists/bookworm-security/main/binary-amd64/Packages failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian-security/20251001T023456Z/dists/bookworm-security/main/Contents-amd64.xz failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian-security/20251001T023456Z/dists/bookworm-security/main/Contents-amd64.bz2 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian-security/20251001T023456Z/dists/bookworm-security/main/Contents-amd64 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+Analyzing: 18 targets (136 packages loaded, 1811 targets configured)
+[3 / 4] Building doxygen documentation for rule 'doxygen'; 0s processwrapper-sandbox
+Analyzing: 18 targets (136 packages loaded, 1811 targets configured)
+[3 / 4] Building doxygen documentation for rule 'doxygen'; 2s processwrapper-sandbox
+Analyzing: 18 targets (136 packages loaded, 1811 targets configured)
+[4 / 4] no actions running
+Analyzing: 18 targets (137 packages loaded, 3662 targets configured)
+[8 / 9] [Prepa] Creating runfiles tree bazel-out/k8-fastbuild/bin/meta/parse.runfiles
+Analyzing: 18 targets (137 packages loaded, 3662 targets configured)
+[16 / 18] Building doxygen documentation for rule 'doxygen' [for tool]; 0s processwrapper-sandbox
+Analyzing: 18 targets (137 packages loaded, 3662 targets configured)
+[16 / 18] Building doxygen documentation for rule 'doxygen' [for tool]; 1s processwrapper-sandbox
+Analyzing: 18 targets (137 packages loaded, 3662 targets configured)
+[17 / 18] RunBinary meta/saimetadata.c; 0s processwrapper-sandbox
+Analyzing: 18 targets (137 packages loaded, 3662 targets configured)
+[17 / 18] RunBinary meta/saimetadata.c; 2s processwrapper-sandbox
+Analyzing: 18 targets (137 packages loaded, 3662 targets configured)
+[17 / 18] RunBinary meta/saimetadata.c; 3s processwrapper-sandbox
+Analyzing: 18 targets (143 packages loaded, 4886 targets configured)
+[17 / 18] RunBinary meta/saimetadata.c; 4s processwrapper-sandbox
+INFO: From RunBinary meta/saimetadata.c:
+Running Aspell
+Words to check: 2832
+Processing sai_8h.xml
+Removing last element SAI_API_MAX
+Processing saiacl_8h.xml
+Creating range attrs SAI_ACL_TABLE_ATTR_USER_DEFINED_FIELD_GROUP_MIN .. MAX
+Limiting range from 255 to 10
+Creating range attrs SAI_ACL_ENTRY_ATTR_USER_DEFINED_FIELD_GROUP_MIN .. MAX
+Limiting range from 255 to 10
+Processing saiars_8h.xml
+Processing saiarsprofile_8h.xml
+Processing saibfd_8h.xml
+Processing saibridge_8h.xml
+Processing saibuffer_8h.xml
+Ignoring SAI_BUFFER_PROFILE_ATTR_BUFFER_SIZE
+Processing saicounter_8h.xml
+Processing saidebugcounter_8h.xml
+Processing saidtel_8h.xml
+Removing last element SAI_DTEL_EVENT_TYPE_MAX
+Processing saiexperimentalbmtor_8h.xml
+Processing saiexperimentaldashacl_8h.xml
+Processing saiexperimentaldashdirectionlookup_8h.xml
+Processing saiexperimentaldasheni_8h.xml
+Processing saiexperimentaldashinboundrouting_8h.xml
+Processing saiexperimentaldashmeter_8h.xml
+Processing saiexperimentaldashoutboundcatopa_8h.xml
+Processing saiexperimentaldashoutboundrouting_8h.xml
+Processing saiexperimentaldashpavalidation_8h.xml
+Processing saiexperimentaldashvip_8h.xml
+Processing saiexperimentaldashvnet_8h.xml
+Processing saiextensions_8h.xml
+Processing saifdb_8h.xml
+Processing saigenericprogrammable_8h.xml
+Processing saihash_8h.xml
+Processing saihostif_8h.xml
+Ignoring SAI_HOSTIF_USER_DEFINED_TRAP_TYPE_NEIGH
+Processing saiipmc_8h.xml
+Processing saiipmcgroup_8h.xml
+Processing saiipsec_8h.xml
+Processing saiisolationgroup_8h.xml
+Processing sail2mc_8h.xml
+Processing sail2mcgroup_8h.xml
+Processing sailag_8h.xml
+Processing saimacsec_8h.xml
+Ignoring SAI_MACSEC_SA_ATTR_XPN
+Ignoring SAI_MACSEC_SA_ATTR_MINIMUM_XPN
+Processing saimcastfdb_8h.xml
+Processing saimetadatalogger_8h.xml
+Processing saimetadatatypes_8h.xml
+Processing saimetadatautils_8h.xml
+Processing saimirror_8h.xml
+Processing saimpls_8h.xml
+Processing saimymac_8h.xml
+Processing sainat_8h.xml
+Processing saineighbor_8h.xml
+Processing sainexthop_8h.xml
+Processing sainexthopgroup_8h.xml
+Ignoring SAI_NEXT_HOP_GROUP_TYPE_ECMP
+Processing saiobject_8h.xml
+Processing saipoe_8h.xml
+Processing saipolicer_8h.xml
+Processing saiport_8h.xml
+Removing last element SAI_PORT_BREAKOUT_MODE_TYPE_MAX
+Removing last element SAI_PORT_INTERFACE_TYPE_MAX
+Processing saiportextensions_8h.xml
+Processing saiqosmap_8h.xml
+Processing saiqueue_8h.xml
+Processing sairoute_8h.xml
+Processing sairouterinterface_8h.xml
+Processing sairpfgroup_8h.xml
+Processing saisamplepacket_8h.xml
+Processing saischeduler_8h.xml
+Processing saischedulergroup_8h.xml
+Processing saiserialize_8h.xml
+Processing saisrv6_8h.xml
+Processing saistatus_8h.xml
+Processing saistp_8h.xml
+Processing saiswitch_8h.xml
+Ignoring SAI_SWITCH_ATTR_PORT_NUMBER
+Ignoring SAI_SWITCH_ATTR_SHUTDOWN_REQUEST_NOTIFY
+Processing saiswitchextensions_8h.xml
+Processing saisystemport_8h.xml
+Processing saitam_8h.xml
+Processing saitunnel_8h.xml
+Processing saitwamp_8h.xml
+Processing saitypes_8h.xml
+Removing last element SAI_COMMON_API_MAX
+Removing last element SAI_OBJECT_TYPE_MAX
+Ignoring SAI_ACL_BIND_POINT_TYPE_ROUTER_INTF
+Removing last element SAI_PORT_ERR_STATUS_MAX
+Processing saitypesextensions_8h.xml
+Processing saiudf_8h.xml
+Processing saiversion_8h.xml
+Processing saivirtualrouter_8h.xml
+Processing saivlan_8h.xml
+Processing saiwred_8h.xml
+no need for END enum for SAI_IN_DROP_REASON_CUSTOM_RANGE_BASE
+no need for END enum for SAI_OUT_DROP_REASON_CUSTOM_RANGE_BASE
+non range base SAI_UDF_ATTR_BASE
+Analyzing: 18 targets (153 packages loaded, 6393 targets configured)
+[18 / 18] no actions running
+Analyzing: 18 targets (153 packages loaded, 6393 targets configured)
+[18 / 18] no actions running
+INFO: Analyzed 18 targets (154 packages loaded, 6596 targets configured).
+INFO: Found 18 targets...
+INFO: Elapsed time: 33.139s, Critical Path: 8.53s
+INFO: 18 processes: 15 internal, 3 processwrapper-sandbox.
+INFO: Build completed successfully, 18 total actions
+
+========================================
+RESULT: SUCCESS
+Finished: Tue Apr 21 20:07:08 CDT 2026
+========================================

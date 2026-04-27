@@ -1,0 +1,155 @@
+========================================
+Step: docker load: //dockers/docker-base-bookworm:load
+Started: Tue Apr 21 22:16:31 CDT 2026
+Command: bazel run //dockers/docker-base-bookworm:load
+========================================
+
+Computing main repo mapping: 
+Loading: 
+Loading: 3 packages loaded
+Analyzing: target //dockers/docker-base-bookworm:load (3 packages loaded, 0 targets configured)
+Analyzing: target //dockers/docker-base-bookworm:load (3 packages loaded, 0 targets configured)
+
+Analyzing: target //dockers/docker-base-bookworm:load (101 packages loaded, 12 targets configured)
+
+Analyzing: target //dockers/docker-base-bookworm:load (113 packages loaded, 518 targets configured)
+
+Analyzing: target //dockers/docker-base-bookworm:load (138 packages loaded, 3754 targets configured)
+
+Analyzing: target //dockers/docker-base-bookworm:load (219 packages loaded, 3915 targets configured)
+
+Analyzing: target //dockers/docker-base-bookworm:load (273 packages loaded, 4112 targets configured)
+
+Analyzing: target //dockers/docker-base-bookworm:load (286 packages loaded, 4112 targets configured)
+
+Analyzing: target //dockers/docker-base-bookworm:load (289 packages loaded, 4112 targets configured)
+
+Analyzing: target //dockers/docker-base-bookworm:load (309 packages loaded, 4112 targets configured)
+
+Analyzing: target //dockers/docker-base-bookworm:load (322 packages loaded, 4112 targets configured)
+
+Analyzing: target //dockers/docker-base-bookworm:load (353 packages loaded, 4112 targets configured)
+
+Analyzing: target //dockers/docker-base-bookworm:load (362 packages loaded, 4112 targets configured)
+
+Analyzing: target //dockers/docker-base-bookworm:load (367 packages loaded, 4112 targets configured)
+
+Analyzing: target //dockers/docker-base-bookworm:load (371 packages loaded, 4112 targets configured)
+
+Analyzing: target //dockers/docker-base-bookworm:load (383 packages loaded, 4133 targets configured)
+
+Analyzing: target //dockers/docker-base-bookworm:load (414 packages loaded, 4248 targets configured)
+
+Analyzing: target //dockers/docker-base-bookworm:load (433 packages loaded, 4249 targets configured)
+
+Analyzing: target //dockers/docker-base-bookworm:load (440 packages loaded, 4249 targets configured)
+
+Analyzing: target //dockers/docker-base-bookworm:load (446 packages loaded, 4249 targets configured)
+
+Analyzing: target //dockers/docker-base-bookworm:load (495 packages loaded, 10424 targets configured)
+
+Analyzing: target //dockers/docker-base-bookworm:load (510 packages loaded, 16615 targets configured)
+
+Analyzing: target //dockers/docker-base-bookworm:load (527 packages loaded, 17548 targets configured)
+
+INFO: Analyzed target //dockers/docker-base-bookworm:load (533 packages loaded, 17887 targets configured).
+[588 / 1,187] [Scann] Compiling lib/genl/ctrl.c
+[601 / 1,187] Compiling src/dfa.c [for tool]; 0s processwrapper-sandbox ... (4 actions, 3 running)
+[644 / 1,187] Compiling src/gen.c [for tool]; 0s processwrapper-sandbox ... (4 actions, 3 running)
+[683 / 1,187] Compiling src/gen.c [for tool]; 1s processwrapper-sandbox ... (4 actions running)
+[699 / 1,187] Compiling gnulib/lib/regex.c [for tool]; 0s processwrapper-sandbox ... (4 actions running)
+[714 / 1,187] Compiling gnulib/lib/regex.c [for tool]; 1s processwrapper-sandbox ... (4 actions running)
+[730 / 1,187] Compiling gnulib/lib/regex.c [for tool]; 2s processwrapper-sandbox ... (4 actions running)
+[742 / 1,187] Executing genrule @@rules_distroless++apt+bookworm_binutils-common-amd64_2.40-2//:data; 1s processwrapper-sandbox ... (4 actions, 3 running)
+[765 / 1,187] Executing genrule @@rules_distroless++apt+bookworm_binutils-x86-64-linux-gnu-amd64_2.40-2//:data; 0s processwrapper-sandbox ... (4 actions, 3 running)
+INFO: From Compiling flex/internal/m4_deny_shell.c [for tool]:
+external/rules_flex+/flex/internal/m4_deny_shell.c: In function 'main':
+external/rules_flex+/flex/internal/m4_deny_shell.c:21:14: warning: unused parameter 'argc' [-Wunused-parameter]
+   21 | int main(int argc, char **argv) {
+      |          ~~~~^~~~
+external/rules_flex+/flex/internal/m4_deny_shell.c:21:27: warning: unused parameter 'argv' [-Wunused-parameter]
+   21 | int main(int argc, char **argv) {
+      |                    ~~~~~~~^~~~
+[784 / 1,187] Executing genrule @@rules_distroless++apt+bookworm_libc6-dev-amd64_2.36-9-deb12u13//:data; 0s processwrapper-sandbox ... (4 actions, 3 running)
+[814 / 1,187] Executing genrule @@rules_distroless++apt+bookworm-security_libssl3-amd64_3.0.14-1_deb12u2//:data; 0s processwrapper-sandbox ... (4 actions, 3 running)
+[840 / 1,187] Compiling gnulib/lib/printf-args.c [for tool]; 0s processwrapper-sandbox ... (4 actions running)
+[870 / 1,187] Compiling src/ielr.c [for tool]; 0s processwrapper-sandbox ... (3 actions, 2 running)
+[882 / 1,187] Executing genrule @@rules_distroless++apt+bookworm_coreutils-amd64_9.1-1//:data; 1s processwrapper-sandbox ... (4 actions, 3 running)
+[899 / 1,187] Compiling cc/runfiles/runfiles.cc [for tool]; 0s processwrapper-sandbox ... (4 actions, 3 running)
+[919 / 1,187] Compiling src/parse-gram.c [for tool]; 0s processwrapper-sandbox ... (4 actions, 3 running)
+[929 / 1,187] Executing genrule @@rules_distroless++apt+bookworm_perl-modules-5.36-all_5.36.0-7-deb12u3//:data; 0s processwrapper-sandbox ... (4 actions, 3 running)
+[943 / 1,187] Executing genrule @@rules_distroless++apt+bookworm_perl-base-amd64_5.36.0-7-deb12u3//:data; 0s processwrapper-sandbox ... (4 actions, 3 running)
+INFO: From Bison @@libnl3++_repo_rules+libnl3_src//:pktloc_syntax:
+external/libnl3++_repo_rules+libnl3_src/lib/route/pktloc_syntax.y:10.1-14: warning: deprecated directive, use '%define parse.error verbose' [-Wdeprecated]
+ %error-verbose
+ ^~~~~~~~~~~~~~
+external/libnl3++_repo_rules+libnl3_src/lib/route/pktloc_syntax.y:12.1-22: warning: deprecated directive, use '%define api.prefix {pktloc_}' [-Wdeprecated]
+ %name-prefix "pktloc_"
+ ^~~~~~~~~~~~~~~~~~~~~~
+external/libnl3++_repo_rules+libnl3_src/lib/route/pktloc_syntax.y:46.6: warning: empty rule without %empty [-Wempty-rule]
+ input:
+      ^
+external/libnl3++_repo_rules+libnl3_src/lib/route/pktloc_syntax.y:87.17-43: warning: empty rule without %empty [-Wempty-rule]
+ 		{ $$ = TCF_LAYER_NETWORK; }
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+external/libnl3++_repo_rules+libnl3_src/lib/route/pktloc_syntax.y:94.17-27: warning: empty rule without %empty [-Wempty-rule]
+ 		{ $$ = 0; }
+                 ^~~~~~~~~~~
+external/libnl3++_repo_rules+libnl3_src/lib/route/pktloc_syntax.y:101.17-27: warning: empty rule without %empty [-Wempty-rule]
+ 		{ $$ = 0; }
+                 ^~~~~~~~~~~
+external/libnl3++_repo_rules+libnl3_src/lib/route/pktloc_syntax.y: warning: fix-its can be applied.  Rerun with option '--update'. [-Wother]
+INFO: From Bison @@libnl3++_repo_rules+libnl3_src//:ematch_syntax:
+external/libnl3++_repo_rules+libnl3_src/lib/route/cls/ematch_syntax.y:26.1-14: warning: deprecated directive, use '%define parse.error verbose' [-Wdeprecated]
+ %error-verbose
+ ^~~~~~~~~~~~~~
+external/libnl3++_repo_rules+libnl3_src/lib/route/cls/ematch_syntax.y:28.1-22: warning: deprecated directive, use '%define api.prefix {ematch_}' [-Wdeprecated]
+ %name-prefix "ematch_"
+ ^~~~~~~~~~~~~~~~~~~~~~
+external/libnl3++_repo_rules+libnl3_src/lib/route/cls/ematch_syntax.y:145.6: warning: empty rule without %empty [-Wempty-rule]
+ input:
+      ^
+external/libnl3++_repo_rules+libnl3_src/lib/route/cls/ematch_syntax.y:318.17-30: warning: empty rule without %empty [-Wempty-rule]
+ 		{ $$ = NULL; }
+                 ^~~~~~~~~~~~~~
+external/libnl3++_repo_rules+libnl3_src/lib/route/cls/ematch_syntax.y:325.17-30: warning: empty rule without %empty [-Wempty-rule]
+ 		{ $$ = NULL; }
+                 ^~~~~~~~~~~~~~
+external/libnl3++_repo_rules+libnl3_src/lib/route/cls/ematch_syntax.y:470.17-27: warning: empty rule without %empty [-Wempty-rule]
+ 		{ $$ = 0; }
+                 ^~~~~~~~~~~
+external/libnl3++_repo_rules+libnl3_src/lib/route/cls/ematch_syntax.y:479.17-27: warning: empty rule without %empty [-Wempty-rule]
+ 		{ $$ = 0; }
+                 ^~~~~~~~~~~
+external/libnl3++_repo_rules+libnl3_src/lib/route/cls/ematch_syntax.y:486.17-27: warning: empty rule without %empty [-Wempty-rule]
+ 		{ $$ = 0; }
+                 ^~~~~~~~~~~
+external/libnl3++_repo_rules+libnl3_src/lib/route/cls/ematch_syntax.y: warning: fix-its can be applied.  Rerun with option '--update'. [-Wother]
+[964 / 1,187] Executing genrule @@rules_distroless++apt+bookworm-security_libicu-dev-amd64_72.1-3-deb12u1//:data; 0s processwrapper-sandbox ... (4 actions running)
+[967 / 1,187] Executing genrule @@rules_distroless++apt+bookworm-security_libicu-dev-amd64_72.1-3-deb12u1//:data; 1s processwrapper-sandbox ... (4 actions running)
+[974 / 1,187] Executing genrule @@rules_distroless++apt+bookworm-security_libicu-dev-amd64_72.1-3-deb12u1//:data; 2s processwrapper-sandbox ... (4 actions running)
+[992 / 1,187] Executing genrule @@rules_distroless++apt+bookworm_libpython3.11-stdlib-amd64_3.11.2-6-deb12u6//:data; 0s processwrapper-sandbox ... (4 actions running)
+[1,010 / 1,187] Executing genrule @@rules_distroless++apt+bookworm_libboost1.74-dev-amd64_1.74.0-ds1-21//:data; 0s processwrapper-sandbox ... (4 actions, 3 running)
+[1,031 / 1,187] Executing genrule @@rules_distroless++apt+bookworm_libboost1.74-dev-amd64_1.74.0-ds1-21//:data; 1s processwrapper-sandbox ... (4 actions, 3 running)
+[1,039 / 1,187] Executing genrule @@rules_distroless++apt+bookworm_libboost1.74-dev-amd64_1.74.0-ds1-21//:data; 3s processwrapper-sandbox ... (4 actions, 3 running)
+[1,049 / 1,187] Executing genrule @@rules_distroless++apt+bookworm_libpython3.11-dev-amd64_3.11.2-6-deb12u6//:data; 1s processwrapper-sandbox ... (4 actions, 3 running)
+[1,082 / 1,187] Executing genrule @@rules_distroless++apt+bookworm_iproute2-amd64_6.1.0-3//:data; 0s processwrapper-sandbox ... (4 actions, 3 running)
+[1,115 / 1,187] Compiling lib/route/link.c; 0s processwrapper-sandbox ... (4 actions, 3 running)
+[1,132 / 1,187] Compiling lib/route/qdisc/netem.c; 0s processwrapper-sandbox ... (4 actions running)
+[1,151 / 1,187] Compiling lib/route/netconf.c; 0s processwrapper-sandbox ... (4 actions, 3 running)
+[1,167 / 1,187] Compiling lib/route/link/ip6vti.c; 0s processwrapper-sandbox ... (4 actions, 3 running)
+[1,183 / 1,187] Flattening //dockers/docker-base-bookworm:flat; 0s processwrapper-sandbox
+[1,184 / 1,187] [Prepa] OCI Descriptor dockers/docker-base-bookworm/flat.tar
+INFO: Found 1 target...
+Target //dockers/docker-base-bookworm:load up-to-date:
+  bazel-bin/dockers/docker-base-bookworm/load.sh
+INFO: Elapsed time: 62.979s, Critical Path: 10.96s
+INFO: 1064 processes: 124 action cache hit, 510 internal, 554 processwrapper-sandbox.
+INFO: Build completed successfully, 1064 total actions
+INFO: Running command line: bazel-bin/dockers/docker-base-bookworm/load.sh
+Loaded image: docker-base-bookworm:latest
+
+========================================
+RESULT: SUCCESS
+Finished: Tue Apr 21 22:17:38 CDT 2026
+========================================

@@ -1,0 +1,52 @@
+========================================
+Step: docker load: //dockers/docker-sysmgr:load
+Started: Tue Apr 21 22:40:18 CDT 2026
+Command: bazel run //dockers/docker-sysmgr:load
+========================================
+
+Computing main repo mapping: 
+Loading: 
+Loading: 0 packages loaded
+Analyzing: target //dockers/docker-sysmgr:load (1 packages loaded, 0 targets configured)
+Analyzing: target //dockers/docker-sysmgr:load (1 packages loaded, 0 targets configured)
+
+Analyzing: target //dockers/docker-sysmgr:load (8 packages loaded, 17 targets configured)
+
+WARNING: /home/bobo.linux/bazel/sonic-buildimage/MODULE.bazel:177:31: The module extension sonic_go_repos defined in @sonic-mgmt-common//:go_repos.bzl reported incorrect imports of repositories via use_repo():
+
+Imported, but reported as indirect dependencies by the extension:
+    com_github_golang_glog, com_github_google_gnxi, com_github_google_gousb, com_github_mitchellh_go_wordwrap, com_github_msteinert_pam, com_github_openconfig_gnmi, com_github_openconfig_gnoi, com_github_openconfig_gnsi, com_github_openconfig_goyang, com_github_openconfig_grpctunnel, com_github_openconfig_ygot, com_github_protocolbuffers_txtpbfmt
+
+Fix the use_repo calls by running 'bazel mod tidy'.
+Analyzing: target //dockers/docker-sysmgr:load (21 packages loaded, 66 targets configured)
+
+Analyzing: target //dockers/docker-sysmgr:load (23 packages loaded, 77 targets configured)
+
+Analyzing: target //dockers/docker-sysmgr:load (24 packages loaded, 171 targets configured)
+
+INFO: Analyzed target //dockers/docker-sysmgr:load (25 packages loaded, 181 targets configured).
+[102 / 145] Generating proto_library @com_github_openconfig_gnoi//system:system_proto; 0s processwrapper-sandbox ... (4 actions, 3 running)
+INFO: From Executing genrule @@sonic-sysmgr+//rebootbackend:reboot_dbus.h.gen:
+skipping interface org.freedesktop.DBus.Introspectable
+generating code for interface org.SONiC.HostService.reboot...
+[126 / 145] Compiling external/sonic-mgmt-common++sonic_go_repos+com_github_openconfig_gnoi/common/_virtual_imports/common_proto/github.com/openconfig/gnoi/common/common.pb.cc; 1s processwrapper-sandbox ... (4 actions running)
+[129 / 145] Compiling external/sonic-mgmt-common++sonic_go_repos+com_github_openconfig_gnoi/common/_virtual_imports/common_proto/github.com/openconfig/gnoi/common/common.pb.cc; 2s processwrapper-sandbox ... (4 actions running)
+[132 / 145] Compiling external/sonic-mgmt-common++sonic_go_repos+com_github_openconfig_gnoi/system/system.pb.cc; 2s processwrapper-sandbox ... (4 actions, 3 running)
+[134 / 145] Compiling external/sonic-mgmt-common++sonic_go_repos+com_github_openconfig_gnoi/system/system.pb.cc; 3s processwrapper-sandbox ... (4 actions, 3 running)
+[137 / 145] Compiling rebootbackend/rebootbe.cpp; 3s processwrapper-sandbox ... (2 actions running)
+[138 / 145] Compiling rebootbackend/reboot_thread.cpp; 3s processwrapper-sandbox
+[139 / 145] [Prepa] Linking external/sonic-sysmgr+/rebootbackend/rebootbackend
+[140 / 145] [Prepa] Tar external/sonic-sysmgr+/sysmgr_pkg.tar
+INFO: Found 1 target...
+Target //dockers/docker-sysmgr:load up-to-date:
+  bazel-bin/dockers/docker-sysmgr/load.sh
+INFO: Elapsed time: 16.815s, Critical Path: 8.33s
+INFO: 138 processes: 7 action cache hit, 95 internal, 43 processwrapper-sandbox.
+INFO: Build completed successfully, 138 total actions
+INFO: Running command line: bazel-bin/dockers/docker-sysmgr/load.sh
+Loaded image: docker-sysmgr:latest
+
+========================================
+RESULT: SUCCESS
+Finished: Tue Apr 21 22:40:38 CDT 2026
+========================================

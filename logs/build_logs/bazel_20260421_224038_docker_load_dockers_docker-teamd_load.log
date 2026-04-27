@@ -1,0 +1,28 @@
+========================================
+Step: docker load: //dockers/docker-teamd:load
+Started: Tue Apr 21 22:40:38 CDT 2026
+Command: bazel run //dockers/docker-teamd:load
+========================================
+
+Computing main repo mapping: 
+Loading: 
+Loading: 0 packages loaded
+Analyzing: target //dockers/docker-teamd:load (1 packages loaded, 0 targets configured)
+Analyzing: target //dockers/docker-teamd:load (1 packages loaded, 0 targets configured)
+
+INFO: Analyzed target //dockers/docker-teamd:load (1 packages loaded, 51 targets configured).
+[293 / 322] Linking external/libteam++_repo_rules+libteam_src/teamnl; 0s processwrapper-sandbox ... (4 actions, 3 running)
+[317 / 322] [Prepa] Linking external/libteam++_repo_rules+libteam_src/teamd
+INFO: Found 1 target...
+Target //dockers/docker-teamd:load up-to-date:
+  bazel-bin/dockers/docker-teamd/load.sh
+INFO: Elapsed time: 2.837s, Critical Path: 1.03s
+INFO: 82 processes: 240 action cache hit, 42 internal, 40 processwrapper-sandbox.
+INFO: Build completed successfully, 82 total actions
+INFO: Running command line: bazel-bin/dockers/docker-teamd/load.sh
+Loaded image: docker-teamd:latest
+
+========================================
+RESULT: SUCCESS
+Finished: Tue Apr 21 22:40:43 CDT 2026
+========================================

@@ -1,0 +1,44 @@
+========================================
+Step: src/sonic-build-infra: bazel build ...
+Repo: src/sonic-build-infra
+Started: Tue Apr 21 20:03:59 CDT 2026
+Command: bazel build ...
+========================================
+
+Starting local Bazel server (8.5.1) and connecting to it...
+Computing main repo mapping: 
+Computing main repo mapping: 
+Loading: 
+Loading: 0 packages loaded
+Loading: 0 packages loaded
+Analyzing: 105 targets (14 packages loaded, 0 targets configured)
+Analyzing: 105 targets (14 packages loaded, 0 targets configured)
+
+Analyzing: 105 targets (27 packages loaded, 248 targets configured)
+[6 / 6] no actions running
+Analyzing: 105 targets (95 packages loaded, 358 targets configured)
+[7 / 8] checking cached actions
+Analyzing: 105 targets (139 packages loaded, 847 targets configured)
+[8 / 8] no actions running
+Analyzing: 105 targets (150 packages loaded, 1133 targets configured)
+[8 / 8] no actions running
+Analyzing: 105 targets (163 packages loaded, 7547 targets configured)
+[22 / 22] no actions running
+Analyzing: 105 targets (163 packages loaded, 7636 targets configured)
+[22 / 22] no actions running
+Analyzing: 105 targets (163 packages loaded, 7636 targets configured)
+[22 / 22] no actions running
+INFO: Analyzed 105 targets (164 packages loaded, 7879 targets configured).
+[32 / 59] Unpack external/rules_distroless++apt+bookworm_libc6-amd64_2.36-9-deb12u13/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2; 0s processwrapper-sandbox ... (4 actions, 3 running)
+[68 / 132] Unpack external/rules_distroless++apt+bookworm_libtsan2-amd64_12.2.0-14-deb12u1/usr/lib/x86_64-linux-gnu/libtsan.so.2.0.0 [for tool]; 0s processwrapper-sandbox ... (4 actions, 3 running)
+[102 / 136] Compiling support/regex.c [for tool]; 0s processwrapper-sandbox ... (4 actions, 3 running)
+[126 / 136] Compiling gawkapi.c [for tool]; 0s processwrapper-sandbox ... (4 actions running)
+INFO: Found 105 targets...
+INFO: Elapsed time: 27.291s, Critical Path: 1.83s
+INFO: 136 processes: 57 internal, 79 processwrapper-sandbox.
+INFO: Build completed successfully, 136 total actions
+
+========================================
+RESULT: SUCCESS
+Finished: Tue Apr 21 20:04:27 CDT 2026
+========================================

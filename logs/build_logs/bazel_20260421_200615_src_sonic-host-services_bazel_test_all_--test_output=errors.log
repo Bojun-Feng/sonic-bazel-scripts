@@ -1,0 +1,60 @@
+========================================
+Step: src/sonic-host-services: bazel test //:all --test_output=errors
+Repo: src/sonic-host-services
+Started: Tue Apr 21 20:06:15 CDT 2026
+Command: bazel test //:all --test_output=errors
+========================================
+
+Starting local Bazel server (8.5.1) and connecting to it...
+Computing main repo mapping: 
+Computing main repo mapping: 
+Computing main repo mapping: 
+Loading: 
+Loading: 2 packages loaded
+Analyzing: 17 targets (3 packages loaded, 0 targets configured)
+Analyzing: 17 targets (3 packages loaded, 0 targets configured)
+
+Analyzing: 17 targets (144 packages loaded, 379 targets configured)
+[3 / 4] checking cached actions
+Analyzing: 17 targets (371 packages loaded, 602 targets configured)
+[4 / 4] no actions running
+Analyzing: 17 targets (402 packages loaded, 2869 targets configured)
+[4 / 4] no actions running
+Analyzing: 17 targets (544 packages loaded, 6115 targets configured)
+[4 / 4] no actions running
+Analyzing: 17 targets (646 packages loaded, 9015 targets configured)
+[4 / 4] no actions running
+Analyzing: 17 targets (673 packages loaded, 13683 targets configured)
+[4 / 4] no actions running
+Analyzing: 17 targets (695 packages loaded, 15935 targets configured)
+[9 / 87] Creating runfiles tree bazel-out/k8-fastbuild/bin/sdist_test-test.sh.runfiles; 0s local
+Analyzing: 17 targets (752 packages loaded, 21188 targets configured)
+[22 / 87] Unpack external/rules_distroless++apt+bookworm-security_linux-libc-dev-amd64_6.1.153-1/usr/include/asm-generic/auxvec.h [for tool]; 0s processwrapper-sandbox ... (4 actions running)
+Analyzing: 17 targets (754 packages loaded, 28610 targets configured)
+[33 / 87] Unpack external/rules_distroless++apt+bookworm_libc6-amd64_2.36-9-deb12u13/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2 [for tool]; 0s processwrapper-sandbox ... (2 actions, 1 running)
+INFO: Analyzed 17 targets (754 packages loaded, 30423 targets configured).
+[49 / 87] Compiling support/regex.c [for tool]; 0s processwrapper-sandbox ... (4 actions, 3 running)
+[57 / 87] Compiling io.c [for tool]; 0s processwrapper-sandbox ... (4 actions running)
+[70 / 87] Compiling eval.c [for tool]; 0s processwrapper-sandbox ... (4 actions, 3 running)
+[98 / 691] Compiling awkgram.c [for tool]; 0s processwrapper-sandbox ... (4 actions, 3 running)
+[435 / 2,040] Unpack external/rules_distroless++apt+bookworm_libc6-dev-amd64_2.36-9-deb12u13/usr/lib/x86_64-linux-gnu/audit/sotruss-lib.so; 0s processwrapper-sandbox ... (4 actions, 3 running)
+ERROR: /home/bobo.linux/.cache/bazel/_bazel_bobo/678437490af2f2b21e608c1b16166111/external/aspect_rules_py++uv+whl_install__sonic_utilities_pip__default__www_authenticate/BUILD.bazel:23:12: Action external/aspect_rules_py++uv+whl_install__sonic_utilities_pip__default__www_authenticate/install failed: (Exit 1): unpack failed: error executing Action command (from target @@aspect_rules_py++uv+whl_install__sonic_utilities_pip__default__www_authenticate//:actual_install) external/aspect_rules_py++py_tools+rules_py_tools.linux_amd64/unpack --into bazel-out/k8-fastbuild/bin/external/aspect_rules_py++uv+whl_install__sonic_utilities_pip__default__www_authenticate/install ... (remaining 6 arguments skipped)
+
+Use --sandbox_debug to see verbose messages from the sandbox and retain the sandbox build root for debugging
+Error:   × Unable to run command:
+  ├─▶ Didn't find exactly one wheel file to install!
+  ╰─▶ got zero elements when exactly one was expected
+
+Use --verbose_failures to see the command lines of failed build steps.
+INFO: Elapsed time: 19.724s, Critical Path: 3.80s
+INFO: 210 processes: 390 action cache hit, 124 internal, 86 processwrapper-sandbox.
+ERROR: Build did NOT complete successfully
+//:dist_test                                                          NO STATUS
+//:sdist_test                                                         NO STATUS
+
+Executed 0 out of 2 tests: 2 were skipped.
+
+========================================
+RESULT: FAILURE (exit code 1)
+Finished: Tue Apr 21 20:06:35 CDT 2026
+========================================

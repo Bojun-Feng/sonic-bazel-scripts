@@ -1,0 +1,2900 @@
+========================================
+Step: docker load: //platform/broadcom/docker-syncd-brcm:load
+Started: Tue Apr 21 22:40:43 CDT 2026
+Command: bazel run //platform/broadcom/docker-syncd-brcm:load
+========================================
+
+Computing main repo mapping: 
+Loading: 
+Loading: 0 packages loaded
+Analyzing: target //platform/broadcom/docker-syncd-brcm:load (1 packages loaded, 0 targets configured)
+Analyzing: target //platform/broadcom/docker-syncd-brcm:load (1 packages loaded, 0 targets configured)
+
+Analyzing: target //platform/broadcom/docker-syncd-brcm:load (382 packages loaded, 11653 targets configured)
+
+INFO: Analyzed target //platform/broadcom/docker-syncd-brcm:load (384 packages loaded, 11664 targets configured).
+[150 / 332] RunBinary external/sonic-yang-models+/yang-models; 0s processwrapper-sandbox ... (3 actions, 2 running)
+[187 / 388] Compiling vslib/sai_vs_acl.cpp; 0s processwrapper-sandbox ... (4 actions, 3 running)
+[232 / 446] Compiling vslib/VirtualSwitchSaiInterfacePort.cpp; 1s processwrapper-sandbox ... (4 actions, 3 running)
+[258 / 446] Compiling vslib/VirtualSwitchSaiInterfacePort.cpp; 2s processwrapper-sandbox ... (4 actions running)
+[261 / 446] Compiling vslib/VirtualSwitchSaiInterface.cpp; 3s processwrapper-sandbox ... (4 actions, 3 running)
+[287 / 446] Compiling vslib/VirtualSwitchSaiInterfaceFdb.cpp; 1s processwrapper-sandbox ... (4 actions, 3 running)
+[290 / 446] Compiling vslib/SwitchStateBaseMACsec.cpp; 1s processwrapper-sandbox ... (4 actions, 3 running)
+[291 / 446] Compiling vslib/SwitchStateBaseMACsec.cpp; 2s processwrapper-sandbox ... (4 actions running)
+[295 / 446] Action external/aspect_rules_py++uv+sbuild__sonic_utilities_pip__default__netifaces/build; 3s processwrapper-sandbox ... (4 actions, 3 running)
+[297 / 446] Action external/aspect_rules_py++uv+sbuild__sonic_utilities_pip__default__netifaces/build; 5s processwrapper-sandbox ... (4 actions, 3 running)
+[299 / 446] Action external/aspect_rules_py++uv+sbuild__sonic_utilities_pip__default__netifaces/build; 6s processwrapper-sandbox ... (4 actions running)
+INFO: From Action external/aspect_rules_py++uv+sbuild__sonic_utilities_pip__default__netifaces/build:
+/home/bobo.linux/.cache/bazel/_bazel_bobo/5f9602010ff550d0b4caceda45f93e29/execroot/_main/bazel-out/k8-fastbuild/bin/external/aspect_rules_py++uv+sbuild__sonic_utilities_pip__default__netifaces/.build_venv/bin/python3
+* Getting build dependencies for wheel...
+/home/bobo.linux/.cache/bazel/_bazel_bobo/5f9602010ff550d0b4caceda45f93e29/execroot/_main/bazel-out/k8-fastbuild/bin/external/aspect_rules_py++uv+sbuild__sonic_utilities_pip__default__netifaces/.build_venv/lib/python3.11/site-packages/setuptools/dist.py:765: SetuptoolsDeprecationWarning: License classifiers are deprecated.
+!!
+
+        ********************************************************************************
+        Please consider removing the following classifiers in favor of a SPDX license expression:
+
+        License :: OSI Approved :: MIT License
+
+        See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license for details.
+        ********************************************************************************
+
+!!
+  self._finalize_license_expression()
+* Building wheel...
+/home/bobo.linux/.cache/bazel/_bazel_bobo/5f9602010ff550d0b4caceda45f93e29/execroot/_main/bazel-out/k8-fastbuild/bin/external/aspect_rules_py++uv+sbuild__sonic_utilities_pip__default__netifaces/.build_venv/lib/python3.11/site-packages/setuptools/dist.py:765: SetuptoolsDeprecationWarning: License classifiers are deprecated.
+!!
+
+        ********************************************************************************
+        Please consider removing the following classifiers in favor of a SPDX license expression:
+
+        License :: OSI Approved :: MIT License
+
+        See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license for details.
+        ********************************************************************************
+
+!!
+  self._finalize_license_expression()
+netifaces.c:1834:14: warning: comparison of integers of different signs: '__u32' (aka 'unsigned int') and 'int' [-Wsign-compare]
+ 1834 |       while (NLMSG_OK (&pmsg->hdr, nllen)) {
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/linux/netlink.h:109:24: note: expanded from macro 'NLMSG_OK'
+  109 |                            (nlh)->nlmsg_len <= (len))
+      |                            ~~~~~~~~~~~~~~~~ ^   ~~~
+netifaces.c:1843:33: warning: comparison of integers of different signs: '__u32' (aka 'unsigned int') and 'int' [-Wsign-compare]
+ 1843 |         if (pmsg->hdr.nlmsg_seq != seq || pmsg->hdr.nlmsg_pid != sanl.nl_pid)
+      |             ~~~~~~~~~~~~~~~~~~~ ^  ~~~
+2 warnings generated.
+['netifaces-0.11.0-cp311-cp311-linux_x86_64.whl']
+running egg_info
+writing netifaces.egg-info/PKG-INFO
+writing dependency_links to netifaces.egg-info/dependency_links.txt
+writing top-level names to netifaces.egg-info/top_level.txt
+reading manifest file 'netifaces.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+adding license file 'LICENSE'
+writing manifest file 'netifaces.egg-info/SOURCES.txt'
+running bdist_wheel
+running build
+running build_ext
+checking for getifaddrs...found. 
+checking for getnameinfo...found. 
+checking for IPv6 socket IOCTLs...not found. 
+checking for optional header files...netash/ash.h netatalk/at.h netax25/ax25.h neteconet/ec.h netipx/ipx.h netpacket/packet.h netrose/rose.h linux/atm.h linux/llc.h linux/tipc.h. 
+checking whether struct sockaddr has a length field...no. 
+checking which sockaddr_xxx structs are defined...at ax25 in in6 ipx un rose ash ec ll atmpvc atmsvc llc. 
+checking for routing socket support...no. 
+checking for sysctl(CTL_NET...) support...no. 
+checking for netlink support...yes. 
+will use netlink to read routing table
+building 'netifaces' extension
+clang -pthread -Wsign-compare -Wunreachable-code -DNDEBUG -g -fwrapv -O3 -Wall -fPIC -fPIC -DNETIFACES_VERSION=0.11.0 -DHAVE_GETIFADDRS=1 -DHAVE_GETNAMEINFO=1 -DHAVE_NETASH_ASH_H=1 -DHAVE_NETATALK_AT_H=1 -DHAVE_NETAX25_AX25_H=1 -DHAVE_NETECONET_EC_H=1 -DHAVE_NETIPX_IPX_H=1 -DHAVE_NETPACKET_PACKET_H=1 -DHAVE_NETROSE_ROSE_H=1 -DHAVE_LINUX_ATM_H=1 -DHAVE_LINUX_LLC_H=1 -DHAVE_LINUX_TIPC_H=1 -DHAVE_SOCKADDR_AT=1 -DHAVE_SOCKADDR_AX25=1 -DHAVE_SOCKADDR_IN=1 -DHAVE_SOCKADDR_IN6=1 -DHAVE_SOCKADDR_IPX=1 -DHAVE_SOCKADDR_UN=1 -DHAVE_SOCKADDR_ROSE=1 -DHAVE_SOCKADDR_ASH=1 -DHAVE_SOCKADDR_EC=1 -DHAVE_SOCKADDR_LL=1 -DHAVE_SOCKADDR_ATMPVC=1 -DHAVE_SOCKADDR_ATMSVC=1 -DHAVE_SOCKADDR_LLC=1 -DHAVE_PF_NETLINK=1 -I/home/bobo.linux/.cache/bazel/_bazel_bobo/5f9602010ff550d0b4caceda45f93e29/execroot/_main/bazel-out/k8-fastbuild/bin/external/aspect_rules_py++uv+sbuild__sonic_utilities_pip__default__netifaces/.build_venv/include -I/home/bobo.linux/.cache/bazel/_bazel_bobo/5f9602010ff550d0b4caceda45f93e29/external/rules_python++python+python_3_11_x86_64-unknown-linux-gnu/include/python3.11 -c netifaces.c -o build/temp.linux-x86_64-cpython-311/netifaces.o
+creating build/lib.linux-x86_64-cpython-311
+clang -pthread -shared -Wl,--exclude-libs,ALL build/temp.linux-x86_64-cpython-311/netifaces.o -L/install/lib -o build/lib.linux-x86_64-cpython-311/netifaces.cpython-311-x86_64-linux-gnu.so
+installing to build/bdist.linux-x86_64/wheel
+running install
+running install_lib
+creating build/bdist.linux-x86_64/wheel
+copying build/lib.linux-x86_64-cpython-311/netifaces.cpython-311-x86_64-linux-gnu.so -> build/bdist.linux-x86_64/wheel/.
+running install_egg_info
+running egg_info
+writing netifaces.egg-info/PKG-INFO
+writing dependency_links to netifaces.egg-info/dependency_links.txt
+writing top-level names to netifaces.egg-info/top_level.txt
+reading manifest file 'netifaces.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+adding license file 'LICENSE'
+writing manifest file 'netifaces.egg-info/SOURCES.txt'
+Copying netifaces.egg-info to build/bdist.linux-x86_64/wheel/./netifaces-0.11.0-py3.11.egg-info
+running install_scripts
+creating build/bdist.linux-x86_64/wheel/netifaces-0.11.0.dist-info/WHEEL
+creating '/home/bobo.linux/.cache/bazel/_bazel_bobo/5f9602010ff550d0b4caceda45f93e29/sandbox/processwrapper-sandbox/4511/execroot/_main/bazel-out/k8-fastbuild/bin/external/aspect_rules_py++uv+sbuild__sonic_utilities_pip__default__netifaces/build/.tmp-k4y2abq0/netifaces-0.11.0-cp311-cp311-linux_x86_64.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
+adding 'netifaces.cpython-311-x86_64-linux-gnu.so'
+adding 'netifaces-0.11.0.dist-info/licenses/LICENSE'
+adding 'netifaces-0.11.0.dist-info/METADATA'
+adding 'netifaces-0.11.0.dist-info/WHEEL'
+adding 'netifaces-0.11.0.dist-info/top_level.txt'
+adding 'netifaces-0.11.0.dist-info/zip-safe'
+adding 'netifaces-0.11.0.dist-info/RECORD'
+removing build/bdist.linux-x86_64/wheel
+Successfully built netifaces-0.11.0-cp311-cp311-linux_x86_64.whl
+[306 / 446] Compiling vslib/SwitchState.cpp; 2s processwrapper-sandbox ... (4 actions, 3 running)
+[308 / 446] Action external/aspect_rules_py++uv+sbuild__sonic_utilities_pip__default__www_authenticate/build; 2s processwrapper-sandbox ... (4 actions running)
+[311 / 446] Action external/aspect_rules_py++uv+sbuild__sonic_utilities_pip__default__www_authenticate/build; 3s processwrapper-sandbox ... (4 actions running)
+INFO: From Action external/aspect_rules_py++uv+sbuild__sonic_utilities_pip__default__www_authenticate/build:
+/home/bobo.linux/.cache/bazel/_bazel_bobo/5f9602010ff550d0b4caceda45f93e29/execroot/_main/bazel-out/k8-fastbuild/bin/external/aspect_rules_py++uv+sbuild__sonic_utilities_pip__default__www_authenticate/.build_venv/bin/python3
+* Getting build dependencies for wheel...
+/home/bobo.linux/.cache/bazel/_bazel_bobo/5f9602010ff550d0b4caceda45f93e29/execroot/_main/bazel-out/k8-fastbuild/bin/external/aspect_rules_py++uv+sbuild__sonic_utilities_pip__default__www_authenticate/.build_venv/lib/python3.11/site-packages/setuptools/_distutils/dist.py:287: UserWarning: Unknown distribution option: 'tests_require'
+  warnings.warn(msg)
+/home/bobo.linux/.cache/bazel/_bazel_bobo/5f9602010ff550d0b4caceda45f93e29/execroot/_main/bazel-out/k8-fastbuild/bin/external/aspect_rules_py++uv+sbuild__sonic_utilities_pip__default__www_authenticate/.build_venv/lib/python3.11/site-packages/setuptools/_distutils/dist.py:287: UserWarning: Unknown distribution option: 'test_suite'
+  warnings.warn(msg)
+* Building wheel...
+/home/bobo.linux/.cache/bazel/_bazel_bobo/5f9602010ff550d0b4caceda45f93e29/execroot/_main/bazel-out/k8-fastbuild/bin/external/aspect_rules_py++uv+sbuild__sonic_utilities_pip__default__www_authenticate/.build_venv/lib/python3.11/site-packages/setuptools/_distutils/dist.py:287: UserWarning: Unknown distribution option: 'tests_require'
+  warnings.warn(msg)
+/home/bobo.linux/.cache/bazel/_bazel_bobo/5f9602010ff550d0b4caceda45f93e29/execroot/_main/bazel-out/k8-fastbuild/bin/external/aspect_rules_py++uv+sbuild__sonic_utilities_pip__default__www_authenticate/.build_venv/lib/python3.11/site-packages/setuptools/_distutils/dist.py:287: UserWarning: Unknown distribution option: 'test_suite'
+  warnings.warn(msg)
+['www_authenticate-0.9.2-py3-none-any.whl']
+running egg_info
+writing www_authenticate.egg-info/PKG-INFO
+writing dependency_links to www_authenticate.egg-info/dependency_links.txt
+writing top-level names to www_authenticate.egg-info/top_level.txt
+reading manifest file 'www_authenticate.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+adding license file 'LICENSE'
+writing manifest file 'www_authenticate.egg-info/SOURCES.txt'
+running bdist_wheel
+running build
+running build_py
+copying www_authenticate.py -> build/lib
+installing to build/bdist.linux-x86_64/wheel
+running install
+running install_lib
+creating build/bdist.linux-x86_64/wheel
+copying build/lib/www_authenticate.py -> build/bdist.linux-x86_64/wheel/.
+creating build/bdist.linux-x86_64/wheel/scapy
+copying build/lib/scapy/utils6.py -> build/bdist.linux-x86_64/wheel/./scapy
+copying build/lib/scapy/route6.py -> build/bdist.linux-x86_64/wheel/./scapy
+copying build/lib/scapy/ansmachine.py -> build/bdist.linux-x86_64/wheel/./scapy
+copying build/lib/scapy/compat.py -> build/bdist.linux-x86_64/wheel/./scapy
+copying build/lib/scapy/plist.py -> build/bdist.linux-x86_64/wheel/./scapy
+copying build/lib/scapy/themes.py -> build/bdist.linux-x86_64/wheel/./scapy
+copying build/lib/scapy/consts.py -> build/bdist.linux-x86_64/wheel/./scapy
+copying build/lib/scapy/base_classes.py -> build/bdist.linux-x86_64/wheel/./scapy
+copying build/lib/scapy/autorun.py -> build/bdist.linux-x86_64/wheel/./scapy
+copying build/lib/scapy/sendrecv.py -> build/bdist.linux-x86_64/wheel/./scapy
+copying build/lib/scapy/data.py -> build/bdist.linux-x86_64/wheel/./scapy
+creating build/bdist.linux-x86_64/wheel/scapy/layers
+copying build/lib/scapy/layers/eap.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/rtp.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/gprs.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/smb2.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/dhcp6.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/vrrp.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/skinny.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/ntp.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/netbios.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/mobileip.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/bluetooth.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/dot11.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/inet6.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+creating build/bdist.linux-x86_64/wheel/scapy/layers/tls
+copying build/lib/scapy/layers/tls/record_sslv2.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls
+copying build/lib/scapy/layers/tls/basefields.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls
+copying build/lib/scapy/layers/tls/keyexchange.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls
+copying build/lib/scapy/layers/tls/session.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls
+copying build/lib/scapy/layers/tls/handshake.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls
+creating build/bdist.linux-x86_64/wheel/scapy/layers/tls/crypto
+copying build/lib/scapy/layers/tls/crypto/hash.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls/crypto
+copying build/lib/scapy/layers/tls/crypto/compression.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls/crypto
+copying build/lib/scapy/layers/tls/crypto/suites.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls/crypto
+copying build/lib/scapy/layers/tls/crypto/kx_algs.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls/crypto
+copying build/lib/scapy/layers/tls/crypto/hkdf.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls/crypto
+copying build/lib/scapy/layers/tls/crypto/common.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls/crypto
+copying build/lib/scapy/layers/tls/crypto/__init__.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls/crypto
+copying build/lib/scapy/layers/tls/crypto/cipher_aead.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls/crypto
+copying build/lib/scapy/layers/tls/crypto/cipher_stream.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls/crypto
+copying build/lib/scapy/layers/tls/crypto/pkcs1.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls/crypto
+copying build/lib/scapy/layers/tls/crypto/ciphers.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls/crypto
+copying build/lib/scapy/layers/tls/crypto/h_mac.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls/crypto
+copying build/lib/scapy/layers/tls/crypto/prf.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls/crypto
+copying build/lib/scapy/layers/tls/crypto/all.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls/crypto
+copying build/lib/scapy/layers/tls/crypto/cipher_block.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls/crypto
+copying build/lib/scapy/layers/tls/crypto/groups.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls/crypto
+copying build/lib/scapy/layers/tls/extensions.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls
+copying build/lib/scapy/layers/tls/cert.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls
+copying build/lib/scapy/layers/tls/keyexchange_tls13.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls
+copying build/lib/scapy/layers/tls/__init__.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls
+copying build/lib/scapy/layers/tls/handshake_sslv2.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls
+copying build/lib/scapy/layers/tls/automaton_cli.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls
+copying build/lib/scapy/layers/tls/tools.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls
+copying build/lib/scapy/layers/tls/automaton.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls
+copying build/lib/scapy/layers/tls/automaton_srv.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls
+copying build/lib/scapy/layers/tls/record_tls13.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls
+copying build/lib/scapy/layers/tls/all.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls
+copying build/lib/scapy/layers/tls/record.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls
+copying build/lib/scapy/layers/inet.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/ipsec.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/pptp.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/vxlan.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/snmp.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/ppi.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/dot15d4.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/smb.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/mgcp.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/clns.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/hsrp.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/http.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/isakmp.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/dns.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/ir.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/tuntap.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/__init__.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/l2tp.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/pflog.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/can.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/x509.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/sixlowpan.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/tftp.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/dhcp.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/rip.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/netflow.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/ppp.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/l2.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/sctp.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/zigbee.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/all.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/radius.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/bluetooth4LE.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/lltd.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/usb.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/llmnr.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/__main__.py -> build/bdist.linux-x86_64/wheel/./scapy
+copying build/lib/scapy/packet.py -> build/bdist.linux-x86_64/wheel/./scapy
+copying build/lib/scapy/extlib.py -> build/bdist.linux-x86_64/wheel/./scapy
+copying build/lib/scapy/supersocket.py -> build/bdist.linux-x86_64/wheel/./scapy
+creating build/bdist.linux-x86_64/wheel/scapy/arch
+copying build/lib/scapy/arch/linux.py -> build/bdist.linux-x86_64/wheel/./scapy/arch
+copying build/lib/scapy/arch/libpcap.py -> build/bdist.linux-x86_64/wheel/./scapy/arch
+creating build/bdist.linux-x86_64/wheel/scapy/arch/bpf
+copying build/lib/scapy/arch/bpf/consts.py -> build/bdist.linux-x86_64/wheel/./scapy/arch/bpf
+copying build/lib/scapy/arch/bpf/core.py -> build/bdist.linux-x86_64/wheel/./scapy/arch/bpf
+copying build/lib/scapy/arch/bpf/supersocket.py -> build/bdist.linux-x86_64/wheel/./scapy/arch/bpf
+copying build/lib/scapy/arch/bpf/__init__.py -> build/bdist.linux-x86_64/wheel/./scapy/arch/bpf
+copying build/lib/scapy/arch/common.py -> build/bdist.linux-x86_64/wheel/./scapy/arch
+copying build/lib/scapy/arch/__init__.py -> build/bdist.linux-x86_64/wheel/./scapy/arch
+copying build/lib/scapy/arch/unix.py -> build/bdist.linux-x86_64/wheel/./scapy/arch
+copying build/lib/scapy/arch/solaris.py -> build/bdist.linux-x86_64/wheel/./scapy/arch
+creating build/bdist.linux-x86_64/wheel/scapy/arch/windows
+copying build/lib/scapy/arch/windows/structures.py -> build/bdist.linux-x86_64/wheel/./scapy/arch/windows
+copying build/lib/scapy/arch/windows/native.py -> build/bdist.linux-x86_64/wheel/./scapy/arch/windows
+copying build/lib/scapy/arch/windows/__init__.py -> build/bdist.linux-x86_64/wheel/./scapy/arch/windows
+copying build/lib/scapy/volatile.py -> build/bdist.linux-x86_64/wheel/./scapy
+copying build/lib/scapy/__init__.py -> build/bdist.linux-x86_64/wheel/./scapy
+creating build/bdist.linux-x86_64/wheel/scapy/modules
+copying build/lib/scapy/modules/nmap.py -> build/bdist.linux-x86_64/wheel/./scapy/modules
+creating build/bdist.linux-x86_64/wheel/scapy/modules/krack
+copying build/lib/scapy/modules/krack/crypto.py -> build/bdist.linux-x86_64/wheel/./scapy/modules/krack
+copying build/lib/scapy/modules/krack/__init__.py -> build/bdist.linux-x86_64/wheel/./scapy/modules/krack
+copying build/lib/scapy/modules/krack/automaton.py -> build/bdist.linux-x86_64/wheel/./scapy/modules/krack
+copying build/lib/scapy/modules/p0f.py -> build/bdist.linux-x86_64/wheel/./scapy/modules
+copying build/lib/scapy/modules/__init__.py -> build/bdist.linux-x86_64/wheel/./scapy/modules
+copying build/lib/scapy/modules/voip.py -> build/bdist.linux-x86_64/wheel/./scapy/modules
+copying build/lib/scapy/modules/six.py -> build/bdist.linux-x86_64/wheel/./scapy/modules
+copying build/lib/scapy/scapypipes.py -> build/bdist.linux-x86_64/wheel/./scapy
+copying build/lib/scapy/fields.py -> build/bdist.linux-x86_64/wheel/./scapy
+copying build/lib/scapy/pton_ntop.py -> build/bdist.linux-x86_64/wheel/./scapy
+copying build/lib/scapy/pipetool.py -> build/bdist.linux-x86_64/wheel/./scapy
+copying build/lib/scapy/utils.py -> build/bdist.linux-x86_64/wheel/./scapy
+copying build/lib/scapy/automaton.py -> build/bdist.linux-x86_64/wheel/./scapy
+copying build/lib/scapy/config.py -> build/bdist.linux-x86_64/wheel/./scapy
+creating build/bdist.linux-x86_64/wheel/scapy/contrib
+copying build/lib/scapy/contrib/homeplugav.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+creating build/bdist.linux-x86_64/wheel/scapy/contrib/automotive
+copying build/lib/scapy/contrib/automotive/uds_logging.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive
+copying build/lib/scapy/contrib/automotive/ccp.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive
+copying build/lib/scapy/contrib/automotive/ecu.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive
+copying build/lib/scapy/contrib/automotive/doip.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive
+copying build/lib/scapy/contrib/automotive/uds.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive
+creating build/bdist.linux-x86_64/wheel/scapy/contrib/automotive/volkswagen
+copying build/lib/scapy/contrib/automotive/volkswagen/__init__.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/volkswagen
+copying build/lib/scapy/contrib/automotive/volkswagen/definitions.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/volkswagen
+copying build/lib/scapy/contrib/automotive/uds_ecu_states.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive
+copying build/lib/scapy/contrib/automotive/__init__.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive
+creating build/bdist.linux-x86_64/wheel/scapy/contrib/automotive/xcp
+copying build/lib/scapy/contrib/automotive/xcp/xcp.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/xcp
+copying build/lib/scapy/contrib/automotive/xcp/cto_commands_slave.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/xcp
+copying build/lib/scapy/contrib/automotive/xcp/__init__.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/xcp
+copying build/lib/scapy/contrib/automotive/xcp/cto_commands_master.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/xcp
+copying build/lib/scapy/contrib/automotive/xcp/utils.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/xcp
+copying build/lib/scapy/contrib/automotive/xcp/scanner.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/xcp
+creating build/bdist.linux-x86_64/wheel/scapy/contrib/automotive/gm
+copying build/lib/scapy/contrib/automotive/gm/gmlanutils.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/gm
+copying build/lib/scapy/contrib/automotive/gm/gmlan_logging.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/gm
+copying build/lib/scapy/contrib/automotive/gm/__init__.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/gm
+copying build/lib/scapy/contrib/automotive/gm/gmlan.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/gm
+copying build/lib/scapy/contrib/automotive/gm/gmlan_ecu_states.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/gm
+creating build/bdist.linux-x86_64/wheel/scapy/contrib/automotive/obd
+creating build/bdist.linux-x86_64/wheel/scapy/contrib/automotive/obd/iid
+copying build/lib/scapy/contrib/automotive/obd/iid/__init__.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/obd/iid
+copying build/lib/scapy/contrib/automotive/obd/iid/iids.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/obd/iid
+creating build/bdist.linux-x86_64/wheel/scapy/contrib/automotive/obd/tid
+copying build/lib/scapy/contrib/automotive/obd/tid/__init__.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/obd/tid
+copying build/lib/scapy/contrib/automotive/obd/tid/tids.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/obd/tid
+creating build/bdist.linux-x86_64/wheel/scapy/contrib/automotive/obd/pid
+copying build/lib/scapy/contrib/automotive/obd/pid/pids_A0_C0.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/obd/pid
+copying build/lib/scapy/contrib/automotive/obd/pid/pids_20_3F.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/obd/pid
+copying build/lib/scapy/contrib/automotive/obd/pid/pids_60_7F.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/obd/pid
+copying build/lib/scapy/contrib/automotive/obd/pid/pids_80_9F.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/obd/pid
+copying build/lib/scapy/contrib/automotive/obd/pid/__init__.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/obd/pid
+copying build/lib/scapy/contrib/automotive/obd/pid/pids_00_1F.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/obd/pid
+copying build/lib/scapy/contrib/automotive/obd/pid/pids.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/obd/pid
+copying build/lib/scapy/contrib/automotive/obd/pid/pids_40_5F.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/obd/pid
+copying build/lib/scapy/contrib/automotive/obd/packet.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/obd
+copying build/lib/scapy/contrib/automotive/obd/__init__.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/obd
+copying build/lib/scapy/contrib/automotive/obd/obd.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/obd
+copying build/lib/scapy/contrib/automotive/obd/services.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/obd
+creating build/bdist.linux-x86_64/wheel/scapy/contrib/automotive/obd/mid
+copying build/lib/scapy/contrib/automotive/obd/mid/mids.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/obd/mid
+copying build/lib/scapy/contrib/automotive/obd/mid/__init__.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/obd/mid
+copying build/lib/scapy/contrib/automotive/obd/scanner.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/obd
+copying build/lib/scapy/contrib/automotive/enumerator.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive
+copying build/lib/scapy/contrib/automotive/someip.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive
+creating build/bdist.linux-x86_64/wheel/scapy/contrib/automotive/bmw
+copying build/lib/scapy/contrib/automotive/bmw/hsfz.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/bmw
+copying build/lib/scapy/contrib/automotive/bmw/__init__.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/bmw
+copying build/lib/scapy/contrib/automotive/bmw/definitions.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/bmw
+copying build/lib/scapy/contrib/automotive/graph.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive
+copying build/lib/scapy/contrib/igmpv3.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/openflow.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/isis.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/opc_da.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/spbm.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/bgp.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/erspan.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/socks.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/skinny.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/chdlc.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/lacp.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/ospf.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/openflow3.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/enipTCP.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/ltp.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/ife.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/ripng.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/dtp.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/gtp_v2.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/igmp.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/mount.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/geneve.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/exposure_notification.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/aoe.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/mac_control.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/rtr.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+creating build/bdist.linux-x86_64/wheel/scapy/contrib/scada
+creating build/bdist.linux-x86_64/wheel/scapy/contrib/scada/iec104
+copying build/lib/scapy/contrib/scada/iec104/iec104_information_elements.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/scada/iec104
+copying build/lib/scapy/contrib/scada/iec104/iec104_fields.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/scada/iec104
+copying build/lib/scapy/contrib/scada/iec104/__init__.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/scada/iec104
+copying build/lib/scapy/contrib/scada/iec104/iec104_information_objects.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/scada/iec104
+copying build/lib/scapy/contrib/scada/__init__.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/scada
+copying build/lib/scapy/contrib/scada/pcom.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/scada
+copying build/lib/scapy/contrib/dce_rpc.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/cansocket_python_can.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/homepluggp.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/wireguard.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/altbeacon.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/loraphy2wan.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/eigrp.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/eddystone.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/nfs.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/roce.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/rpl_metrics.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/ubberlogger.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/oncrpc.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/tzsp.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/ppi_geotag.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/homeplugsg.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/wpa_eapol.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/bfd.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/carp.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/tacacs.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/cansocket_native.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/icmp_extensions.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/vtp.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/macsec.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/__init__.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/rsvp.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/bp.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/ppi_cace.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/coap.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/send.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/bier.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/nlm.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/etherip.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/rpl.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/concox.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/http2.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/pim.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/pnio_dcp.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/avs.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/mqttsn.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/cansocket.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/ethercat.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/portmap.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/sdnv.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/gtp.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/sebek.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/isotp.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/pnio.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/vqp.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/modbus.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/ibeacon.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/nsh.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/cdp.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/ldp.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/lldp.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/diameter.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/mqtt.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/pnio_rpc.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/ikev2.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/pfcp.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/mpls.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/sessions.py -> build/bdist.linux-x86_64/wheel/./scapy
+copying build/lib/scapy/main.py -> build/bdist.linux-x86_64/wheel/./scapy
+creating build/bdist.linux-x86_64/wheel/scapy/libs
+copying build/lib/scapy/libs/structures.py -> build/bdist.linux-x86_64/wheel/./scapy/libs
+copying build/lib/scapy/libs/ethertypes.py -> build/bdist.linux-x86_64/wheel/./scapy/libs
+copying build/lib/scapy/libs/__init__.py -> build/bdist.linux-x86_64/wheel/./scapy/libs
+copying build/lib/scapy/libs/winpcapy.py -> build/bdist.linux-x86_64/wheel/./scapy/libs
+copying build/lib/scapy/asn1packet.py -> build/bdist.linux-x86_64/wheel/./scapy
+copying build/lib/scapy/interfaces.py -> build/bdist.linux-x86_64/wheel/./scapy
+creating build/bdist.linux-x86_64/wheel/scapy/asn1
+copying build/lib/scapy/asn1/asn1.py -> build/bdist.linux-x86_64/wheel/./scapy/asn1
+copying build/lib/scapy/asn1/mib.py -> build/bdist.linux-x86_64/wheel/./scapy/asn1
+copying build/lib/scapy/asn1/__init__.py -> build/bdist.linux-x86_64/wheel/./scapy/asn1
+copying build/lib/scapy/asn1/ber.py -> build/bdist.linux-x86_64/wheel/./scapy/asn1
+copying build/lib/scapy/asn1fields.py -> build/bdist.linux-x86_64/wheel/./scapy
+copying build/lib/scapy/VERSION -> build/bdist.linux-x86_64/wheel/./scapy
+copying build/lib/scapy/all.py -> build/bdist.linux-x86_64/wheel/./scapy
+copying build/lib/scapy/dadict.py -> build/bdist.linux-x86_64/wheel/./scapy
+copying build/lib/scapy/error.py -> build/bdist.linux-x86_64/wheel/./scapy
+creating build/bdist.linux-x86_64/wheel/scapy/tools
+creating build/bdist.linux-x86_64/wheel/scapy/tools/automotive
+copying build/lib/scapy/tools/automotive/obdscanner.py -> build/bdist.linux-x86_64/wheel/./scapy/tools/automotive
+copying build/lib/scapy/tools/automotive/isotpscanner.py -> build/bdist.linux-x86_64/wheel/./scapy/tools/automotive
+copying build/lib/scapy/tools/automotive/xcpscanner.py -> build/bdist.linux-x86_64/wheel/./scapy/tools/automotive
+copying build/lib/scapy/tools/automotive/__init__.py -> build/bdist.linux-x86_64/wheel/./scapy/tools/automotive
+copying build/lib/scapy/tools/UTscapy.py -> build/bdist.linux-x86_64/wheel/./scapy/tools
+copying build/lib/scapy/tools/check_asdis.py -> build/bdist.linux-x86_64/wheel/./scapy/tools
+copying build/lib/scapy/tools/generate_ethertypes.py -> build/bdist.linux-x86_64/wheel/./scapy/tools
+copying build/lib/scapy/tools/__init__.py -> build/bdist.linux-x86_64/wheel/./scapy/tools
+copying build/lib/scapy/tools/scapy_pyannotate.py -> build/bdist.linux-x86_64/wheel/./scapy/tools
+copying build/lib/scapy/as_resolvers.py -> build/bdist.linux-x86_64/wheel/./scapy
+copying build/lib/scapy/route.py -> build/bdist.linux-x86_64/wheel/./scapy
+running install_egg_info
+running egg_info
+writing www_authenticate.egg-info/PKG-INFO
+writing dependency_links to www_authenticate.egg-info/dependency_links.txt
+writing top-level names to www_authenticate.egg-info/top_level.txt
+reading manifest file 'www_authenticate.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+adding license file 'LICENSE'
+writing manifest file 'www_authenticate.egg-info/SOURCES.txt'
+Copying www_authenticate.egg-info to build/bdist.linux-x86_64/wheel/./www_authenticate-0.9.2-py3.11.egg-info
+running install_scripts
+creating build/bdist.linux-x86_64/wheel/www_authenticate-0.9.2.dist-info/WHEEL
+creating '/home/bobo.linux/.cache/bazel/_bazel_bobo/5f9602010ff550d0b4caceda45f93e29/sandbox/processwrapper-sandbox/4527/execroot/_main/bazel-out/k8-fastbuild/bin/external/aspect_rules_py++uv+sbuild__sonic_utilities_pip__default__www_authenticate/build/.tmp-lgb8qon1/www_authenticate-0.9.2-py3-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
+adding 'www_authenticate.py'
+adding 'scapy/VERSION'
+adding 'scapy/__init__.py'
+adding 'scapy/__main__.py'
+adding 'scapy/all.py'
+adding 'scapy/ansmachine.py'
+adding 'scapy/as_resolvers.py'
+adding 'scapy/asn1fields.py'
+adding 'scapy/asn1packet.py'
+adding 'scapy/automaton.py'
+adding 'scapy/autorun.py'
+adding 'scapy/base_classes.py'
+adding 'scapy/compat.py'
+adding 'scapy/config.py'
+adding 'scapy/consts.py'
+adding 'scapy/dadict.py'
+adding 'scapy/data.py'
+adding 'scapy/error.py'
+adding 'scapy/extlib.py'
+adding 'scapy/fields.py'
+adding 'scapy/interfaces.py'
+adding 'scapy/main.py'
+adding 'scapy/packet.py'
+adding 'scapy/pipetool.py'
+adding 'scapy/plist.py'
+adding 'scapy/pton_ntop.py'
+adding 'scapy/route.py'
+adding 'scapy/route6.py'
+adding 'scapy/scapypipes.py'
+adding 'scapy/sendrecv.py'
+adding 'scapy/sessions.py'
+adding 'scapy/supersocket.py'
+adding 'scapy/themes.py'
+adding 'scapy/utils.py'
+adding 'scapy/utils6.py'
+adding 'scapy/volatile.py'
+adding 'scapy/arch/__init__.py'
+adding 'scapy/arch/common.py'
+adding 'scapy/arch/libpcap.py'
+adding 'scapy/arch/linux.py'
+adding 'scapy/arch/solaris.py'
+adding 'scapy/arch/unix.py'
+adding 'scapy/arch/bpf/__init__.py'
+adding 'scapy/arch/bpf/consts.py'
+adding 'scapy/arch/bpf/core.py'
+adding 'scapy/arch/bpf/supersocket.py'
+adding 'scapy/arch/windows/__init__.py'
+adding 'scapy/arch/windows/native.py'
+adding 'scapy/arch/windows/structures.py'
+adding 'scapy/asn1/__init__.py'
+adding 'scapy/asn1/asn1.py'
+adding 'scapy/asn1/ber.py'
+adding 'scapy/asn1/mib.py'
+adding 'scapy/contrib/__init__.py'
+adding 'scapy/contrib/altbeacon.py'
+adding 'scapy/contrib/aoe.py'
+adding 'scapy/contrib/avs.py'
+adding 'scapy/contrib/bfd.py'
+adding 'scapy/contrib/bgp.py'
+adding 'scapy/contrib/bier.py'
+adding 'scapy/contrib/bp.py'
+adding 'scapy/contrib/cansocket.py'
+adding 'scapy/contrib/cansocket_native.py'
+adding 'scapy/contrib/cansocket_python_can.py'
+adding 'scapy/contrib/carp.py'
+adding 'scapy/contrib/cdp.py'
+adding 'scapy/contrib/chdlc.py'
+adding 'scapy/contrib/coap.py'
+adding 'scapy/contrib/concox.py'
+adding 'scapy/contrib/dce_rpc.py'
+adding 'scapy/contrib/diameter.py'
+adding 'scapy/contrib/dtp.py'
+adding 'scapy/contrib/eddystone.py'
+adding 'scapy/contrib/eigrp.py'
+adding 'scapy/contrib/enipTCP.py'
+adding 'scapy/contrib/erspan.py'
+adding 'scapy/contrib/ethercat.py'
+adding 'scapy/contrib/etherip.py'
+adding 'scapy/contrib/exposure_notification.py'
+adding 'scapy/contrib/geneve.py'
+adding 'scapy/contrib/gtp.py'
+adding 'scapy/contrib/gtp_v2.py'
+adding 'scapy/contrib/homeplugav.py'
+adding 'scapy/contrib/homepluggp.py'
+adding 'scapy/contrib/homeplugsg.py'
+adding 'scapy/contrib/http2.py'
+adding 'scapy/contrib/ibeacon.py'
+adding 'scapy/contrib/icmp_extensions.py'
+adding 'scapy/contrib/ife.py'
+adding 'scapy/contrib/igmp.py'
+adding 'scapy/contrib/igmpv3.py'
+adding 'scapy/contrib/ikev2.py'
+adding 'scapy/contrib/isis.py'
+adding 'scapy/contrib/isotp.py'
+adding 'scapy/contrib/lacp.py'
+adding 'scapy/contrib/ldp.py'
+adding 'scapy/contrib/lldp.py'
+adding 'scapy/contrib/loraphy2wan.py'
+adding 'scapy/contrib/ltp.py'
+adding 'scapy/contrib/mac_control.py'
+adding 'scapy/contrib/macsec.py'
+adding 'scapy/contrib/modbus.py'
+adding 'scapy/contrib/mount.py'
+adding 'scapy/contrib/mpls.py'
+adding 'scapy/contrib/mqtt.py'
+adding 'scapy/contrib/mqttsn.py'
+adding 'scapy/contrib/nfs.py'
+adding 'scapy/contrib/nlm.py'
+adding 'scapy/contrib/nsh.py'
+adding 'scapy/contrib/oncrpc.py'
+adding 'scapy/contrib/opc_da.py'
+adding 'scapy/contrib/openflow.py'
+adding 'scapy/contrib/openflow3.py'
+adding 'scapy/contrib/ospf.py'
+adding 'scapy/contrib/pfcp.py'
+adding 'scapy/contrib/pim.py'
+adding 'scapy/contrib/pnio.py'
+adding 'scapy/contrib/pnio_dcp.py'
+adding 'scapy/contrib/pnio_rpc.py'
+adding 'scapy/contrib/portmap.py'
+adding 'scapy/contrib/ppi_cace.py'
+adding 'scapy/contrib/ppi_geotag.py'
+adding 'scapy/contrib/ripng.py'
+adding 'scapy/contrib/roce.py'
+adding 'scapy/contrib/rpl.py'
+adding 'scapy/contrib/rpl_metrics.py'
+adding 'scapy/contrib/rsvp.py'
+adding 'scapy/contrib/rtr.py'
+adding 'scapy/contrib/sdnv.py'
+adding 'scapy/contrib/sebek.py'
+adding 'scapy/contrib/send.py'
+adding 'scapy/contrib/skinny.py'
+adding 'scapy/contrib/socks.py'
+adding 'scapy/contrib/spbm.py'
+adding 'scapy/contrib/tacacs.py'
+adding 'scapy/contrib/tzsp.py'
+adding 'scapy/contrib/ubberlogger.py'
+adding 'scapy/contrib/vqp.py'
+adding 'scapy/contrib/vtp.py'
+adding 'scapy/contrib/wireguard.py'
+adding 'scapy/contrib/wpa_eapol.py'
+adding 'scapy/contrib/automotive/__init__.py'
+adding 'scapy/contrib/automotive/ccp.py'
+adding 'scapy/contrib/automotive/doip.py'
+adding 'scapy/contrib/automotive/ecu.py'
+adding 'scapy/contrib/automotive/enumerator.py'
+adding 'scapy/contrib/automotive/graph.py'
+adding 'scapy/contrib/automotive/someip.py'
+adding 'scapy/contrib/automotive/uds.py'
+adding 'scapy/contrib/automotive/uds_ecu_states.py'
+adding 'scapy/contrib/automotive/uds_logging.py'
+adding 'scapy/contrib/automotive/bmw/__init__.py'
+adding 'scapy/contrib/automotive/bmw/definitions.py'
+adding 'scapy/contrib/automotive/bmw/hsfz.py'
+adding 'scapy/contrib/automotive/gm/__init__.py'
+adding 'scapy/contrib/automotive/gm/gmlan.py'
+adding 'scapy/contrib/automotive/gm/gmlan_ecu_states.py'
+adding 'scapy/contrib/automotive/gm/gmlan_logging.py'
+adding 'scapy/contrib/automotive/gm/gmlanutils.py'
+adding 'scapy/contrib/automotive/obd/__init__.py'
+adding 'scapy/contrib/automotive/obd/obd.py'
+adding 'scapy/contrib/automotive/obd/packet.py'
+adding 'scapy/contrib/automotive/obd/scanner.py'
+adding 'scapy/contrib/automotive/obd/services.py'
+adding 'scapy/contrib/automotive/obd/iid/__init__.py'
+adding 'scapy/contrib/automotive/obd/iid/iids.py'
+adding 'scapy/contrib/automotive/obd/mid/__init__.py'
+adding 'scapy/contrib/automotive/obd/mid/mids.py'
+adding 'scapy/contrib/automotive/obd/pid/__init__.py'
+adding 'scapy/contrib/automotive/obd/pid/pids.py'
+adding 'scapy/contrib/automotive/obd/pid/pids_00_1F.py'
+adding 'scapy/contrib/automotive/obd/pid/pids_20_3F.py'
+adding 'scapy/contrib/automotive/obd/pid/pids_40_5F.py'
+adding 'scapy/contrib/automotive/obd/pid/pids_60_7F.py'
+adding 'scapy/contrib/automotive/obd/pid/pids_80_9F.py'
+adding 'scapy/contrib/automotive/obd/pid/pids_A0_C0.py'
+adding 'scapy/contrib/automotive/obd/tid/__init__.py'
+adding 'scapy/contrib/automotive/obd/tid/tids.py'
+adding 'scapy/contrib/automotive/volkswagen/__init__.py'
+adding 'scapy/contrib/automotive/volkswagen/definitions.py'
+adding 'scapy/contrib/automotive/xcp/__init__.py'
+adding 'scapy/contrib/automotive/xcp/cto_commands_master.py'
+adding 'scapy/contrib/automotive/xcp/cto_commands_slave.py'
+adding 'scapy/contrib/automotive/xcp/scanner.py'
+adding 'scapy/contrib/automotive/xcp/utils.py'
+adding 'scapy/contrib/automotive/xcp/xcp.py'
+adding 'scapy/contrib/scada/__init__.py'
+adding 'scapy/contrib/scada/pcom.py'
+adding 'scapy/contrib/scada/iec104/__init__.py'
+adding 'scapy/contrib/scada/iec104/iec104_fields.py'
+adding 'scapy/contrib/scada/iec104/iec104_information_elements.py'
+adding 'scapy/contrib/scada/iec104/iec104_information_objects.py'
+adding 'scapy/layers/__init__.py'
+adding 'scapy/layers/all.py'
+adding 'scapy/layers/bluetooth.py'
+adding 'scapy/layers/bluetooth4LE.py'
+adding 'scapy/layers/can.py'
+adding 'scapy/layers/clns.py'
+adding 'scapy/layers/dhcp.py'
+adding 'scapy/layers/dhcp6.py'
+adding 'scapy/layers/dns.py'
+adding 'scapy/layers/dot11.py'
+adding 'scapy/layers/dot15d4.py'
+adding 'scapy/layers/eap.py'
+adding 'scapy/layers/gprs.py'
+adding 'scapy/layers/hsrp.py'
+adding 'scapy/layers/http.py'
+adding 'scapy/layers/inet.py'
+adding 'scapy/layers/inet6.py'
+adding 'scapy/layers/ipsec.py'
+adding 'scapy/layers/ir.py'
+adding 'scapy/layers/isakmp.py'
+adding 'scapy/layers/l2.py'
+adding 'scapy/layers/l2tp.py'
+adding 'scapy/layers/llmnr.py'
+adding 'scapy/layers/lltd.py'
+adding 'scapy/layers/mgcp.py'
+adding 'scapy/layers/mobileip.py'
+adding 'scapy/layers/netbios.py'
+adding 'scapy/layers/netflow.py'
+adding 'scapy/layers/ntp.py'
+adding 'scapy/layers/pflog.py'
+adding 'scapy/layers/ppi.py'
+adding 'scapy/layers/ppp.py'
+adding 'scapy/layers/pptp.py'
+adding 'scapy/layers/radius.py'
+adding 'scapy/layers/rip.py'
+adding 'scapy/layers/rtp.py'
+adding 'scapy/layers/sctp.py'
+adding 'scapy/layers/sixlowpan.py'
+adding 'scapy/layers/skinny.py'
+adding 'scapy/layers/smb.py'
+adding 'scapy/layers/smb2.py'
+adding 'scapy/layers/snmp.py'
+adding 'scapy/layers/tftp.py'
+adding 'scapy/layers/tuntap.py'
+adding 'scapy/layers/usb.py'
+adding 'scapy/layers/vrrp.py'
+adding 'scapy/layers/vxlan.py'
+adding 'scapy/layers/x509.py'
+adding 'scapy/layers/zigbee.py'
+adding 'scapy/layers/tls/__init__.py'
+adding 'scapy/layers/tls/all.py'
+adding 'scapy/layers/tls/automaton.py'
+adding 'scapy/layers/tls/automaton_cli.py'
+adding 'scapy/layers/tls/automaton_srv.py'
+adding 'scapy/layers/tls/basefields.py'
+adding 'scapy/layers/tls/cert.py'
+adding 'scapy/layers/tls/extensions.py'
+adding 'scapy/layers/tls/handshake.py'
+adding 'scapy/layers/tls/handshake_sslv2.py'
+adding 'scapy/layers/tls/keyexchange.py'
+adding 'scapy/layers/tls/keyexchange_tls13.py'
+adding 'scapy/layers/tls/record.py'
+adding 'scapy/layers/tls/record_sslv2.py'
+adding 'scapy/layers/tls/record_tls13.py'
+adding 'scapy/layers/tls/session.py'
+adding 'scapy/layers/tls/tools.py'
+adding 'scapy/layers/tls/crypto/__init__.py'
+adding 'scapy/layers/tls/crypto/all.py'
+adding 'scapy/layers/tls/crypto/cipher_aead.py'
+adding 'scapy/layers/tls/crypto/cipher_block.py'
+adding 'scapy/layers/tls/crypto/cipher_stream.py'
+adding 'scapy/layers/tls/crypto/ciphers.py'
+adding 'scapy/layers/tls/crypto/common.py'
+adding 'scapy/layers/tls/crypto/compression.py'
+adding 'scapy/layers/tls/crypto/groups.py'
+adding 'scapy/layers/tls/crypto/h_mac.py'
+adding 'scapy/layers/tls/crypto/hash.py'
+adding 'scapy/layers/tls/crypto/hkdf.py'
+adding 'scapy/layers/tls/crypto/kx_algs.py'
+adding 'scapy/layers/tls/crypto/pkcs1.py'
+adding 'scapy/layers/tls/crypto/prf.py'
+adding 'scapy/layers/tls/crypto/suites.py'
+adding 'scapy/libs/__init__.py'
+adding 'scapy/libs/ethertypes.py'
+adding 'scapy/libs/structures.py'
+adding 'scapy/libs/winpcapy.py'
+adding 'scapy/modules/__init__.py'
+adding 'scapy/modules/nmap.py'
+adding 'scapy/modules/p0f.py'
+adding 'scapy/modules/six.py'
+adding 'scapy/modules/voip.py'
+adding 'scapy/modules/krack/__init__.py'
+adding 'scapy/modules/krack/automaton.py'
+adding 'scapy/modules/krack/crypto.py'
+adding 'scapy/tools/UTscapy.py'
+adding 'scapy/tools/__init__.py'
+adding 'scapy/tools/check_asdis.py'
+adding 'scapy/tools/generate_ethertypes.py'
+adding 'scapy/tools/scapy_pyannotate.py'
+adding 'scapy/tools/automotive/__init__.py'
+adding 'scapy/tools/automotive/isotpscanner.py'
+adding 'scapy/tools/automotive/obdscanner.py'
+adding 'scapy/tools/automotive/xcpscanner.py'
+adding 'www_authenticate-0.9.2.dist-info/licenses/LICENSE'
+adding 'www_authenticate-0.9.2.dist-info/METADATA'
+adding 'www_authenticate-0.9.2.dist-info/WHEEL'
+adding 'www_authenticate-0.9.2.dist-info/pbr.json'
+adding 'www_authenticate-0.9.2.dist-info/top_level.txt'
+adding 'www_authenticate-0.9.2.dist-info/RECORD'
+removing build/bdist.linux-x86_64/wheel
+Successfully built www_authenticate-0.9.2-py3-none-any.whl
+[315 / 446] Compiling vslib/SwitchMLNX2700.cpp; 2s processwrapper-sandbox ... (4 actions running)
+[318 / 446] Action external/aspect_rules_py++uv+sbuild__sonic_utilities_pip__default__mockredispy/build; 1s processwrapper-sandbox ... (4 actions running)
+[321 / 446] Action external/aspect_rules_py++uv+sbuild__sonic_utilities_pip__default__mockredispy/build; 2s processwrapper-sandbox ... (4 actions running)
+INFO: From Action external/aspect_rules_py++uv+sbuild__sonic_utilities_pip__default__mockredispy/build:
+/home/bobo.linux/.cache/bazel/_bazel_bobo/5f9602010ff550d0b4caceda45f93e29/execroot/_main/bazel-out/k8-fastbuild/bin/external/aspect_rules_py++uv+sbuild__sonic_utilities_pip__default__mockredispy/.build_venv/bin/python3
+* Getting build dependencies for wheel...
+* Building wheel...
+/home/bobo.linux/.cache/bazel/_bazel_bobo/5f9602010ff550d0b4caceda45f93e29/execroot/_main/bazel-out/k8-fastbuild/bin/external/aspect_rules_py++uv+sbuild__sonic_utilities_pip__default__mockredispy/.build_venv/lib/python3.11/site-packages/setuptools/_distutils/dist.py:287: UserWarning: Unknown distribution option: 'tests_require'
+  warnings.warn(msg)
+/home/bobo.linux/.cache/bazel/_bazel_bobo/5f9602010ff550d0b4caceda45f93e29/execroot/_main/bazel-out/k8-fastbuild/bin/external/aspect_rules_py++uv+sbuild__sonic_utilities_pip__default__mockredispy/.build_venv/lib/python3.11/site-packages/setuptools/_distutils/dist.py:287: UserWarning: Unknown distribution option: 'test_suite'
+  warnings.warn(msg)
+['mockredispy-2.9.3-py3-none-any.whl']
+running bdist_wheel
+running build
+running build_py
+creating build/lib/pyangbind
+copying pyangbind/__init__.py -> build/lib/pyangbind
+copying scapy/utils6.py -> build/lib/scapy
+copying scapy/route6.py -> build/lib/scapy
+copying scapy/ansmachine.py -> build/lib/scapy
+copying scapy/compat.py -> build/lib/scapy
+copying scapy/plist.py -> build/lib/scapy
+copying scapy/themes.py -> build/lib/scapy
+copying scapy/consts.py -> build/lib/scapy
+copying scapy/base_classes.py -> build/lib/scapy
+copying scapy/autorun.py -> build/lib/scapy
+copying scapy/sendrecv.py -> build/lib/scapy
+copying scapy/data.py -> build/lib/scapy
+copying scapy/__main__.py -> build/lib/scapy
+copying scapy/packet.py -> build/lib/scapy
+copying scapy/extlib.py -> build/lib/scapy
+copying scapy/supersocket.py -> build/lib/scapy
+copying scapy/volatile.py -> build/lib/scapy
+copying scapy/__init__.py -> build/lib/scapy
+copying scapy/scapypipes.py -> build/lib/scapy
+copying scapy/fields.py -> build/lib/scapy
+copying scapy/pton_ntop.py -> build/lib/scapy
+copying scapy/pipetool.py -> build/lib/scapy
+copying scapy/utils.py -> build/lib/scapy
+copying scapy/automaton.py -> build/lib/scapy
+copying scapy/config.py -> build/lib/scapy
+copying scapy/sessions.py -> build/lib/scapy
+copying scapy/main.py -> build/lib/scapy
+copying scapy/asn1packet.py -> build/lib/scapy
+copying scapy/interfaces.py -> build/lib/scapy
+copying scapy/asn1fields.py -> build/lib/scapy
+copying scapy/all.py -> build/lib/scapy
+copying scapy/dadict.py -> build/lib/scapy
+copying scapy/error.py -> build/lib/scapy
+copying scapy/as_resolvers.py -> build/lib/scapy
+copying scapy/route.py -> build/lib/scapy
+creating build/lib/mockredis
+copying mockredis/sortedset.py -> build/lib/mockredis
+copying mockredis/script.py -> build/lib/mockredis
+copying mockredis/lock.py -> build/lib/mockredis
+copying mockredis/client.py -> build/lib/mockredis
+copying mockredis/pipeline.py -> build/lib/mockredis
+copying mockredis/__init__.py -> build/lib/mockredis
+copying mockredis/noseplugin.py -> build/lib/mockredis
+copying mockredis/clock.py -> build/lib/mockredis
+copying mockredis/exceptions.py -> build/lib/mockredis
+creating build/lib/pyangbind/helpers
+copying pyangbind/helpers/identity.py -> build/lib/pyangbind/helpers
+copying pyangbind/helpers/misc.py -> build/lib/pyangbind/helpers
+copying pyangbind/helpers/__init__.py -> build/lib/pyangbind/helpers
+creating build/lib/pyangbind/lib
+copying pyangbind/lib/base.py -> build/lib/pyangbind/lib
+copying pyangbind/lib/serialise.py -> build/lib/pyangbind/lib
+copying pyangbind/lib/xpathhelper.py -> build/lib/pyangbind/lib
+copying pyangbind/lib/yangtypes.py -> build/lib/pyangbind/lib
+copying pyangbind/lib/pybindJSON.py -> build/lib/pyangbind/lib
+copying pyangbind/lib/__init__.py -> build/lib/pyangbind/lib
+creating build/lib/pyangbind/plugin
+copying pyangbind/plugin/__init__.py -> build/lib/pyangbind/plugin
+copying pyangbind/plugin/pybind.py -> build/lib/pyangbind/plugin
+copying scapy/layers/eap.py -> build/lib/scapy/layers
+copying scapy/layers/rtp.py -> build/lib/scapy/layers
+copying scapy/layers/gprs.py -> build/lib/scapy/layers
+copying scapy/layers/smb2.py -> build/lib/scapy/layers
+copying scapy/layers/dhcp6.py -> build/lib/scapy/layers
+copying scapy/layers/vrrp.py -> build/lib/scapy/layers
+copying scapy/layers/skinny.py -> build/lib/scapy/layers
+copying scapy/layers/ntp.py -> build/lib/scapy/layers
+copying scapy/layers/netbios.py -> build/lib/scapy/layers
+copying scapy/layers/mobileip.py -> build/lib/scapy/layers
+copying scapy/layers/bluetooth.py -> build/lib/scapy/layers
+copying scapy/layers/dot11.py -> build/lib/scapy/layers
+copying scapy/layers/inet6.py -> build/lib/scapy/layers
+copying scapy/layers/inet.py -> build/lib/scapy/layers
+copying scapy/layers/ipsec.py -> build/lib/scapy/layers
+copying scapy/layers/pptp.py -> build/lib/scapy/layers
+copying scapy/layers/vxlan.py -> build/lib/scapy/layers
+copying scapy/layers/snmp.py -> build/lib/scapy/layers
+copying scapy/layers/ppi.py -> build/lib/scapy/layers
+copying scapy/layers/dot15d4.py -> build/lib/scapy/layers
+copying scapy/layers/smb.py -> build/lib/scapy/layers
+copying scapy/layers/mgcp.py -> build/lib/scapy/layers
+copying scapy/layers/clns.py -> build/lib/scapy/layers
+copying scapy/layers/hsrp.py -> build/lib/scapy/layers
+copying scapy/layers/http.py -> build/lib/scapy/layers
+copying scapy/layers/isakmp.py -> build/lib/scapy/layers
+copying scapy/layers/dns.py -> build/lib/scapy/layers
+copying scapy/layers/ir.py -> build/lib/scapy/layers
+copying scapy/layers/tuntap.py -> build/lib/scapy/layers
+copying scapy/layers/__init__.py -> build/lib/scapy/layers
+copying scapy/layers/l2tp.py -> build/lib/scapy/layers
+copying scapy/layers/pflog.py -> build/lib/scapy/layers
+copying scapy/layers/can.py -> build/lib/scapy/layers
+copying scapy/layers/x509.py -> build/lib/scapy/layers
+copying scapy/layers/sixlowpan.py -> build/lib/scapy/layers
+copying scapy/layers/tftp.py -> build/lib/scapy/layers
+copying scapy/layers/dhcp.py -> build/lib/scapy/layers
+copying scapy/layers/rip.py -> build/lib/scapy/layers
+copying scapy/layers/netflow.py -> build/lib/scapy/layers
+copying scapy/layers/ppp.py -> build/lib/scapy/layers
+copying scapy/layers/l2.py -> build/lib/scapy/layers
+copying scapy/layers/sctp.py -> build/lib/scapy/layers
+copying scapy/layers/zigbee.py -> build/lib/scapy/layers
+copying scapy/layers/all.py -> build/lib/scapy/layers
+copying scapy/layers/radius.py -> build/lib/scapy/layers
+copying scapy/layers/bluetooth4LE.py -> build/lib/scapy/layers
+copying scapy/layers/lltd.py -> build/lib/scapy/layers
+copying scapy/layers/usb.py -> build/lib/scapy/layers
+copying scapy/layers/llmnr.py -> build/lib/scapy/layers
+copying scapy/arch/linux.py -> build/lib/scapy/arch
+copying scapy/arch/libpcap.py -> build/lib/scapy/arch
+copying scapy/arch/common.py -> build/lib/scapy/arch
+copying scapy/arch/__init__.py -> build/lib/scapy/arch
+copying scapy/arch/unix.py -> build/lib/scapy/arch
+copying scapy/arch/solaris.py -> build/lib/scapy/arch
+copying scapy/modules/nmap.py -> build/lib/scapy/modules
+copying scapy/modules/p0f.py -> build/lib/scapy/modules
+copying scapy/modules/__init__.py -> build/lib/scapy/modules
+copying scapy/modules/voip.py -> build/lib/scapy/modules
+copying scapy/modules/six.py -> build/lib/scapy/modules
+copying scapy/contrib/homeplugav.py -> build/lib/scapy/contrib
+copying scapy/contrib/igmpv3.py -> build/lib/scapy/contrib
+copying scapy/contrib/openflow.py -> build/lib/scapy/contrib
+copying scapy/contrib/isis.py -> build/lib/scapy/contrib
+copying scapy/contrib/opc_da.py -> build/lib/scapy/contrib
+copying scapy/contrib/spbm.py -> build/lib/scapy/contrib
+copying scapy/contrib/bgp.py -> build/lib/scapy/contrib
+copying scapy/contrib/erspan.py -> build/lib/scapy/contrib
+copying scapy/contrib/socks.py -> build/lib/scapy/contrib
+copying scapy/contrib/skinny.py -> build/lib/scapy/contrib
+copying scapy/contrib/chdlc.py -> build/lib/scapy/contrib
+copying scapy/contrib/lacp.py -> build/lib/scapy/contrib
+copying scapy/contrib/ospf.py -> build/lib/scapy/contrib
+copying scapy/contrib/openflow3.py -> build/lib/scapy/contrib
+copying scapy/contrib/enipTCP.py -> build/lib/scapy/contrib
+copying scapy/contrib/ltp.py -> build/lib/scapy/contrib
+copying scapy/contrib/ife.py -> build/lib/scapy/contrib
+copying scapy/contrib/ripng.py -> build/lib/scapy/contrib
+copying scapy/contrib/dtp.py -> build/lib/scapy/contrib
+copying scapy/contrib/gtp_v2.py -> build/lib/scapy/contrib
+copying scapy/contrib/igmp.py -> build/lib/scapy/contrib
+copying scapy/contrib/mount.py -> build/lib/scapy/contrib
+copying scapy/contrib/geneve.py -> build/lib/scapy/contrib
+copying scapy/contrib/exposure_notification.py -> build/lib/scapy/contrib
+copying scapy/contrib/aoe.py -> build/lib/scapy/contrib
+copying scapy/contrib/mac_control.py -> build/lib/scapy/contrib
+copying scapy/contrib/rtr.py -> build/lib/scapy/contrib
+copying scapy/contrib/dce_rpc.py -> build/lib/scapy/contrib
+copying scapy/contrib/cansocket_python_can.py -> build/lib/scapy/contrib
+copying scapy/contrib/homepluggp.py -> build/lib/scapy/contrib
+copying scapy/contrib/wireguard.py -> build/lib/scapy/contrib
+copying scapy/contrib/altbeacon.py -> build/lib/scapy/contrib
+copying scapy/contrib/loraphy2wan.py -> build/lib/scapy/contrib
+copying scapy/contrib/eigrp.py -> build/lib/scapy/contrib
+copying scapy/contrib/eddystone.py -> build/lib/scapy/contrib
+copying scapy/contrib/nfs.py -> build/lib/scapy/contrib
+copying scapy/contrib/roce.py -> build/lib/scapy/contrib
+copying scapy/contrib/rpl_metrics.py -> build/lib/scapy/contrib
+copying scapy/contrib/ubberlogger.py -> build/lib/scapy/contrib
+copying scapy/contrib/oncrpc.py -> build/lib/scapy/contrib
+copying scapy/contrib/tzsp.py -> build/lib/scapy/contrib
+copying scapy/contrib/ppi_geotag.py -> build/lib/scapy/contrib
+copying scapy/contrib/homeplugsg.py -> build/lib/scapy/contrib
+copying scapy/contrib/wpa_eapol.py -> build/lib/scapy/contrib
+copying scapy/contrib/bfd.py -> build/lib/scapy/contrib
+copying scapy/contrib/carp.py -> build/lib/scapy/contrib
+copying scapy/contrib/tacacs.py -> build/lib/scapy/contrib
+copying scapy/contrib/cansocket_native.py -> build/lib/scapy/contrib
+copying scapy/contrib/icmp_extensions.py -> build/lib/scapy/contrib
+copying scapy/contrib/vtp.py -> build/lib/scapy/contrib
+copying scapy/contrib/macsec.py -> build/lib/scapy/contrib
+copying scapy/contrib/__init__.py -> build/lib/scapy/contrib
+copying scapy/contrib/rsvp.py -> build/lib/scapy/contrib
+copying scapy/contrib/bp.py -> build/lib/scapy/contrib
+copying scapy/contrib/ppi_cace.py -> build/lib/scapy/contrib
+copying scapy/contrib/coap.py -> build/lib/scapy/contrib
+copying scapy/contrib/send.py -> build/lib/scapy/contrib
+copying scapy/contrib/bier.py -> build/lib/scapy/contrib
+copying scapy/contrib/nlm.py -> build/lib/scapy/contrib
+copying scapy/contrib/etherip.py -> build/lib/scapy/contrib
+copying scapy/contrib/rpl.py -> build/lib/scapy/contrib
+copying scapy/contrib/concox.py -> build/lib/scapy/contrib
+copying scapy/contrib/http2.py -> build/lib/scapy/contrib
+copying scapy/contrib/pim.py -> build/lib/scapy/contrib
+copying scapy/contrib/pnio_dcp.py -> build/lib/scapy/contrib
+copying scapy/contrib/avs.py -> build/lib/scapy/contrib
+copying scapy/contrib/mqttsn.py -> build/lib/scapy/contrib
+copying scapy/contrib/cansocket.py -> build/lib/scapy/contrib
+copying scapy/contrib/ethercat.py -> build/lib/scapy/contrib
+copying scapy/contrib/portmap.py -> build/lib/scapy/contrib
+copying scapy/contrib/sdnv.py -> build/lib/scapy/contrib
+copying scapy/contrib/gtp.py -> build/lib/scapy/contrib
+copying scapy/contrib/sebek.py -> build/lib/scapy/contrib
+copying scapy/contrib/isotp.py -> build/lib/scapy/contrib
+copying scapy/contrib/pnio.py -> build/lib/scapy/contrib
+copying scapy/contrib/vqp.py -> build/lib/scapy/contrib
+copying scapy/contrib/modbus.py -> build/lib/scapy/contrib
+copying scapy/contrib/ibeacon.py -> build/lib/scapy/contrib
+copying scapy/contrib/nsh.py -> build/lib/scapy/contrib
+copying scapy/contrib/cdp.py -> build/lib/scapy/contrib
+copying scapy/contrib/ldp.py -> build/lib/scapy/contrib
+copying scapy/contrib/lldp.py -> build/lib/scapy/contrib
+copying scapy/contrib/diameter.py -> build/lib/scapy/contrib
+copying scapy/contrib/mqtt.py -> build/lib/scapy/contrib
+copying scapy/contrib/pnio_rpc.py -> build/lib/scapy/contrib
+copying scapy/contrib/ikev2.py -> build/lib/scapy/contrib
+copying scapy/contrib/pfcp.py -> build/lib/scapy/contrib
+copying scapy/contrib/mpls.py -> build/lib/scapy/contrib
+copying scapy/libs/structures.py -> build/lib/scapy/libs
+copying scapy/libs/ethertypes.py -> build/lib/scapy/libs
+copying scapy/libs/__init__.py -> build/lib/scapy/libs
+copying scapy/libs/winpcapy.py -> build/lib/scapy/libs
+copying scapy/asn1/asn1.py -> build/lib/scapy/asn1
+copying scapy/asn1/mib.py -> build/lib/scapy/asn1
+copying scapy/asn1/__init__.py -> build/lib/scapy/asn1
+copying scapy/asn1/ber.py -> build/lib/scapy/asn1
+copying scapy/tools/UTscapy.py -> build/lib/scapy/tools
+copying scapy/tools/check_asdis.py -> build/lib/scapy/tools
+copying scapy/tools/generate_ethertypes.py -> build/lib/scapy/tools
+copying scapy/tools/__init__.py -> build/lib/scapy/tools
+copying scapy/tools/scapy_pyannotate.py -> build/lib/scapy/tools
+copying scapy/layers/tls/record_sslv2.py -> build/lib/scapy/layers/tls
+copying scapy/layers/tls/basefields.py -> build/lib/scapy/layers/tls
+copying scapy/layers/tls/keyexchange.py -> build/lib/scapy/layers/tls
+copying scapy/layers/tls/session.py -> build/lib/scapy/layers/tls
+copying scapy/layers/tls/handshake.py -> build/lib/scapy/layers/tls
+copying scapy/layers/tls/extensions.py -> build/lib/scapy/layers/tls
+copying scapy/layers/tls/cert.py -> build/lib/scapy/layers/tls
+copying scapy/layers/tls/keyexchange_tls13.py -> build/lib/scapy/layers/tls
+copying scapy/layers/tls/__init__.py -> build/lib/scapy/layers/tls
+copying scapy/layers/tls/handshake_sslv2.py -> build/lib/scapy/layers/tls
+copying scapy/layers/tls/automaton_cli.py -> build/lib/scapy/layers/tls
+copying scapy/layers/tls/tools.py -> build/lib/scapy/layers/tls
+copying scapy/layers/tls/automaton.py -> build/lib/scapy/layers/tls
+copying scapy/layers/tls/automaton_srv.py -> build/lib/scapy/layers/tls
+copying scapy/layers/tls/record_tls13.py -> build/lib/scapy/layers/tls
+copying scapy/layers/tls/all.py -> build/lib/scapy/layers/tls
+copying scapy/layers/tls/record.py -> build/lib/scapy/layers/tls
+copying scapy/layers/tls/crypto/hash.py -> build/lib/scapy/layers/tls/crypto
+copying scapy/layers/tls/crypto/compression.py -> build/lib/scapy/layers/tls/crypto
+copying scapy/layers/tls/crypto/suites.py -> build/lib/scapy/layers/tls/crypto
+copying scapy/layers/tls/crypto/kx_algs.py -> build/lib/scapy/layers/tls/crypto
+copying scapy/layers/tls/crypto/hkdf.py -> build/lib/scapy/layers/tls/crypto
+copying scapy/layers/tls/crypto/common.py -> build/lib/scapy/layers/tls/crypto
+copying scapy/layers/tls/crypto/__init__.py -> build/lib/scapy/layers/tls/crypto
+copying scapy/layers/tls/crypto/cipher_aead.py -> build/lib/scapy/layers/tls/crypto
+copying scapy/layers/tls/crypto/cipher_stream.py -> build/lib/scapy/layers/tls/crypto
+copying scapy/layers/tls/crypto/pkcs1.py -> build/lib/scapy/layers/tls/crypto
+copying scapy/layers/tls/crypto/ciphers.py -> build/lib/scapy/layers/tls/crypto
+copying scapy/layers/tls/crypto/h_mac.py -> build/lib/scapy/layers/tls/crypto
+copying scapy/layers/tls/crypto/prf.py -> build/lib/scapy/layers/tls/crypto
+copying scapy/layers/tls/crypto/all.py -> build/lib/scapy/layers/tls/crypto
+copying scapy/layers/tls/crypto/cipher_block.py -> build/lib/scapy/layers/tls/crypto
+copying scapy/layers/tls/crypto/groups.py -> build/lib/scapy/layers/tls/crypto
+copying scapy/arch/bpf/consts.py -> build/lib/scapy/arch/bpf
+copying scapy/arch/bpf/core.py -> build/lib/scapy/arch/bpf
+copying scapy/arch/bpf/supersocket.py -> build/lib/scapy/arch/bpf
+copying scapy/arch/bpf/__init__.py -> build/lib/scapy/arch/bpf
+copying scapy/arch/windows/structures.py -> build/lib/scapy/arch/windows
+copying scapy/arch/windows/native.py -> build/lib/scapy/arch/windows
+copying scapy/arch/windows/__init__.py -> build/lib/scapy/arch/windows
+copying scapy/modules/krack/crypto.py -> build/lib/scapy/modules/krack
+copying scapy/modules/krack/__init__.py -> build/lib/scapy/modules/krack
+copying scapy/modules/krack/automaton.py -> build/lib/scapy/modules/krack
+copying scapy/contrib/automotive/uds_logging.py -> build/lib/scapy/contrib/automotive
+copying scapy/contrib/automotive/ccp.py -> build/lib/scapy/contrib/automotive
+copying scapy/contrib/automotive/ecu.py -> build/lib/scapy/contrib/automotive
+copying scapy/contrib/automotive/doip.py -> build/lib/scapy/contrib/automotive
+copying scapy/contrib/automotive/uds.py -> build/lib/scapy/contrib/automotive
+copying scapy/contrib/automotive/uds_ecu_states.py -> build/lib/scapy/contrib/automotive
+copying scapy/contrib/automotive/__init__.py -> build/lib/scapy/contrib/automotive
+copying scapy/contrib/automotive/enumerator.py -> build/lib/scapy/contrib/automotive
+copying scapy/contrib/automotive/someip.py -> build/lib/scapy/contrib/automotive
+copying scapy/contrib/automotive/graph.py -> build/lib/scapy/contrib/automotive
+copying scapy/contrib/scada/__init__.py -> build/lib/scapy/contrib/scada
+copying scapy/contrib/scada/pcom.py -> build/lib/scapy/contrib/scada
+copying scapy/contrib/automotive/volkswagen/__init__.py -> build/lib/scapy/contrib/automotive/volkswagen
+copying scapy/contrib/automotive/volkswagen/definitions.py -> build/lib/scapy/contrib/automotive/volkswagen
+copying scapy/contrib/automotive/xcp/xcp.py -> build/lib/scapy/contrib/automotive/xcp
+copying scapy/contrib/automotive/xcp/cto_commands_slave.py -> build/lib/scapy/contrib/automotive/xcp
+copying scapy/contrib/automotive/xcp/__init__.py -> build/lib/scapy/contrib/automotive/xcp
+copying scapy/contrib/automotive/xcp/cto_commands_master.py -> build/lib/scapy/contrib/automotive/xcp
+copying scapy/contrib/automotive/xcp/utils.py -> build/lib/scapy/contrib/automotive/xcp
+copying scapy/contrib/automotive/xcp/scanner.py -> build/lib/scapy/contrib/automotive/xcp
+copying scapy/contrib/automotive/gm/gmlanutils.py -> build/lib/scapy/contrib/automotive/gm
+copying scapy/contrib/automotive/gm/gmlan_logging.py -> build/lib/scapy/contrib/automotive/gm
+copying scapy/contrib/automotive/gm/__init__.py -> build/lib/scapy/contrib/automotive/gm
+copying scapy/contrib/automotive/gm/gmlan.py -> build/lib/scapy/contrib/automotive/gm
+copying scapy/contrib/automotive/gm/gmlan_ecu_states.py -> build/lib/scapy/contrib/automotive/gm
+copying scapy/contrib/automotive/obd/packet.py -> build/lib/scapy/contrib/automotive/obd
+copying scapy/contrib/automotive/obd/__init__.py -> build/lib/scapy/contrib/automotive/obd
+copying scapy/contrib/automotive/obd/obd.py -> build/lib/scapy/contrib/automotive/obd
+copying scapy/contrib/automotive/obd/services.py -> build/lib/scapy/contrib/automotive/obd
+copying scapy/contrib/automotive/obd/scanner.py -> build/lib/scapy/contrib/automotive/obd
+copying scapy/contrib/automotive/bmw/hsfz.py -> build/lib/scapy/contrib/automotive/bmw
+copying scapy/contrib/automotive/bmw/__init__.py -> build/lib/scapy/contrib/automotive/bmw
+copying scapy/contrib/automotive/bmw/definitions.py -> build/lib/scapy/contrib/automotive/bmw
+copying scapy/contrib/automotive/obd/iid/__init__.py -> build/lib/scapy/contrib/automotive/obd/iid
+copying scapy/contrib/automotive/obd/iid/iids.py -> build/lib/scapy/contrib/automotive/obd/iid
+copying scapy/contrib/automotive/obd/tid/__init__.py -> build/lib/scapy/contrib/automotive/obd/tid
+copying scapy/contrib/automotive/obd/tid/tids.py -> build/lib/scapy/contrib/automotive/obd/tid
+copying scapy/contrib/automotive/obd/pid/pids_A0_C0.py -> build/lib/scapy/contrib/automotive/obd/pid
+copying scapy/contrib/automotive/obd/pid/pids_20_3F.py -> build/lib/scapy/contrib/automotive/obd/pid
+copying scapy/contrib/automotive/obd/pid/pids_60_7F.py -> build/lib/scapy/contrib/automotive/obd/pid
+copying scapy/contrib/automotive/obd/pid/pids_80_9F.py -> build/lib/scapy/contrib/automotive/obd/pid
+copying scapy/contrib/automotive/obd/pid/__init__.py -> build/lib/scapy/contrib/automotive/obd/pid
+copying scapy/contrib/automotive/obd/pid/pids_00_1F.py -> build/lib/scapy/contrib/automotive/obd/pid
+copying scapy/contrib/automotive/obd/pid/pids.py -> build/lib/scapy/contrib/automotive/obd/pid
+copying scapy/contrib/automotive/obd/pid/pids_40_5F.py -> build/lib/scapy/contrib/automotive/obd/pid
+copying scapy/contrib/automotive/obd/mid/mids.py -> build/lib/scapy/contrib/automotive/obd/mid
+copying scapy/contrib/automotive/obd/mid/__init__.py -> build/lib/scapy/contrib/automotive/obd/mid
+copying scapy/contrib/scada/iec104/iec104_information_elements.py -> build/lib/scapy/contrib/scada/iec104
+copying scapy/contrib/scada/iec104/iec104_fields.py -> build/lib/scapy/contrib/scada/iec104
+copying scapy/contrib/scada/iec104/__init__.py -> build/lib/scapy/contrib/scada/iec104
+copying scapy/contrib/scada/iec104/iec104_information_objects.py -> build/lib/scapy/contrib/scada/iec104
+copying scapy/tools/automotive/obdscanner.py -> build/lib/scapy/tools/automotive
+copying scapy/tools/automotive/isotpscanner.py -> build/lib/scapy/tools/automotive
+copying scapy/tools/automotive/xcpscanner.py -> build/lib/scapy/tools/automotive
+copying scapy/tools/automotive/__init__.py -> build/lib/scapy/tools/automotive
+installing to build/bdist.linux-x86_64/wheel
+running install
+running install_lib
+creating build/bdist.linux-x86_64/wheel
+copying build/lib/www_authenticate.py -> build/bdist.linux-x86_64/wheel/.
+creating build/bdist.linux-x86_64/wheel/pyangbind
+creating build/bdist.linux-x86_64/wheel/pyangbind/helpers
+copying build/lib/pyangbind/helpers/identity.py -> build/bdist.linux-x86_64/wheel/./pyangbind/helpers
+copying build/lib/pyangbind/helpers/misc.py -> build/bdist.linux-x86_64/wheel/./pyangbind/helpers
+copying build/lib/pyangbind/helpers/__init__.py -> build/bdist.linux-x86_64/wheel/./pyangbind/helpers
+creating build/bdist.linux-x86_64/wheel/pyangbind/lib
+copying build/lib/pyangbind/lib/base.py -> build/bdist.linux-x86_64/wheel/./pyangbind/lib
+copying build/lib/pyangbind/lib/serialise.py -> build/bdist.linux-x86_64/wheel/./pyangbind/lib
+copying build/lib/pyangbind/lib/xpathhelper.py -> build/bdist.linux-x86_64/wheel/./pyangbind/lib
+copying build/lib/pyangbind/lib/yangtypes.py -> build/bdist.linux-x86_64/wheel/./pyangbind/lib
+copying build/lib/pyangbind/lib/pybindJSON.py -> build/bdist.linux-x86_64/wheel/./pyangbind/lib
+copying build/lib/pyangbind/lib/__init__.py -> build/bdist.linux-x86_64/wheel/./pyangbind/lib
+creating build/bdist.linux-x86_64/wheel/pyangbind/plugin
+copying build/lib/pyangbind/plugin/__init__.py -> build/bdist.linux-x86_64/wheel/./pyangbind/plugin
+copying build/lib/pyangbind/plugin/pybind.py -> build/bdist.linux-x86_64/wheel/./pyangbind/plugin
+copying build/lib/pyangbind/__init__.py -> build/bdist.linux-x86_64/wheel/./pyangbind
+creating build/bdist.linux-x86_64/wheel/scapy
+copying build/lib/scapy/utils6.py -> build/bdist.linux-x86_64/wheel/./scapy
+copying build/lib/scapy/route6.py -> build/bdist.linux-x86_64/wheel/./scapy
+copying build/lib/scapy/ansmachine.py -> build/bdist.linux-x86_64/wheel/./scapy
+copying build/lib/scapy/compat.py -> build/bdist.linux-x86_64/wheel/./scapy
+copying build/lib/scapy/plist.py -> build/bdist.linux-x86_64/wheel/./scapy
+copying build/lib/scapy/themes.py -> build/bdist.linux-x86_64/wheel/./scapy
+copying build/lib/scapy/consts.py -> build/bdist.linux-x86_64/wheel/./scapy
+copying build/lib/scapy/base_classes.py -> build/bdist.linux-x86_64/wheel/./scapy
+copying build/lib/scapy/autorun.py -> build/bdist.linux-x86_64/wheel/./scapy
+copying build/lib/scapy/sendrecv.py -> build/bdist.linux-x86_64/wheel/./scapy
+copying build/lib/scapy/data.py -> build/bdist.linux-x86_64/wheel/./scapy
+creating build/bdist.linux-x86_64/wheel/scapy/layers
+copying build/lib/scapy/layers/eap.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/rtp.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/gprs.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/smb2.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/dhcp6.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/vrrp.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/skinny.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/ntp.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/netbios.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/mobileip.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/bluetooth.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/dot11.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/inet6.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+creating build/bdist.linux-x86_64/wheel/scapy/layers/tls
+copying build/lib/scapy/layers/tls/record_sslv2.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls
+copying build/lib/scapy/layers/tls/basefields.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls
+copying build/lib/scapy/layers/tls/keyexchange.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls
+copying build/lib/scapy/layers/tls/session.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls
+copying build/lib/scapy/layers/tls/handshake.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls
+creating build/bdist.linux-x86_64/wheel/scapy/layers/tls/crypto
+copying build/lib/scapy/layers/tls/crypto/hash.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls/crypto
+copying build/lib/scapy/layers/tls/crypto/compression.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls/crypto
+copying build/lib/scapy/layers/tls/crypto/suites.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls/crypto
+copying build/lib/scapy/layers/tls/crypto/kx_algs.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls/crypto
+copying build/lib/scapy/layers/tls/crypto/hkdf.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls/crypto
+copying build/lib/scapy/layers/tls/crypto/common.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls/crypto
+copying build/lib/scapy/layers/tls/crypto/__init__.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls/crypto
+copying build/lib/scapy/layers/tls/crypto/cipher_aead.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls/crypto
+copying build/lib/scapy/layers/tls/crypto/cipher_stream.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls/crypto
+copying build/lib/scapy/layers/tls/crypto/pkcs1.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls/crypto
+copying build/lib/scapy/layers/tls/crypto/ciphers.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls/crypto
+copying build/lib/scapy/layers/tls/crypto/h_mac.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls/crypto
+copying build/lib/scapy/layers/tls/crypto/prf.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls/crypto
+copying build/lib/scapy/layers/tls/crypto/all.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls/crypto
+copying build/lib/scapy/layers/tls/crypto/cipher_block.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls/crypto
+copying build/lib/scapy/layers/tls/crypto/groups.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls/crypto
+copying build/lib/scapy/layers/tls/extensions.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls
+copying build/lib/scapy/layers/tls/cert.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls
+copying build/lib/scapy/layers/tls/keyexchange_tls13.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls
+copying build/lib/scapy/layers/tls/__init__.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls
+copying build/lib/scapy/layers/tls/handshake_sslv2.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls
+copying build/lib/scapy/layers/tls/automaton_cli.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls
+copying build/lib/scapy/layers/tls/tools.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls
+copying build/lib/scapy/layers/tls/automaton.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls
+copying build/lib/scapy/layers/tls/automaton_srv.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls
+copying build/lib/scapy/layers/tls/record_tls13.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls
+copying build/lib/scapy/layers/tls/all.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls
+copying build/lib/scapy/layers/tls/record.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls
+copying build/lib/scapy/layers/inet.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/ipsec.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/pptp.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/vxlan.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/snmp.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/ppi.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/dot15d4.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/smb.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/mgcp.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/clns.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/hsrp.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/http.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/isakmp.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/dns.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/ir.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/tuntap.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/__init__.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/l2tp.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/pflog.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/can.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/x509.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/sixlowpan.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/tftp.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/dhcp.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/rip.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/netflow.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/ppp.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/l2.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/sctp.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/zigbee.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/all.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/radius.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/bluetooth4LE.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/lltd.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/usb.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/llmnr.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/__main__.py -> build/bdist.linux-x86_64/wheel/./scapy
+copying build/lib/scapy/packet.py -> build/bdist.linux-x86_64/wheel/./scapy
+copying build/lib/scapy/extlib.py -> build/bdist.linux-x86_64/wheel/./scapy
+copying build/lib/scapy/supersocket.py -> build/bdist.linux-x86_64/wheel/./scapy
+creating build/bdist.linux-x86_64/wheel/scapy/arch
+copying build/lib/scapy/arch/linux.py -> build/bdist.linux-x86_64/wheel/./scapy/arch
+copying build/lib/scapy/arch/libpcap.py -> build/bdist.linux-x86_64/wheel/./scapy/arch
+creating build/bdist.linux-x86_64/wheel/scapy/arch/bpf
+copying build/lib/scapy/arch/bpf/consts.py -> build/bdist.linux-x86_64/wheel/./scapy/arch/bpf
+copying build/lib/scapy/arch/bpf/core.py -> build/bdist.linux-x86_64/wheel/./scapy/arch/bpf
+copying build/lib/scapy/arch/bpf/supersocket.py -> build/bdist.linux-x86_64/wheel/./scapy/arch/bpf
+copying build/lib/scapy/arch/bpf/__init__.py -> build/bdist.linux-x86_64/wheel/./scapy/arch/bpf
+copying build/lib/scapy/arch/common.py -> build/bdist.linux-x86_64/wheel/./scapy/arch
+copying build/lib/scapy/arch/__init__.py -> build/bdist.linux-x86_64/wheel/./scapy/arch
+copying build/lib/scapy/arch/unix.py -> build/bdist.linux-x86_64/wheel/./scapy/arch
+copying build/lib/scapy/arch/solaris.py -> build/bdist.linux-x86_64/wheel/./scapy/arch
+creating build/bdist.linux-x86_64/wheel/scapy/arch/windows
+copying build/lib/scapy/arch/windows/structures.py -> build/bdist.linux-x86_64/wheel/./scapy/arch/windows
+copying build/lib/scapy/arch/windows/native.py -> build/bdist.linux-x86_64/wheel/./scapy/arch/windows
+copying build/lib/scapy/arch/windows/__init__.py -> build/bdist.linux-x86_64/wheel/./scapy/arch/windows
+copying build/lib/scapy/volatile.py -> build/bdist.linux-x86_64/wheel/./scapy
+copying build/lib/scapy/__init__.py -> build/bdist.linux-x86_64/wheel/./scapy
+creating build/bdist.linux-x86_64/wheel/scapy/modules
+copying build/lib/scapy/modules/nmap.py -> build/bdist.linux-x86_64/wheel/./scapy/modules
+creating build/bdist.linux-x86_64/wheel/scapy/modules/krack
+copying build/lib/scapy/modules/krack/crypto.py -> build/bdist.linux-x86_64/wheel/./scapy/modules/krack
+copying build/lib/scapy/modules/krack/__init__.py -> build/bdist.linux-x86_64/wheel/./scapy/modules/krack
+copying build/lib/scapy/modules/krack/automaton.py -> build/bdist.linux-x86_64/wheel/./scapy/modules/krack
+copying build/lib/scapy/modules/p0f.py -> build/bdist.linux-x86_64/wheel/./scapy/modules
+copying build/lib/scapy/modules/__init__.py -> build/bdist.linux-x86_64/wheel/./scapy/modules
+copying build/lib/scapy/modules/voip.py -> build/bdist.linux-x86_64/wheel/./scapy/modules
+copying build/lib/scapy/modules/six.py -> build/bdist.linux-x86_64/wheel/./scapy/modules
+copying build/lib/scapy/scapypipes.py -> build/bdist.linux-x86_64/wheel/./scapy
+copying build/lib/scapy/fields.py -> build/bdist.linux-x86_64/wheel/./scapy
+copying build/lib/scapy/pton_ntop.py -> build/bdist.linux-x86_64/wheel/./scapy
+copying build/lib/scapy/pipetool.py -> build/bdist.linux-x86_64/wheel/./scapy
+copying build/lib/scapy/utils.py -> build/bdist.linux-x86_64/wheel/./scapy
+copying build/lib/scapy/automaton.py -> build/bdist.linux-x86_64/wheel/./scapy
+copying build/lib/scapy/config.py -> build/bdist.linux-x86_64/wheel/./scapy
+creating build/bdist.linux-x86_64/wheel/scapy/contrib
+copying build/lib/scapy/contrib/homeplugav.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+creating build/bdist.linux-x86_64/wheel/scapy/contrib/automotive
+copying build/lib/scapy/contrib/automotive/uds_logging.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive
+copying build/lib/scapy/contrib/automotive/ccp.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive
+copying build/lib/scapy/contrib/automotive/ecu.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive
+copying build/lib/scapy/contrib/automotive/doip.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive
+copying build/lib/scapy/contrib/automotive/uds.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive
+creating build/bdist.linux-x86_64/wheel/scapy/contrib/automotive/volkswagen
+copying build/lib/scapy/contrib/automotive/volkswagen/__init__.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/volkswagen
+copying build/lib/scapy/contrib/automotive/volkswagen/definitions.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/volkswagen
+copying build/lib/scapy/contrib/automotive/uds_ecu_states.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive
+copying build/lib/scapy/contrib/automotive/__init__.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive
+creating build/bdist.linux-x86_64/wheel/scapy/contrib/automotive/xcp
+copying build/lib/scapy/contrib/automotive/xcp/xcp.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/xcp
+copying build/lib/scapy/contrib/automotive/xcp/cto_commands_slave.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/xcp
+copying build/lib/scapy/contrib/automotive/xcp/__init__.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/xcp
+copying build/lib/scapy/contrib/automotive/xcp/cto_commands_master.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/xcp
+copying build/lib/scapy/contrib/automotive/xcp/utils.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/xcp
+copying build/lib/scapy/contrib/automotive/xcp/scanner.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/xcp
+creating build/bdist.linux-x86_64/wheel/scapy/contrib/automotive/gm
+copying build/lib/scapy/contrib/automotive/gm/gmlanutils.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/gm
+copying build/lib/scapy/contrib/automotive/gm/gmlan_logging.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/gm
+copying build/lib/scapy/contrib/automotive/gm/__init__.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/gm
+copying build/lib/scapy/contrib/automotive/gm/gmlan.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/gm
+copying build/lib/scapy/contrib/automotive/gm/gmlan_ecu_states.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/gm
+creating build/bdist.linux-x86_64/wheel/scapy/contrib/automotive/obd
+creating build/bdist.linux-x86_64/wheel/scapy/contrib/automotive/obd/iid
+copying build/lib/scapy/contrib/automotive/obd/iid/__init__.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/obd/iid
+copying build/lib/scapy/contrib/automotive/obd/iid/iids.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/obd/iid
+creating build/bdist.linux-x86_64/wheel/scapy/contrib/automotive/obd/tid
+copying build/lib/scapy/contrib/automotive/obd/tid/__init__.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/obd/tid
+copying build/lib/scapy/contrib/automotive/obd/tid/tids.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/obd/tid
+creating build/bdist.linux-x86_64/wheel/scapy/contrib/automotive/obd/pid
+copying build/lib/scapy/contrib/automotive/obd/pid/pids_A0_C0.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/obd/pid
+copying build/lib/scapy/contrib/automotive/obd/pid/pids_20_3F.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/obd/pid
+copying build/lib/scapy/contrib/automotive/obd/pid/pids_60_7F.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/obd/pid
+copying build/lib/scapy/contrib/automotive/obd/pid/pids_80_9F.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/obd/pid
+copying build/lib/scapy/contrib/automotive/obd/pid/__init__.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/obd/pid
+copying build/lib/scapy/contrib/automotive/obd/pid/pids_00_1F.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/obd/pid
+copying build/lib/scapy/contrib/automotive/obd/pid/pids.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/obd/pid
+copying build/lib/scapy/contrib/automotive/obd/pid/pids_40_5F.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/obd/pid
+copying build/lib/scapy/contrib/automotive/obd/packet.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/obd
+copying build/lib/scapy/contrib/automotive/obd/__init__.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/obd
+copying build/lib/scapy/contrib/automotive/obd/obd.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/obd
+copying build/lib/scapy/contrib/automotive/obd/services.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/obd
+creating build/bdist.linux-x86_64/wheel/scapy/contrib/automotive/obd/mid
+copying build/lib/scapy/contrib/automotive/obd/mid/mids.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/obd/mid
+copying build/lib/scapy/contrib/automotive/obd/mid/__init__.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/obd/mid
+copying build/lib/scapy/contrib/automotive/obd/scanner.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/obd
+copying build/lib/scapy/contrib/automotive/enumerator.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive
+copying build/lib/scapy/contrib/automotive/someip.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive
+creating build/bdist.linux-x86_64/wheel/scapy/contrib/automotive/bmw
+copying build/lib/scapy/contrib/automotive/bmw/hsfz.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/bmw
+copying build/lib/scapy/contrib/automotive/bmw/__init__.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/bmw
+copying build/lib/scapy/contrib/automotive/bmw/definitions.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/bmw
+copying build/lib/scapy/contrib/automotive/graph.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive
+copying build/lib/scapy/contrib/igmpv3.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/openflow.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/isis.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/opc_da.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/spbm.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/bgp.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/erspan.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/socks.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/skinny.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/chdlc.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/lacp.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/ospf.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/openflow3.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/enipTCP.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/ltp.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/ife.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/ripng.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/dtp.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/gtp_v2.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/igmp.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/mount.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/geneve.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/exposure_notification.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/aoe.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/mac_control.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/rtr.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+creating build/bdist.linux-x86_64/wheel/scapy/contrib/scada
+creating build/bdist.linux-x86_64/wheel/scapy/contrib/scada/iec104
+copying build/lib/scapy/contrib/scada/iec104/iec104_information_elements.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/scada/iec104
+copying build/lib/scapy/contrib/scada/iec104/iec104_fields.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/scada/iec104
+copying build/lib/scapy/contrib/scada/iec104/__init__.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/scada/iec104
+copying build/lib/scapy/contrib/scada/iec104/iec104_information_objects.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/scada/iec104
+copying build/lib/scapy/contrib/scada/__init__.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/scada
+copying build/lib/scapy/contrib/scada/pcom.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/scada
+copying build/lib/scapy/contrib/dce_rpc.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/cansocket_python_can.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/homepluggp.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/wireguard.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/altbeacon.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/loraphy2wan.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/eigrp.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/eddystone.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/nfs.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/roce.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/rpl_metrics.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/ubberlogger.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/oncrpc.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/tzsp.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/ppi_geotag.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/homeplugsg.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/wpa_eapol.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/bfd.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/carp.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/tacacs.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/cansocket_native.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/icmp_extensions.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/vtp.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/macsec.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/__init__.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/rsvp.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/bp.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/ppi_cace.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/coap.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/send.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/bier.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/nlm.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/etherip.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/rpl.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/concox.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/http2.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/pim.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/pnio_dcp.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/avs.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/mqttsn.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/cansocket.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/ethercat.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/portmap.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/sdnv.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/gtp.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/sebek.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/isotp.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/pnio.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/vqp.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/modbus.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/ibeacon.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/nsh.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/cdp.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/ldp.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/lldp.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/diameter.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/mqtt.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/pnio_rpc.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/ikev2.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/pfcp.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/mpls.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/sessions.py -> build/bdist.linux-x86_64/wheel/./scapy
+copying build/lib/scapy/main.py -> build/bdist.linux-x86_64/wheel/./scapy
+creating build/bdist.linux-x86_64/wheel/scapy/libs
+copying build/lib/scapy/libs/structures.py -> build/bdist.linux-x86_64/wheel/./scapy/libs
+copying build/lib/scapy/libs/ethertypes.py -> build/bdist.linux-x86_64/wheel/./scapy/libs
+copying build/lib/scapy/libs/__init__.py -> build/bdist.linux-x86_64/wheel/./scapy/libs
+copying build/lib/scapy/libs/winpcapy.py -> build/bdist.linux-x86_64/wheel/./scapy/libs
+copying build/lib/scapy/asn1packet.py -> build/bdist.linux-x86_64/wheel/./scapy
+copying build/lib/scapy/interfaces.py -> build/bdist.linux-x86_64/wheel/./scapy
+creating build/bdist.linux-x86_64/wheel/scapy/asn1
+copying build/lib/scapy/asn1/asn1.py -> build/bdist.linux-x86_64/wheel/./scapy/asn1
+copying build/lib/scapy/asn1/mib.py -> build/bdist.linux-x86_64/wheel/./scapy/asn1
+copying build/lib/scapy/asn1/__init__.py -> build/bdist.linux-x86_64/wheel/./scapy/asn1
+copying build/lib/scapy/asn1/ber.py -> build/bdist.linux-x86_64/wheel/./scapy/asn1
+copying build/lib/scapy/asn1fields.py -> build/bdist.linux-x86_64/wheel/./scapy
+copying build/lib/scapy/VERSION -> build/bdist.linux-x86_64/wheel/./scapy
+copying build/lib/scapy/all.py -> build/bdist.linux-x86_64/wheel/./scapy
+copying build/lib/scapy/dadict.py -> build/bdist.linux-x86_64/wheel/./scapy
+copying build/lib/scapy/error.py -> build/bdist.linux-x86_64/wheel/./scapy
+creating build/bdist.linux-x86_64/wheel/scapy/tools
+creating build/bdist.linux-x86_64/wheel/scapy/tools/automotive
+copying build/lib/scapy/tools/automotive/obdscanner.py -> build/bdist.linux-x86_64/wheel/./scapy/tools/automotive
+copying build/lib/scapy/tools/automotive/isotpscanner.py -> build/bdist.linux-x86_64/wheel/./scapy/tools/automotive
+copying build/lib/scapy/tools/automotive/xcpscanner.py -> build/bdist.linux-x86_64/wheel/./scapy/tools/automotive
+copying build/lib/scapy/tools/automotive/__init__.py -> build/bdist.linux-x86_64/wheel/./scapy/tools/automotive
+copying build/lib/scapy/tools/UTscapy.py -> build/bdist.linux-x86_64/wheel/./scapy/tools
+copying build/lib/scapy/tools/check_asdis.py -> build/bdist.linux-x86_64/wheel/./scapy/tools
+copying build/lib/scapy/tools/generate_ethertypes.py -> build/bdist.linux-x86_64/wheel/./scapy/tools
+copying build/lib/scapy/tools/__init__.py -> build/bdist.linux-x86_64/wheel/./scapy/tools
+copying build/lib/scapy/tools/scapy_pyannotate.py -> build/bdist.linux-x86_64/wheel/./scapy/tools
+copying build/lib/scapy/as_resolvers.py -> build/bdist.linux-x86_64/wheel/./scapy
+copying build/lib/scapy/route.py -> build/bdist.linux-x86_64/wheel/./scapy
+creating build/bdist.linux-x86_64/wheel/mockredis
+copying build/lib/mockredis/sortedset.py -> build/bdist.linux-x86_64/wheel/./mockredis
+copying build/lib/mockredis/script.py -> build/bdist.linux-x86_64/wheel/./mockredis
+copying build/lib/mockredis/lock.py -> build/bdist.linux-x86_64/wheel/./mockredis
+copying build/lib/mockredis/client.py -> build/bdist.linux-x86_64/wheel/./mockredis
+copying build/lib/mockredis/pipeline.py -> build/bdist.linux-x86_64/wheel/./mockredis
+copying build/lib/mockredis/__init__.py -> build/bdist.linux-x86_64/wheel/./mockredis
+copying build/lib/mockredis/noseplugin.py -> build/bdist.linux-x86_64/wheel/./mockredis
+copying build/lib/mockredis/clock.py -> build/bdist.linux-x86_64/wheel/./mockredis
+copying build/lib/mockredis/exceptions.py -> build/bdist.linux-x86_64/wheel/./mockredis
+running install_egg_info
+running egg_info
+writing mockredispy.egg-info/PKG-INFO
+writing dependency_links to mockredispy.egg-info/dependency_links.txt
+writing entry points to mockredispy.egg-info/entry_points.txt
+writing requirements to mockredispy.egg-info/requires.txt
+writing top-level names to mockredispy.egg-info/top_level.txt
+reading manifest file 'mockredispy.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+adding license file 'LICENSE'
+writing manifest file 'mockredispy.egg-info/SOURCES.txt'
+Copying mockredispy.egg-info to build/bdist.linux-x86_64/wheel/./mockredispy-2.9.3-py3.11.egg-info
+running install_scripts
+creating build/bdist.linux-x86_64/wheel/mockredispy-2.9.3.dist-info/WHEEL
+creating '/home/bobo.linux/.cache/bazel/_bazel_bobo/5f9602010ff550d0b4caceda45f93e29/sandbox/processwrapper-sandbox/4538/execroot/_main/bazel-out/k8-fastbuild/bin/external/aspect_rules_py++uv+sbuild__sonic_utilities_pip__default__mockredispy/build/.tmp-u9cxkamt/mockredispy-2.9.3-py3-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
+adding 'www_authenticate.py'
+adding 'mockredis/__init__.py'
+adding 'mockredis/client.py'
+adding 'mockredis/clock.py'
+adding 'mockredis/exceptions.py'
+adding 'mockredis/lock.py'
+adding 'mockredis/noseplugin.py'
+adding 'mockredis/pipeline.py'
+adding 'mockredis/script.py'
+adding 'mockredis/sortedset.py'
+adding 'mockredispy-2.9.3.dist-info/licenses/LICENSE'
+adding 'pyangbind/__init__.py'
+adding 'pyangbind/helpers/__init__.py'
+adding 'pyangbind/helpers/identity.py'
+adding 'pyangbind/helpers/misc.py'
+adding 'pyangbind/lib/__init__.py'
+adding 'pyangbind/lib/base.py'
+adding 'pyangbind/lib/pybindJSON.py'
+adding 'pyangbind/lib/serialise.py'
+adding 'pyangbind/lib/xpathhelper.py'
+adding 'pyangbind/lib/yangtypes.py'
+adding 'pyangbind/plugin/__init__.py'
+adding 'pyangbind/plugin/pybind.py'
+adding 'scapy/VERSION'
+adding 'scapy/__init__.py'
+adding 'scapy/__main__.py'
+adding 'scapy/all.py'
+adding 'scapy/ansmachine.py'
+adding 'scapy/as_resolvers.py'
+adding 'scapy/asn1fields.py'
+adding 'scapy/asn1packet.py'
+adding 'scapy/automaton.py'
+adding 'scapy/autorun.py'
+adding 'scapy/base_classes.py'
+adding 'scapy/compat.py'
+adding 'scapy/config.py'
+adding 'scapy/consts.py'
+adding 'scapy/dadict.py'
+adding 'scapy/data.py'
+adding 'scapy/error.py'
+adding 'scapy/extlib.py'
+adding 'scapy/fields.py'
+adding 'scapy/interfaces.py'
+adding 'scapy/main.py'
+adding 'scapy/packet.py'
+adding 'scapy/pipetool.py'
+adding 'scapy/plist.py'
+adding 'scapy/pton_ntop.py'
+adding 'scapy/route.py'
+adding 'scapy/route6.py'
+adding 'scapy/scapypipes.py'
+adding 'scapy/sendrecv.py'
+adding 'scapy/sessions.py'
+adding 'scapy/supersocket.py'
+adding 'scapy/themes.py'
+adding 'scapy/utils.py'
+adding 'scapy/utils6.py'
+adding 'scapy/volatile.py'
+adding 'scapy/arch/__init__.py'
+adding 'scapy/arch/common.py'
+adding 'scapy/arch/libpcap.py'
+adding 'scapy/arch/linux.py'
+adding 'scapy/arch/solaris.py'
+adding 'scapy/arch/unix.py'
+adding 'scapy/arch/bpf/__init__.py'
+adding 'scapy/arch/bpf/consts.py'
+adding 'scapy/arch/bpf/core.py'
+adding 'scapy/arch/bpf/supersocket.py'
+adding 'scapy/arch/windows/__init__.py'
+adding 'scapy/arch/windows/native.py'
+adding 'scapy/arch/windows/structures.py'
+adding 'scapy/asn1/__init__.py'
+adding 'scapy/asn1/asn1.py'
+adding 'scapy/asn1/ber.py'
+adding 'scapy/asn1/mib.py'
+adding 'scapy/contrib/__init__.py'
+adding 'scapy/contrib/altbeacon.py'
+adding 'scapy/contrib/aoe.py'
+adding 'scapy/contrib/avs.py'
+adding 'scapy/contrib/bfd.py'
+adding 'scapy/contrib/bgp.py'
+adding 'scapy/contrib/bier.py'
+adding 'scapy/contrib/bp.py'
+adding 'scapy/contrib/cansocket.py'
+adding 'scapy/contrib/cansocket_native.py'
+adding 'scapy/contrib/cansocket_python_can.py'
+adding 'scapy/contrib/carp.py'
+adding 'scapy/contrib/cdp.py'
+adding 'scapy/contrib/chdlc.py'
+adding 'scapy/contrib/coap.py'
+adding 'scapy/contrib/concox.py'
+adding 'scapy/contrib/dce_rpc.py'
+adding 'scapy/contrib/diameter.py'
+adding 'scapy/contrib/dtp.py'
+adding 'scapy/contrib/eddystone.py'
+adding 'scapy/contrib/eigrp.py'
+adding 'scapy/contrib/enipTCP.py'
+adding 'scapy/contrib/erspan.py'
+adding 'scapy/contrib/ethercat.py'
+adding 'scapy/contrib/etherip.py'
+adding 'scapy/contrib/exposure_notification.py'
+adding 'scapy/contrib/geneve.py'
+adding 'scapy/contrib/gtp.py'
+adding 'scapy/contrib/gtp_v2.py'
+adding 'scapy/contrib/homeplugav.py'
+adding 'scapy/contrib/homepluggp.py'
+adding 'scapy/contrib/homeplugsg.py'
+adding 'scapy/contrib/http2.py'
+adding 'scapy/contrib/ibeacon.py'
+adding 'scapy/contrib/icmp_extensions.py'
+adding 'scapy/contrib/ife.py'
+adding 'scapy/contrib/igmp.py'
+adding 'scapy/contrib/igmpv3.py'
+adding 'scapy/contrib/ikev2.py'
+adding 'scapy/contrib/isis.py'
+adding 'scapy/contrib/isotp.py'
+adding 'scapy/contrib/lacp.py'
+adding 'scapy/contrib/ldp.py'
+adding 'scapy/contrib/lldp.py'
+adding 'scapy/contrib/loraphy2wan.py'
+adding 'scapy/contrib/ltp.py'
+adding 'scapy/contrib/mac_control.py'
+adding 'scapy/contrib/macsec.py'
+adding 'scapy/contrib/modbus.py'
+adding 'scapy/contrib/mount.py'
+adding 'scapy/contrib/mpls.py'
+adding 'scapy/contrib/mqtt.py'
+adding 'scapy/contrib/mqttsn.py'
+adding 'scapy/contrib/nfs.py'
+adding 'scapy/contrib/nlm.py'
+adding 'scapy/contrib/nsh.py'
+adding 'scapy/contrib/oncrpc.py'
+adding 'scapy/contrib/opc_da.py'
+adding 'scapy/contrib/openflow.py'
+adding 'scapy/contrib/openflow3.py'
+adding 'scapy/contrib/ospf.py'
+adding 'scapy/contrib/pfcp.py'
+adding 'scapy/contrib/pim.py'
+adding 'scapy/contrib/pnio.py'
+adding 'scapy/contrib/pnio_dcp.py'
+adding 'scapy/contrib/pnio_rpc.py'
+adding 'scapy/contrib/portmap.py'
+adding 'scapy/contrib/ppi_cace.py'
+adding 'scapy/contrib/ppi_geotag.py'
+adding 'scapy/contrib/ripng.py'
+adding 'scapy/contrib/roce.py'
+adding 'scapy/contrib/rpl.py'
+adding 'scapy/contrib/rpl_metrics.py'
+adding 'scapy/contrib/rsvp.py'
+adding 'scapy/contrib/rtr.py'
+adding 'scapy/contrib/sdnv.py'
+adding 'scapy/contrib/sebek.py'
+adding 'scapy/contrib/send.py'
+adding 'scapy/contrib/skinny.py'
+adding 'scapy/contrib/socks.py'
+adding 'scapy/contrib/spbm.py'
+adding 'scapy/contrib/tacacs.py'
+adding 'scapy/contrib/tzsp.py'
+adding 'scapy/contrib/ubberlogger.py'
+adding 'scapy/contrib/vqp.py'
+adding 'scapy/contrib/vtp.py'
+adding 'scapy/contrib/wireguard.py'
+adding 'scapy/contrib/wpa_eapol.py'
+adding 'scapy/contrib/automotive/__init__.py'
+adding 'scapy/contrib/automotive/ccp.py'
+adding 'scapy/contrib/automotive/doip.py'
+adding 'scapy/contrib/automotive/ecu.py'
+adding 'scapy/contrib/automotive/enumerator.py'
+adding 'scapy/contrib/automotive/graph.py'
+adding 'scapy/contrib/automotive/someip.py'
+adding 'scapy/contrib/automotive/uds.py'
+adding 'scapy/contrib/automotive/uds_ecu_states.py'
+adding 'scapy/contrib/automotive/uds_logging.py'
+adding 'scapy/contrib/automotive/bmw/__init__.py'
+adding 'scapy/contrib/automotive/bmw/definitions.py'
+adding 'scapy/contrib/automotive/bmw/hsfz.py'
+adding 'scapy/contrib/automotive/gm/__init__.py'
+adding 'scapy/contrib/automotive/gm/gmlan.py'
+adding 'scapy/contrib/automotive/gm/gmlan_ecu_states.py'
+adding 'scapy/contrib/automotive/gm/gmlan_logging.py'
+adding 'scapy/contrib/automotive/gm/gmlanutils.py'
+adding 'scapy/contrib/automotive/obd/__init__.py'
+adding 'scapy/contrib/automotive/obd/obd.py'
+adding 'scapy/contrib/automotive/obd/packet.py'
+adding 'scapy/contrib/automotive/obd/scanner.py'
+adding 'scapy/contrib/automotive/obd/services.py'
+adding 'scapy/contrib/automotive/obd/iid/__init__.py'
+adding 'scapy/contrib/automotive/obd/iid/iids.py'
+adding 'scapy/contrib/automotive/obd/mid/__init__.py'
+adding 'scapy/contrib/automotive/obd/mid/mids.py'
+adding 'scapy/contrib/automotive/obd/pid/__init__.py'
+adding 'scapy/contrib/automotive/obd/pid/pids.py'
+adding 'scapy/contrib/automotive/obd/pid/pids_00_1F.py'
+adding 'scapy/contrib/automotive/obd/pid/pids_20_3F.py'
+adding 'scapy/contrib/automotive/obd/pid/pids_40_5F.py'
+adding 'scapy/contrib/automotive/obd/pid/pids_60_7F.py'
+adding 'scapy/contrib/automotive/obd/pid/pids_80_9F.py'
+adding 'scapy/contrib/automotive/obd/pid/pids_A0_C0.py'
+adding 'scapy/contrib/automotive/obd/tid/__init__.py'
+adding 'scapy/contrib/automotive/obd/tid/tids.py'
+adding 'scapy/contrib/automotive/volkswagen/__init__.py'
+adding 'scapy/contrib/automotive/volkswagen/definitions.py'
+adding 'scapy/contrib/automotive/xcp/__init__.py'
+adding 'scapy/contrib/automotive/xcp/cto_commands_master.py'
+adding 'scapy/contrib/automotive/xcp/cto_commands_slave.py'
+adding 'scapy/contrib/automotive/xcp/scanner.py'
+adding 'scapy/contrib/automotive/xcp/utils.py'
+adding 'scapy/contrib/automotive/xcp/xcp.py'
+adding 'scapy/contrib/scada/__init__.py'
+adding 'scapy/contrib/scada/pcom.py'
+adding 'scapy/contrib/scada/iec104/__init__.py'
+adding 'scapy/contrib/scada/iec104/iec104_fields.py'
+adding 'scapy/contrib/scada/iec104/iec104_information_elements.py'
+adding 'scapy/contrib/scada/iec104/iec104_information_objects.py'
+adding 'scapy/layers/__init__.py'
+adding 'scapy/layers/all.py'
+adding 'scapy/layers/bluetooth.py'
+adding 'scapy/layers/bluetooth4LE.py'
+adding 'scapy/layers/can.py'
+adding 'scapy/layers/clns.py'
+adding 'scapy/layers/dhcp.py'
+adding 'scapy/layers/dhcp6.py'
+adding 'scapy/layers/dns.py'
+adding 'scapy/layers/dot11.py'
+adding 'scapy/layers/dot15d4.py'
+adding 'scapy/layers/eap.py'
+adding 'scapy/layers/gprs.py'
+adding 'scapy/layers/hsrp.py'
+adding 'scapy/layers/http.py'
+adding 'scapy/layers/inet.py'
+adding 'scapy/layers/inet6.py'
+adding 'scapy/layers/ipsec.py'
+adding 'scapy/layers/ir.py'
+adding 'scapy/layers/isakmp.py'
+adding 'scapy/layers/l2.py'
+adding 'scapy/layers/l2tp.py'
+adding 'scapy/layers/llmnr.py'
+adding 'scapy/layers/lltd.py'
+adding 'scapy/layers/mgcp.py'
+adding 'scapy/layers/mobileip.py'
+adding 'scapy/layers/netbios.py'
+adding 'scapy/layers/netflow.py'
+adding 'scapy/layers/ntp.py'
+adding 'scapy/layers/pflog.py'
+adding 'scapy/layers/ppi.py'
+adding 'scapy/layers/ppp.py'
+adding 'scapy/layers/pptp.py'
+adding 'scapy/layers/radius.py'
+adding 'scapy/layers/rip.py'
+adding 'scapy/layers/rtp.py'
+adding 'scapy/layers/sctp.py'
+adding 'scapy/layers/sixlowpan.py'
+adding 'scapy/layers/skinny.py'
+adding 'scapy/layers/smb.py'
+adding 'scapy/layers/smb2.py'
+adding 'scapy/layers/snmp.py'
+adding 'scapy/layers/tftp.py'
+adding 'scapy/layers/tuntap.py'
+adding 'scapy/layers/usb.py'
+adding 'scapy/layers/vrrp.py'
+adding 'scapy/layers/vxlan.py'
+adding 'scapy/layers/x509.py'
+adding 'scapy/layers/zigbee.py'
+adding 'scapy/layers/tls/__init__.py'
+adding 'scapy/layers/tls/all.py'
+adding 'scapy/layers/tls/automaton.py'
+adding 'scapy/layers/tls/automaton_cli.py'
+adding 'scapy/layers/tls/automaton_srv.py'
+adding 'scapy/layers/tls/basefields.py'
+adding 'scapy/layers/tls/cert.py'
+adding 'scapy/layers/tls/extensions.py'
+adding 'scapy/layers/tls/handshake.py'
+adding 'scapy/layers/tls/handshake_sslv2.py'
+adding 'scapy/layers/tls/keyexchange.py'
+adding 'scapy/layers/tls/keyexchange_tls13.py'
+adding 'scapy/layers/tls/record.py'
+adding 'scapy/layers/tls/record_sslv2.py'
+adding 'scapy/layers/tls/record_tls13.py'
+adding 'scapy/layers/tls/session.py'
+adding 'scapy/layers/tls/tools.py'
+adding 'scapy/layers/tls/crypto/__init__.py'
+adding 'scapy/layers/tls/crypto/all.py'
+adding 'scapy/layers/tls/crypto/cipher_aead.py'
+adding 'scapy/layers/tls/crypto/cipher_block.py'
+adding 'scapy/layers/tls/crypto/cipher_stream.py'
+adding 'scapy/layers/tls/crypto/ciphers.py'
+adding 'scapy/layers/tls/crypto/common.py'
+adding 'scapy/layers/tls/crypto/compression.py'
+adding 'scapy/layers/tls/crypto/groups.py'
+adding 'scapy/layers/tls/crypto/h_mac.py'
+adding 'scapy/layers/tls/crypto/hash.py'
+adding 'scapy/layers/tls/crypto/hkdf.py'
+adding 'scapy/layers/tls/crypto/kx_algs.py'
+adding 'scapy/layers/tls/crypto/pkcs1.py'
+adding 'scapy/layers/tls/crypto/prf.py'
+adding 'scapy/layers/tls/crypto/suites.py'
+adding 'scapy/libs/__init__.py'
+adding 'scapy/libs/ethertypes.py'
+adding 'scapy/libs/structures.py'
+adding 'scapy/libs/winpcapy.py'
+adding 'scapy/modules/__init__.py'
+adding 'scapy/modules/nmap.py'
+adding 'scapy/modules/p0f.py'
+adding 'scapy/modules/six.py'
+adding 'scapy/modules/voip.py'
+adding 'scapy/modules/krack/__init__.py'
+adding 'scapy/modules/krack/automaton.py'
+adding 'scapy/modules/krack/crypto.py'
+adding 'scapy/tools/UTscapy.py'
+adding 'scapy/tools/__init__.py'
+adding 'scapy/tools/check_asdis.py'
+adding 'scapy/tools/generate_ethertypes.py'
+adding 'scapy/tools/scapy_pyannotate.py'
+adding 'scapy/tools/automotive/__init__.py'
+adding 'scapy/tools/automotive/isotpscanner.py'
+adding 'scapy/tools/automotive/obdscanner.py'
+adding 'scapy/tools/automotive/xcpscanner.py'
+adding 'mockredispy-2.9.3.dist-info/METADATA'
+adding 'mockredispy-2.9.3.dist-info/WHEEL'
+adding 'mockredispy-2.9.3.dist-info/entry_points.txt'
+adding 'mockredispy-2.9.3.dist-info/top_level.txt'
+adding 'mockredispy-2.9.3.dist-info/RECORD'
+removing build/bdist.linux-x86_64/wheel
+Successfully built mockredispy-2.9.3-py3-none-any.whl
+[323 / 446] Compiling vslib/SwitchBCM81724.cpp; 1s processwrapper-sandbox ... (4 actions, 3 running)
+[326 / 446] Compiling vslib/SwitchBCM56971B0.cpp; 2s processwrapper-sandbox ... (4 actions, 3 running)
+[328 / 446] Compiling vslib/sai_vs_interfacequery.cpp; 2s processwrapper-sandbox ... (4 actions, 3 running)
+INFO: From Action external/aspect_rules_py++uv+sbuild__sonic_utilities_pip__default__pyangbind/build:
+/home/bobo.linux/.cache/bazel/_bazel_bobo/5f9602010ff550d0b4caceda45f93e29/execroot/_main/bazel-out/k8-fastbuild/bin/external/aspect_rules_py++uv+sbuild__sonic_utilities_pip__default__pyangbind/.build_venv/bin/python3
+* Getting build dependencies for wheel...
+/home/bobo.linux/.cache/bazel/_bazel_bobo/5f9602010ff550d0b4caceda45f93e29/execroot/_main/bazel-out/k8-fastbuild/bin/external/aspect_rules_py++uv+sbuild__sonic_utilities_pip__default__pyangbind/.build_venv/lib/python3.11/site-packages/setuptools/_distutils/dist.py:287: UserWarning: Unknown distribution option: 'test_suite'
+  warnings.warn(msg)
+/home/bobo.linux/.cache/bazel/_bazel_bobo/5f9602010ff550d0b4caceda45f93e29/execroot/_main/bazel-out/k8-fastbuild/bin/external/aspect_rules_py++uv+sbuild__sonic_utilities_pip__default__pyangbind/.build_venv/lib/python3.11/site-packages/setuptools/dist.py:765: SetuptoolsDeprecationWarning: License classifiers are deprecated.
+!!
+
+        ********************************************************************************
+        Please consider removing the following classifiers in favor of a SPDX license expression:
+
+        License :: OSI Approved :: Apache Software License
+
+        See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license for details.
+        ********************************************************************************
+
+!!
+  self._finalize_license_expression()
+* Building wheel...
+/home/bobo.linux/.cache/bazel/_bazel_bobo/5f9602010ff550d0b4caceda45f93e29/execroot/_main/bazel-out/k8-fastbuild/bin/external/aspect_rules_py++uv+sbuild__sonic_utilities_pip__default__pyangbind/.build_venv/lib/python3.11/site-packages/setuptools/_distutils/dist.py:287: UserWarning: Unknown distribution option: 'test_suite'
+  warnings.warn(msg)
+/home/bobo.linux/.cache/bazel/_bazel_bobo/5f9602010ff550d0b4caceda45f93e29/execroot/_main/bazel-out/k8-fastbuild/bin/external/aspect_rules_py++uv+sbuild__sonic_utilities_pip__default__pyangbind/.build_venv/lib/python3.11/site-packages/setuptools/dist.py:765: SetuptoolsDeprecationWarning: License classifiers are deprecated.
+!!
+
+        ********************************************************************************
+        Please consider removing the following classifiers in favor of a SPDX license expression:
+
+        License :: OSI Approved :: Apache Software License
+
+        See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license for details.
+        ********************************************************************************
+
+!!
+  self._finalize_license_expression()
+['pyangbind-0.8.1-py3-none-any.whl']
+running egg_info
+writing pyangbind.egg-info/PKG-INFO
+writing dependency_links to pyangbind.egg-info/dependency_links.txt
+writing requirements to pyangbind.egg-info/requires.txt
+writing top-level names to pyangbind.egg-info/top_level.txt
+reading manifest file 'pyangbind.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+adding license file 'LICENSE'
+writing manifest file 'pyangbind.egg-info/SOURCES.txt'
+running bdist_wheel
+running build
+running build_py
+copying pyangbind/__init__.py -> build/lib/pyangbind
+copying scapy/utils6.py -> build/lib/scapy
+copying scapy/route6.py -> build/lib/scapy
+copying scapy/ansmachine.py -> build/lib/scapy
+copying scapy/compat.py -> build/lib/scapy
+copying scapy/plist.py -> build/lib/scapy
+copying scapy/themes.py -> build/lib/scapy
+copying scapy/consts.py -> build/lib/scapy
+copying scapy/base_classes.py -> build/lib/scapy
+copying scapy/autorun.py -> build/lib/scapy
+copying scapy/sendrecv.py -> build/lib/scapy
+copying scapy/data.py -> build/lib/scapy
+copying scapy/__main__.py -> build/lib/scapy
+copying scapy/packet.py -> build/lib/scapy
+copying scapy/extlib.py -> build/lib/scapy
+copying scapy/supersocket.py -> build/lib/scapy
+copying scapy/volatile.py -> build/lib/scapy
+copying scapy/__init__.py -> build/lib/scapy
+copying scapy/scapypipes.py -> build/lib/scapy
+copying scapy/fields.py -> build/lib/scapy
+copying scapy/pton_ntop.py -> build/lib/scapy
+copying scapy/pipetool.py -> build/lib/scapy
+copying scapy/utils.py -> build/lib/scapy
+copying scapy/automaton.py -> build/lib/scapy
+copying scapy/config.py -> build/lib/scapy
+copying scapy/sessions.py -> build/lib/scapy
+copying scapy/main.py -> build/lib/scapy
+copying scapy/asn1packet.py -> build/lib/scapy
+copying scapy/interfaces.py -> build/lib/scapy
+copying scapy/asn1fields.py -> build/lib/scapy
+copying scapy/all.py -> build/lib/scapy
+copying scapy/dadict.py -> build/lib/scapy
+copying scapy/error.py -> build/lib/scapy
+copying scapy/as_resolvers.py -> build/lib/scapy
+copying scapy/route.py -> build/lib/scapy
+copying mockredis/sortedset.py -> build/lib/mockredis
+copying mockredis/script.py -> build/lib/mockredis
+copying mockredis/lock.py -> build/lib/mockredis
+copying mockredis/client.py -> build/lib/mockredis
+copying mockredis/pipeline.py -> build/lib/mockredis
+copying mockredis/__init__.py -> build/lib/mockredis
+copying mockredis/noseplugin.py -> build/lib/mockredis
+copying mockredis/clock.py -> build/lib/mockredis
+copying mockredis/exceptions.py -> build/lib/mockredis
+copying pyangbind/helpers/identity.py -> build/lib/pyangbind/helpers
+copying pyangbind/helpers/misc.py -> build/lib/pyangbind/helpers
+copying pyangbind/helpers/__init__.py -> build/lib/pyangbind/helpers
+copying pyangbind/lib/base.py -> build/lib/pyangbind/lib
+copying pyangbind/lib/serialise.py -> build/lib/pyangbind/lib
+copying pyangbind/lib/xpathhelper.py -> build/lib/pyangbind/lib
+copying pyangbind/lib/yangtypes.py -> build/lib/pyangbind/lib
+copying pyangbind/lib/pybindJSON.py -> build/lib/pyangbind/lib
+copying pyangbind/lib/__init__.py -> build/lib/pyangbind/lib
+copying pyangbind/plugin/__init__.py -> build/lib/pyangbind/plugin
+copying pyangbind/plugin/pybind.py -> build/lib/pyangbind/plugin
+copying scapy/layers/eap.py -> build/lib/scapy/layers
+copying scapy/layers/rtp.py -> build/lib/scapy/layers
+copying scapy/layers/gprs.py -> build/lib/scapy/layers
+copying scapy/layers/smb2.py -> build/lib/scapy/layers
+copying scapy/layers/dhcp6.py -> build/lib/scapy/layers
+copying scapy/layers/vrrp.py -> build/lib/scapy/layers
+copying scapy/layers/skinny.py -> build/lib/scapy/layers
+copying scapy/layers/ntp.py -> build/lib/scapy/layers
+copying scapy/layers/netbios.py -> build/lib/scapy/layers
+copying scapy/layers/mobileip.py -> build/lib/scapy/layers
+copying scapy/layers/bluetooth.py -> build/lib/scapy/layers
+copying scapy/layers/dot11.py -> build/lib/scapy/layers
+copying scapy/layers/inet6.py -> build/lib/scapy/layers
+copying scapy/layers/inet.py -> build/lib/scapy/layers
+copying scapy/layers/ipsec.py -> build/lib/scapy/layers
+copying scapy/layers/pptp.py -> build/lib/scapy/layers
+copying scapy/layers/vxlan.py -> build/lib/scapy/layers
+copying scapy/layers/snmp.py -> build/lib/scapy/layers
+copying scapy/layers/ppi.py -> build/lib/scapy/layers
+copying scapy/layers/dot15d4.py -> build/lib/scapy/layers
+copying scapy/layers/smb.py -> build/lib/scapy/layers
+copying scapy/layers/mgcp.py -> build/lib/scapy/layers
+copying scapy/layers/clns.py -> build/lib/scapy/layers
+copying scapy/layers/hsrp.py -> build/lib/scapy/layers
+copying scapy/layers/http.py -> build/lib/scapy/layers
+copying scapy/layers/isakmp.py -> build/lib/scapy/layers
+copying scapy/layers/dns.py -> build/lib/scapy/layers
+copying scapy/layers/ir.py -> build/lib/scapy/layers
+copying scapy/layers/tuntap.py -> build/lib/scapy/layers
+copying scapy/layers/__init__.py -> build/lib/scapy/layers
+copying scapy/layers/l2tp.py -> build/lib/scapy/layers
+copying scapy/layers/pflog.py -> build/lib/scapy/layers
+copying scapy/layers/can.py -> build/lib/scapy/layers
+copying scapy/layers/x509.py -> build/lib/scapy/layers
+copying scapy/layers/sixlowpan.py -> build/lib/scapy/layers
+copying scapy/layers/tftp.py -> build/lib/scapy/layers
+copying scapy/layers/dhcp.py -> build/lib/scapy/layers
+copying scapy/layers/rip.py -> build/lib/scapy/layers
+copying scapy/layers/netflow.py -> build/lib/scapy/layers
+copying scapy/layers/ppp.py -> build/lib/scapy/layers
+copying scapy/layers/l2.py -> build/lib/scapy/layers
+copying scapy/layers/sctp.py -> build/lib/scapy/layers
+copying scapy/layers/zigbee.py -> build/lib/scapy/layers
+copying scapy/layers/all.py -> build/lib/scapy/layers
+copying scapy/layers/radius.py -> build/lib/scapy/layers
+copying scapy/layers/bluetooth4LE.py -> build/lib/scapy/layers
+copying scapy/layers/lltd.py -> build/lib/scapy/layers
+copying scapy/layers/usb.py -> build/lib/scapy/layers
+copying scapy/layers/llmnr.py -> build/lib/scapy/layers
+copying scapy/arch/linux.py -> build/lib/scapy/arch
+copying scapy/arch/libpcap.py -> build/lib/scapy/arch
+copying scapy/arch/common.py -> build/lib/scapy/arch
+copying scapy/arch/__init__.py -> build/lib/scapy/arch
+copying scapy/arch/unix.py -> build/lib/scapy/arch
+copying scapy/arch/solaris.py -> build/lib/scapy/arch
+copying scapy/modules/nmap.py -> build/lib/scapy/modules
+copying scapy/modules/p0f.py -> build/lib/scapy/modules
+copying scapy/modules/__init__.py -> build/lib/scapy/modules
+copying scapy/modules/voip.py -> build/lib/scapy/modules
+copying scapy/modules/six.py -> build/lib/scapy/modules
+copying scapy/contrib/homeplugav.py -> build/lib/scapy/contrib
+copying scapy/contrib/igmpv3.py -> build/lib/scapy/contrib
+copying scapy/contrib/openflow.py -> build/lib/scapy/contrib
+copying scapy/contrib/isis.py -> build/lib/scapy/contrib
+copying scapy/contrib/opc_da.py -> build/lib/scapy/contrib
+copying scapy/contrib/spbm.py -> build/lib/scapy/contrib
+copying scapy/contrib/bgp.py -> build/lib/scapy/contrib
+copying scapy/contrib/erspan.py -> build/lib/scapy/contrib
+copying scapy/contrib/socks.py -> build/lib/scapy/contrib
+copying scapy/contrib/skinny.py -> build/lib/scapy/contrib
+copying scapy/contrib/chdlc.py -> build/lib/scapy/contrib
+copying scapy/contrib/lacp.py -> build/lib/scapy/contrib
+copying scapy/contrib/ospf.py -> build/lib/scapy/contrib
+copying scapy/contrib/openflow3.py -> build/lib/scapy/contrib
+copying scapy/contrib/enipTCP.py -> build/lib/scapy/contrib
+copying scapy/contrib/ltp.py -> build/lib/scapy/contrib
+copying scapy/contrib/ife.py -> build/lib/scapy/contrib
+copying scapy/contrib/ripng.py -> build/lib/scapy/contrib
+copying scapy/contrib/dtp.py -> build/lib/scapy/contrib
+copying scapy/contrib/gtp_v2.py -> build/lib/scapy/contrib
+copying scapy/contrib/igmp.py -> build/lib/scapy/contrib
+copying scapy/contrib/mount.py -> build/lib/scapy/contrib
+copying scapy/contrib/geneve.py -> build/lib/scapy/contrib
+copying scapy/contrib/exposure_notification.py -> build/lib/scapy/contrib
+copying scapy/contrib/aoe.py -> build/lib/scapy/contrib
+copying scapy/contrib/mac_control.py -> build/lib/scapy/contrib
+copying scapy/contrib/rtr.py -> build/lib/scapy/contrib
+copying scapy/contrib/dce_rpc.py -> build/lib/scapy/contrib
+copying scapy/contrib/cansocket_python_can.py -> build/lib/scapy/contrib
+copying scapy/contrib/homepluggp.py -> build/lib/scapy/contrib
+copying scapy/contrib/wireguard.py -> build/lib/scapy/contrib
+copying scapy/contrib/altbeacon.py -> build/lib/scapy/contrib
+copying scapy/contrib/loraphy2wan.py -> build/lib/scapy/contrib
+copying scapy/contrib/eigrp.py -> build/lib/scapy/contrib
+copying scapy/contrib/eddystone.py -> build/lib/scapy/contrib
+copying scapy/contrib/nfs.py -> build/lib/scapy/contrib
+copying scapy/contrib/roce.py -> build/lib/scapy/contrib
+copying scapy/contrib/rpl_metrics.py -> build/lib/scapy/contrib
+copying scapy/contrib/ubberlogger.py -> build/lib/scapy/contrib
+copying scapy/contrib/oncrpc.py -> build/lib/scapy/contrib
+copying scapy/contrib/tzsp.py -> build/lib/scapy/contrib
+copying scapy/contrib/ppi_geotag.py -> build/lib/scapy/contrib
+copying scapy/contrib/homeplugsg.py -> build/lib/scapy/contrib
+copying scapy/contrib/wpa_eapol.py -> build/lib/scapy/contrib
+copying scapy/contrib/bfd.py -> build/lib/scapy/contrib
+copying scapy/contrib/carp.py -> build/lib/scapy/contrib
+copying scapy/contrib/tacacs.py -> build/lib/scapy/contrib
+copying scapy/contrib/cansocket_native.py -> build/lib/scapy/contrib
+copying scapy/contrib/icmp_extensions.py -> build/lib/scapy/contrib
+copying scapy/contrib/vtp.py -> build/lib/scapy/contrib
+copying scapy/contrib/macsec.py -> build/lib/scapy/contrib
+copying scapy/contrib/__init__.py -> build/lib/scapy/contrib
+copying scapy/contrib/rsvp.py -> build/lib/scapy/contrib
+copying scapy/contrib/bp.py -> build/lib/scapy/contrib
+copying scapy/contrib/ppi_cace.py -> build/lib/scapy/contrib
+copying scapy/contrib/coap.py -> build/lib/scapy/contrib
+copying scapy/contrib/send.py -> build/lib/scapy/contrib
+copying scapy/contrib/bier.py -> build/lib/scapy/contrib
+copying scapy/contrib/nlm.py -> build/lib/scapy/contrib
+copying scapy/contrib/etherip.py -> build/lib/scapy/contrib
+copying scapy/contrib/rpl.py -> build/lib/scapy/contrib
+copying scapy/contrib/concox.py -> build/lib/scapy/contrib
+copying scapy/contrib/http2.py -> build/lib/scapy/contrib
+copying scapy/contrib/pim.py -> build/lib/scapy/contrib
+copying scapy/contrib/pnio_dcp.py -> build/lib/scapy/contrib
+copying scapy/contrib/avs.py -> build/lib/scapy/contrib
+copying scapy/contrib/mqttsn.py -> build/lib/scapy/contrib
+copying scapy/contrib/cansocket.py -> build/lib/scapy/contrib
+copying scapy/contrib/ethercat.py -> build/lib/scapy/contrib
+copying scapy/contrib/portmap.py -> build/lib/scapy/contrib
+copying scapy/contrib/sdnv.py -> build/lib/scapy/contrib
+copying scapy/contrib/gtp.py -> build/lib/scapy/contrib
+copying scapy/contrib/sebek.py -> build/lib/scapy/contrib
+copying scapy/contrib/isotp.py -> build/lib/scapy/contrib
+copying scapy/contrib/pnio.py -> build/lib/scapy/contrib
+copying scapy/contrib/vqp.py -> build/lib/scapy/contrib
+copying scapy/contrib/modbus.py -> build/lib/scapy/contrib
+copying scapy/contrib/ibeacon.py -> build/lib/scapy/contrib
+copying scapy/contrib/nsh.py -> build/lib/scapy/contrib
+copying scapy/contrib/cdp.py -> build/lib/scapy/contrib
+copying scapy/contrib/ldp.py -> build/lib/scapy/contrib
+copying scapy/contrib/lldp.py -> build/lib/scapy/contrib
+copying scapy/contrib/diameter.py -> build/lib/scapy/contrib
+copying scapy/contrib/mqtt.py -> build/lib/scapy/contrib
+copying scapy/contrib/pnio_rpc.py -> build/lib/scapy/contrib
+copying scapy/contrib/ikev2.py -> build/lib/scapy/contrib
+copying scapy/contrib/pfcp.py -> build/lib/scapy/contrib
+copying scapy/contrib/mpls.py -> build/lib/scapy/contrib
+copying scapy/libs/structures.py -> build/lib/scapy/libs
+copying scapy/libs/ethertypes.py -> build/lib/scapy/libs
+copying scapy/libs/__init__.py -> build/lib/scapy/libs
+copying scapy/libs/winpcapy.py -> build/lib/scapy/libs
+copying scapy/asn1/asn1.py -> build/lib/scapy/asn1
+copying scapy/asn1/mib.py -> build/lib/scapy/asn1
+copying scapy/asn1/__init__.py -> build/lib/scapy/asn1
+copying scapy/asn1/ber.py -> build/lib/scapy/asn1
+copying scapy/tools/UTscapy.py -> build/lib/scapy/tools
+copying scapy/tools/check_asdis.py -> build/lib/scapy/tools
+copying scapy/tools/generate_ethertypes.py -> build/lib/scapy/tools
+copying scapy/tools/__init__.py -> build/lib/scapy/tools
+copying scapy/tools/scapy_pyannotate.py -> build/lib/scapy/tools
+copying scapy/layers/tls/record_sslv2.py -> build/lib/scapy/layers/tls
+copying scapy/layers/tls/basefields.py -> build/lib/scapy/layers/tls
+copying scapy/layers/tls/keyexchange.py -> build/lib/scapy/layers/tls
+copying scapy/layers/tls/session.py -> build/lib/scapy/layers/tls
+copying scapy/layers/tls/handshake.py -> build/lib/scapy/layers/tls
+copying scapy/layers/tls/extensions.py -> build/lib/scapy/layers/tls
+copying scapy/layers/tls/cert.py -> build/lib/scapy/layers/tls
+copying scapy/layers/tls/keyexchange_tls13.py -> build/lib/scapy/layers/tls
+copying scapy/layers/tls/__init__.py -> build/lib/scapy/layers/tls
+copying scapy/layers/tls/handshake_sslv2.py -> build/lib/scapy/layers/tls
+copying scapy/layers/tls/automaton_cli.py -> build/lib/scapy/layers/tls
+copying scapy/layers/tls/tools.py -> build/lib/scapy/layers/tls
+copying scapy/layers/tls/automaton.py -> build/lib/scapy/layers/tls
+copying scapy/layers/tls/automaton_srv.py -> build/lib/scapy/layers/tls
+copying scapy/layers/tls/record_tls13.py -> build/lib/scapy/layers/tls
+copying scapy/layers/tls/all.py -> build/lib/scapy/layers/tls
+copying scapy/layers/tls/record.py -> build/lib/scapy/layers/tls
+copying scapy/layers/tls/crypto/hash.py -> build/lib/scapy/layers/tls/crypto
+copying scapy/layers/tls/crypto/compression.py -> build/lib/scapy/layers/tls/crypto
+copying scapy/layers/tls/crypto/suites.py -> build/lib/scapy/layers/tls/crypto
+copying scapy/layers/tls/crypto/kx_algs.py -> build/lib/scapy/layers/tls/crypto
+copying scapy/layers/tls/crypto/hkdf.py -> build/lib/scapy/layers/tls/crypto
+copying scapy/layers/tls/crypto/common.py -> build/lib/scapy/layers/tls/crypto
+copying scapy/layers/tls/crypto/__init__.py -> build/lib/scapy/layers/tls/crypto
+copying scapy/layers/tls/crypto/cipher_aead.py -> build/lib/scapy/layers/tls/crypto
+copying scapy/layers/tls/crypto/cipher_stream.py -> build/lib/scapy/layers/tls/crypto
+copying scapy/layers/tls/crypto/pkcs1.py -> build/lib/scapy/layers/tls/crypto
+copying scapy/layers/tls/crypto/ciphers.py -> build/lib/scapy/layers/tls/crypto
+copying scapy/layers/tls/crypto/h_mac.py -> build/lib/scapy/layers/tls/crypto
+copying scapy/layers/tls/crypto/prf.py -> build/lib/scapy/layers/tls/crypto
+copying scapy/layers/tls/crypto/all.py -> build/lib/scapy/layers/tls/crypto
+copying scapy/layers/tls/crypto/cipher_block.py -> build/lib/scapy/layers/tls/crypto
+copying scapy/layers/tls/crypto/groups.py -> build/lib/scapy/layers/tls/crypto
+copying scapy/arch/bpf/consts.py -> build/lib/scapy/arch/bpf
+copying scapy/arch/bpf/core.py -> build/lib/scapy/arch/bpf
+copying scapy/arch/bpf/supersocket.py -> build/lib/scapy/arch/bpf
+copying scapy/arch/bpf/__init__.py -> build/lib/scapy/arch/bpf
+copying scapy/arch/windows/structures.py -> build/lib/scapy/arch/windows
+copying scapy/arch/windows/native.py -> build/lib/scapy/arch/windows
+copying scapy/arch/windows/__init__.py -> build/lib/scapy/arch/windows
+copying scapy/modules/krack/crypto.py -> build/lib/scapy/modules/krack
+copying scapy/modules/krack/__init__.py -> build/lib/scapy/modules/krack
+copying scapy/modules/krack/automaton.py -> build/lib/scapy/modules/krack
+copying scapy/contrib/automotive/uds_logging.py -> build/lib/scapy/contrib/automotive
+copying scapy/contrib/automotive/ccp.py -> build/lib/scapy/contrib/automotive
+copying scapy/contrib/automotive/ecu.py -> build/lib/scapy/contrib/automotive
+copying scapy/contrib/automotive/doip.py -> build/lib/scapy/contrib/automotive
+copying scapy/contrib/automotive/uds.py -> build/lib/scapy/contrib/automotive
+copying scapy/contrib/automotive/uds_ecu_states.py -> build/lib/scapy/contrib/automotive
+copying scapy/contrib/automotive/__init__.py -> build/lib/scapy/contrib/automotive
+copying scapy/contrib/automotive/enumerator.py -> build/lib/scapy/contrib/automotive
+copying scapy/contrib/automotive/someip.py -> build/lib/scapy/contrib/automotive
+copying scapy/contrib/automotive/graph.py -> build/lib/scapy/contrib/automotive
+copying scapy/contrib/scada/__init__.py -> build/lib/scapy/contrib/scada
+copying scapy/contrib/scada/pcom.py -> build/lib/scapy/contrib/scada
+copying scapy/contrib/automotive/volkswagen/__init__.py -> build/lib/scapy/contrib/automotive/volkswagen
+copying scapy/contrib/automotive/volkswagen/definitions.py -> build/lib/scapy/contrib/automotive/volkswagen
+copying scapy/contrib/automotive/xcp/xcp.py -> build/lib/scapy/contrib/automotive/xcp
+copying scapy/contrib/automotive/xcp/cto_commands_slave.py -> build/lib/scapy/contrib/automotive/xcp
+copying scapy/contrib/automotive/xcp/__init__.py -> build/lib/scapy/contrib/automotive/xcp
+copying scapy/contrib/automotive/xcp/cto_commands_master.py -> build/lib/scapy/contrib/automotive/xcp
+copying scapy/contrib/automotive/xcp/utils.py -> build/lib/scapy/contrib/automotive/xcp
+copying scapy/contrib/automotive/xcp/scanner.py -> build/lib/scapy/contrib/automotive/xcp
+copying scapy/contrib/automotive/gm/gmlanutils.py -> build/lib/scapy/contrib/automotive/gm
+copying scapy/contrib/automotive/gm/gmlan_logging.py -> build/lib/scapy/contrib/automotive/gm
+copying scapy/contrib/automotive/gm/__init__.py -> build/lib/scapy/contrib/automotive/gm
+copying scapy/contrib/automotive/gm/gmlan.py -> build/lib/scapy/contrib/automotive/gm
+copying scapy/contrib/automotive/gm/gmlan_ecu_states.py -> build/lib/scapy/contrib/automotive/gm
+copying scapy/contrib/automotive/obd/packet.py -> build/lib/scapy/contrib/automotive/obd
+copying scapy/contrib/automotive/obd/__init__.py -> build/lib/scapy/contrib/automotive/obd
+copying scapy/contrib/automotive/obd/obd.py -> build/lib/scapy/contrib/automotive/obd
+copying scapy/contrib/automotive/obd/services.py -> build/lib/scapy/contrib/automotive/obd
+copying scapy/contrib/automotive/obd/scanner.py -> build/lib/scapy/contrib/automotive/obd
+copying scapy/contrib/automotive/bmw/hsfz.py -> build/lib/scapy/contrib/automotive/bmw
+copying scapy/contrib/automotive/bmw/__init__.py -> build/lib/scapy/contrib/automotive/bmw
+copying scapy/contrib/automotive/bmw/definitions.py -> build/lib/scapy/contrib/automotive/bmw
+copying scapy/contrib/automotive/obd/iid/__init__.py -> build/lib/scapy/contrib/automotive/obd/iid
+copying scapy/contrib/automotive/obd/iid/iids.py -> build/lib/scapy/contrib/automotive/obd/iid
+copying scapy/contrib/automotive/obd/tid/__init__.py -> build/lib/scapy/contrib/automotive/obd/tid
+copying scapy/contrib/automotive/obd/tid/tids.py -> build/lib/scapy/contrib/automotive/obd/tid
+copying scapy/contrib/automotive/obd/pid/pids_A0_C0.py -> build/lib/scapy/contrib/automotive/obd/pid
+copying scapy/contrib/automotive/obd/pid/pids_20_3F.py -> build/lib/scapy/contrib/automotive/obd/pid
+copying scapy/contrib/automotive/obd/pid/pids_60_7F.py -> build/lib/scapy/contrib/automotive/obd/pid
+copying scapy/contrib/automotive/obd/pid/pids_80_9F.py -> build/lib/scapy/contrib/automotive/obd/pid
+copying scapy/contrib/automotive/obd/pid/__init__.py -> build/lib/scapy/contrib/automotive/obd/pid
+copying scapy/contrib/automotive/obd/pid/pids_00_1F.py -> build/lib/scapy/contrib/automotive/obd/pid
+copying scapy/contrib/automotive/obd/pid/pids.py -> build/lib/scapy/contrib/automotive/obd/pid
+copying scapy/contrib/automotive/obd/pid/pids_40_5F.py -> build/lib/scapy/contrib/automotive/obd/pid
+copying scapy/contrib/automotive/obd/mid/mids.py -> build/lib/scapy/contrib/automotive/obd/mid
+copying scapy/contrib/automotive/obd/mid/__init__.py -> build/lib/scapy/contrib/automotive/obd/mid
+copying scapy/contrib/scada/iec104/iec104_information_elements.py -> build/lib/scapy/contrib/scada/iec104
+copying scapy/contrib/scada/iec104/iec104_fields.py -> build/lib/scapy/contrib/scada/iec104
+copying scapy/contrib/scada/iec104/__init__.py -> build/lib/scapy/contrib/scada/iec104
+copying scapy/contrib/scada/iec104/iec104_information_objects.py -> build/lib/scapy/contrib/scada/iec104
+copying scapy/tools/automotive/obdscanner.py -> build/lib/scapy/tools/automotive
+copying scapy/tools/automotive/isotpscanner.py -> build/lib/scapy/tools/automotive
+copying scapy/tools/automotive/xcpscanner.py -> build/lib/scapy/tools/automotive
+copying scapy/tools/automotive/__init__.py -> build/lib/scapy/tools/automotive
+running egg_info
+writing pyangbind.egg-info/PKG-INFO
+writing dependency_links to pyangbind.egg-info/dependency_links.txt
+writing requirements to pyangbind.egg-info/requires.txt
+writing top-level names to pyangbind.egg-info/top_level.txt
+reading manifest file 'pyangbind.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+adding license file 'LICENSE'
+writing manifest file 'pyangbind.egg-info/SOURCES.txt'
+installing to build/bdist.linux-x86_64/wheel
+running install
+running install_lib
+creating build/bdist.linux-x86_64/wheel
+copying build/lib/www_authenticate.py -> build/bdist.linux-x86_64/wheel/.
+creating build/bdist.linux-x86_64/wheel/pyangbind
+creating build/bdist.linux-x86_64/wheel/pyangbind/helpers
+copying build/lib/pyangbind/helpers/identity.py -> build/bdist.linux-x86_64/wheel/./pyangbind/helpers
+copying build/lib/pyangbind/helpers/misc.py -> build/bdist.linux-x86_64/wheel/./pyangbind/helpers
+copying build/lib/pyangbind/helpers/__init__.py -> build/bdist.linux-x86_64/wheel/./pyangbind/helpers
+creating build/bdist.linux-x86_64/wheel/pyangbind/lib
+copying build/lib/pyangbind/lib/base.py -> build/bdist.linux-x86_64/wheel/./pyangbind/lib
+copying build/lib/pyangbind/lib/serialise.py -> build/bdist.linux-x86_64/wheel/./pyangbind/lib
+copying build/lib/pyangbind/lib/xpathhelper.py -> build/bdist.linux-x86_64/wheel/./pyangbind/lib
+copying build/lib/pyangbind/lib/yangtypes.py -> build/bdist.linux-x86_64/wheel/./pyangbind/lib
+copying build/lib/pyangbind/lib/pybindJSON.py -> build/bdist.linux-x86_64/wheel/./pyangbind/lib
+copying build/lib/pyangbind/lib/__init__.py -> build/bdist.linux-x86_64/wheel/./pyangbind/lib
+creating build/bdist.linux-x86_64/wheel/pyangbind/plugin
+copying build/lib/pyangbind/plugin/__init__.py -> build/bdist.linux-x86_64/wheel/./pyangbind/plugin
+copying build/lib/pyangbind/plugin/pybind.py -> build/bdist.linux-x86_64/wheel/./pyangbind/plugin
+copying build/lib/pyangbind/__init__.py -> build/bdist.linux-x86_64/wheel/./pyangbind
+creating build/bdist.linux-x86_64/wheel/scapy
+copying build/lib/scapy/utils6.py -> build/bdist.linux-x86_64/wheel/./scapy
+copying build/lib/scapy/route6.py -> build/bdist.linux-x86_64/wheel/./scapy
+copying build/lib/scapy/ansmachine.py -> build/bdist.linux-x86_64/wheel/./scapy
+copying build/lib/scapy/compat.py -> build/bdist.linux-x86_64/wheel/./scapy
+copying build/lib/scapy/plist.py -> build/bdist.linux-x86_64/wheel/./scapy
+copying build/lib/scapy/themes.py -> build/bdist.linux-x86_64/wheel/./scapy
+copying build/lib/scapy/consts.py -> build/bdist.linux-x86_64/wheel/./scapy
+copying build/lib/scapy/base_classes.py -> build/bdist.linux-x86_64/wheel/./scapy
+copying build/lib/scapy/autorun.py -> build/bdist.linux-x86_64/wheel/./scapy
+copying build/lib/scapy/sendrecv.py -> build/bdist.linux-x86_64/wheel/./scapy
+copying build/lib/scapy/data.py -> build/bdist.linux-x86_64/wheel/./scapy
+creating build/bdist.linux-x86_64/wheel/scapy/layers
+copying build/lib/scapy/layers/eap.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/rtp.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/gprs.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/smb2.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/dhcp6.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/vrrp.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/skinny.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/ntp.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/netbios.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/mobileip.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/bluetooth.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/dot11.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/inet6.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+creating build/bdist.linux-x86_64/wheel/scapy/layers/tls
+copying build/lib/scapy/layers/tls/record_sslv2.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls
+copying build/lib/scapy/layers/tls/basefields.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls
+copying build/lib/scapy/layers/tls/keyexchange.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls
+copying build/lib/scapy/layers/tls/session.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls
+copying build/lib/scapy/layers/tls/handshake.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls
+creating build/bdist.linux-x86_64/wheel/scapy/layers/tls/crypto
+copying build/lib/scapy/layers/tls/crypto/hash.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls/crypto
+copying build/lib/scapy/layers/tls/crypto/compression.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls/crypto
+copying build/lib/scapy/layers/tls/crypto/suites.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls/crypto
+copying build/lib/scapy/layers/tls/crypto/kx_algs.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls/crypto
+copying build/lib/scapy/layers/tls/crypto/hkdf.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls/crypto
+copying build/lib/scapy/layers/tls/crypto/common.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls/crypto
+copying build/lib/scapy/layers/tls/crypto/__init__.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls/crypto
+copying build/lib/scapy/layers/tls/crypto/cipher_aead.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls/crypto
+copying build/lib/scapy/layers/tls/crypto/cipher_stream.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls/crypto
+copying build/lib/scapy/layers/tls/crypto/pkcs1.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls/crypto
+copying build/lib/scapy/layers/tls/crypto/ciphers.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls/crypto
+copying build/lib/scapy/layers/tls/crypto/h_mac.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls/crypto
+copying build/lib/scapy/layers/tls/crypto/prf.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls/crypto
+copying build/lib/scapy/layers/tls/crypto/all.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls/crypto
+copying build/lib/scapy/layers/tls/crypto/cipher_block.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls/crypto
+copying build/lib/scapy/layers/tls/crypto/groups.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls/crypto
+copying build/lib/scapy/layers/tls/extensions.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls
+copying build/lib/scapy/layers/tls/cert.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls
+copying build/lib/scapy/layers/tls/keyexchange_tls13.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls
+copying build/lib/scapy/layers/tls/__init__.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls
+copying build/lib/scapy/layers/tls/handshake_sslv2.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls
+copying build/lib/scapy/layers/tls/automaton_cli.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls
+copying build/lib/scapy/layers/tls/tools.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls
+copying build/lib/scapy/layers/tls/automaton.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls
+copying build/lib/scapy/layers/tls/automaton_srv.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls
+copying build/lib/scapy/layers/tls/record_tls13.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls
+copying build/lib/scapy/layers/tls/all.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls
+copying build/lib/scapy/layers/tls/record.py -> build/bdist.linux-x86_64/wheel/./scapy/layers/tls
+copying build/lib/scapy/layers/inet.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/ipsec.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/pptp.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/vxlan.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/snmp.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/ppi.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/dot15d4.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/smb.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/mgcp.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/clns.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/hsrp.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/http.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/isakmp.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/dns.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/ir.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/tuntap.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/__init__.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/l2tp.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/pflog.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/can.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/x509.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/sixlowpan.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/tftp.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/dhcp.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/rip.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/netflow.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/ppp.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/l2.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/sctp.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/zigbee.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/all.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/radius.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/bluetooth4LE.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/lltd.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/usb.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/layers/llmnr.py -> build/bdist.linux-x86_64/wheel/./scapy/layers
+copying build/lib/scapy/__main__.py -> build/bdist.linux-x86_64/wheel/./scapy
+copying build/lib/scapy/packet.py -> build/bdist.linux-x86_64/wheel/./scapy
+copying build/lib/scapy/extlib.py -> build/bdist.linux-x86_64/wheel/./scapy
+copying build/lib/scapy/supersocket.py -> build/bdist.linux-x86_64/wheel/./scapy
+creating build/bdist.linux-x86_64/wheel/scapy/arch
+copying build/lib/scapy/arch/linux.py -> build/bdist.linux-x86_64/wheel/./scapy/arch
+copying build/lib/scapy/arch/libpcap.py -> build/bdist.linux-x86_64/wheel/./scapy/arch
+creating build/bdist.linux-x86_64/wheel/scapy/arch/bpf
+copying build/lib/scapy/arch/bpf/consts.py -> build/bdist.linux-x86_64/wheel/./scapy/arch/bpf
+copying build/lib/scapy/arch/bpf/core.py -> build/bdist.linux-x86_64/wheel/./scapy/arch/bpf
+copying build/lib/scapy/arch/bpf/supersocket.py -> build/bdist.linux-x86_64/wheel/./scapy/arch/bpf
+copying build/lib/scapy/arch/bpf/__init__.py -> build/bdist.linux-x86_64/wheel/./scapy/arch/bpf
+copying build/lib/scapy/arch/common.py -> build/bdist.linux-x86_64/wheel/./scapy/arch
+copying build/lib/scapy/arch/__init__.py -> build/bdist.linux-x86_64/wheel/./scapy/arch
+copying build/lib/scapy/arch/unix.py -> build/bdist.linux-x86_64/wheel/./scapy/arch
+copying build/lib/scapy/arch/solaris.py -> build/bdist.linux-x86_64/wheel/./scapy/arch
+creating build/bdist.linux-x86_64/wheel/scapy/arch/windows
+copying build/lib/scapy/arch/windows/structures.py -> build/bdist.linux-x86_64/wheel/./scapy/arch/windows
+copying build/lib/scapy/arch/windows/native.py -> build/bdist.linux-x86_64/wheel/./scapy/arch/windows
+copying build/lib/scapy/arch/windows/__init__.py -> build/bdist.linux-x86_64/wheel/./scapy/arch/windows
+copying build/lib/scapy/volatile.py -> build/bdist.linux-x86_64/wheel/./scapy
+copying build/lib/scapy/__init__.py -> build/bdist.linux-x86_64/wheel/./scapy
+creating build/bdist.linux-x86_64/wheel/scapy/modules
+copying build/lib/scapy/modules/nmap.py -> build/bdist.linux-x86_64/wheel/./scapy/modules
+creating build/bdist.linux-x86_64/wheel/scapy/modules/krack
+copying build/lib/scapy/modules/krack/crypto.py -> build/bdist.linux-x86_64/wheel/./scapy/modules/krack
+copying build/lib/scapy/modules/krack/__init__.py -> build/bdist.linux-x86_64/wheel/./scapy/modules/krack
+copying build/lib/scapy/modules/krack/automaton.py -> build/bdist.linux-x86_64/wheel/./scapy/modules/krack
+copying build/lib/scapy/modules/p0f.py -> build/bdist.linux-x86_64/wheel/./scapy/modules
+copying build/lib/scapy/modules/__init__.py -> build/bdist.linux-x86_64/wheel/./scapy/modules
+copying build/lib/scapy/modules/voip.py -> build/bdist.linux-x86_64/wheel/./scapy/modules
+copying build/lib/scapy/modules/six.py -> build/bdist.linux-x86_64/wheel/./scapy/modules
+copying build/lib/scapy/scapypipes.py -> build/bdist.linux-x86_64/wheel/./scapy
+copying build/lib/scapy/fields.py -> build/bdist.linux-x86_64/wheel/./scapy
+copying build/lib/scapy/pton_ntop.py -> build/bdist.linux-x86_64/wheel/./scapy
+copying build/lib/scapy/pipetool.py -> build/bdist.linux-x86_64/wheel/./scapy
+copying build/lib/scapy/utils.py -> build/bdist.linux-x86_64/wheel/./scapy
+copying build/lib/scapy/automaton.py -> build/bdist.linux-x86_64/wheel/./scapy
+copying build/lib/scapy/config.py -> build/bdist.linux-x86_64/wheel/./scapy
+creating build/bdist.linux-x86_64/wheel/scapy/contrib
+copying build/lib/scapy/contrib/homeplugav.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+creating build/bdist.linux-x86_64/wheel/scapy/contrib/automotive
+copying build/lib/scapy/contrib/automotive/uds_logging.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive
+copying build/lib/scapy/contrib/automotive/ccp.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive
+copying build/lib/scapy/contrib/automotive/ecu.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive
+copying build/lib/scapy/contrib/automotive/doip.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive
+copying build/lib/scapy/contrib/automotive/uds.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive
+creating build/bdist.linux-x86_64/wheel/scapy/contrib/automotive/volkswagen
+copying build/lib/scapy/contrib/automotive/volkswagen/__init__.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/volkswagen
+copying build/lib/scapy/contrib/automotive/volkswagen/definitions.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/volkswagen
+copying build/lib/scapy/contrib/automotive/uds_ecu_states.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive
+copying build/lib/scapy/contrib/automotive/__init__.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive
+creating build/bdist.linux-x86_64/wheel/scapy/contrib/automotive/xcp
+copying build/lib/scapy/contrib/automotive/xcp/xcp.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/xcp
+copying build/lib/scapy/contrib/automotive/xcp/cto_commands_slave.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/xcp
+copying build/lib/scapy/contrib/automotive/xcp/__init__.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/xcp
+copying build/lib/scapy/contrib/automotive/xcp/cto_commands_master.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/xcp
+copying build/lib/scapy/contrib/automotive/xcp/utils.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/xcp
+copying build/lib/scapy/contrib/automotive/xcp/scanner.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/xcp
+creating build/bdist.linux-x86_64/wheel/scapy/contrib/automotive/gm
+copying build/lib/scapy/contrib/automotive/gm/gmlanutils.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/gm
+copying build/lib/scapy/contrib/automotive/gm/gmlan_logging.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/gm
+copying build/lib/scapy/contrib/automotive/gm/__init__.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/gm
+copying build/lib/scapy/contrib/automotive/gm/gmlan.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/gm
+copying build/lib/scapy/contrib/automotive/gm/gmlan_ecu_states.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/gm
+creating build/bdist.linux-x86_64/wheel/scapy/contrib/automotive/obd
+creating build/bdist.linux-x86_64/wheel/scapy/contrib/automotive/obd/iid
+copying build/lib/scapy/contrib/automotive/obd/iid/__init__.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/obd/iid
+copying build/lib/scapy/contrib/automotive/obd/iid/iids.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/obd/iid
+creating build/bdist.linux-x86_64/wheel/scapy/contrib/automotive/obd/tid
+copying build/lib/scapy/contrib/automotive/obd/tid/__init__.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/obd/tid
+copying build/lib/scapy/contrib/automotive/obd/tid/tids.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/obd/tid
+creating build/bdist.linux-x86_64/wheel/scapy/contrib/automotive/obd/pid
+copying build/lib/scapy/contrib/automotive/obd/pid/pids_A0_C0.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/obd/pid
+copying build/lib/scapy/contrib/automotive/obd/pid/pids_20_3F.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/obd/pid
+copying build/lib/scapy/contrib/automotive/obd/pid/pids_60_7F.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/obd/pid
+copying build/lib/scapy/contrib/automotive/obd/pid/pids_80_9F.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/obd/pid
+copying build/lib/scapy/contrib/automotive/obd/pid/__init__.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/obd/pid
+copying build/lib/scapy/contrib/automotive/obd/pid/pids_00_1F.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/obd/pid
+copying build/lib/scapy/contrib/automotive/obd/pid/pids.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/obd/pid
+copying build/lib/scapy/contrib/automotive/obd/pid/pids_40_5F.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/obd/pid
+copying build/lib/scapy/contrib/automotive/obd/packet.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/obd
+copying build/lib/scapy/contrib/automotive/obd/__init__.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/obd
+copying build/lib/scapy/contrib/automotive/obd/obd.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/obd
+copying build/lib/scapy/contrib/automotive/obd/services.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/obd
+creating build/bdist.linux-x86_64/wheel/scapy/contrib/automotive/obd/mid
+copying build/lib/scapy/contrib/automotive/obd/mid/mids.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/obd/mid
+copying build/lib/scapy/contrib/automotive/obd/mid/__init__.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/obd/mid
+copying build/lib/scapy/contrib/automotive/obd/scanner.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/obd
+copying build/lib/scapy/contrib/automotive/enumerator.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive
+copying build/lib/scapy/contrib/automotive/someip.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive
+creating build/bdist.linux-x86_64/wheel/scapy/contrib/automotive/bmw
+copying build/lib/scapy/contrib/automotive/bmw/hsfz.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/bmw
+copying build/lib/scapy/contrib/automotive/bmw/__init__.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/bmw
+copying build/lib/scapy/contrib/automotive/bmw/definitions.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive/bmw
+copying build/lib/scapy/contrib/automotive/graph.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/automotive
+copying build/lib/scapy/contrib/igmpv3.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/openflow.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/isis.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/opc_da.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/spbm.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/bgp.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/erspan.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/socks.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/skinny.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/chdlc.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/lacp.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/ospf.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/openflow3.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/enipTCP.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/ltp.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/ife.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/ripng.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/dtp.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/gtp_v2.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/igmp.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/mount.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/geneve.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/exposure_notification.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/aoe.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/mac_control.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/rtr.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+creating build/bdist.linux-x86_64/wheel/scapy/contrib/scada
+creating build/bdist.linux-x86_64/wheel/scapy/contrib/scada/iec104
+copying build/lib/scapy/contrib/scada/iec104/iec104_information_elements.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/scada/iec104
+copying build/lib/scapy/contrib/scada/iec104/iec104_fields.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/scada/iec104
+copying build/lib/scapy/contrib/scada/iec104/__init__.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/scada/iec104
+copying build/lib/scapy/contrib/scada/iec104/iec104_information_objects.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/scada/iec104
+copying build/lib/scapy/contrib/scada/__init__.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/scada
+copying build/lib/scapy/contrib/scada/pcom.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib/scada
+copying build/lib/scapy/contrib/dce_rpc.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/cansocket_python_can.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/homepluggp.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/wireguard.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/altbeacon.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/loraphy2wan.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/eigrp.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/eddystone.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/nfs.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/roce.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/rpl_metrics.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/ubberlogger.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/oncrpc.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/tzsp.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/ppi_geotag.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/homeplugsg.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/wpa_eapol.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/bfd.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/carp.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/tacacs.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/cansocket_native.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/icmp_extensions.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/vtp.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/macsec.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/__init__.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/rsvp.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/bp.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/ppi_cace.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/coap.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/send.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/bier.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/nlm.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/etherip.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/rpl.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/concox.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/http2.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/pim.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/pnio_dcp.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/avs.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/mqttsn.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/cansocket.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/ethercat.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/portmap.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/sdnv.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/gtp.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/sebek.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/isotp.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/pnio.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/vqp.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/modbus.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/ibeacon.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/nsh.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/cdp.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/ldp.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/lldp.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/diameter.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/mqtt.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/pnio_rpc.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/ikev2.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/pfcp.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/contrib/mpls.py -> build/bdist.linux-x86_64/wheel/./scapy/contrib
+copying build/lib/scapy/sessions.py -> build/bdist.linux-x86_64/wheel/./scapy
+copying build/lib/scapy/main.py -> build/bdist.linux-x86_64/wheel/./scapy
+creating build/bdist.linux-x86_64/wheel/scapy/libs
+copying build/lib/scapy/libs/structures.py -> build/bdist.linux-x86_64/wheel/./scapy/libs
+copying build/lib/scapy/libs/ethertypes.py -> build/bdist.linux-x86_64/wheel/./scapy/libs
+copying build/lib/scapy/libs/__init__.py -> build/bdist.linux-x86_64/wheel/./scapy/libs
+copying build/lib/scapy/libs/winpcapy.py -> build/bdist.linux-x86_64/wheel/./scapy/libs
+copying build/lib/scapy/asn1packet.py -> build/bdist.linux-x86_64/wheel/./scapy
+copying build/lib/scapy/interfaces.py -> build/bdist.linux-x86_64/wheel/./scapy
+creating build/bdist.linux-x86_64/wheel/scapy/asn1
+copying build/lib/scapy/asn1/asn1.py -> build/bdist.linux-x86_64/wheel/./scapy/asn1
+copying build/lib/scapy/asn1/mib.py -> build/bdist.linux-x86_64/wheel/./scapy/asn1
+copying build/lib/scapy/asn1/__init__.py -> build/bdist.linux-x86_64/wheel/./scapy/asn1
+copying build/lib/scapy/asn1/ber.py -> build/bdist.linux-x86_64/wheel/./scapy/asn1
+copying build/lib/scapy/asn1fields.py -> build/bdist.linux-x86_64/wheel/./scapy
+copying build/lib/scapy/VERSION -> build/bdist.linux-x86_64/wheel/./scapy
+copying build/lib/scapy/all.py -> build/bdist.linux-x86_64/wheel/./scapy
+copying build/lib/scapy/dadict.py -> build/bdist.linux-x86_64/wheel/./scapy
+copying build/lib/scapy/error.py -> build/bdist.linux-x86_64/wheel/./scapy
+creating build/bdist.linux-x86_64/wheel/scapy/tools
+creating build/bdist.linux-x86_64/wheel/scapy/tools/automotive
+copying build/lib/scapy/tools/automotive/obdscanner.py -> build/bdist.linux-x86_64/wheel/./scapy/tools/automotive
+copying build/lib/scapy/tools/automotive/isotpscanner.py -> build/bdist.linux-x86_64/wheel/./scapy/tools/automotive
+copying build/lib/scapy/tools/automotive/xcpscanner.py -> build/bdist.linux-x86_64/wheel/./scapy/tools/automotive
+copying build/lib/scapy/tools/automotive/__init__.py -> build/bdist.linux-x86_64/wheel/./scapy/tools/automotive
+copying build/lib/scapy/tools/UTscapy.py -> build/bdist.linux-x86_64/wheel/./scapy/tools
+copying build/lib/scapy/tools/check_asdis.py -> build/bdist.linux-x86_64/wheel/./scapy/tools
+copying build/lib/scapy/tools/generate_ethertypes.py -> build/bdist.linux-x86_64/wheel/./scapy/tools
+copying build/lib/scapy/tools/__init__.py -> build/bdist.linux-x86_64/wheel/./scapy/tools
+copying build/lib/scapy/tools/scapy_pyannotate.py -> build/bdist.linux-x86_64/wheel/./scapy/tools
+copying build/lib/scapy/as_resolvers.py -> build/bdist.linux-x86_64/wheel/./scapy
+copying build/lib/scapy/route.py -> build/bdist.linux-x86_64/wheel/./scapy
+creating build/bdist.linux-x86_64/wheel/mockredis
+copying build/lib/mockredis/sortedset.py -> build/bdist.linux-x86_64/wheel/./mockredis
+copying build/lib/mockredis/script.py -> build/bdist.linux-x86_64/wheel/./mockredis
+copying build/lib/mockredis/lock.py -> build/bdist.linux-x86_64/wheel/./mockredis
+copying build/lib/mockredis/client.py -> build/bdist.linux-x86_64/wheel/./mockredis
+copying build/lib/mockredis/pipeline.py -> build/bdist.linux-x86_64/wheel/./mockredis
+copying build/lib/mockredis/__init__.py -> build/bdist.linux-x86_64/wheel/./mockredis
+copying build/lib/mockredis/noseplugin.py -> build/bdist.linux-x86_64/wheel/./mockredis
+copying build/lib/mockredis/clock.py -> build/bdist.linux-x86_64/wheel/./mockredis
+copying build/lib/mockredis/exceptions.py -> build/bdist.linux-x86_64/wheel/./mockredis
+running install_egg_info
+Copying pyangbind.egg-info to build/bdist.linux-x86_64/wheel/./pyangbind-0.8.1-py3.11.egg-info
+running install_scripts
+creating build/bdist.linux-x86_64/wheel/pyangbind-0.8.1.dist-info/WHEEL
+creating '/home/bobo.linux/.cache/bazel/_bazel_bobo/5f9602010ff550d0b4caceda45f93e29/sandbox/processwrapper-sandbox/4549/execroot/_main/bazel-out/k8-fastbuild/bin/external/aspect_rules_py++uv+sbuild__sonic_utilities_pip__default__pyangbind/build/.tmp-t4mmgos0/pyangbind-0.8.1-py3-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
+adding 'www_authenticate.py'
+adding 'mockredis/__init__.py'
+adding 'mockredis/client.py'
+adding 'mockredis/clock.py'
+adding 'mockredis/exceptions.py'
+adding 'mockredis/lock.py'
+adding 'mockredis/noseplugin.py'
+adding 'mockredis/pipeline.py'
+adding 'mockredis/script.py'
+adding 'mockredis/sortedset.py'
+adding 'pyangbind/__init__.py'
+adding 'pyangbind/helpers/__init__.py'
+adding 'pyangbind/helpers/identity.py'
+adding 'pyangbind/helpers/misc.py'
+adding 'pyangbind/lib/__init__.py'
+adding 'pyangbind/lib/base.py'
+adding 'pyangbind/lib/pybindJSON.py'
+adding 'pyangbind/lib/serialise.py'
+adding 'pyangbind/lib/xpathhelper.py'
+adding 'pyangbind/lib/yangtypes.py'
+adding 'pyangbind/plugin/__init__.py'
+adding 'pyangbind/plugin/pybind.py'
+adding 'pyangbind-0.8.1.dist-info/licenses/LICENSE'
+adding 'scapy/VERSION'
+adding 'scapy/__init__.py'
+adding 'scapy/__main__.py'
+adding 'scapy/all.py'
+adding 'scapy/ansmachine.py'
+adding 'scapy/as_resolvers.py'
+adding 'scapy/asn1fields.py'
+adding 'scapy/asn1packet.py'
+adding 'scapy/automaton.py'
+adding 'scapy/autorun.py'
+adding 'scapy/base_classes.py'
+adding 'scapy/compat.py'
+adding 'scapy/config.py'
+adding 'scapy/consts.py'
+adding 'scapy/dadict.py'
+adding 'scapy/data.py'
+adding 'scapy/error.py'
+adding 'scapy/extlib.py'
+adding 'scapy/fields.py'
+adding 'scapy/interfaces.py'
+adding 'scapy/main.py'
+adding 'scapy/packet.py'
+adding 'scapy/pipetool.py'
+adding 'scapy/plist.py'
+adding 'scapy/pton_ntop.py'
+adding 'scapy/route.py'
+adding 'scapy/route6.py'
+adding 'scapy/scapypipes.py'
+adding 'scapy/sendrecv.py'
+adding 'scapy/sessions.py'
+adding 'scapy/supersocket.py'
+adding 'scapy/themes.py'
+adding 'scapy/utils.py'
+adding 'scapy/utils6.py'
+adding 'scapy/volatile.py'
+adding 'scapy/arch/__init__.py'
+adding 'scapy/arch/common.py'
+adding 'scapy/arch/libpcap.py'
+adding 'scapy/arch/linux.py'
+adding 'scapy/arch/solaris.py'
+adding 'scapy/arch/unix.py'
+adding 'scapy/arch/bpf/__init__.py'
+adding 'scapy/arch/bpf/consts.py'
+adding 'scapy/arch/bpf/core.py'
+adding 'scapy/arch/bpf/supersocket.py'
+adding 'scapy/arch/windows/__init__.py'
+adding 'scapy/arch/windows/native.py'
+adding 'scapy/arch/windows/structures.py'
+adding 'scapy/asn1/__init__.py'
+adding 'scapy/asn1/asn1.py'
+adding 'scapy/asn1/ber.py'
+adding 'scapy/asn1/mib.py'
+adding 'scapy/contrib/__init__.py'
+adding 'scapy/contrib/altbeacon.py'
+adding 'scapy/contrib/aoe.py'
+adding 'scapy/contrib/avs.py'
+adding 'scapy/contrib/bfd.py'
+adding 'scapy/contrib/bgp.py'
+adding 'scapy/contrib/bier.py'
+adding 'scapy/contrib/bp.py'
+adding 'scapy/contrib/cansocket.py'
+adding 'scapy/contrib/cansocket_native.py'
+adding 'scapy/contrib/cansocket_python_can.py'
+adding 'scapy/contrib/carp.py'
+adding 'scapy/contrib/cdp.py'
+adding 'scapy/contrib/chdlc.py'
+adding 'scapy/contrib/coap.py'
+adding 'scapy/contrib/concox.py'
+adding 'scapy/contrib/dce_rpc.py'
+adding 'scapy/contrib/diameter.py'
+adding 'scapy/contrib/dtp.py'
+adding 'scapy/contrib/eddystone.py'
+adding 'scapy/contrib/eigrp.py'
+adding 'scapy/contrib/enipTCP.py'
+adding 'scapy/contrib/erspan.py'
+adding 'scapy/contrib/ethercat.py'
+adding 'scapy/contrib/etherip.py'
+adding 'scapy/contrib/exposure_notification.py'
+adding 'scapy/contrib/geneve.py'
+adding 'scapy/contrib/gtp.py'
+adding 'scapy/contrib/gtp_v2.py'
+adding 'scapy/contrib/homeplugav.py'
+adding 'scapy/contrib/homepluggp.py'
+adding 'scapy/contrib/homeplugsg.py'
+adding 'scapy/contrib/http2.py'
+adding 'scapy/contrib/ibeacon.py'
+adding 'scapy/contrib/icmp_extensions.py'
+adding 'scapy/contrib/ife.py'
+adding 'scapy/contrib/igmp.py'
+adding 'scapy/contrib/igmpv3.py'
+adding 'scapy/contrib/ikev2.py'
+adding 'scapy/contrib/isis.py'
+adding 'scapy/contrib/isotp.py'
+adding 'scapy/contrib/lacp.py'
+adding 'scapy/contrib/ldp.py'
+adding 'scapy/contrib/lldp.py'
+adding 'scapy/contrib/loraphy2wan.py'
+adding 'scapy/contrib/ltp.py'
+adding 'scapy/contrib/mac_control.py'
+adding 'scapy/contrib/macsec.py'
+adding 'scapy/contrib/modbus.py'
+adding 'scapy/contrib/mount.py'
+adding 'scapy/contrib/mpls.py'
+adding 'scapy/contrib/mqtt.py'
+adding 'scapy/contrib/mqttsn.py'
+adding 'scapy/contrib/nfs.py'
+adding 'scapy/contrib/nlm.py'
+adding 'scapy/contrib/nsh.py'
+adding 'scapy/contrib/oncrpc.py'
+adding 'scapy/contrib/opc_da.py'
+adding 'scapy/contrib/openflow.py'
+adding 'scapy/contrib/openflow3.py'
+adding 'scapy/contrib/ospf.py'
+adding 'scapy/contrib/pfcp.py'
+adding 'scapy/contrib/pim.py'
+adding 'scapy/contrib/pnio.py'
+adding 'scapy/contrib/pnio_dcp.py'
+adding 'scapy/contrib/pnio_rpc.py'
+adding 'scapy/contrib/portmap.py'
+adding 'scapy/contrib/ppi_cace.py'
+adding 'scapy/contrib/ppi_geotag.py'
+adding 'scapy/contrib/ripng.py'
+adding 'scapy/contrib/roce.py'
+adding 'scapy/contrib/rpl.py'
+adding 'scapy/contrib/rpl_metrics.py'
+adding 'scapy/contrib/rsvp.py'
+adding 'scapy/contrib/rtr.py'
+adding 'scapy/contrib/sdnv.py'
+adding 'scapy/contrib/sebek.py'
+adding 'scapy/contrib/send.py'
+adding 'scapy/contrib/skinny.py'
+adding 'scapy/contrib/socks.py'
+adding 'scapy/contrib/spbm.py'
+adding 'scapy/contrib/tacacs.py'
+adding 'scapy/contrib/tzsp.py'
+adding 'scapy/contrib/ubberlogger.py'
+adding 'scapy/contrib/vqp.py'
+adding 'scapy/contrib/vtp.py'
+adding 'scapy/contrib/wireguard.py'
+adding 'scapy/contrib/wpa_eapol.py'
+adding 'scapy/contrib/automotive/__init__.py'
+adding 'scapy/contrib/automotive/ccp.py'
+adding 'scapy/contrib/automotive/doip.py'
+adding 'scapy/contrib/automotive/ecu.py'
+adding 'scapy/contrib/automotive/enumerator.py'
+adding 'scapy/contrib/automotive/graph.py'
+adding 'scapy/contrib/automotive/someip.py'
+adding 'scapy/contrib/automotive/uds.py'
+adding 'scapy/contrib/automotive/uds_ecu_states.py'
+adding 'scapy/contrib/automotive/uds_logging.py'
+adding 'scapy/contrib/automotive/bmw/__init__.py'
+adding 'scapy/contrib/automotive/bmw/definitions.py'
+adding 'scapy/contrib/automotive/bmw/hsfz.py'
+adding 'scapy/contrib/automotive/gm/__init__.py'
+adding 'scapy/contrib/automotive/gm/gmlan.py'
+adding 'scapy/contrib/automotive/gm/gmlan_ecu_states.py'
+adding 'scapy/contrib/automotive/gm/gmlan_logging.py'
+adding 'scapy/contrib/automotive/gm/gmlanutils.py'
+adding 'scapy/contrib/automotive/obd/__init__.py'
+adding 'scapy/contrib/automotive/obd/obd.py'
+adding 'scapy/contrib/automotive/obd/packet.py'
+adding 'scapy/contrib/automotive/obd/scanner.py'
+adding 'scapy/contrib/automotive/obd/services.py'
+adding 'scapy/contrib/automotive/obd/iid/__init__.py'
+adding 'scapy/contrib/automotive/obd/iid/iids.py'
+adding 'scapy/contrib/automotive/obd/mid/__init__.py'
+adding 'scapy/contrib/automotive/obd/mid/mids.py'
+adding 'scapy/contrib/automotive/obd/pid/__init__.py'
+adding 'scapy/contrib/automotive/obd/pid/pids.py'
+adding 'scapy/contrib/automotive/obd/pid/pids_00_1F.py'
+adding 'scapy/contrib/automotive/obd/pid/pids_20_3F.py'
+adding 'scapy/contrib/automotive/obd/pid/pids_40_5F.py'
+adding 'scapy/contrib/automotive/obd/pid/pids_60_7F.py'
+adding 'scapy/contrib/automotive/obd/pid/pids_80_9F.py'
+adding 'scapy/contrib/automotive/obd/pid/pids_A0_C0.py'
+adding 'scapy/contrib/automotive/obd/tid/__init__.py'
+adding 'scapy/contrib/automotive/obd/tid/tids.py'
+adding 'scapy/contrib/automotive/volkswagen/__init__.py'
+adding 'scapy/contrib/automotive/volkswagen/definitions.py'
+adding 'scapy/contrib/automotive/xcp/__init__.py'
+adding 'scapy/contrib/automotive/xcp/cto_commands_master.py'
+adding 'scapy/contrib/automotive/xcp/cto_commands_slave.py'
+adding 'scapy/contrib/automotive/xcp/scanner.py'
+adding 'scapy/contrib/automotive/xcp/utils.py'
+adding 'scapy/contrib/automotive/xcp/xcp.py'
+adding 'scapy/contrib/scada/__init__.py'
+adding 'scapy/contrib/scada/pcom.py'
+adding 'scapy/contrib/scada/iec104/__init__.py'
+adding 'scapy/contrib/scada/iec104/iec104_fields.py'
+adding 'scapy/contrib/scada/iec104/iec104_information_elements.py'
+adding 'scapy/contrib/scada/iec104/iec104_information_objects.py'
+adding 'scapy/layers/__init__.py'
+adding 'scapy/layers/all.py'
+adding 'scapy/layers/bluetooth.py'
+adding 'scapy/layers/bluetooth4LE.py'
+adding 'scapy/layers/can.py'
+adding 'scapy/layers/clns.py'
+adding 'scapy/layers/dhcp.py'
+adding 'scapy/layers/dhcp6.py'
+adding 'scapy/layers/dns.py'
+adding 'scapy/layers/dot11.py'
+adding 'scapy/layers/dot15d4.py'
+adding 'scapy/layers/eap.py'
+adding 'scapy/layers/gprs.py'
+adding 'scapy/layers/hsrp.py'
+adding 'scapy/layers/http.py'
+adding 'scapy/layers/inet.py'
+adding 'scapy/layers/inet6.py'
+adding 'scapy/layers/ipsec.py'
+adding 'scapy/layers/ir.py'
+adding 'scapy/layers/isakmp.py'
+adding 'scapy/layers/l2.py'
+adding 'scapy/layers/l2tp.py'
+adding 'scapy/layers/llmnr.py'
+adding 'scapy/layers/lltd.py'
+adding 'scapy/layers/mgcp.py'
+adding 'scapy/layers/mobileip.py'
+adding 'scapy/layers/netbios.py'
+adding 'scapy/layers/netflow.py'
+adding 'scapy/layers/ntp.py'
+adding 'scapy/layers/pflog.py'
+adding 'scapy/layers/ppi.py'
+adding 'scapy/layers/ppp.py'
+adding 'scapy/layers/pptp.py'
+adding 'scapy/layers/radius.py'
+adding 'scapy/layers/rip.py'
+adding 'scapy/layers/rtp.py'
+adding 'scapy/layers/sctp.py'
+adding 'scapy/layers/sixlowpan.py'
+adding 'scapy/layers/skinny.py'
+adding 'scapy/layers/smb.py'
+adding 'scapy/layers/smb2.py'
+adding 'scapy/layers/snmp.py'
+adding 'scapy/layers/tftp.py'
+adding 'scapy/layers/tuntap.py'
+adding 'scapy/layers/usb.py'
+adding 'scapy/layers/vrrp.py'
+adding 'scapy/layers/vxlan.py'
+adding 'scapy/layers/x509.py'
+adding 'scapy/layers/zigbee.py'
+adding 'scapy/layers/tls/__init__.py'
+adding 'scapy/layers/tls/all.py'
+adding 'scapy/layers/tls/automaton.py'
+adding 'scapy/layers/tls/automaton_cli.py'
+adding 'scapy/layers/tls/automaton_srv.py'
+adding 'scapy/layers/tls/basefields.py'
+adding 'scapy/layers/tls/cert.py'
+adding 'scapy/layers/tls/extensions.py'
+adding 'scapy/layers/tls/handshake.py'
+adding 'scapy/layers/tls/handshake_sslv2.py'
+adding 'scapy/layers/tls/keyexchange.py'
+adding 'scapy/layers/tls/keyexchange_tls13.py'
+adding 'scapy/layers/tls/record.py'
+adding 'scapy/layers/tls/record_sslv2.py'
+adding 'scapy/layers/tls/record_tls13.py'
+adding 'scapy/layers/tls/session.py'
+adding 'scapy/layers/tls/tools.py'
+adding 'scapy/layers/tls/crypto/__init__.py'
+adding 'scapy/layers/tls/crypto/all.py'
+adding 'scapy/layers/tls/crypto/cipher_aead.py'
+adding 'scapy/layers/tls/crypto/cipher_block.py'
+adding 'scapy/layers/tls/crypto/cipher_stream.py'
+adding 'scapy/layers/tls/crypto/ciphers.py'
+adding 'scapy/layers/tls/crypto/common.py'
+adding 'scapy/layers/tls/crypto/compression.py'
+adding 'scapy/layers/tls/crypto/groups.py'
+adding 'scapy/layers/tls/crypto/h_mac.py'
+adding 'scapy/layers/tls/crypto/hash.py'
+adding 'scapy/layers/tls/crypto/hkdf.py'
+adding 'scapy/layers/tls/crypto/kx_algs.py'
+adding 'scapy/layers/tls/crypto/pkcs1.py'
+adding 'scapy/layers/tls/crypto/prf.py'
+adding 'scapy/layers/tls/crypto/suites.py'
+adding 'scapy/libs/__init__.py'
+adding 'scapy/libs/ethertypes.py'
+adding 'scapy/libs/structures.py'
+adding 'scapy/libs/winpcapy.py'
+adding 'scapy/modules/__init__.py'
+adding 'scapy/modules/nmap.py'
+adding 'scapy/modules/p0f.py'
+adding 'scapy/modules/six.py'
+adding 'scapy/modules/voip.py'
+adding 'scapy/modules/krack/__init__.py'
+adding 'scapy/modules/krack/automaton.py'
+adding 'scapy/modules/krack/crypto.py'
+adding 'scapy/tools/UTscapy.py'
+adding 'scapy/tools/__init__.py'
+adding 'scapy/tools/check_asdis.py'
+adding 'scapy/tools/generate_ethertypes.py'
+adding 'scapy/tools/scapy_pyannotate.py'
+adding 'scapy/tools/automotive/__init__.py'
+adding 'scapy/tools/automotive/isotpscanner.py'
+adding 'scapy/tools/automotive/obdscanner.py'
+adding 'scapy/tools/automotive/xcpscanner.py'
+adding 'pyangbind-0.8.1.dist-info/METADATA'
+adding 'pyangbind-0.8.1.dist-info/WHEEL'
+adding 'pyangbind-0.8.1.dist-info/top_level.txt'
+adding 'pyangbind-0.8.1.dist-info/RECORD'
+removing build/bdist.linux-x86_64/wheel
+Successfully built pyangbind-0.8.1-py3-none-any.whl
+[332 / 446] Compiling vslib/SwitchBCM56850.cpp; 2s processwrapper-sandbox ... (4 actions, 3 running)
+[339 / 446] RunBinary src/sonic-device-data/device_output; 0s processwrapper-sandbox ... (4 actions, 3 running)
+[340 / 446] RunBinary src/sonic-device-data/device_output; 2s processwrapper-sandbox ... (4 actions running)
+[344 / 446] Compiling vslib/SaiEventQueue.cpp; 0s processwrapper-sandbox ... (4 actions, 3 running)
+[348 / 446] Compiling vslib/SaiEventQueue.cpp; 1s processwrapper-sandbox ... (4 actions, 3 running)
+[350 / 446] Compiling vslib/SaiEventQueue.cpp; 2s processwrapper-sandbox ... (4 actions, 3 running)
+[368 / 446] Compiling vslib/Sai.cpp; 2s processwrapper-sandbox ... (4 actions, 3 running)
+[382 / 446] Compiling vslib/ResourceLimiterContainer.cpp; 0s processwrapper-sandbox ... (4 actions, 3 running)
+[386 / 446] Compiling vslib/RealObjectIdManager.cpp; 1s processwrapper-sandbox ... (4 actions, 3 running)
+[390 / 446] Compiling vslib/MACsecManager.cpp; 1s processwrapper-sandbox ... (4 actions, 3 running)
+[392 / 446] Compiling vslib/MACsecManager.cpp; 2s processwrapper-sandbox ... (4 actions running)
+[395 / 446] Compiling vslib/MACsecManager.cpp; 3s processwrapper-sandbox ... (4 actions running)
+[400 / 446] Compiling vslib/LaneMapFileParser.cpp; 0s processwrapper-sandbox ... (4 actions, 3 running)
+[405 / 446] Compiling vslib/HostInterfaceInfo.cpp; 1s processwrapper-sandbox ... (4 actions, 3 running)
+[408 / 446] Compiling vslib/HostInterfaceInfo.cpp; 2s processwrapper-sandbox ... (4 actions, 3 running)
+[411 / 446] Compiling vslib/FdbInfo.cpp; 3s processwrapper-sandbox ... (4 actions running)
+[414 / 446] Compiling vslib/EventPayloadNotification.cpp; 2s processwrapper-sandbox ... (4 actions running)
+[419 / 446] Compiling vslib/CorePortIndexMap.cpp; 0s processwrapper-sandbox ... (4 actions, 3 running)
+[423 / 446] Compiling vslib/ContextConfigContainer.cpp; 1s processwrapper-sandbox ... (4 actions, 3 running)
+[426 / 446] Compiling vslib/ContextConfigContainer.cpp; 2s processwrapper-sandbox ... (4 actions, 3 running)
+[430 / 446] Compiling vslib/ContextConfigContainer.cpp; 3s processwrapper-sandbox ... (4 actions, 3 running)
+[439 / 446] [Prepa] Linking external/sonic-sairedis+/vslib/liblibsaivs.a
+[444 / 446] OCI Image //platform/broadcom/docker-syncd-brcm:docker-syncd-brcm; 0s processwrapper-sandbox
+INFO: Found 1 target...
+Target //platform/broadcom/docker-syncd-brcm:load up-to-date:
+  bazel-bin/platform/broadcom/docker-syncd-brcm/load.sh
+INFO: Elapsed time: 51.779s, Critical Path: 10.07s
+INFO: 334 processes: 23 action cache hit, 60 internal, 274 processwrapper-sandbox.
+INFO: Build completed successfully, 334 total actions
+INFO: Running command line: bazel-bin/platform/broadcom/docker-syncd-brcm/load.sh
+Loaded image: docker-syncd-brcm:latest
+
+========================================
+RESULT: SUCCESS
+Finished: Tue Apr 21 22:41:40 CDT 2026
+========================================

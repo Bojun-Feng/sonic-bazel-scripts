@@ -1,0 +1,30 @@
+========================================
+Step: docker load: //dockers/docker-platform-monitor:load
+Started: Tue Apr 21 22:32:31 CDT 2026
+Command: bazel run //dockers/docker-platform-monitor:load
+========================================
+
+Computing main repo mapping: 
+Loading: 
+Loading: 0 packages loaded
+Analyzing: target //dockers/docker-platform-monitor:load (0 packages loaded, 0 targets configured)
+Analyzing: target //dockers/docker-platform-monitor:load (0 packages loaded, 0 targets configured)
+
+Analyzing: target //dockers/docker-platform-monitor:load (35 packages loaded, 262 targets configured)
+
+INFO: Analyzed target //dockers/docker-platform-monitor:load (37 packages loaded, 335 targets configured).
+[2,059 / 2,076] Action external/aspect_rules_py++uv+whl_install__daemons_pip__default__grpcio/install [for tool]; 0s processwrapper-sandbox ... (4 actions, 3 running)
+[2,075 / 2,076] [Prepa] OCITarballManifest dockers/docker-platform-monitor/load/tarball.spec
+INFO: Found 1 target...
+Target //dockers/docker-platform-monitor:load up-to-date:
+  bazel-bin/dockers/docker-platform-monitor/load.sh
+INFO: Elapsed time: 5.212s, Critical Path: 1.66s
+INFO: 68 processes: 36 internal, 32 processwrapper-sandbox.
+INFO: Build completed successfully, 68 total actions
+INFO: Running command line: bazel-bin/dockers/docker-platform-monitor/load.sh
+Loaded image: docker-platform-monitor:latest
+
+========================================
+RESULT: SUCCESS
+Finished: Tue Apr 21 22:32:39 CDT 2026
+========================================

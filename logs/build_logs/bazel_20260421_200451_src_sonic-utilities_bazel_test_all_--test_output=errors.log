@@ -1,0 +1,128 @@
+========================================
+Step: src/sonic-utilities: bazel test //:all --test_output=errors
+Repo: src/sonic-utilities
+Started: Tue Apr 21 20:04:51 CDT 2026
+Command: bazel test //:all --test_output=errors
+========================================
+
+Starting local Bazel server (8.5.1) and connecting to it...
+Computing main repo mapping: 
+Computing main repo mapping: 
+Loading: 
+Loading: 2 packages loaded
+Analyzing: 25 targets (3 packages loaded, 0 targets configured)
+Analyzing: 25 targets (3 packages loaded, 0 targets configured)
+
+Analyzing: 25 targets (187 packages loaded, 429 targets configured)
+[2 / 6] [Prepa] Executing genrule //:dist_test_expected_normalized ... (4 actions, 0 running)
+Analyzing: 25 targets (352 packages loaded, 1436 targets configured)
+[6 / 6] no actions running
+Analyzing: 25 targets (437 packages loaded, 3642 targets configured)
+[6 / 6] no actions running
+WARNING: Download from https://snapshot.debian.org/archive/debian/20251001T023456Z/dists/bookworm/main/binary-amd64/Packages.bz2 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian/20251001T023456Z/dists/bookworm/main/Contents-amd64 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian/20251001T023456Z/dists/bookworm/main/Contents-amd64.xz failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian/20251001T023456Z/dists/bookworm-updates/main/binary-amd64/Packages failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian/20251001T023456Z/dists/bookworm-updates/main/binary-amd64/Packages.bz2 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian/20251001T023456Z/dists/bookworm-updates/main/Contents-amd64.bz2 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian/20251001T023456Z/dists/bookworm-updates/main/Contents-amd64.xz failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian/20251001T023456Z/dists/bookworm-updates/main/Contents-amd64 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+Analyzing: 25 targets (505 packages loaded, 7065 targets configured)
+[6 / 6] no actions running
+WARNING: Download from https://snapshot.debian.org/archive/debian/20251001T023456Z/dists/bookworm/main/Contents-amd64.bz2 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian-security/20251001T023456Z/dists/bookworm-security/main/binary-amd64/Packages.bz2 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian-security/20251001T023456Z/dists/bookworm-security/main/binary-amd64/Packages failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian-security/20251001T023456Z/dists/bookworm-security/main/Contents-amd64.xz failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian-security/20251001T023456Z/dists/bookworm-security/main/Contents-amd64 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian-security/20251001T023456Z/dists/bookworm-security/main/Contents-amd64.bz2 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian/20251001T023456Z/dists/bookworm/main/binary-amd64/Packages failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+Analyzing: 25 targets (505 packages loaded, 7065 targets configured)
+[6 / 6] no actions running
+Analyzing: 25 targets (505 packages loaded, 7065 targets configured)
+[6 / 6] no actions running
+Analyzing: 25 targets (505 packages loaded, 7065 targets configured)
+[6 / 6] no actions running
+Analyzing: 25 targets (505 packages loaded, 7065 targets configured)
+[6 / 6] no actions running
+Analyzing: 25 targets (505 packages loaded, 7065 targets configured)
+[6 / 6] no actions running
+Analyzing: 25 targets (519 packages loaded, 7115 targets configured)
+[6 / 6] no actions running
+Analyzing: 25 targets (614 packages loaded, 8692 targets configured)
+[6 / 6] no actions running
+Analyzing: 25 targets (614 packages loaded, 8692 targets configured)
+[6 / 6] no actions running
+WARNING: Download from https://snapshot.debian.org/archive/debian-security/20251001T023456Z/dists/bookworm-security/main/binary-amd64/Packages.gz failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+Analyzing: 25 targets (618 packages loaded, 15311 targets configured)
+[6 / 6] no actions running
+WARNING: Download from https://snapshot.debian.org/archive/debian/20251001T023456Z/dists/bookworm-updates/main/binary-amd64/Packages.gz failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+Analyzing: 25 targets (619 packages loaded, 15355 targets configured)
+[11 / 11] no actions running
+Analyzing: 25 targets (631 packages loaded, 15355 targets configured)
+[11 / 11] no actions running
+Analyzing: 25 targets (642 packages loaded, 18808 targets configured)
+[11 / 11] no actions running
+Analyzing: 25 targets (658 packages loaded, 19196 targets configured)
+[11 / 11] no actions running
+Analyzing: 25 targets (673 packages loaded, 19441 targets configured)
+[11 / 11] no actions running
+Analyzing: 25 targets (693 packages loaded, 21154 targets configured)
+[11 / 11] no actions running
+Analyzing: 25 targets (713 packages loaded, 21274 targets configured)
+[11 / 11] no actions running
+Analyzing: 25 targets (717 packages loaded, 21336 targets configured)
+[11 / 11] no actions running
+Analyzing: 25 targets (722 packages loaded, 21344 targets configured)
+[11 / 11] no actions running
+Analyzing: 25 targets (726 packages loaded, 21893 targets configured)
+[11 / 11] no actions running
+Analyzing: 25 targets (732 packages loaded, 22436 targets configured)
+[15 / 88] checking cached actions
+Analyzing: 25 targets (736 packages loaded, 31074 targets configured)
+[15 / 88] checking cached actions
+Analyzing: 25 targets (739 packages loaded, 36692 targets configured)
+[15 / 88] checking cached actions
+Analyzing: 25 targets (742 packages loaded, 36753 targets configured)
+[15 / 88] checking cached actions
+Analyzing: 25 targets (743 packages loaded, 36764 targets configured)
+[15 / 88] checking cached actions
+Analyzing: 25 targets (750 packages loaded, 36908 targets configured)
+[26 / 97] Unpack external/rules_distroless++apt+bookworm_libtsan2-amd64_12.2.0-14-deb12u1/usr/lib/x86_64-linux-gnu/libtsan.so.2.0.0 [for tool]; 0s processwrapper-sandbox ... (4 actions running)
+Analyzing: 25 targets (752 packages loaded, 36974 targets configured)
+[52 / 97] [Scann] Compiling version.c [for tool]
+Analyzing: 25 targets (752 packages loaded, 36974 targets configured)
+[61 / 97] Compiling support/regex.c [for tool]; 1s processwrapper-sandbox ... (4 actions, 3 running)
+INFO: Analyzed 25 targets (753 packages loaded, 37239 targets configured).
+[78 / 97] Compiling field.c [for tool]; 0s processwrapper-sandbox ... (4 actions, 3 running)
+[89 / 403] Compiling builtin.c [for tool]; 0s processwrapper-sandbox ... (4 actions, 3 running)
+[146 / 835] Compiling src/patchelf.cc [for tool]; 0s processwrapper-sandbox ... (4 actions running)
+[203 / 883] Compiling src/patchelf.cc [for tool]; 2s processwrapper-sandbox ... (4 actions, 3 running)
+[409 / 2,040] Compiling src/patchelf.cc [for tool]; 3s processwrapper-sandbox ... (4 actions, 3 running)
+INFO: From Action external/aspect_rules_py++uv+sbuild__sonic_utilities_pip__default__pyangbind/build:
+/home/bobo.linux/.cache/bazel/_bazel_bobo/4c311c2fb69232dda242e055378b4672/execroot/_main/bazel-out/k8-fastbuild/bin/external/aspect_rules_py++uv+sbuild__sonic_utilities_pip__default__pyangbind/.build_venv/bin/python3
+* Getting build dependencies for wheel...
+ERROR Missing dependencies:
+	nose
+[]
+
+ERROR: /home/bobo.linux/.cache/bazel/_bazel_bobo/4c311c2fb69232dda242e055378b4672/external/aspect_rules_py++uv+whl_install__sonic_utilities_pip__default__pyangbind/BUILD.bazel:23:12: Action external/aspect_rules_py++uv+whl_install__sonic_utilities_pip__default__pyangbind/install failed: (Exit 1): unpack failed: error executing Action command (from target @@aspect_rules_py++uv+whl_install__sonic_utilities_pip__default__pyangbind//:actual_install) external/aspect_rules_py++py_tools+rules_py_tools.linux_amd64/unpack --into bazel-out/k8-fastbuild/bin/external/aspect_rules_py++uv+whl_install__sonic_utilities_pip__default__pyangbind/install --wheel ... (remaining 5 arguments skipped)
+
+Use --sandbox_debug to see verbose messages from the sandbox and retain the sandbox build root for debugging
+Error:   × Unable to run command:
+  ├─▶ Didn't find exactly one wheel file to install!
+  ╰─▶ got zero elements when exactly one was expected
+
+Use --verbose_failures to see the command lines of failed build steps.
+INFO: Elapsed time: 43.356s, Critical Path: 4.78s
+INFO: 414 processes: 299 internal, 115 processwrapper-sandbox.
+ERROR: Build did NOT complete successfully
+//:dist_test                                                          NO STATUS
+//:libs_dist_test                                                     NO STATUS
+//:pkg_data_test                                                      NO STATUS
+
+Executed 0 out of 3 tests: 3 were skipped.
+
+========================================
+RESULT: FAILURE (exit code 1)
+Finished: Tue Apr 21 20:05:34 CDT 2026
+========================================

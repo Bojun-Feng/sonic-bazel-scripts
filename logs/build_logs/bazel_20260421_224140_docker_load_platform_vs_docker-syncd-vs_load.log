@@ -1,0 +1,52 @@
+========================================
+Step: docker load: //platform/vs/docker-syncd-vs:load
+Started: Tue Apr 21 22:41:40 CDT 2026
+Command: bazel run //platform/vs/docker-syncd-vs:load
+========================================
+
+Computing main repo mapping: 
+Loading: 
+Loading: 0 packages loaded
+Analyzing: target //platform/vs/docker-syncd-vs:load (1 packages loaded, 0 targets configured)
+Analyzing: target //platform/vs/docker-syncd-vs:load (1 packages loaded, 0 targets configured)
+
+Analyzing: target //platform/vs/docker-syncd-vs:load (84 packages loaded, 28 targets configured)
+
+Analyzing: target //platform/vs/docker-syncd-vs:load (91 packages loaded, 48 targets configured)
+
+Analyzing: target //platform/vs/docker-syncd-vs:load (97 packages loaded, 72 targets configured)
+
+Analyzing: target //platform/vs/docker-syncd-vs:load (103 packages loaded, 88 targets configured)
+
+Analyzing: target //platform/vs/docker-syncd-vs:load (105 packages loaded, 96 targets configured)
+
+Analyzing: target //platform/vs/docker-syncd-vs:load (111 packages loaded, 108 targets configured)
+
+Analyzing: target //platform/vs/docker-syncd-vs:load (115 packages loaded, 124 targets configured)
+
+Analyzing: target //platform/vs/docker-syncd-vs:load (121 packages loaded, 148 targets configured)
+
+Analyzing: target //platform/vs/docker-syncd-vs:load (124 packages loaded, 160 targets configured)
+
+Analyzing: target //platform/vs/docker-syncd-vs:load (127 packages loaded, 172 targets configured)
+
+Analyzing: target //platform/vs/docker-syncd-vs:load (129 packages loaded, 180 targets configured)
+
+INFO: Analyzed target //platform/vs/docker-syncd-vs:load (130 packages loaded, 187 targets configured).
+[261 / 306] Executing genrule @@rules_distroless++apt+bookworm_thrift-compiler-amd64_0.17.0-2-b2//:data; 0s processwrapper-sandbox ... (4 actions, 3 running)
+[276 / 306] Executing genrule @@rules_distroless++apt+bookworm_libgrpc-dev-amd64_1.51.1-3-b1//:data; 1s processwrapper-sandbox ... (4 actions, 3 running)
+[302 / 306] Flattening //platform/vs/docker-syncd-vs:debian_packages; 0s processwrapper-sandbox
+[304 / 306] OCI Image //platform/vs/docker-syncd-vs:docker-syncd-vs; 0s processwrapper-sandbox
+INFO: Found 1 target...
+Target //platform/vs/docker-syncd-vs:load up-to-date:
+  bazel-bin/platform/vs/docker-syncd-vs/load.sh
+INFO: Elapsed time: 18.000s, Critical Path: 4.62s
+INFO: 76 processes: 11 action cache hit, 12 internal, 64 processwrapper-sandbox.
+INFO: Build completed successfully, 76 total actions
+INFO: Running command line: bazel-bin/platform/vs/docker-syncd-vs/load.sh
+Loaded image: docker-syncd-vs:latest
+
+========================================
+RESULT: SUCCESS
+Finished: Tue Apr 21 22:42:04 CDT 2026
+========================================

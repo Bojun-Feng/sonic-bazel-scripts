@@ -1,0 +1,392 @@
+========================================
+Step: src/sonic-mgmt-common: bazel build ...
+Repo: src/sonic-mgmt-common
+Started: Tue Apr 21 22:01:19 CDT 2026
+Command: bazel build ...
+========================================
+
+Starting local Bazel server (8.5.1) and connecting to it...
+Computing main repo mapping: 
+Computing main repo mapping: 
+WARNING: For repository 'bazel_skylib', the root module requires module version bazel_skylib@1.8.1, but got bazel_skylib@1.8.2 in the resolved dependency graph. Please update the version in your MODULE.bazel or set --check_direct_dependencies=off
+WARNING: For repository 'rules_python', the root module requires module version rules_python@1.6.3, but got rules_python@1.7.0 in the resolved dependency graph. Please update the version in your MODULE.bazel or set --check_direct_dependencies=off
+WARNING: For repository 'com_google_protobuf', the root module requires module version protobuf@29.0, but got protobuf@29.1 in the resolved dependency graph. Please update the version in your MODULE.bazel or set --check_direct_dependencies=off
+Loading: 
+Loading: 0 packages loaded
+Loading: 0 packages loaded
+Loading: 33 packages loaded
+    currently loading:  ... (4 packages)
+DEBUG: /home/bobo.linux/.cache/bazel/_bazel_bobo/89680900f12b4a06333d8f0ebcf7ed36/external/gazelle+/internal/bzlmod/go_deps.bzl:653:36: The following Go modules were required by the root module at the given versions, but were implicitly updated to higher versions due to transitive dependencies:
+ 
+  golang.org/x/crypto: v0.32.0 -> v0.39.0 
+
+Update the root module's dependencies to match the resolved versions via:
+
+  bazel run @io_bazel_rules_go//go -- get golang.org/x/crypto@v0.39.0 
+
+WARNING: /home/bobo.linux/bazel/sonic-buildimage/src/sonic-mgmt-common/MODULE.bazel:53:24: The module extension go_deps defined in @gazelle//:extensions.bzl reported incorrect imports of repositories via use_repo():
+
+Not imported, but reported as direct dependencies by the extension (may cause the build to fail):
+    com_github_antchfx_jsonquery, com_github_antchfx_xmlquery, com_github_antchfx_xpath, com_github_golang_glog, com_github_openconfig_gnmi, com_github_openconfig_goyang, com_github_openconfig_ygot
+
+Imported, but reported as indirect dependencies by the extension:
+    com_github_golang_protobuf, org_golang_google_protobuf, org_golang_x_net
+
+Fix the use_repo calls by running 'bazel mod tidy'.
+Loading: 34 packages loaded
+    currently loading: tools/pyang ... (3 packages)
+Loading: 34 packages loaded
+    currently loading: tools/pyang ... (3 packages)
+Loading: 34 packages loaded
+    currently loading: tools/pyang ... (3 packages)
+Analyzing: 77 targets (37 packages loaded, 0 targets configured)
+Analyzing: 77 targets (37 packages loaded, 0 targets configured)
+
+WARNING: /home/bobo.linux/bazel/sonic-buildimage/src/sonic-mgmt-common/MODULE.bazel:74:31: The module extension sonic_go_repos defined in @sonic-mgmt-common//:go_repos.bzl reported incorrect imports of repositories via use_repo():
+
+Imported, but reported as indirect dependencies by the extension:
+    com_github_golang_glog, com_github_google_gnxi, com_github_google_gousb, com_github_mitchellh_go_wordwrap, com_github_msteinert_pam, com_github_openconfig_gnmi, com_github_openconfig_gnsi, com_github_openconfig_goyang, com_github_openconfig_grpctunnel, com_github_openconfig_ygot, com_github_protocolbuffers_txtpbfmt
+
+Fix the use_repo calls by running 'bazel mod tidy'.
+Analyzing: 77 targets (104 packages loaded, 302 targets configured)
+[2 / 3] Executing genrule //models/yang:generate-yangs; 0s processwrapper-sandbox
+Analyzing: 77 targets (133 packages loaded, 2088 targets configured)
+[3 / 3] no actions running
+Analyzing: 77 targets (186 packages loaded, 3738 targets configured)
+[3 / 3] no actions running
+Analyzing: 77 targets (211 packages loaded, 3779 targets configured)
+[3 / 3] no actions running
+Analyzing: 77 targets (213 packages loaded, 3779 targets configured)
+[3 / 3] no actions running
+Analyzing: 77 targets (229 packages loaded, 4190 targets configured)
+[3 / 3] no actions running
+Analyzing: 77 targets (234 packages loaded, 6739 targets configured)
+[3 / 3] no actions running
+Analyzing: 77 targets (241 packages loaded, 6919 targets configured)
+[3 / 3] no actions running
+Analyzing: 77 targets (252 packages loaded, 12037 targets configured)
+[3 / 3] no actions running
+Analyzing: 77 targets (259 packages loaded, 17161 targets configured)
+[3 / 3] no actions running
+Analyzing: 77 targets (259 packages loaded, 17161 targets configured)
+[3 / 3] no actions running
+Analyzing: 77 targets (259 packages loaded, 17161 targets configured)
+[3 / 3] no actions running
+Analyzing: 77 targets (260 packages loaded, 17195 targets configured)
+[3 / 3] no actions running
+Analyzing: 77 targets (261 packages loaded, 17829 targets configured)
+[3 / 3] no actions running
+Analyzing: 77 targets (264 packages loaded, 18847 targets configured)
+[3 / 3] no actions running
+Analyzing: 77 targets (267 packages loaded, 19850 targets configured)
+[3 / 3] no actions running
+Analyzing: 77 targets (268 packages loaded, 21834 targets configured)
+[3 / 3] no actions running
+Analyzing: 77 targets (268 packages loaded, 21834 targets configured)
+[3 / 3] no actions running
+Analyzing: 77 targets (269 packages loaded, 21849 targets configured)
+[3 / 3] no actions running
+Analyzing: 77 targets (269 packages loaded, 21849 targets configured)
+[3 / 3] no actions running
+Analyzing: 77 targets (276 packages loaded, 22222 targets configured)
+[3 / 3] no actions running
+Analyzing: 77 targets (285 packages loaded, 22266 targets configured)
+[3 / 3] no actions running
+Analyzing: 77 targets (304 packages loaded, 22442 targets configured)
+[4 / 19] checking cached actions
+Analyzing: 77 targets (324 packages loaded, 22526 targets configured)
+[55 / 110] Creating runfiles tree bazel-out/k8-fastbuild/bin/tools/pyang/import_yang.runfiles; 0s local ... (4 actions, 3 running)
+Analyzing: 77 targets (415 packages loaded, 22874 targets configured)
+[74 / 118] Unpack external/rules_distroless++apt+bookworm_libubsan1-amd64_12.2.0-14-deb12u1/usr/lib/x86_64-linux-gnu/libubsan.so.1.0.0; 0s processwrapper-sandbox ... (4 actions running)
+Analyzing: 77 targets (479 packages loaded, 23626 targets configured)
+[143 / 593] Unpack external/rules_distroless++apt+bookworm_libasan8-amd64_12.2.0-14-deb12u1/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0; 1s processwrapper-sandbox ... (4 actions running)
+INFO: Analyzed 77 targets (479 packages loaded, 23662 targets configured).
+[480 / 612] Unpack external/rules_distroless++apt+bookworm_libc6-dev-amd64_2.36-9-deb12u13/usr/lib/x86_64-linux-gnu/audit/sotruss-lib.so; 0s processwrapper-sandbox ... (4 actions, 3 running)
+[543 / 882] Executing genrule //cvl:test-yin-files-tar; 1s processwrapper-sandbox ... (4 actions, 3 running)
+INFO: From Executing genrule //cvl:test-yin-files-tar:
+====> Transforming container /sonic-mgmt_vrf:sonic-mgmt_vrf/sonic-mgmt_vrf:MGMT_VRF_CONFIG/sonic-mgmt_vrf:vrf_global to list
+====> Transforming container /sonic-test-xfmr:sonic-test-xfmr/sonic-test-xfmr:TEST_SENSOR_GLOBAL/sonic-test-xfmr:global_sensor to list
+====> Transforming container /sonic-telemetry_client:sonic-telemetry_client/sonic-telemetry_client:TELEMETRY_CLIENT/sonic-telemetry_client:Global to list
+====> Transforming container /sonic-sflow:sonic-sflow/sonic-sflow:SFLOW/sonic-sflow:global to list
+====> Transforming container /sonic-telemetry:sonic-telemetry/sonic-telemetry:TELEMETRY/sonic-telemetry:certs to list
+====> Transforming container /sonic-telemetry:sonic-telemetry/sonic-telemetry:TELEMETRY/sonic-telemetry:gnmi to list
+Writing _yin_out/sonic-tc-queue-map.yin
+Writing _yin_out/sonic-acl.yin
+Writing _yin_out/sonic-static-route.yin
+Writing _yin_out/sonic-mgmt_vrf.yin
+Writing _yin_out/sonic-vrf.yin
+Writing _yin_out/sonic-cablelength.yin
+Writing _yin_out/sonic-ifa.yin
+Writing _yin_out/sonic-mirror-session.yin
+Writing _yin_out/sonic-vlan-subinterface.yin
+Writing _yin_out/sonic-spanning-tree.yin
+Writing _yin_out/sonic-leaflist-test.yin
+Writing _yin_out/sonic-loopback-interface.yin
+Writing _yin_out/sonic-vxlan.yin
+Writing _yin_out/sonic-mgmt_port.yin
+Writing _yin_out/sonic-vlan-interface.yin
+Writing _yin_out/sonic-port-qos-map.yin
+Writing _yin_out/sonic-types.yin
+Writing _yin_out/sonic-portchannel.yin
+Writing _yin_out/sonic-tc-priority-group-map.yin
+Writing _yin_out/sonic-tam.yin
+Writing _yin_out/sonic-device-metadata.yin
+Writing _yin_out/sonic-queue.yin
+Writing _yin_out/sonic-igmp-snooping.yin
+Writing _yin_out/sonic-pfc-priority-queue-map.yin
+Writing _yin_out/sonic-test-xfmr.yin
+Writing _yin_out/sonic-buffer-profile.yin
+Writing _yin_out/sonic-buffer-pool.yin
+Writing _yin_out/sonic-port.yin
+Writing _yin_out/sonic-ospfv2.yin
+Writing _yin_out/sonic-dscp-tc-map.yin
+Writing _yin_out/sonic-pf-limits.yin
+Writing _yin_out/sonic-telemetry_client.yin
+Writing _yin_out/sonic-sflow.yin
+Writing _yin_out/sonic-buffer-pg.yin
+Writing _yin_out/sonic-device-neighbor.yin
+Writing _yin_out/sonic-vlan.yin
+Writing _yin_out/sonic-portchannel-interface.yin
+Writing _yin_out/sonic-bgp-global.yin
+Writing _yin_out/sonic-interface.yin
+Writing _yin_out/sonic-scheduler.yin
+Writing _yin_out/sonic-telemetry.yin
+Writing _yin_out/sonic-wred-profile.yin
+Writing _yin_out/sonic-extension.yin
+Writing _yin_out/sonic-common.yin
+[560 / 897] Executing genrule //models/yang:yang-tree; 2s processwrapper-sandbox ... (4 actions running)
+INFO: From Executing genrule //cvl:yin-files:
+====> Transforming container /sonic-optical-switch:sonic-optical-switch/sonic-optical-switch:OCS_TOPOLOGY/sonic-optical-switch:global_topology to list
+====> Transforming container /sonic-memory-stats:sonic-memory-stats/sonic-memory-stats:MEMORY_STATS/sonic-memory-stats:system to list
+sonic-extensions.yin has no schema elements
+sonic-showtech-annot.yin has no schema elements
+Writing yin_file_build/sonic-qos-umf-classifier.yin
+Writing yin_file_build/sonic-tc-queue-map.yin
+Writing yin_file_build/sonic-acl.yin
+Writing yin_file_build/sonic-loopback.yin
+sonic-cpu-stats.yin has no schema elements
+sonic-ntp-server.yin has no schema elements
+Writing yin_file_build/sonic-umf-trunk-queue.yin
+sonic-show-techsupport.yin has no schema elements
+Writing yin_file_build/sonic-diag.yin
+Writing yin_file_build/sonic-mgmt-port.yin
+Writing yin_file_build/sonic-platform-node.yin
+Writing yin_file_build/sonic-mgmt-interface.yin
+Writing yin_file_build/sonic-umf-queue.yin
+Writing yin_file_build/sonic-gnpsi.yin
+Writing yin_file_build/sonic-dot1p-tc-map.yin
+Writing yin_file_build/sonic-extension.yin
+Writing yin_file_build/sonic-common.yin
+sonic-process-stats.yin has no schema elements
+Writing yin_file_build/sonic-queue-name-id-map.yin
+Writing yin_file_build/sonic-loopback-interface.yin
+Writing yin_file_build/sonic-port-breakout.yin
+Writing yin_file_build/sonic-port-qos-map.yin
+Writing yin_file_build/sonic-portchannel.yin
+Writing yin_file_build/sonic-platform-transceiver.yin
+Writing yin_file_build/sonic-device-metadata.yin
+Writing yin_file_build/sonic-queue.yin
+Writing yin_file_build/sonic-pfc-priority-queue-map.yin
+Writing yin_file_build/sonic-qos-pfc.yin
+Writing yin_file_build/sonic-buffer-profile.yin
+Writing yin_file_build/sonic-buffer-pool.yin
+Writing yin_file_build/sonic-tc-dscp-map.yin
+Writing yin_file_build/sonic-port.yin
+Writing yin_file_build/sonic-optical-switch.yin
+Writing yin_file_build/sonic-qos-fwd-group.yin
+Writing yin_file_build/sonic-platform-chassis.yin
+Writing yin_file_build/sonic-dscp-tc-map.yin
+sonic-mount-points.yin has no schema elements
+sonic-memory-stats.yin has no schema elements
+sonic-platform-software.yin has no schema elements
+Writing yin_file_build/sonic-system-labels.yin
+Writing yin_file_build/sonic-sflow.yin
+Writing yin_file_build/sonic-queue-buf-profile-map.yin
+Writing yin_file_build/sonic-system-logging.yin
+Writing yin_file_build/sonic-buffer-queue.yin
+Writing yin_file_build/sonic-tc-dot1p-map.yin
+Writing yin_file_build/sonic-portchannel-interface.yin
+Writing yin_file_build/sonic-interface.yin
+Writing yin_file_build/sonic-scheduler.yin
+Writing yin_file_build/sonic-bridge.yin
+Writing yin_file_build/sonic-tc-uc-mc-queue-map.yin
+Writing yin_file_build/sonic-wred-profile.yin
+/home/bobo.linux/.cache/bazel/_bazel_bobo/89680900f12b4a06333d8f0ebcf7ed36/sandbox/processwrapper-sandbox/48/execroot/_main/yin_file_build /home/bobo.linux/.cache/bazel/_bazel_bobo/89680900f12b4a06333d8f0ebcf7ed36/sandbox/processwrapper-sandbox/48/execroot/_main
+/home/bobo.linux/.cache/bazel/_bazel_bobo/89680900f12b4a06333d8f0ebcf7ed36/sandbox/processwrapper-sandbox/48/execroot/_main
+[596 / 1,043] Executing genrule //models/yang:yang-tree; 3s processwrapper-sandbox ... (4 actions, 3 running)
+INFO: From Compiling src/xpath.c:
+external/libyang++_repo_rules+libyang_src/src/xpath.c:15: warning: "_GNU_SOURCE" redefined
+   15 | #define _GNU_SOURCE
+      | 
+<command-line>: note: this is the location of the previous definition
+[603 / 1,043] Executing genrule //models/yang:yang-tree; 4s processwrapper-sandbox ... (4 actions running)
+INFO: From Compiling src/tree_schema.c:
+external/libyang++_repo_rules+libyang_src/src/tree_schema.c:15: warning: "_GNU_SOURCE" redefined
+   15 | #define _GNU_SOURCE
+      | 
+<command-line>: note: this is the location of the previous definition
+[608 / 1,043] Executing genrule //models/yang:yang-tree; 5s processwrapper-sandbox ... (4 actions running)
+INFO: From Compiling src/tree_data.c:
+external/libyang++_repo_rules+libyang_src/src/tree_data.c:15: warning: "_GNU_SOURCE" redefined
+   15 | #define _GNU_SOURCE
+      | 
+<command-line>: note: this is the location of the previous definition
+INFO: From Executing genrule //models/yang:yang-tree:
+/home/bobo.linux/.cache/bazel/_bazel_bobo/89680900f12b4a06333d8f0ebcf7ed36/sandbox/processwrapper-sandbox/34/execroot/_main/./bazel-out/k8-opt-exec-ST-d57f47055a04/bin/tools/pyang/tree.runfiles/rules_python++pip+pip_sonic_mgmt_common_311_pyang/site-packages/pyang/plugin.py:5: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+Discovered 49 yangs from ./yang/
+Loaded 49 yang modules, 0 failed
+load_yangs took 0.261s
+validate_context took 3.528s
+Writing text tree to oc_yang_tree.txt ...
+write_tree took 0.052s
+Writing html tree to oc_yang_tree.html ...
+write_tree took 0.343s
+[613 / 1,043] GoToolchainBinaryBuild external/rules_go++go_sdk+main___download_0/builder [for tool]; 5s processwrapper-sandbox ... (4 actions running)
+INFO: From Compiling src/printer_yin.c:
+external/libyang++_repo_rules+libyang_src/src/printer_yin.c:14: warning: "_GNU_SOURCE" redefined
+   14 | #define _GNU_SOURCE
+      | 
+<command-line>: note: this is the location of the previous definition
+INFO: From Compiling src/resolve.c:
+external/libyang++_repo_rules+libyang_src/src/resolve.c:15: warning: "_GNU_SOURCE" redefined
+   15 | #define _GNU_SOURCE
+      | 
+<command-line>: note: this is the location of the previous definition
+INFO: From Compiling src/printer_yang.c:
+external/libyang++_repo_rules+libyang_src/src/printer_yang.c:14: warning: "_GNU_SOURCE" redefined
+   14 | #define _GNU_SOURCE
+      | 
+<command-line>: note: this is the location of the previous definition
+INFO: From Compiling src/printer_xml.c:
+external/libyang++_repo_rules+libyang_src/src/printer_xml.c:15: warning: "_GNU_SOURCE" redefined
+   15 | #define _GNU_SOURCE
+      | 
+<command-line>: note: this is the location of the previous definition
+[620 / 1,043] GoToolchainBinaryBuild external/rules_go++go_sdk+main___download_0/builder [for tool]; 6s processwrapper-sandbox ... (4 actions running)
+INFO: From Compiling src/printer_json_schema.c:
+external/libyang++_repo_rules+libyang_src/src/printer_json_schema.c:15: warning: "_GNU_SOURCE" redefined
+   15 | #define _GNU_SOURCE
+      | 
+<command-line>: note: this is the location of the previous definition
+INFO: From Executing genrule //models/yang:sonic-yang-tree:
+/home/bobo.linux/.cache/bazel/_bazel_bobo/89680900f12b4a06333d8f0ebcf7ed36/sandbox/processwrapper-sandbox/75/execroot/_main/./bazel-out/k8-opt-exec-ST-d57f47055a04/bin/tools/pyang/tree.runfiles/rules_python++pip+pip_sonic_mgmt_common_311_pyang/site-packages/pyang/plugin.py:5: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+Discovered 49 yangs from ./yang/sonic
+Loaded 49 yang modules, 0 failed
+load_yangs took 0.032s
+validate_context took 0.1s
+Writing text tree to sonic_allyangs_tree.txt ...
+write_tree took 0.004s
+Writing html tree to sonic_allyangs_tree.html ...
+write_tree took 0.009s
+INFO: From Compiling src/printer.c:
+external/libyang++_repo_rules+libyang_src/src/printer.c:15: warning: "_GNU_SOURCE" redefined
+   15 | #define _GNU_SOURCE /* vasprintf(), vdprintf() */
+      | 
+<command-line>: note: this is the location of the previous definition
+INFO: From Compiling src/plugins.c:
+external/libyang++_repo_rules+libyang_src/src/plugins.c:15: warning: "_GNU_SOURCE" redefined
+   15 | #define _GNU_SOURCE
+      | 
+<command-line>: note: this is the location of the previous definition
+[629 / 1,043] GoToolchainBinaryBuild external/rules_go++go_sdk+main___download_0/builder [for tool]; 7s processwrapper-sandbox ... (4 actions running)
+INFO: From Compiling src/parser_json.c:
+external/libyang++_repo_rules+libyang_src/src/parser_json.c:15: warning: "_GNU_SOURCE" redefined
+   15 | #define _GNU_SOURCE
+      | 
+<command-line>: note: this is the location of the previous definition
+INFO: From Compiling src/log.c:
+external/libyang++_repo_rules+libyang_src/src/log.c:15: warning: "_GNU_SOURCE" redefined
+   15 | #define _GNU_SOURCE
+      | 
+<command-line>: note: this is the location of the previous definition
+INFO: From Compiling src/parser.c:
+external/libyang++_repo_rules+libyang_src/src/parser.c:15: warning: "_GNU_SOURCE" redefined
+   15 | #define _GNU_SOURCE
+      | 
+<command-line>: note: this is the location of the previous definition
+INFO: From Compiling src/common.c:
+external/libyang++_repo_rules+libyang_src/src/common.c:15: warning: "_GNU_SOURCE" redefined
+   15 | #define _GNU_SOURCE
+      | 
+<command-line>: note: this is the location of the previous definition
+INFO: From Compiling src/context.c:
+external/libyang++_repo_rules+libyang_src/src/context.c:15: warning: "_GNU_SOURCE" redefined
+   15 | #define _GNU_SOURCE
+      | 
+<command-line>: note: this is the location of the previous definition
+[639 / 1,045] GoToolchainBinaryBuild external/rules_go++go_sdk+main___download_0/builder [for tool]; 8s processwrapper-sandbox
+[640 / 1,045] [Prepa] Creating symlink external/rules_go++go_sdk+main___download_0/pack_reset/pack.exe [for tool]
+[647 / 1,045] GoStdlib external/rules_go+/stdlib_/pkg [for tool]; 1s processwrapper-sandbox ... (2 actions running)
+[647 / 1,045] GoStdlib external/rules_go+/stdlib_/pkg [for tool]; 11s processwrapper-sandbox ... (2 actions running)
+[648 / 1,045] GoStdlib external/rules_go+/stdlib_/pkg; 33s processwrapper-sandbox ... (2 actions, 1 running)
+[673 / 1,045] GoCompilePkg external/gazelle++go_deps+com_github_godbus_dbus_v5/dbus.a; 0s processwrapper-sandbox ... (4 actions, 3 running)
+[683 / 1,045] GoCompilePkg external/gazelle++go_deps+org_golang_x_text/unicode/norm/norm.a [for tool]; 0s processwrapper-sandbox ... (4 actions, 3 running)
+[714 / 1,045] GoCompilePkg external/gazelle++go_deps+org_golang_x_net/http2/http2.a [for tool]; 0s processwrapper-sandbox ... (4 actions, 3 running)
+[738 / 1,045] GoCompilePkg external/gazelle++go_deps+org_golang_x_sys/unix/unix.a [for tool]; 0s processwrapper-sandbox ... (4 actions, 3 running)
+[764 / 1,045] GoCompilePkg external/gazelle++go_deps+org_golang_x_sys/unix/unix.a; 0s processwrapper-sandbox ... (4 actions, 3 running)
+[790 / 1,045] GoLink translib/log/log_test_/log_test; 0s processwrapper-sandbox ... (4 actions, 3 running)
+INFO: From GoLink translib/log/log_test_/log_test:
+/home/bobo.linux/.cache/bazel/_bazel_bobo/89680900f12b4a06333d8f0ebcf7ed36/external/sonic-build-infra++_repo_rules+gcc-linux-x86_64/bin/../lib/gcc/x86_64-linux/12.5.0/../../../../x86_64-linux/bin/ld: /tmp/go-link-172876607/go.o: warning: relocation in read-only section `.gopclntab'
+/home/bobo.linux/.cache/bazel/_bazel_bobo/89680900f12b4a06333d8f0ebcf7ed36/external/sonic-build-infra++_repo_rules+gcc-linux-x86_64/bin/../lib/gcc/x86_64-linux/12.5.0/../../../../x86_64-linux/bin/ld: warning: creating DT_TEXTREL in a PIE
+[833 / 1,045] GoCompilePkg external/gazelle++go_deps+org_golang_google_protobuf/internal/impl/impl.a [for tool]; 0s processwrapper-sandbox ... (4 actions, 3 running)
+[846 / 1,045] GoCompilePkg external/gazelle++go_deps+org_golang_google_protobuf/internal/impl/impl.a [for tool]; 1s processwrapper-sandbox ... (4 actions, 3 running)
+[858 / 1,045] GoCompilePkg external/gazelle++go_deps+com_github_redis_go_redis_v9/go-redis.a; 2s processwrapper-sandbox ... (4 actions running)
+[872 / 1,045] GoCompilePkg external/gazelle++go_deps+com_github_redis_go_redis_v9/go-redis.a; 3s processwrapper-sandbox ... (4 actions running)
+[892 / 1,045] GoCompilePkg external/gazelle++go_deps+com_github_redis_go_redis_v9/go-redis.a; 4s processwrapper-sandbox ... (4 actions running)
+[905 / 1,045] GoCompilePkg external/gazelle++go_deps+com_github_redis_go_redis_v9/go-redis.a; 5s processwrapper-sandbox ... (4 actions, 3 running)
+[913 / 1,045] GoCompilePkg external/gazelle++go_deps+org_golang_google_protobuf/encoding/prototext/prototext.a; 0s processwrapper-sandbox ... (4 actions, 3 running)
+[928 / 1,045] GoCompilePkg cvl/internal/util/util.a; 1s processwrapper-sandbox ... (4 actions, 3 running)
+[932 / 1,045] GoCompilePkg external/gazelle++go_deps+org_golang_google_protobuf/internal/impl/impl.a; 2s processwrapper-sandbox ... (4 actions running)
+[952 / 1,045] GoCompilePkg cvl/internal/yparser/yparser.a; 2s processwrapper-sandbox ... (4 actions, 3 running)
+INFO: From GoCompilePkg cvl/internal/yparser/yparser.a:
+cvl/internal/yparser/yparser.go: In function 'lyd_node_leafref_match_in_union':
+cvl/internal/yparser/yparser.go:157:27: warning: comparison of integer expressions of different signedness: 'int' and 'unsigned int' [-Wsign-compare]
+  157 |         for (idx = 0; idx < lNode->type.info.uni.count; idx++)
+      |                           ^
+cvl/internal/yparser/yparser.go: In function 'lys_get_leafrefs':
+cvl/internal/yparser/yparser.go:205:32: warning: comparison of integer expressions of different signedness: 'int' and 'unsigned int' [-Wsign-compare]
+  205 |                 for (; typeCnt < node->type.info.uni.count; typeCnt++) {
+      |                                ^
+[970 / 1,045] GoLink external/+sonic_go_repos+com_github_openconfig_ygot/generator/generator_/generator [for tool]; 1s processwrapper-sandbox ... (4 actions, 3 running)
+INFO: From GoLink external/+sonic_go_repos+com_github_openconfig_ygot/generator/generator_/generator [for tool]:
+/home/bobo.linux/.cache/bazel/_bazel_bobo/89680900f12b4a06333d8f0ebcf7ed36/external/sonic-build-infra++_repo_rules+gcc-linux-x86_64/bin/../lib/gcc/x86_64-linux/12.5.0/../../../../x86_64-linux/bin/ld: /tmp/go-link-1431552299/go.o: warning: relocation in read-only section `.gopclntab'
+/home/bobo.linux/.cache/bazel/_bazel_bobo/89680900f12b4a06333d8f0ebcf7ed36/external/sonic-build-infra++_repo_rules+gcc-linux-x86_64/bin/../lib/gcc/x86_64-linux/12.5.0/../../../../x86_64-linux/bin/ld: warning: creating DT_TEXTREL in a PIE
+[981 / 1,045] Executing genrule //translib/ocbinds:oc_go; 0s processwrapper-sandbox ... (4 actions, 3 running)
+INFO: From GoLink translib/tlerr/tlerr_test_/tlerr_test:
+/home/bobo.linux/.cache/bazel/_bazel_bobo/89680900f12b4a06333d8f0ebcf7ed36/external/sonic-build-infra++_repo_rules+gcc-linux-x86_64/bin/../lib/gcc/x86_64-linux/12.5.0/../../../../x86_64-linux/bin/ld: /tmp/go-link-1648543915/go.o: warning: relocation in read-only section `.gopclntab'
+/home/bobo.linux/.cache/bazel/_bazel_bobo/89680900f12b4a06333d8f0ebcf7ed36/external/sonic-build-infra++_repo_rules+gcc-linux-x86_64/bin/../lib/gcc/x86_64-linux/12.5.0/../../../../x86_64-linux/bin/ld: warning: creating DT_TEXTREL in a PIE
+[989 / 1,045] Executing genrule //translib/ocbinds:oc_go; 2s processwrapper-sandbox ... (4 actions, 3 running)
+[998 / 1,045] Executing genrule //translib/ocbinds:oc_go; 3s processwrapper-sandbox ... (4 actions, 3 running)
+[1,019 / 1,045] Executing genrule //translib/ocbinds:oc_go; 4s processwrapper-sandbox ... (4 actions running)
+INFO: From GoLink translib/internal/apis/apis_test_/apis_test:
+/home/bobo.linux/.cache/bazel/_bazel_bobo/89680900f12b4a06333d8f0ebcf7ed36/external/sonic-build-infra++_repo_rules+gcc-linux-x86_64/bin/../lib/gcc/x86_64-linux/12.5.0/../../../../x86_64-linux/bin/ld: /tmp/go-link-3407887245/go.o: warning: relocation in read-only section `.gopclntab'
+/home/bobo.linux/.cache/bazel/_bazel_bobo/89680900f12b4a06333d8f0ebcf7ed36/external/sonic-build-infra++_repo_rules+gcc-linux-x86_64/bin/../lib/gcc/x86_64-linux/12.5.0/../../../../x86_64-linux/bin/ld: warning: creating DT_TEXTREL in a PIE
+INFO: From GoLink external/gazelle+/cmd/gazelle/gazelle_/gazelle:
+/home/bobo.linux/.cache/bazel/_bazel_bobo/89680900f12b4a06333d8f0ebcf7ed36/external/sonic-build-infra++_repo_rules+gcc-linux-x86_64/bin/../lib/gcc/x86_64-linux/12.5.0/../../../../x86_64-linux/bin/ld: /tmp/go-link-1429787953/go.o: warning: relocation in read-only section `.gopclntab'
+/home/bobo.linux/.cache/bazel/_bazel_bobo/89680900f12b4a06333d8f0ebcf7ed36/external/sonic-build-infra++_repo_rules+gcc-linux-x86_64/bin/../lib/gcc/x86_64-linux/12.5.0/../../../../x86_64-linux/bin/ld: warning: creating DT_TEXTREL in a PIE
+[1,024 / 1,045] Executing genrule //translib/ocbinds:oc_go; 5s processwrapper-sandbox
+[1,027 / 1,045] GoCompilePkg translib/ocbinds/ocbinds_test.internal.a; 1s processwrapper-sandbox ... (2 actions running)
+[1,028 / 1,045] GoCompilePkg translib/ocbinds/ocbinds_test.internal.a; 7s processwrapper-sandbox ... (2 actions, 1 running)
+INFO: From GoLink translib/ocbinds/ocbinds_test_/ocbinds_test:
+/home/bobo.linux/.cache/bazel/_bazel_bobo/89680900f12b4a06333d8f0ebcf7ed36/external/sonic-build-infra++_repo_rules+gcc-linux-x86_64/bin/../lib/gcc/x86_64-linux/12.5.0/../../../../x86_64-linux/bin/ld: /tmp/go-link-1839680850/go.o: warning: relocation in read-only section `.gopclntab'
+/home/bobo.linux/.cache/bazel/_bazel_bobo/89680900f12b4a06333d8f0ebcf7ed36/external/sonic-build-infra++_repo_rules+gcc-linux-x86_64/bin/../lib/gcc/x86_64-linux/12.5.0/../../../../x86_64-linux/bin/ld: warning: creating DT_TEXTREL in a PIE
+[1,036 / 1,045] GoCompilePkg translib/transformer/transformer.a; 1s processwrapper-sandbox ... (3 actions running)
+INFO: From GoLink translib/path/path_test_/path_test:
+/home/bobo.linux/.cache/bazel/_bazel_bobo/89680900f12b4a06333d8f0ebcf7ed36/external/sonic-build-infra++_repo_rules+gcc-linux-x86_64/bin/../lib/gcc/x86_64-linux/12.5.0/../../../../x86_64-linux/bin/ld: /tmp/go-link-3029391816/go.o: warning: relocation in read-only section `.gopclntab'
+/home/bobo.linux/.cache/bazel/_bazel_bobo/89680900f12b4a06333d8f0ebcf7ed36/external/sonic-build-infra++_repo_rules+gcc-linux-x86_64/bin/../lib/gcc/x86_64-linux/12.5.0/../../../../x86_64-linux/bin/ld: warning: creating DT_TEXTREL in a PIE
+[1,038 / 1,045] GoCompilePkg translib/transformer/transformer.a; 2s processwrapper-sandbox
+[1,039 / 1,045] [Prepa] GoCompilePkg translib/translib.a ... (2 actions, 0 running)
+INFO: From GoLink translib/cs/cs_test_/cs_test:
+/home/bobo.linux/.cache/bazel/_bazel_bobo/89680900f12b4a06333d8f0ebcf7ed36/external/sonic-build-infra++_repo_rules+gcc-linux-x86_64/bin/../lib/gcc/x86_64-linux/12.5.0/../../../../x86_64-linux/bin/ld: /tmp/go-link-2905470980/go.o: warning: relocation in read-only section `.gopclntab'
+/home/bobo.linux/.cache/bazel/_bazel_bobo/89680900f12b4a06333d8f0ebcf7ed36/external/sonic-build-infra++_repo_rules+gcc-linux-x86_64/bin/../lib/gcc/x86_64-linux/12.5.0/../../../../x86_64-linux/bin/ld: warning: creating DT_TEXTREL in a PIE
+INFO: Found 77 targets...
+INFO: Elapsed time: 140.493s, Critical Path: 82.72s
+INFO: 1045 processes: 545 internal, 500 processwrapper-sandbox.
+INFO: Build completed successfully, 1045 total actions
+
+========================================
+RESULT: SUCCESS
+Finished: Tue Apr 21 22:03:39 CDT 2026
+========================================

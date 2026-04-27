@@ -1,0 +1,29 @@
+========================================
+Step: docker image query
+Started: Tue Apr 21 22:16:25 CDT 2026
+Command: bazel query kind(oci_load, ...)
+========================================
+
+Starting local Bazel server (8.5.1) and connecting to it...
+ no actions running
+ no actions running
+Loading: 0 packages loaded
+Loading: 0 packages loaded
+//dockers/docker-base-bookworm:load
+//dockers/docker-config-engine-bookworm:load
+//dockers/docker-database:load
+//dockers/docker-orchagent:load
+//dockers/docker-platform-monitor:load
+//dockers/docker-sflow:load
+//dockers/docker-sonic-gnmi:load
+//dockers/docker-sonic-p4rt:load
+//dockers/docker-swss-layer-bookworm:load
+//dockers/docker-sysmgr:load
+//dockers/docker-teamd:load
+//platform/broadcom/docker-syncd-brcm:load
+//platform/vs/docker-syncd-vs:load
+
+========================================
+RESULT: SUCCESS
+Finished: Tue Apr 21 22:16:30 CDT 2026
+========================================

@@ -1,0 +1,39 @@
+========================================
+Step: docker load: //dockers/docker-sflow:load
+Started: Tue Apr 21 22:32:39 CDT 2026
+Command: bazel run //dockers/docker-sflow:load
+========================================
+
+Computing main repo mapping: 
+Loading: 
+Loading: 0 packages loaded
+Analyzing: target //dockers/docker-sflow:load (1 packages loaded, 0 targets configured)
+Analyzing: target //dockers/docker-sflow:load (1 packages loaded, 0 targets configured)
+
+Analyzing: target //dockers/docker-sflow:load (83 packages loaded, 1566 targets configured)
+
+Analyzing: target //dockers/docker-sflow:load (149 packages loaded, 7925 targets configured)
+
+Analyzing: target //dockers/docker-sflow:load (166 packages loaded, 18364 targets configured)
+
+INFO: Analyzed target //dockers/docker-sflow:load (167 packages loaded, 33674 targets configured).
+[1 / 1] no actions running
+[1,772 / 2,307] [Scann] Compiling src/sflow/sflow_receiver.c
+[2,404 / 3,207] [Prepa] Executing genrule @@rules_distroless++apt+bookworm_dmidecode-amd64_3.4-1//:data
+[2,843 / 3,683] Linking external/psample++_repo_rules+psample_src/liblibpsample_shared.so; 0s processwrapper-sandbox
+[3,095 / 3,819] Compiling src/Linux/hsflowconfig.c; 0s processwrapper-sandbox ... (4 actions running)
+[3,117 / 3,819] Compiling src/Linux/util.c; 0s processwrapper-sandbox ... (4 actions running)
+[3,637 / 3,819] [Prepa] Linking external/hsflowd++_repo_rules+hsflowd_src/liblibhsflowd.a
+INFO: Found 1 target...
+Target //dockers/docker-sflow:load up-to-date:
+  bazel-bin/dockers/docker-sflow/load.sh
+INFO: Elapsed time: 12.814s, Critical Path: 2.01s
+INFO: 102 processes: 3728 action cache hit, 37 internal, 65 processwrapper-sandbox.
+INFO: Build completed successfully, 102 total actions
+INFO: Running command line: bazel-bin/dockers/docker-sflow/load.sh
+Loaded image: docker-sflow:latest
+
+========================================
+RESULT: SUCCESS
+Finished: Tue Apr 21 22:32:56 CDT 2026
+========================================

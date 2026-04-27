@@ -1,0 +1,26 @@
+========================================
+Step: docker load: //dockers/docker-swss-layer-bookworm:load
+Started: Tue Apr 21 22:40:12 CDT 2026
+Command: bazel run //dockers/docker-swss-layer-bookworm:load
+========================================
+
+Computing main repo mapping: 
+Loading: 
+Loading: 0 packages loaded
+Analyzing: target //dockers/docker-swss-layer-bookworm:load (0 packages loaded, 0 targets configured)
+Analyzing: target //dockers/docker-swss-layer-bookworm:load (0 packages loaded, 0 targets configured)
+
+INFO: Analyzed target //dockers/docker-swss-layer-bookworm:load (0 packages loaded, 2 targets configured).
+INFO: Found 1 target...
+Target //dockers/docker-swss-layer-bookworm:load up-to-date:
+  bazel-bin/dockers/docker-swss-layer-bookworm/load.sh
+INFO: Elapsed time: 2.277s, Critical Path: 0.07s
+INFO: 8 processes: 240 action cache hit, 7 internal, 1 processwrapper-sandbox.
+INFO: Build completed successfully, 8 total actions
+INFO: Running command line: bazel-bin/dockers/docker-swss-layer-bookworm/load.sh
+Loaded image: docker-swss-layer-bookworm:latest
+
+========================================
+RESULT: SUCCESS
+Finished: Tue Apr 21 22:40:18 CDT 2026
+========================================

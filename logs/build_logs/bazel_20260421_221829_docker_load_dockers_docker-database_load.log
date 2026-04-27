@@ -1,0 +1,1123 @@
+========================================
+Step: docker load: //dockers/docker-database:load
+Started: Tue Apr 21 22:18:29 CDT 2026
+Command: bazel run //dockers/docker-database:load
+========================================
+
+Computing main repo mapping: 
+Loading: 
+Loading: 0 packages loaded
+Analyzing: target //dockers/docker-database:load (0 packages loaded, 0 targets configured)
+Analyzing: target //dockers/docker-database:load (0 packages loaded, 0 targets configured)
+
+Analyzing: target //dockers/docker-database:load (17 packages loaded, 1241 targets configured)
+
+Analyzing: target //dockers/docker-database:load (77 packages loaded, 6246 targets configured)
+
+Analyzing: target //dockers/docker-database:load (91 packages loaded, 27748 targets configured)
+
+INFO: Analyzed target //dockers/docker-database:load (91 packages loaded, 30657 targets configured).
+[486 / 1,646] Compiling sonic-db-cli/main.cpp; 0s processwrapper-sandbox ... (4 actions running)
+[609 / 2,237] Compiling sonic-db-cli/main.cpp; 1s processwrapper-sandbox ... (4 actions running)
+[621 / 2,243] Compiling sonic-db-cli/main.cpp; 2s processwrapper-sandbox ... (4 actions running)
+[784 / 2,312] Compiling sonic-db-cli/sonic-db-cli.cpp; 3s processwrapper-sandbox ... (4 actions running)
+[1,254 / 2,730] Compiling common/loglevel.cpp; 0s processwrapper-sandbox ... (3 actions, 2 running)
+[1,308 / 2,733] Compiling common/loglevel.cpp; 1s processwrapper-sandbox ... (4 actions running)
+[1,324 / 2,733] Unpack external/rules_distroless++apt+bookworm_libboost1.74-dev-amd64_1.74.0-ds1-21/usr/include/boost/container/detail/alloc_lib.h; 1s processwrapper-sandbox ... (4 actions running)
+[1,352 / 2,756] Unpack external/rules_distroless++apt+bookworm_libboost1.74-dev-amd64_1.74.0-ds1-21/usr/include/boost/container/detail/alloc_lib.h; 2s processwrapper-sandbox ... (4 actions, 3 running)
+[1,546 / 3,204] Unpack external/rules_distroless++apt+bookworm_libboost1.74-dev-amd64_1.74.0-ds1-21/usr/include/boost/container/detail/alloc_lib.h; 3s processwrapper-sandbox ... (4 actions, 3 running)
+[1,571 / 3,205] Unpack external/rules_distroless++apt+bookworm_libboost1.74-dev-amd64_1.74.0-ds1-21/usr/include/boost/container/detail/alloc_lib.h; 5s processwrapper-sandbox ... (4 actions, 3 running)
+[1,631 / 3,278] Unpack external/rules_distroless++apt+bookworm_libboost1.74-dev-amd64_1.74.0-ds1-21/usr/include/boost/container/detail/alloc_lib.h; 6s processwrapper-sandbox ... (4 actions, 3 running)
+[1,650 / 3,278] Compiling absl/numeric/int128.cc [for tool]; 0s processwrapper-sandbox ... (4 actions, 3 running)
+[1,658 / 3,278] Compiling src/gen.c [for tool]; 0s processwrapper-sandbox ... (4 actions, 3 running)
+[1,671 / 3,278] Compiling src/muscle-tab.c [for tool]; 0s processwrapper-sandbox ... (4 actions, 3 running)
+INFO: From Compiling flex/internal/m4_deny_shell.c [for tool]:
+external/rules_flex+/flex/internal/m4_deny_shell.c: In function 'main':
+external/rules_flex+/flex/internal/m4_deny_shell.c:21:14: warning: unused parameter 'argc' [-Wunused-parameter]
+   21 | int main(int argc, char **argv) {
+      |          ~~~~^~~~
+external/rules_flex+/flex/internal/m4_deny_shell.c:21:27: warning: unused parameter 'argv' [-Wunused-parameter]
+   21 | int main(int argc, char **argv) {
+      |                    ~~~~~~~^~~~
+[1,694 / 3,281] Compiling absl/base/internal/throw_delegate.cc; 0s processwrapper-sandbox ... (3 actions, 2 running)
+[1,721 / 3,281] Compiling src/print.c [for tool]; 0s processwrapper-sandbox ... (4 actions, 3 running)
+[1,736 / 3,281] Compiling gnulib/lib/regex.c [for tool]; 0s processwrapper-sandbox ... (4 actions, 3 running)
+[1,745 / 3,281] Compiling gnulib/lib/regex.c [for tool]; 1s processwrapper-sandbox ... (4 actions, 3 running)
+[1,753 / 3,281] Compiling gnulib/lib/regex.c [for tool]; 2s processwrapper-sandbox ... (4 actions, 3 running)
+[1,779 / 3,281] Compiling absl/strings/string_view.cc [for tool]; 0s processwrapper-sandbox ... (4 actions, 3 running)
+[1,801 / 3,281] Compiling cc/runfiles/runfiles.cc [for tool]; 0s processwrapper-sandbox ... (4 actions, 3 running)
+[1,813 / 3,281] Compiling src/builtin.c [for tool]; 0s processwrapper-sandbox ... (4 actions, 3 running)
+[1,835 / 3,281] Compiling gnulib/lib/vasnprintf.c [for tool]; 0s processwrapper-sandbox ... (4 actions running)
+[1,847 / 3,281] Compiling gnulib/lib/bitset/list.c [for tool]; 0s processwrapper-sandbox ... (3 actions running)
+[1,864 / 3,281] Compiling absl/strings/substitute.cc; 0s processwrapper-sandbox ... (3 actions running)
+INFO: From Bison @@libnl3++_repo_rules+libnl3_src//:pktloc_syntax:
+external/libnl3++_repo_rules+libnl3_src/lib/route/pktloc_syntax.y:10.1-14: warning: deprecated directive, use '%define parse.error verbose' [-Wdeprecated]
+ %error-verbose
+ ^~~~~~~~~~~~~~
+external/libnl3++_repo_rules+libnl3_src/lib/route/pktloc_syntax.y:12.1-22: warning: deprecated directive, use '%define api.prefix {pktloc_}' [-Wdeprecated]
+ %name-prefix "pktloc_"
+ ^~~~~~~~~~~~~~~~~~~~~~
+external/libnl3++_repo_rules+libnl3_src/lib/route/pktloc_syntax.y:46.6: warning: empty rule without %empty [-Wempty-rule]
+ input:
+      ^
+external/libnl3++_repo_rules+libnl3_src/lib/route/pktloc_syntax.y:87.17-43: warning: empty rule without %empty [-Wempty-rule]
+ 		{ $$ = TCF_LAYER_NETWORK; }
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+external/libnl3++_repo_rules+libnl3_src/lib/route/pktloc_syntax.y:94.17-27: warning: empty rule without %empty [-Wempty-rule]
+ 		{ $$ = 0; }
+                 ^~~~~~~~~~~
+external/libnl3++_repo_rules+libnl3_src/lib/route/pktloc_syntax.y:101.17-27: warning: empty rule without %empty [-Wempty-rule]
+ 		{ $$ = 0; }
+                 ^~~~~~~~~~~
+external/libnl3++_repo_rules+libnl3_src/lib/route/pktloc_syntax.y: warning: fix-its can be applied.  Rerun with option '--update'. [-Wother]
+[1,880 / 3,281] Compiling absl/strings/str_split.cc [for tool]; 0s processwrapper-sandbox ... (4 actions, 3 running)
+INFO: From Bison @@libnl3++_repo_rules+libnl3_src//:ematch_syntax:
+external/libnl3++_repo_rules+libnl3_src/lib/route/cls/ematch_syntax.y:26.1-14: warning: deprecated directive, use '%define parse.error verbose' [-Wdeprecated]
+ %error-verbose
+ ^~~~~~~~~~~~~~
+external/libnl3++_repo_rules+libnl3_src/lib/route/cls/ematch_syntax.y:28.1-22: warning: deprecated directive, use '%define api.prefix {ematch_}' [-Wdeprecated]
+ %name-prefix "ematch_"
+ ^~~~~~~~~~~~~~~~~~~~~~
+external/libnl3++_repo_rules+libnl3_src/lib/route/cls/ematch_syntax.y:145.6: warning: empty rule without %empty [-Wempty-rule]
+ input:
+      ^
+external/libnl3++_repo_rules+libnl3_src/lib/route/cls/ematch_syntax.y:318.17-30: warning: empty rule without %empty [-Wempty-rule]
+ 		{ $$ = NULL; }
+                 ^~~~~~~~~~~~~~
+external/libnl3++_repo_rules+libnl3_src/lib/route/cls/ematch_syntax.y:325.17-30: warning: empty rule without %empty [-Wempty-rule]
+ 		{ $$ = NULL; }
+                 ^~~~~~~~~~~~~~
+external/libnl3++_repo_rules+libnl3_src/lib/route/cls/ematch_syntax.y:470.17-27: warning: empty rule without %empty [-Wempty-rule]
+ 		{ $$ = 0; }
+                 ^~~~~~~~~~~
+external/libnl3++_repo_rules+libnl3_src/lib/route/cls/ematch_syntax.y:479.17-27: warning: empty rule without %empty [-Wempty-rule]
+ 		{ $$ = 0; }
+                 ^~~~~~~~~~~
+external/libnl3++_repo_rules+libnl3_src/lib/route/cls/ematch_syntax.y:486.17-27: warning: empty rule without %empty [-Wempty-rule]
+ 		{ $$ = 0; }
+                 ^~~~~~~~~~~
+external/libnl3++_repo_rules+libnl3_src/lib/route/cls/ematch_syntax.y: warning: fix-its can be applied.  Rerun with option '--update'. [-Wother]
+[1,890 / 3,281] Compiling absl/strings/str_cat.cc; 0s processwrapper-sandbox ... (4 actions, 3 running)
+[1,898 / 3,281] Compiling absl/strings/numbers.cc; 0s processwrapper-sandbox ... (4 actions, 3 running)
+[1,911 / 3,281] Compiling absl/strings/internal/charconv_bigint.cc [for tool]; 0s processwrapper-sandbox ... (4 actions, 3 running)
+[1,919 / 3,281] Compiling common/zmqproducerstatetable.cpp; 0s processwrapper-sandbox ... (4 actions, 3 running)
+[1,928 / 3,281] Compiling common/zmqproducerstatetable.cpp; 1s processwrapper-sandbox ... (4 actions, 3 running)
+[1,933 / 3,281] Compiling absl/strings/internal/str_format/parser.cc; 1s processwrapper-sandbox ... (4 actions, 3 running)
+[1,936 / 3,281] Compiling common/zmqconsumerstatetable.cpp; 1s processwrapper-sandbox ... (4 actions running)
+[1,939 / 3,281] Compiling absl/strings/internal/str_format/float_conversion.cc; 1s processwrapper-sandbox ... (4 actions running)
+[1,948 / 3,281] Compiling common/zmqclient.cpp; 1s processwrapper-sandbox ... (4 actions, 3 running)
+[1,955 / 3,281] Compiling common/warm_restart.cpp; 0s processwrapper-sandbox ... (4 actions, 3 running)
+[1,957 / 3,281] Compiling common/warm_restart.cpp; 1s processwrapper-sandbox ... (4 actions, 3 running)
+[1,960 / 3,281] Compiling common/warm_restart.cpp; 2s processwrapper-sandbox ... (4 actions, 3 running)
+[1,966 / 3,281] Compiling absl/crc/internal/crc_cord_state.cc [for tool]; 1s processwrapper-sandbox ... (4 actions running)
+[1,976 / 3,281] Compiling absl/crc/internal/crc_cord_state.cc; 0s processwrapper-sandbox ... (4 actions running)
+[1,983 / 3,281] Compiling common/table.cpp; 1s processwrapper-sandbox ... (4 actions running)
+[1,986 / 3,281] Compiling common/table.cpp; 2s processwrapper-sandbox ... (4 actions running)
+[1,988 / 3,281] Compiling common/table.cpp; 3s processwrapper-sandbox ... (4 actions running)
+[1,993 / 3,281] Compiling common/table.cpp; 4s processwrapper-sandbox ... (4 actions, 3 running)
+[2,000 / 3,281] Compiling common/subscriberstatetable.cpp; 0s processwrapper-sandbox ... (4 actions, 3 running)
+[2,003 / 3,281] Compiling common/subscriberstatetable.cpp; 1s processwrapper-sandbox ... (4 actions, 3 running)
+[2,007 / 3,281] Compiling absl/time/clock.cc; 0s processwrapper-sandbox ... (4 actions, 3 running)
+[2,018 / 3,281] Compiling common/sonicv2connector.cpp; 1s processwrapper-sandbox ... (4 actions, 3 running)
+[2,029 / 3,281] Compiling absl/debugging/internal/vdso_support.cc [for tool]; 0s processwrapper-sandbox ... (4 actions, 3 running)
+[2,040 / 3,281] Compiling absl/debugging/symbolize.cc [for tool]; 0s processwrapper-sandbox ... (4 actions, 3 running)
+[2,051 / 3,281] Compiling absl/synchronization/internal/graphcycles.cc [for tool]; 0s processwrapper-sandbox ... (4 actions, 3 running)
+[2,059 / 3,281] Compiling absl/synchronization/notification.cc; 0s processwrapper-sandbox ... (4 actions, 3 running)
+[2,066 / 3,281] Compiling absl/synchronization/internal/stdcpp_waiter.cc [for tool]; 0s processwrapper-sandbox ... (4 actions, 3 running)
+[2,071 / 3,281] Compiling common/restart_waiter.cpp; 1s processwrapper-sandbox ... (4 actions, 3 running)
+[2,076 / 3,281] Compiling common/redisutility.cpp; 0s processwrapper-sandbox ... (4 actions running)
+[2,079 / 3,281] Compiling common/redisutility.cpp; 1s processwrapper-sandbox ... (4 actions running)
+[2,082 / 3,281] Compiling absl/synchronization/internal/futex_waiter.cc; 1s processwrapper-sandbox ... (4 actions running)
+[2,086 / 3,281] Compiling common/redistran.cpp; 1s processwrapper-sandbox ... (4 actions running)
+[2,099 / 3,281] Compiling common/redisselect.cpp; 0s processwrapper-sandbox ... (4 actions running)
+[2,104 / 3,281] Compiling absl/strings/internal/cord_rep_crc.cc; 0s processwrapper-sandbox ... (4 actions running)
+[2,108 / 3,281] Compiling common/redisreply.cpp; 2s processwrapper-sandbox ... (4 actions, 3 running)
+[2,112 / 3,281] Compiling absl/strings/internal/cord_internal.cc [for tool]; 1s processwrapper-sandbox ... (4 actions, 3 running)
+[2,118 / 3,281] Compiling common/rediscommand.cpp; 1s processwrapper-sandbox ... (4 actions, 3 running)
+[2,123 / 3,281] Compiling absl/strings/cord_analysis.cc [for tool]; 0s processwrapper-sandbox ... (4 actions, 3 running)
+[2,129 / 3,281] Compiling common/redis_table_waiter.cpp; 1s processwrapper-sandbox ... (4 actions running)
+[2,134 / 3,281] Compiling absl/status/status.cc [for tool]; 0s processwrapper-sandbox ... (4 actions running)
+[2,136 / 3,281] Compiling absl/strings/cord.cc; 1s processwrapper-sandbox ... (4 actions running)
+[2,139 / 3,281] Compiling absl/status/status.cc; 1s processwrapper-sandbox ... (4 actions running)
+[2,145 / 3,281] Compiling common/profileprovider.cpp; 1s processwrapper-sandbox ... (4 actions, 3 running)
+[2,152 / 3,281] Compiling absl/log/internal/vlog_config.cc; 0s processwrapper-sandbox ... (4 actions, 3 running)
+[2,160 / 3,281] Compiling common/producertable.cpp; 1s processwrapper-sandbox ... (4 actions, 3 running)
+[2,170 / 3,281] Compiling common/producertable.cpp; 3s processwrapper-sandbox ... (4 actions, 3 running)
+[2,178 / 3,281] Compiling absl/log/initialize.cc [for tool]; 0s processwrapper-sandbox ... (4 actions running)
+[2,183 / 3,281] Compiling common/producerstatetable.cpp; 1s processwrapper-sandbox ... (4 actions, 3 running)
+[2,191 / 3,281] Compiling common/producerstatetable.cpp; 2s processwrapper-sandbox ... (4 actions, 3 running)
+[2,199 / 3,281] Compiling absl/log/internal/log_sink_set.cc; 1s processwrapper-sandbox ... (4 actions, 3 running)
+[2,213 / 3,281] Compiling common/performancetimer.cpp; 0s processwrapper-sandbox ... (4 actions, 3 running)
+[2,217 / 3,281] Compiling absl/log/internal/log_message.cc; 1s processwrapper-sandbox ... (4 actions, 3 running)
+[2,228 / 3,281] Compiling common/notificationproducer.cpp; 1s processwrapper-sandbox ... (4 actions, 3 running)
+[2,235 / 3,281] Compiling absl/container/internal/raw_hash_set.cc; 1s processwrapper-sandbox ... (4 actions, 3 running)
+[2,240 / 3,281] Compiling common/notificationconsumer.cpp; 1s processwrapper-sandbox ... (4 actions running)
+[2,255 / 3,281] Compiling absl/flags/reflection.cc; 2s processwrapper-sandbox ... (4 actions running)
+[2,270 / 3,281] Compiling src/google/protobuf/port.cc [for tool]; 1s processwrapper-sandbox ... (4 actions running)
+[2,275 / 3,281] Compiling absl/status/statusor.cc; 1s processwrapper-sandbox ... (4 actions running)
+[2,279 / 3,281] Compiling src/google/protobuf/port.cc; 1s processwrapper-sandbox ... (4 actions running)
+[2,346 / 3,281] Compiling common/luatable.cpp; 1s processwrapper-sandbox ... (4 actions, 3 running)
+[2,361 / 3,281] Compiling src/google/protobuf/io/printer.cc [for tool]; 0s processwrapper-sandbox ... (4 actions, 3 running)
+[2,375 / 3,281] Compiling src/google/protobuf/io/printer.cc [for tool]; 1s processwrapper-sandbox ... (3 actions, 2 running)
+[2,388 / 3,281] Compiling src/google/protobuf/io/printer.cc [for tool]; 3s processwrapper-sandbox ... (4 actions, 3 running)
+[2,447 / 3,281] Compiling src/google/protobuf/repeated_ptr_field.cc [for tool]; 1s processwrapper-sandbox ... (4 actions, 3 running)
+[2,452 / 3,281] Compiling common/json.cpp; 1s processwrapper-sandbox ... (4 actions running)
+[2,453 / 3,281] Compiling common/json.cpp; 2s processwrapper-sandbox ... (4 actions running)
+[2,455 / 3,281] Compiling common/json.cpp; 3s processwrapper-sandbox ... (4 actions running)
+[2,458 / 3,281] Compiling src/google/protobuf/message_lite.cc [for tool]; 2s processwrapper-sandbox ... (3 actions, 2 running)
+[2,460 / 3,281] Compiling src/google/protobuf/io/zero_copy_stream.cc [for tool]; 1s processwrapper-sandbox ... (4 actions, 3 running)
+[2,465 / 3,281] Compiling common/ipaddresses.cpp; 1s processwrapper-sandbox ... (4 actions, 3 running)
+[2,469 / 3,281] Compiling src/google/protobuf/generated_message_tctable_lite.cc [for tool]; 1s processwrapper-sandbox ... (4 actions, 3 running)
+[2,475 / 3,281] Compiling src/google/protobuf/generated_message_tctable_lite.cc [for tool]; 2s processwrapper-sandbox ... (4 actions running)
+INFO: From Compiling src/google/protobuf/generated_enum_util.cc [for tool]:
+external/protobuf+/src/google/protobuf/generated_enum_util.cc: In function 'std::vector<unsigned int> google::protobuf::internal::GenerateEnumData(absl::lts_20240722::Span<const int>)':
+external/protobuf+/src/google/protobuf/generated_enum_util.cc:213:66: warning: missing initializer for member 'google::protobuf::internal::EytzingerLayoutSorter::i' [-Wmissing-field-initializers]
+  213 |                         absl::MakeSpan(p, fallback_values.size())}
+      |                                                                  ^
+[2,478 / 3,281] Compiling src/google/protobuf/generated_message_tctable_lite.cc [for tool]; 3s processwrapper-sandbox ... (4 actions running)
+[2,481 / 3,281] Compiling src/google/protobuf/generated_message_tctable_lite.cc [for tool]; 4s processwrapper-sandbox ... (4 actions running)
+INFO: From Compiling src/google/protobuf/generated_message_tctable_lite.cc [for tool]:
+external/protobuf+/src/google/protobuf/generated_message_tctable_lite.cc: In instantiation of 'static const char* google::protobuf::internal::TcParser::MiniParse(google::protobuf::MessageLite*, const char*, google::protobuf::internal::ParseContext*, google::protobuf::internal::TcFieldData, const google::protobuf::internal::TcParseTableBase*, uint64_t) [with bool export_called_function = false; uint64_t = long unsigned int]':
+external/protobuf+/src/google/protobuf/generated_message_tctable_lite.cc:601:44:   required from here
+external/protobuf+/src/google/protobuf/generated_message_tctable_lite.cc:526:43: warning: missing initializer for member 'google::protobuf::internal::TcParser::TestMiniParseResult::tag' [-Wmissing-field-initializers]
+  526 |     if (export_called_function) *test_out = {Error};
+      |                                 ~~~~~~~~~~^~~~~~~~~
+external/protobuf+/src/google/protobuf/generated_message_tctable_lite.cc:526:43: warning: missing initializer for member 'google::protobuf::internal::TcParser::TestMiniParseResult::found_entry' [-Wmissing-field-initializers]
+external/protobuf+/src/google/protobuf/generated_message_tctable_lite.cc:526:43: warning: missing initializer for member 'google::protobuf::internal::TcParser::TestMiniParseResult::ptr' [-Wmissing-field-initializers]
+external/protobuf+/src/google/protobuf/generated_message_tctable_lite.cc:532:43: warning: missing initializer for member 'google::protobuf::internal::TcParser::TestMiniParseResult::found_entry' [-Wmissing-field-initializers]
+  532 |     if (export_called_function) *test_out = {table->fallback, tag};
+      |                                 ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+external/protobuf+/src/google/protobuf/generated_message_tctable_lite.cc:532:43: warning: missing initializer for member 'google::protobuf::internal::TcParser::TestMiniParseResult::ptr' [-Wmissing-field-initializers]
+external/protobuf+/src/google/protobuf/generated_message_tctable_lite.cc:594:41: warning: missing initializer for member 'google::protobuf::internal::TcParser::TestMiniParseResult::ptr' [-Wmissing-field-initializers]
+  594 |   if (export_called_function) *test_out = {parse_fn, tag, entry};
+      |                               ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+external/protobuf+/src/google/protobuf/generated_message_tctable_lite.cc: In instantiation of 'static const char* google::protobuf::internal::TcParser::MiniParse(google::protobuf::MessageLite*, const char*, google::protobuf::internal::ParseContext*, google::protobuf::internal::TcFieldData, const google::protobuf::internal::TcParseTableBase*, uint64_t) [with bool export_called_function = true; uint64_t = long unsigned int]':
+external/protobuf+/src/google/protobuf/generated_message_tctable_lite.cc:607:31:   required from here
+external/protobuf+/src/google/protobuf/generated_message_tctable_lite.cc:526:43: warning: missing initializer for member 'google::protobuf::internal::TcParser::TestMiniParseResult::tag' [-Wmissing-field-initializers]
+  526 |     if (export_called_function) *test_out = {Error};
+      |                                 ~~~~~~~~~~^~~~~~~~~
+external/protobuf+/src/google/protobuf/generated_message_tctable_lite.cc:526:43: warning: missing initializer for member 'google::protobuf::internal::TcParser::TestMiniParseResult::found_entry' [-Wmissing-field-initializers]
+external/protobuf+/src/google/protobuf/generated_message_tctable_lite.cc:526:43: warning: missing initializer for member 'google::protobuf::internal::TcParser::TestMiniParseResult::ptr' [-Wmissing-field-initializers]
+external/protobuf+/src/google/protobuf/generated_message_tctable_lite.cc:532:43: warning: missing initializer for member 'google::protobuf::internal::TcParser::TestMiniParseResult::found_entry' [-Wmissing-field-initializers]
+  532 |     if (export_called_function) *test_out = {table->fallback, tag};
+      |                                 ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+external/protobuf+/src/google/protobuf/generated_message_tctable_lite.cc:532:43: warning: missing initializer for member 'google::protobuf::internal::TcParser::TestMiniParseResult::ptr' [-Wmissing-field-initializers]
+external/protobuf+/src/google/protobuf/generated_message_tctable_lite.cc:594:41: warning: missing initializer for member 'google::protobuf::internal::TcParser::TestMiniParseResult::ptr' [-Wmissing-field-initializers]
+  594 |   if (export_called_function) *test_out = {parse_fn, tag, entry};
+      |                               ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+[2,483 / 3,281] Compiling src/google/protobuf/extension_set.cc [for tool]; 2s processwrapper-sandbox ... (4 actions running)
+[2,486 / 3,281] Compiling src/google/protobuf/extension_set.cc [for tool]; 3s processwrapper-sandbox ... (4 actions running)
+[2,487 / 3,281] Compiling src/google/protobuf/extension_set.cc [for tool]; 4s processwrapper-sandbox ... (4 actions, 3 running)
+[2,547 / 3,281] Compiling src/google/protobuf/compiler/retention.cc [for tool]; 0s processwrapper-sandbox ... (4 actions, 3 running)
+[2,548 / 3,281] Compiling src/google/protobuf/compiler/retention.cc [for tool]; 2s processwrapper-sandbox ... (4 actions running)
+[2,549 / 3,281] Compiling src/google/protobuf/compiler/retention.cc [for tool]; 3s processwrapper-sandbox ... (4 actions, 3 running)
+[2,554 / 3,281] Compiling src/google/protobuf/generated_enum_util.cc; 1s processwrapper-sandbox ... (4 actions running)
+[2,555 / 3,281] Compiling common/defaultvalueprovider.cpp; 2s processwrapper-sandbox ... (4 actions running)
+[2,557 / 3,281] Compiling src/google/protobuf/text_format.cc [for tool]; 2s processwrapper-sandbox ... (4 actions running)
+[2,558 / 3,281] Compiling src/google/protobuf/text_format.cc [for tool]; 3s processwrapper-sandbox ... (4 actions running)
+[2,559 / 3,281] Compiling src/google/protobuf/text_format.cc [for tool]; 5s processwrapper-sandbox ... (4 actions running)
+[2,561 / 3,281] Compiling src/google/protobuf/text_format.cc [for tool]; 6s processwrapper-sandbox ... (4 actions running)
+[2,563 / 3,281] Compiling src/google/protobuf/text_format.cc [for tool]; 7s processwrapper-sandbox ... (4 actions running)
+INFO: From Compiling src/google/protobuf/text_format.cc [for tool]:
+external/protobuf+/src/google/protobuf/text_format.cc: In member function 'bool google::protobuf::TextFormat::Parser::ParserImpl::ConsumeField(google::protobuf::Message*)':
+external/protobuf+/src/google/protobuf/text_format.cc:663:54: warning: 'bool google::protobuf::FieldOptions::weak() const' is deprecated [-Wdeprecated-declarations]
+  663 |       if (consumed_semicolon && field->options().weak() &&
+      |                                 ~~~~~~~~~~~~~~~~~~~~~^~
+In file included from external/protobuf+/src/google/protobuf/text_format.cc:46:
+bazel-out/k8-opt-exec-ST-d57f47055a04/bin/external/protobuf+/src/google/protobuf/_virtual_includes/protobuf/google/protobuf/descriptor.pb.h:18861:13: note: declared here
+18861 | inline bool FieldOptions::weak() const {
+      |             ^~~~~~~~~~~~
+[2,565 / 3,281] Compiling src/google/protobuf/generated_message_util.cc; 2s processwrapper-sandbox ... (4 actions, 3 running)
+[2,566 / 3,281] Compiling src/google/protobuf/message.cc [for tool]; 3s processwrapper-sandbox ... (4 actions running)
+[2,568 / 3,281] Compiling src/google/protobuf/message.cc [for tool]; 4s processwrapper-sandbox ... (4 actions running)
+[2,570 / 3,281] Compiling common/dbconnector.cpp; 3s processwrapper-sandbox ... (4 actions running)
+[2,571 / 3,281] Compiling common/dbconnector.cpp; 5s processwrapper-sandbox ... (4 actions, 3 running)
+[2,573 / 3,281] Compiling src/google/protobuf/generated_message_tctable_gen.cc [for tool]; 4s processwrapper-sandbox ... (4 actions running)
+INFO: From Compiling src/google/protobuf/generated_message_tctable_gen.cc [for tool]:
+external/protobuf+/src/google/protobuf/generated_message_tctable_gen.cc: In function 'google::protobuf::internal::TailCallTableInfo::NumToEntryTable google::protobuf::internal::{anonymous}::MakeNumToEntryTable(absl::lts_20240722::Span<const google::protobuf::internal::TailCallTableInfo::FieldOptions>)':
+external/protobuf+/src/google/protobuf/generated_message_tctable_gen.cc:502:42: warning: missing initializer for member 'google::protobuf::internal::TailCallTableInfo::SkipEntryBlock::entries' [-Wmissing-field-initializers]
+  502 |       num_to_entry_table.blocks.push_back({fnum});
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+external/protobuf+/src/google/protobuf/generated_message_tctable_gen.cc: In function 'bool google::protobuf::internal::{anonymous}::HasWeakFields(const google::protobuf::Descriptor*)':
+external/protobuf+/src/google/protobuf/generated_message_tctable_gen.cc:699:45: warning: 'bool google::protobuf::FieldOptions::weak() const' is deprecated [-Wdeprecated-declarations]
+  699 |     if (descriptor->field(i)->options().weak()) {
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+In file included from bazel-out/k8-opt-exec-ST-d57f47055a04/bin/external/protobuf+/src/google/protobuf/_virtual_includes/protobuf/google/protobuf/generated_message_tctable_gen.h:21,
+                 from external/protobuf+/src/google/protobuf/generated_message_tctable_gen.cc:8:
+bazel-out/k8-opt-exec-ST-d57f47055a04/bin/external/protobuf+/src/google/protobuf/_virtual_includes/protobuf/google/protobuf/descriptor.pb.h:18861:13: note: declared here
+18861 | inline bool FieldOptions::weak() const {
+      |             ^~~~~~~~~~~~
+external/protobuf+/src/google/protobuf/generated_message_tctable_gen.cc: In function 'bool google::protobuf::internal::IsFieldTypeEligibleForFastParsing(const google::protobuf::FieldDescriptor*)':
+external/protobuf+/src/google/protobuf/generated_message_tctable_gen.cc:738:28: warning: 'bool google::protobuf::FieldOptions::weak() const' is deprecated [-Wdeprecated-declarations]
+  738 |       field->options().weak()) {
+      |       ~~~~~~~~~~~~~~~~~~~~~^~
+bazel-out/k8-opt-exec-ST-d57f47055a04/bin/external/protobuf+/src/google/protobuf/_virtual_includes/protobuf/google/protobuf/descriptor.pb.h:18861:13: note: declared here
+18861 | inline bool FieldOptions::weak() const {
+      |             ^~~~~~~~~~~~
+external/protobuf+/src/google/protobuf/generated_message_tctable_gen.cc: In lambda function:
+external/protobuf+/src/google/protobuf/generated_message_tctable_gen.cc:773:54: warning: 'bool google::protobuf::FieldOptions::weak() const' is deprecated [-Wdeprecated-declarations]
+  773 |            !field->is_map() && !field->options().weak() &&
+      |                                 ~~~~~~~~~~~~~~~~~~~~~^~
+bazel-out/k8-opt-exec-ST-d57f47055a04/bin/external/protobuf+/src/google/protobuf/_virtual_includes/protobuf/google/protobuf/descriptor.pb.h:18861:13: note: declared here
+18861 | inline bool FieldOptions::weak() const {
+      |             ^~~~~~~~~~~~
+external/protobuf+/src/google/protobuf/generated_message_tctable_gen.cc: In static member function 'static std::vector<google::protobuf::internal::TailCallTableInfo::FieldEntryInfo> google::protobuf::internal::TailCallTableInfo::BuildFieldEntries(const google::protobuf::Descriptor*, const MessageOptions&, absl::lts_20240722::Span<const FieldOptions>, std::vector<AuxEntry>&)':
+external/protobuf+/src/google/protobuf/generated_message_tctable_gen.cc:790:28: warning: missing initializer for member 'google::protobuf::internal::TailCallTableInfo::FieldEntryInfo::inlined_string_idx' [-Wmissing-field-initializers]
+  790 |     field_entries.push_back({field, options.has_bit_index});
+      |     ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+external/protobuf+/src/google/protobuf/generated_message_tctable_gen.cc:790:28: warning: missing initializer for member 'google::protobuf::internal::TailCallTableInfo::FieldEntryInfo::aux_idx' [-Wmissing-field-initializers]
+external/protobuf+/src/google/protobuf/generated_message_tctable_gen.cc:790:28: warning: missing initializer for member 'google::protobuf::internal::TailCallTableInfo::FieldEntryInfo::type_card' [-Wmissing-field-initializers]
+external/protobuf+/src/google/protobuf/generated_message_tctable_gen.cc:790:28: warning: missing initializer for member 'google::protobuf::internal::TailCallTableInfo::FieldEntryInfo::utf8_check_mode' [-Wmissing-field-initializers]
+external/protobuf+/src/google/protobuf/generated_message_tctable_gen.cc:813:39: warning: 'bool google::protobuf::FieldOptions::weak() const' is deprecated [-Wdeprecated-declarations]
+  813 |       } else if (field->options().weak()) {
+      |                  ~~~~~~~~~~~~~~~~~~~~~^~
+bazel-out/k8-opt-exec-ST-d57f47055a04/bin/external/protobuf+/src/google/protobuf/_virtual_includes/protobuf/google/protobuf/descriptor.pb.h:18861:13: note: declared here
+18861 | inline bool FieldOptions::weak() const {
+      |             ^~~~~~~~~~~~
+external/protobuf+/src/google/protobuf/generated_message_tctable_gen.cc:823:34: warning: missing initializer for member 'google::protobuf::internal::TailCallTableInfo::AuxEntry::<anonymous>' [-Wmissing-field-initializers]
+  823 |             aux_entries.push_back({kNothing});
+      |             ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+external/protobuf+/src/google/protobuf/generated_message_tctable_gen.cc:875:28: warning: missing initializer for member 'google::protobuf::internal::TailCallTableInfo::AuxEntry::<anonymous>' [-Wmissing-field-initializers]
+  875 |       aux_entries.push_back({kNumericOffset});
+      |       ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+external/protobuf+/src/google/protobuf/generated_message_tctable_gen.cc: In constructor 'google::protobuf::internal::TailCallTableInfo::TailCallTableInfo(const google::protobuf::Descriptor*, const MessageOptions&, absl::lts_20240722::Span<const FieldOptions>)':
+external/protobuf+/src/google/protobuf/generated_message_tctable_gen.cc:911:39: warning: missing initializer for member 'google::protobuf::internal::TailCallTableInfo::AuxEntry::<anonymous>' [-Wmissing-field-initializers]
+  911 |       aux_entries = {{kSelfVerifyFunc}};
+      |                                       ^
+external/protobuf+/src/google/protobuf/generated_message_tctable_gen.cc:938:69: warning: missing initializer for member 'google::protobuf::internal::TailCallTableInfo::AuxEntry::<anonymous>' [-Wmissing-field-initializers]
+  938 |     aux_entries[kInlinedStringAuxIdx] = {kInlinedStringDonatedOffset};
+      |                                                                     ^
+external/protobuf+/src/google/protobuf/generated_message_tctable_gen.cc:948:52: warning: missing initializer for member 'google::protobuf::internal::TailCallTableInfo::AuxEntry::<anonymous>' [-Wmissing-field-initializers]
+  948 |     aux_entries[kSplitOffsetAuxIdx] = {kSplitOffset};
+      |                                                    ^
+external/protobuf+/src/google/protobuf/generated_message_tctable_gen.cc:949:50: warning: missing initializer for member 'google::protobuf::internal::TailCallTableInfo::AuxEntry::<anonymous>' [-Wmissing-field-initializers]
+  949 |     aux_entries[kSplitSizeAuxIdx] = {kSplitSizeof};
+      |                                                  ^
+[2,574 / 3,281] Compiling src/google/protobuf/message_lite.cc; 2s processwrapper-sandbox ... (4 actions running)
+[2,576 / 3,281] Compiling common/countertable.cpp; 3s processwrapper-sandbox ... (4 actions running)
+[2,578 / 3,281] Compiling src/google/protobuf/generated_message_reflection.cc [for tool]; 2s processwrapper-sandbox ... (4 actions, 3 running)
+[2,581 / 3,281] Compiling src/google/protobuf/generated_message_reflection.cc [for tool]; 3s processwrapper-sandbox ... (4 actions running)
+[2,582 / 3,281] Compiling src/google/protobuf/generated_message_reflection.cc [for tool]; 5s processwrapper-sandbox ... (4 actions running)
+[2,583 / 3,281] Compiling src/google/protobuf/generated_message_reflection.cc [for tool]; 6s processwrapper-sandbox ... (4 actions, 3 running)
+[2,584 / 3,281] Compiling src/google/protobuf/generated_message_reflection.cc [for tool]; 8s processwrapper-sandbox ... (4 actions running)
+INFO: From Compiling src/google/protobuf/generated_message_reflection.cc [for tool]:
+external/protobuf+/src/google/protobuf/generated_message_reflection.cc: In member function 'const google::protobuf::Message* google::protobuf::Reflection::GetDefaultMessageInstance(const google::protobuf::FieldDescriptor*) const':
+external/protobuf+/src/google/protobuf/generated_message_reflection.cc:2526:55: warning: 'bool google::protobuf::FieldOptions::weak() const' is deprecated [-Wdeprecated-declarations]
+ 2526 |   if (!field->is_extension() && !field->options().weak() &&
+      |                                  ~~~~~~~~~~~~~~~~~~~~~^~
+In file included from external/protobuf+/src/google/protobuf/generated_message_reflection.cc:41:
+bazel-out/k8-opt-exec-ST-d57f47055a04/bin/external/protobuf+/src/google/protobuf/_virtual_includes/protobuf/google/protobuf/descriptor.pb.h:18861:13: note: declared here
+18861 | inline bool FieldOptions::weak() const {
+      |             ^~~~~~~~~~~~
+In file included from external/abseil-cpp+/absl/log/internal/check_impl.h:20,
+                 from external/abseil-cpp+/absl/log/absl_check.h:38,
+                 from bazel-out/k8-opt-exec-ST-d57f47055a04/bin/external/protobuf+/src/google/protobuf/_virtual_includes/protobuf/google/protobuf/generated_message_reflection.h:25,
+                 from external/protobuf+/src/google/protobuf/generated_message_reflection.cc:12:
+external/protobuf+/src/google/protobuf/generated_message_reflection.cc: In member function 'bool google::protobuf::Reflection::HasFieldWithHasbits(const google::protobuf::Message&, const google::protobuf::FieldDescriptor*) const':
+external/protobuf+/src/google/protobuf/generated_message_reflection.cc:3290:37: warning: 'bool google::protobuf::FieldOptions::weak() const' is deprecated [-Wdeprecated-declarations]
+ 3290 |   ABSL_DCHECK(!field->options().weak());
+      |                ~~~~~~~~~~~~~~~~~~~~~^~
+bazel-out/k8-opt-exec-ST-d57f47055a04/bin/external/protobuf+/src/google/protobuf/_virtual_includes/protobuf/google/protobuf/descriptor.pb.h:18861:13: note: declared here
+18861 | inline bool FieldOptions::weak() const {
+      |             ^~~~~~~~~~~~
+external/protobuf+/src/google/protobuf/generated_message_reflection.cc: In member function 'void google::protobuf::Reflection::SetHasBit(google::protobuf::Message*, const google::protobuf::FieldDescriptor*) const':
+external/protobuf+/src/google/protobuf/generated_message_reflection.cc:3323:37: warning: 'bool google::protobuf::FieldOptions::weak() const' is deprecated [-Wdeprecated-declarations]
+ 3323 |   ABSL_DCHECK(!field->options().weak());
+      |                ~~~~~~~~~~~~~~~~~~~~~^~
+bazel-out/k8-opt-exec-ST-d57f47055a04/bin/external/protobuf+/src/google/protobuf/_virtual_includes/protobuf/google/protobuf/descriptor.pb.h:18861:13: note: declared here
+18861 | inline bool FieldOptions::weak() const {
+      |             ^~~~~~~~~~~~
+external/protobuf+/src/google/protobuf/generated_message_reflection.cc: In member function 'void google::protobuf::Reflection::ClearHasBit(google::protobuf::Message*, const google::protobuf::FieldDescriptor*) const':
+external/protobuf+/src/google/protobuf/generated_message_reflection.cc:3332:37: warning: 'bool google::protobuf::FieldOptions::weak() const' is deprecated [-Wdeprecated-declarations]
+ 3332 |   ABSL_DCHECK(!field->options().weak());
+      |                ~~~~~~~~~~~~~~~~~~~~~^~
+bazel-out/k8-opt-exec-ST-d57f47055a04/bin/external/protobuf+/src/google/protobuf/_virtual_includes/protobuf/google/protobuf/descriptor.pb.h:18861:13: note: declared here
+18861 | inline bool FieldOptions::weak() const {
+      |             ^~~~~~~~~~~~
+external/protobuf+/src/google/protobuf/generated_message_reflection.cc: In member function 'void google::protobuf::Reflection::NaiveSwapHasBit(google::protobuf::Message*, google::protobuf::Message*, const google::protobuf::FieldDescriptor*) const':
+external/protobuf+/src/google/protobuf/generated_message_reflection.cc:3341:37: warning: 'bool google::protobuf::FieldOptions::weak() const' is deprecated [-Wdeprecated-declarations]
+ 3341 |   ABSL_DCHECK(!field->options().weak());
+      |                ~~~~~~~~~~~~~~~~~~~~~^~
+bazel-out/k8-opt-exec-ST-d57f47055a04/bin/external/protobuf+/src/google/protobuf/_virtual_includes/protobuf/google/protobuf/descriptor.pb.h:18861:13: note: declared here
+18861 | inline bool FieldOptions::weak() const {
+      |             ^~~~~~~~~~~~
+[2,590 / 3,281] Compiling src/google/protobuf/extension_set_heavy.cc [for tool]; 1s processwrapper-sandbox ... (4 actions, 3 running)
+[2,591 / 3,281] Compiling src/google/protobuf/extension_set_heavy.cc [for tool]; 2s processwrapper-sandbox ... (4 actions running)
+[2,592 / 3,281] Compiling src/google/protobuf/extension_set_heavy.cc [for tool]; 3s processwrapper-sandbox ... (4 actions running)
+INFO: From Compiling src/google/protobuf/dynamic_message.cc [for tool]:
+external/protobuf+/src/google/protobuf/dynamic_message.cc: In member function 'void google::protobuf::DynamicMessage::SharedCtor(bool)':
+external/protobuf+/src/google/protobuf/dynamic_message.cc:574:66: warning: 'google::protobuf::RepeatedPtrField<T>::RepeatedPtrField(google::protobuf::Arena*) [with Element = std::__cxx11::basic_string<char>]' is deprecated: Use Arena::Create<RepeatedPtrField<...>>(Arena*) instead [-Wdeprecated-declarations]
+  574 |               new (field_ptr) RepeatedPtrField<std::string>(arena);
+      |                                                                  ^
+In file included from bazel-out/k8-opt-exec-ST-d57f47055a04/bin/external/protobuf+/src/google/protobuf/_virtual_includes/protobuf_lite/google/protobuf/repeated_field.h:46,
+                 from bazel-out/k8-opt-exec-ST-d57f47055a04/bin/external/protobuf+/src/google/protobuf/_virtual_includes/protobuf_lite/google/protobuf/parse_context.h:39,
+                 from bazel-out/k8-opt-exec-ST-d57f47055a04/bin/external/protobuf+/src/google/protobuf/_virtual_includes/protobuf_lite/google/protobuf/generated_message_tctable_decl.h:25,
+                 from bazel-out/k8-opt-exec-ST-d57f47055a04/bin/external/protobuf+/src/google/protobuf/_virtual_includes/protobuf_lite/google/protobuf/extension_set.h:40,
+                 from bazel-out/k8-opt-exec-ST-d57f47055a04/bin/external/protobuf+/src/google/protobuf/_virtual_includes/protobuf/google/protobuf/descriptor.h:56,
+                 from bazel-out/k8-opt-exec-ST-d57f47055a04/bin/external/protobuf+/src/google/protobuf/_virtual_includes/protobuf/google/protobuf/dynamic_message.h:27,
+                 from external/protobuf+/src/google/protobuf/dynamic_message.cc:42:
+bazel-out/k8-opt-exec-ST-d57f47055a04/bin/external/protobuf+/src/google/protobuf/_virtual_includes/protobuf_lite/google/protobuf/repeated_ptr_field.h:1380:8: note: declared here
+ 1380 | inline RepeatedPtrField<Element>::RepeatedPtrField(Arena* arena)
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~
+external/protobuf+/src/google/protobuf/dynamic_message.cc:602:60: warning: 'google::protobuf::RepeatedPtrField<T>::RepeatedPtrField(google::protobuf::Arena*) [with Element = google::protobuf::Message]' is deprecated: Use Arena::Create<RepeatedPtrField<...>>(Arena*) instead [-Wdeprecated-declarations]
+  602 |             new (field_ptr) RepeatedPtrField<Message>(arena);
+      |                                                            ^
+bazel-out/k8-opt-exec-ST-d57f47055a04/bin/external/protobuf+/src/google/protobuf/_virtual_includes/protobuf_lite/google/protobuf/repeated_ptr_field.h:1380:8: note: declared here
+ 1380 | inline RepeatedPtrField<Element>::RepeatedPtrField(Arena* arena)
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~
+external/protobuf+/src/google/protobuf/dynamic_message.cc: In member function 'void google::protobuf::DynamicMessage::CrossLinkPrototypes()':
+external/protobuf+/src/google/protobuf/dynamic_message.cc:774:31: warning: 'bool google::protobuf::FieldOptions::weak() const' is deprecated [-Wdeprecated-declarations]
+  774 |         !field->options().weak() && !InRealOneof(field) &&
+      |          ~~~~~~~~~~~~~~~~~~~~~^~
+In file included from external/protobuf+/src/google/protobuf/dynamic_message.cc:60:
+bazel-out/k8-opt-exec-ST-d57f47055a04/bin/external/protobuf+/src/google/protobuf/_virtual_includes/protobuf/google/protobuf/descriptor.pb.h:18861:13: note: declared here
+18861 | inline bool FieldOptions::weak() const {
+      |             ^~~~~~~~~~~~
+[2,594 / 3,281] Compiling src/google/protobuf/io/printer.cc; 4s processwrapper-sandbox ... (4 actions running)
+[2,597 / 3,281] Compiling src/google/protobuf/descriptor_database.cc [for tool]; 2s processwrapper-sandbox ... (4 actions running)
+[2,599 / 3,281] Compiling src/google/protobuf/descriptor_database.cc [for tool]; 3s processwrapper-sandbox ... (4 actions running)
+[2,600 / 3,281] Compiling src/google/protobuf/descriptor_database.cc [for tool]; 4s processwrapper-sandbox ... (4 actions, 3 running)
+[2,604 / 3,281] Compiling src/google/protobuf/descriptor_database.cc [for tool]; 5s processwrapper-sandbox ... (4 actions, 3 running)
+[2,611 / 3,281] Compiling src/google/protobuf/descriptor_database.cc [for tool]; 6s processwrapper-sandbox ... (4 actions, 3 running)
+[2,615 / 3,281] Compiling src/google/protobuf/descriptor.cc [for tool]; 1s processwrapper-sandbox ... (4 actions, 3 running)
+[2,621 / 3,281] Compiling src/google/protobuf/descriptor.cc [for tool]; 2s processwrapper-sandbox ... (4 actions, 3 running)
+[2,627 / 3,281] Compiling src/google/protobuf/descriptor.cc [for tool]; 4s processwrapper-sandbox ... (4 actions, 3 running)
+[2,632 / 3,281] Compiling src/google/protobuf/descriptor.cc [for tool]; 5s processwrapper-sandbox ... (4 actions, 3 running)
+[2,634 / 3,281] Compiling src/google/protobuf/descriptor.cc [for tool]; 6s processwrapper-sandbox ... (4 actions, 3 running)
+[2,639 / 3,281] Compiling src/google/protobuf/descriptor.cc [for tool]; 7s processwrapper-sandbox ... (4 actions running)
+[2,646 / 3,281] Compiling src/google/protobuf/descriptor.cc [for tool]; 8s processwrapper-sandbox ... (4 actions running)
+[2,652 / 3,281] Compiling src/google/protobuf/descriptor.cc [for tool]; 9s processwrapper-sandbox ... (4 actions, 3 running)
+[2,655 / 3,281] Compiling src/google/protobuf/descriptor.cc [for tool]; 10s processwrapper-sandbox ... (4 actions, 3 running)
+[2,658 / 3,281] Compiling src/google/protobuf/descriptor.cc [for tool]; 11s processwrapper-sandbox ... (4 actions, 3 running)
+[2,664 / 3,281] Compiling src/google/protobuf/descriptor.cc [for tool]; 13s processwrapper-sandbox ... (4 actions running)
+[2,667 / 3,281] Compiling src/google/protobuf/descriptor.cc [for tool]; 14s processwrapper-sandbox ... (4 actions running)
+[2,675 / 3,281] Compiling src/google/protobuf/descriptor.cc [for tool]; 15s processwrapper-sandbox ... (4 actions running)
+[2,680 / 3,281] Compiling src/google/protobuf/descriptor.cc [for tool]; 16s processwrapper-sandbox ... (4 actions running)
+INFO: From Compiling src/google/protobuf/descriptor.cc [for tool]:
+external/protobuf+/src/google/protobuf/descriptor.cc: In member function 'void google::protobuf::FieldDescriptor::DebugString(int, std::string*, const google::protobuf::DebugStringOptions&) const':
+external/protobuf+/src/google/protobuf/descriptor.cc:3953:65: warning: 'bool google::protobuf::FieldDescriptor::has_optional_keyword() const' is deprecated: Use has_presence() instead. [-Wdeprecated-declarations]
+ 3953 |       (!is_required() && !is_repeated() && !has_optional_keyword())) {
+      |                                             ~~~~~~~~~~~~~~~~~~~~^~
+In file included from external/protobuf+/src/google/protobuf/descriptor.cc:12:
+bazel-out/k8-opt-exec-ST-d57f47055a04/bin/external/protobuf+/src/google/protobuf/_virtual_includes/protobuf/google/protobuf/descriptor.h:1136:8: note: declared here
+ 1136 |   bool has_optional_keyword() const;
+      |        ^~~~~~~~~~~~~~~~~~~~
+external/protobuf+/src/google/protobuf/descriptor.cc: In member function 'void google::protobuf::DescriptorBuilder::CrossLinkField(google::protobuf::FieldDescriptor*, const google::protobuf::FieldDescriptorProto&)':
+external/protobuf+/src/google/protobuf/descriptor.cc:7982:65: warning: 'bool google::protobuf::FieldOptions::weak() const' is deprecated [-Wdeprecated-declarations]
+ 7982 |     bool is_weak = !pool_->enforce_weak_ && proto.options().weak();
+      |                                             ~~~~~~~~~~~~~~~~~~~~^~
+In file included from bazel-out/k8-opt-exec-ST-d57f47055a04/bin/external/protobuf+/src/google/protobuf/_virtual_includes/protobuf/google/protobuf/cpp_features.pb.h:33,
+                 from external/protobuf+/src/google/protobuf/descriptor.cc:72:
+bazel-out/k8-opt-exec-ST-d57f47055a04/bin/external/protobuf+/src/google/protobuf/_virtual_includes/protobuf/google/protobuf/descriptor.pb.h:18861:13: note: declared here
+18861 | inline bool FieldOptions::weak() const {
+      |             ^~~~~~~~~~~~
+external/protobuf+/src/google/protobuf/descriptor.cc: In function 'google::protobuf::internal::cpp::HasbitMode google::protobuf::internal::cpp::GetFieldHasbitModeWithoutProfile(const google::protobuf::FieldDescriptor*)':
+external/protobuf+/src/google/protobuf/descriptor.cc:10700:62: warning: 'bool google::protobuf::FieldOptions::weak() const' is deprecated [-Wdeprecated-declarations]
+10700 |   if (field->real_containing_oneof() || field->options().weak() ||
+      |                                         ~~~~~~~~~~~~~~~~~~~~~^~
+bazel-out/k8-opt-exec-ST-d57f47055a04/bin/external/protobuf+/src/google/protobuf/_virtual_includes/protobuf/google/protobuf/descriptor.pb.h:18861:13: note: declared here
+18861 | inline bool FieldOptions::weak() const {
+      |             ^~~~~~~~~~~~
+[2,687 / 3,281] Compiling src/google/protobuf/dynamic_message.cc; 2s processwrapper-sandbox ... (4 actions running)
+[2,692 / 3,281] Compiling src/google/protobuf/dynamic_message.cc; 3s processwrapper-sandbox ... (4 actions running)
+[2,697 / 3,281] Compiling src/google/protobuf/compiler/ruby/ruby_generator.cc [for tool]; 4s processwrapper-sandbox ... (4 actions running)
+INFO: From Compiling src/google/protobuf/compiler/ruby/ruby_generator.cc [for tool]:
+external/protobuf+/src/google/protobuf/compiler/ruby/ruby_generator.cc: In function 'void google::protobuf::compiler::ruby::GenerateBinaryDescriptor(const google::protobuf::FileDescriptor*, google::protobuf::io::Printer*, std::string*)':
+external/protobuf+/src/google/protobuf/compiler/ruby/ruby_generator.cc:281:44: warning: unused parameter 'error' [-Wunused-parameter]
+  281 |                               std::string* error) {
+      |                               ~~~~~~~~~~~~~^~~~~
+external/protobuf+/src/google/protobuf/compiler/ruby/ruby_generator.cc: In member function 'virtual bool google::protobuf::compiler::ruby::Generator::Generate(const google::protobuf::FileDescriptor*, const std::string&, google::protobuf::compiler::GeneratorContext*, std::string*) const':
+external/protobuf+/src/google/protobuf/compiler/ruby/ruby_generator.cc:327:45: warning: unused parameter 'parameter' [-Wunused-parameter]
+  327 |                          const std::string& parameter,
+      |                          ~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+[2,703 / 3,281] Compiling src/google/protobuf/descriptor.cc; 3s processwrapper-sandbox ... (4 actions, 3 running)
+[2,708 / 3,281] Compiling src/google/protobuf/descriptor.cc; 4s processwrapper-sandbox ... (4 actions, 3 running)
+[2,711 / 3,281] Compiling src/google/protobuf/descriptor.cc; 6s processwrapper-sandbox ... (4 actions running)
+[2,714 / 3,281] Compiling src/google/protobuf/descriptor.cc; 7s processwrapper-sandbox ... (4 actions running)
+[2,716 / 3,281] Compiling src/google/protobuf/descriptor.cc; 8s processwrapper-sandbox ... (4 actions running)
+[2,717 / 3,281] Compiling src/google/protobuf/descriptor.cc; 9s processwrapper-sandbox ... (4 actions, 3 running)
+INFO: From Compiling src/google/protobuf/compiler/python/generator.cc [for tool]:
+external/protobuf+/src/google/protobuf/compiler/python/generator.cc: In instantiation of 'bool google::protobuf::compiler::python::Generator::PrintDescriptorOptionsFixingCode(const DescriptorT&, const typename DescriptorT::Proto&, absl::lts_20240722::string_view) const [with DescriptorT = google::protobuf::FileDescriptor; typename DescriptorT::Proto = google::protobuf::FileDescriptorProto; absl::lts_20240722::string_view = std::basic_string_view<char>]':
+external/protobuf+/src/google/protobuf/compiler/python/generator.cc:1404:40:   required from here
+external/protobuf+/src/google/protobuf/compiler/python/generator.cc:1329:24: warning: unused parameter 'descriptor' [-Wunused-parameter]
+ 1329 |     const DescriptorT& descriptor, const typename DescriptorT::Proto& proto,
+      |     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+external/protobuf+/src/google/protobuf/compiler/python/generator.cc: In instantiation of 'bool google::protobuf::compiler::python::Generator::PrintDescriptorOptionsFixingCode(const DescriptorT&, const typename DescriptorT::Proto&, absl::lts_20240722::string_view) const [with DescriptorT = google::protobuf::OneofDescriptor; typename DescriptorT::Proto = google::protobuf::OneofDescriptorProto; absl::lts_20240722::string_view = std::basic_string_view<char>]':
+external/protobuf+/src/google/protobuf/compiler/python/generator.cc:1431:35:   required from here
+external/protobuf+/src/google/protobuf/compiler/python/generator.cc:1329:24: warning: unused parameter 'descriptor' [-Wunused-parameter]
+external/protobuf+/src/google/protobuf/compiler/python/generator.cc: In instantiation of 'bool google::protobuf::compiler::python::Generator::PrintDescriptorOptionsFixingCode(const DescriptorT&, const typename DescriptorT::Proto&, absl::lts_20240722::string_view) const [with DescriptorT = google::protobuf::EnumDescriptor; typename DescriptorT::Proto = google::protobuf::EnumDescriptorProto; absl::lts_20240722::string_view = std::basic_string_view<char>]':
+external/protobuf+/src/google/protobuf/compiler/python/generator.cc:1439:35:   required from here
+external/protobuf+/src/google/protobuf/compiler/python/generator.cc:1329:24: warning: unused parameter 'descriptor' [-Wunused-parameter]
+external/protobuf+/src/google/protobuf/compiler/python/generator.cc: In instantiation of 'bool google::protobuf::compiler::python::Generator::PrintDescriptorOptionsFixingCode(const DescriptorT&, const typename DescriptorT::Proto&, absl::lts_20240722::string_view) const [with DescriptorT = google::protobuf::EnumValueDescriptor; typename DescriptorT::Proto = google::protobuf::EnumValueDescriptorProto; absl::lts_20240722::string_view = std::basic_string_view<char>]':
+external/protobuf+/src/google/protobuf/compiler/python/generator.cc:1442:37:   required from here
+external/protobuf+/src/google/protobuf/compiler/python/generator.cc:1329:24: warning: unused parameter 'descriptor' [-Wunused-parameter]
+external/protobuf+/src/google/protobuf/compiler/python/generator.cc: In instantiation of 'bool google::protobuf::compiler::python::Generator::PrintDescriptorOptionsFixingCode(const DescriptorT&, const typename DescriptorT::Proto&, absl::lts_20240722::string_view) const [with DescriptorT = google::protobuf::ServiceDescriptor; typename DescriptorT::Proto = google::protobuf::ServiceDescriptorProto; absl::lts_20240722::string_view = std::basic_string_view<char>]':
+external/protobuf+/src/google/protobuf/compiler/python/generator.cc:1456:35:   required from here
+external/protobuf+/src/google/protobuf/compiler/python/generator.cc:1329:24: warning: unused parameter 'descriptor' [-Wunused-parameter]
+external/protobuf+/src/google/protobuf/compiler/python/generator.cc: In instantiation of 'bool google::protobuf::compiler::python::Generator::PrintDescriptorOptionsFixingCode(const DescriptorT&, const typename DescriptorT::Proto&, absl::lts_20240722::string_view) const [with DescriptorT = google::protobuf::MethodDescriptor; typename DescriptorT::Proto = google::protobuf::MethodDescriptorProto; absl::lts_20240722::string_view = std::basic_string_view<char>]':
+external/protobuf+/src/google/protobuf/compiler/python/generator.cc:1462:37:   required from here
+external/protobuf+/src/google/protobuf/compiler/python/generator.cc:1329:24: warning: unused parameter 'descriptor' [-Wunused-parameter]
+external/protobuf+/src/google/protobuf/compiler/python/generator.cc: In instantiation of 'bool google::protobuf::compiler::python::Generator::PrintDescriptorOptionsFixingCode(const DescriptorT&, const typename DescriptorT::Proto&, absl::lts_20240722::string_view) const [with DescriptorT = google::protobuf::FieldDescriptor; typename DescriptorT::Proto = google::protobuf::FieldDescriptorProto; absl::lts_20240722::string_view = std::basic_string_view<char>]':
+external/protobuf+/src/google/protobuf/compiler/python/generator.cc:1483:35:   required from here
+external/protobuf+/src/google/protobuf/compiler/python/generator.cc:1329:24: warning: unused parameter 'descriptor' [-Wunused-parameter]
+external/protobuf+/src/google/protobuf/compiler/python/generator.cc: In instantiation of 'bool google::protobuf::compiler::python::Generator::PrintDescriptorOptionsFixingCode(const DescriptorT&, const typename DescriptorT::Proto&, absl::lts_20240722::string_view) const [with DescriptorT = google::protobuf::Descriptor; typename DescriptorT::Proto = google::protobuf::DescriptorProto; absl::lts_20240722::string_view = std::basic_string_view<char>]':
+external/protobuf+/src/google/protobuf/compiler/python/generator.cc:1513:35:   required from here
+external/protobuf+/src/google/protobuf/compiler/python/generator.cc:1329:24: warning: unused parameter 'descriptor' [-Wunused-parameter]
+[2,722 / 3,281] Compiling src/google/protobuf/descriptor.cc; 11s processwrapper-sandbox ... (4 actions running)
+[2,724 / 3,281] Compiling src/google/protobuf/descriptor.cc; 12s processwrapper-sandbox ... (4 actions, 3 running)
+[2,726 / 3,281] Compiling src/google/protobuf/descriptor.cc; 14s processwrapper-sandbox ... (4 actions, 3 running)
+[2,727 / 3,281] Compiling src/google/protobuf/descriptor.cc; 15s processwrapper-sandbox ... (4 actions, 3 running)
+[2,727 / 3,281] Compiling src/google/protobuf/descriptor.cc; 16s processwrapper-sandbox ... (4 actions running)
+[2,729 / 3,281] Compiling src/google/protobuf/generated_message_reflection.cc; 4s processwrapper-sandbox ... (4 actions, 3 running)
+[2,730 / 3,281] Compiling src/google/protobuf/generated_message_reflection.cc; 6s processwrapper-sandbox ... (4 actions running)
+[2,733 / 3,281] Compiling src/google/protobuf/generated_message_reflection.cc; 7s processwrapper-sandbox ... (4 actions running)
+[2,735 / 3,281] Compiling src/google/protobuf/generated_message_reflection.cc; 8s processwrapper-sandbox ... (4 actions running)
+[2,737 / 3,281] Compiling src/google/protobuf/compiler/plugin.cc [for tool]; 2s processwrapper-sandbox ... (4 actions running)
+[2,738 / 3,281] Compiling src/google/protobuf/wire_format.cc; 3s processwrapper-sandbox ... (4 actions, 3 running)
+[2,742 / 3,281] Compiling src/google/protobuf/wire_format.cc; 4s processwrapper-sandbox ... (4 actions, 3 running)
+[2,746 / 3,281] Compiling src/google/protobuf/compiler/versions.cc [for tool]; 1s processwrapper-sandbox ... (4 actions, 3 running)
+[2,746 / 3,281] Compiling src/google/protobuf/compiler/versions.cc [for tool]; 2s processwrapper-sandbox ... (4 actions running)
+[2,747 / 3,281] Compiling src/google/protobuf/generated_message_tctable_gen.cc; 3s processwrapper-sandbox ... (4 actions, 3 running)
+[2,764 / 3,281] Compiling src/google/protobuf/compiler/cpp/helpers.cc [for tool]; 4s processwrapper-sandbox ... (4 actions, 3 running)
+[2,764 / 3,281] Compiling src/google/protobuf/compiler/cpp/helpers.cc [for tool]; 6s processwrapper-sandbox ... (4 actions running)
+[2,765 / 3,281] Compiling src/google/protobuf/compiler/cpp/helpers.cc [for tool]; 7s processwrapper-sandbox ... (4 actions, 3 running)
+[2,765 / 3,281] Compiling src/google/protobuf/compiler/cpp/helpers.cc [for tool]; 9s processwrapper-sandbox ... (4 actions running)
+INFO: From Compiling src/google/protobuf/compiler/cpp/tracker.cc [for tool]:
+external/protobuf+/src/google/protobuf/compiler/cpp/tracker.cc: In function 'google::protobuf::compiler::cpp::{anonymous}::Getters google::protobuf::compiler::cpp::{anonymous}::RepeatedFieldGetters(const google::protobuf::FieldDescriptor*, const google::protobuf::compiler::cpp::Options&)':
+external/protobuf+/src/google/protobuf/compiler/cpp/tracker.cc:209:45: warning: unused parameter 'opts' [-Wunused-parameter]
+  209 |                              const Options& opts) {
+      |                              ~~~~~~~~~~~~~~~^~~~
+INFO: From Compiling src/google/protobuf/compiler/cpp/helpers.cc [for tool]:
+external/protobuf+/src/google/protobuf/compiler/cpp/helpers.cc: In member function 'google::protobuf::compiler::cpp::MessageAnalysis google::protobuf::compiler::cpp::MessageSCCAnalyzer::GetSCCAnalysis(const google::protobuf::compiler::SCC*)':
+external/protobuf+/src/google/protobuf/compiler/cpp/helpers.cc:1802:32: warning: 'bool google::protobuf::FieldOptions::weak() const' is deprecated [-Wdeprecated-declarations]
+ 1802 |       if (field->options().weak()) {
+      |           ~~~~~~~~~~~~~~~~~~~~~^~
+In file included from bazel-out/k8-opt-exec-ST-d57f47055a04/bin/external/protobuf+/src/google/protobuf/compiler/_virtual_includes/code_generator_lite/google/protobuf/compiler/code_generator_lite.h:18,
+                 from bazel-out/k8-opt-exec-ST-d57f47055a04/bin/external/protobuf+/src/google/protobuf/compiler/_virtual_includes/code_generator/google/protobuf/compiler/code_generator.h:25,
+                 from bazel-out/k8-opt-exec-ST-d57f47055a04/bin/external/protobuf+/src/google/protobuf/compiler/cpp/_virtual_includes/names_internal/google/protobuf/compiler/cpp/helpers.h:29,
+                 from external/protobuf+/src/google/protobuf/compiler/cpp/helpers.cc:12:
+bazel-out/k8-opt-exec-ST-d57f47055a04/bin/external/protobuf+/src/google/protobuf/_virtual_includes/protobuf/google/protobuf/descriptor.pb.h:18861:13: note: declared here
+18861 | inline bool FieldOptions::weak() const {
+      |             ^~~~~~~~~~~~
+[2,768 / 3,281] Compiling src/google/protobuf/text_format.cc; 6s processwrapper-sandbox ... (4 actions running)
+[2,770 / 3,281] Compiling src/google/protobuf/compiler/cpp/service.cc [for tool]; 2s processwrapper-sandbox ... (4 actions, 3 running)
+[2,771 / 3,281] Compiling src/google/protobuf/compiler/cpp/service.cc [for tool]; 3s processwrapper-sandbox ... (4 actions running)
+[2,772 / 3,281] Compiling src/google/protobuf/compiler/cpp/parse_function_generator.cc [for tool]; 4s processwrapper-sandbox ... (4 actions, 3 running)
+[2,774 / 3,281] Compiling src/google/protobuf/compiler/cpp/parse_function_generator.cc [for tool]; 6s processwrapper-sandbox ... (4 actions running)
+[2,776 / 3,281] Compiling src/google/protobuf/compiler/cpp/parse_function_generator.cc [for tool]; 7s processwrapper-sandbox ... (4 actions running)
+[2,777 / 3,281] Compiling src/google/protobuf/compiler/cpp/parse_function_generator.cc [for tool]; 8s processwrapper-sandbox ... (4 actions running)
+INFO: From Compiling src/google/protobuf/compiler/cpp/parse_function_generator.cc [for tool]:
+external/protobuf+/src/google/protobuf/compiler/cpp/parse_function_generator.cc: In static member function 'static std::vector<google::protobuf::internal::TailCallTableInfo::FieldOptions> google::protobuf::compiler::cpp::ParseFunctionGenerator::BuildFieldOptions(const google::protobuf::Descriptor*, absl::lts_20240722::Span<const google::protobuf::FieldDescriptor* const>, const google::protobuf::compiler::cpp::Options&, google::protobuf::compiler::cpp::MessageSCCAnalyzer*, absl::lts_20240722::Span<const int>, absl::lts_20240722::Span<const int>)':
+external/protobuf+/src/google/protobuf/compiler/cpp/parse_function_generator.cc:81:23: warning: unused parameter 'descriptor' [-Wunused-parameter]
+   81 |     const Descriptor* descriptor,
+      |     ~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+external/protobuf+/src/google/protobuf/compiler/cpp/parse_function_generator.cc: In function 'google::protobuf::compiler::cpp::NumToEntryTable google::protobuf::compiler::cpp::MakeNumToEntryTable(absl::lts_20240722::Span<const google::protobuf::FieldDescriptor* const>)':
+external/protobuf+/src/google/protobuf/compiler/cpp/parse_function_generator.cc:248:62: warning: missing initializer for member 'google::protobuf::compiler::cpp::SkipEntryBlock::entries' [-Wmissing-field-initializers]
+  248 |       num_to_entry_table.blocks.push_back(SkipEntryBlock{fnum});
+      |                                                              ^
+[2,778 / 3,281] Compiling src/google/protobuf/compiler/cpp/message_layout_helper.cc [for tool]; 4s processwrapper-sandbox ... (4 actions running)
+[2,779 / 3,281] Compiling src/google/protobuf/compiler/cpp/message_layout_helper.cc [for tool]; 5s processwrapper-sandbox ... (4 actions running)
+[2,780 / 3,281] Compiling src/google/protobuf/compiler/cpp/message.cc [for tool]; 5s processwrapper-sandbox ... (4 actions running)
+INFO: From Compiling src/google/protobuf/compiler/cpp/generator.cc [for tool]:
+external/protobuf+/src/google/protobuf/compiler/cpp/generator.cc: In member function 'bool google::protobuf::compiler::cpp::CppGenerator::GenerateImpl(const google::protobuf::FileDescriptor*, const std::string&, google::protobuf::compiler::GeneratorContext*, std::string*, const google::protobuf::compiler::cpp::Options&) const':
+external/protobuf+/src/google/protobuf/compiler/cpp/generator.cc:97:52: warning: unused parameter 'parameter' [-Wunused-parameter]
+   97 |                                 const std::string& parameter,
+      |                                 ~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+[2,781 / 3,281] Compiling src/google/protobuf/compiler/cpp/message.cc [for tool]; 8s processwrapper-sandbox ... (4 actions, 3 running)
+[2,781 / 3,281] Compiling src/google/protobuf/compiler/cpp/message.cc [for tool]; 10s processwrapper-sandbox ... (4 actions running)
+[2,782 / 3,281] Compiling src/google/protobuf/compiler/cpp/message.cc [for tool]; 12s processwrapper-sandbox ... (4 actions running)
+[2,783 / 3,281] Compiling src/google/protobuf/compiler/cpp/message.cc [for tool]; 15s processwrapper-sandbox ... (4 actions, 3 running)
+INFO: From Compiling src/google/protobuf/compiler/cpp/message.cc [for tool]:
+external/protobuf+/src/google/protobuf/compiler/cpp/message.cc: In function 'void google::protobuf::compiler::cpp::{anonymous}::PrintPresenceCheck(const google::protobuf::FieldDescriptor*, const std::vector<int>&, google::protobuf::io::Printer*, int*, const google::protobuf::compiler::cpp::Options&)':
+external/protobuf+/src/google/protobuf/compiler/cpp/message.cc:176:29: warning: 'bool google::protobuf::FieldOptions::weak() const' is deprecated [-Wdeprecated-declarations]
+  176 |   if (!field->options().weak()) {
+      |        ~~~~~~~~~~~~~~~~~~~~~^~
+In file included from bazel-out/k8-opt-exec-ST-d57f47055a04/bin/external/protobuf+/src/google/protobuf/compiler/_virtual_includes/code_generator_lite/google/protobuf/compiler/code_generator_lite.h:18,
+                 from bazel-out/k8-opt-exec-ST-d57f47055a04/bin/external/protobuf+/src/google/protobuf/compiler/_virtual_includes/code_generator/google/protobuf/compiler/code_generator.h:25,
+                 from bazel-out/k8-opt-exec-ST-d57f47055a04/bin/external/protobuf+/src/google/protobuf/compiler/cpp/_virtual_includes/names_internal/google/protobuf/compiler/cpp/helpers.h:29,
+                 from bazel-out/k8-opt-exec-ST-d57f47055a04/bin/external/protobuf+/src/google/protobuf/compiler/cpp/_virtual_includes/cpp/google/protobuf/compiler/cpp/extension.h:19,
+                 from bazel-out/k8-opt-exec-ST-d57f47055a04/bin/external/protobuf+/src/google/protobuf/compiler/cpp/_virtual_includes/cpp/google/protobuf/compiler/cpp/message.h:25,
+                 from external/protobuf+/src/google/protobuf/compiler/cpp/message.cc:12:
+bazel-out/k8-opt-exec-ST-d57f47055a04/bin/external/protobuf+/src/google/protobuf/_virtual_includes/protobuf/google/protobuf/descriptor.pb.h:18861:13: note: declared here
+18861 | inline bool FieldOptions::weak() const {
+      |             ^~~~~~~~~~~~
+external/protobuf+/src/google/protobuf/compiler/cpp/message.cc: In member function 'void google::protobuf::compiler::cpp::MessageGenerator::GenerateFieldAccessorDeclarations(google::protobuf::io::Printer*)':
+external/protobuf+/src/google/protobuf/compiler/cpp/message.cc:775:66: warning: 'bool google::protobuf::FieldOptions::weak() const' is deprecated [-Wdeprecated-declarations]
+  775 |     if (!field->real_containing_oneof() && !field->options().weak()) {
+      |                                             ~~~~~~~~~~~~~~~~~~~~~^~
+bazel-out/k8-opt-exec-ST-d57f47055a04/bin/external/protobuf+/src/google/protobuf/_virtual_includes/protobuf/google/protobuf/descriptor.pb.h:18861:13: note: declared here
+18861 | inline bool FieldOptions::weak() const {
+      |             ^~~~~~~~~~~~
+external/protobuf+/src/google/protobuf/compiler/cpp/message.cc: In member function 'void google::protobuf::compiler::cpp::MessageGenerator::GenerateSingularFieldHasBits(const google::protobuf::FieldDescriptor*, google::protobuf::io::Printer*)':
+external/protobuf+/src/google/protobuf/compiler/cpp/message.cc:1140:28: warning: 'bool google::protobuf::FieldOptions::weak() const' is deprecated [-Wdeprecated-declarations]
+ 1140 |   if (field->options().weak()) {
+      |       ~~~~~~~~~~~~~~~~~~~~~^~
+bazel-out/k8-opt-exec-ST-d57f47055a04/bin/external/protobuf+/src/google/protobuf/_virtual_includes/protobuf/google/protobuf/descriptor.pb.h:18861:13: note: declared here
+18861 | inline bool FieldOptions::weak() const {
+      |             ^~~~~~~~~~~~
+external/protobuf+/src/google/protobuf/compiler/cpp/message.cc: In member function 'void google::protobuf::compiler::cpp::MessageGenerator::MaybeEmitUpdateCachedHasbits(const google::protobuf::FieldDescriptor*, google::protobuf::io::Printer*, int&) const':
+external/protobuf+/src/google/protobuf/compiler/cpp/message.cc:1396:59: warning: 'bool google::protobuf::FieldOptions::weak() const' is deprecated [-Wdeprecated-declarations]
+ 1396 |   if (!HasHasbit(field, options_) || field->options().weak()) return;
+      |                                      ~~~~~~~~~~~~~~~~~~~~~^~
+bazel-out/k8-opt-exec-ST-d57f47055a04/bin/external/protobuf+/src/google/protobuf/_virtual_includes/protobuf/google/protobuf/descriptor.pb.h:18861:13: note: declared here
+18861 | inline bool FieldOptions::weak() const {
+      |             ^~~~~~~~~~~~
+external/protobuf+/src/google/protobuf/compiler/cpp/message.cc: In lambda function:
+external/protobuf+/src/google/protobuf/compiler/cpp/message.cc:2184:64: warning: 'bool google::protobuf::FieldOptions::weak() const' is deprecated [-Wdeprecated-declarations]
+ 2184 |             if (!field->is_repeated() && !field->options().weak() &&
+      |                                           ~~~~~~~~~~~~~~~~~~~~~^~
+bazel-out/k8-opt-exec-ST-d57f47055a04/bin/external/protobuf+/src/google/protobuf/_virtual_includes/protobuf/google/protobuf/descriptor.pb.h:18861:13: note: declared here
+18861 | inline bool FieldOptions::weak() const {
+      |             ^~~~~~~~~~~~
+external/protobuf+/src/google/protobuf/compiler/cpp/message.cc: In member function 'size_t google::protobuf::compiler::cpp::MessageGenerator::GenerateOffsets(google::protobuf::io::Printer*)':
+external/protobuf+/src/google/protobuf/compiler/cpp/message.cc:2717:30: warning: 'bool google::protobuf::FieldOptions::weak() const' is deprecated [-Wdeprecated-declarations]
+ 2717 |     if (field->options().weak()) {
+      |         ~~~~~~~~~~~~~~~~~~~~~^~
+bazel-out/k8-opt-exec-ST-d57f47055a04/bin/external/protobuf+/src/google/protobuf/_virtual_includes/protobuf/google/protobuf/descriptor.pb.h:18861:13: note: declared here
+18861 | inline bool FieldOptions::weak() const {
+      |             ^~~~~~~~~~~~
+external/protobuf+/src/google/protobuf/compiler/cpp/message.cc: In lambda function:
+external/protobuf+/src/google/protobuf/compiler/cpp/message.cc:4372:39: warning: 'bool google::protobuf::FieldOptions::weak() const' is deprecated [-Wdeprecated-declarations]
+ 4372 |       } else if (field->options().weak() ||
+      |                  ~~~~~~~~~~~~~~~~~~~~~^~
+bazel-out/k8-opt-exec-ST-d57f47055a04/bin/external/protobuf+/src/google/protobuf/_virtual_includes/protobuf/google/protobuf/descriptor.pb.h:18861:13: note: declared here
+18861 | inline bool FieldOptions::weak() const {
+      |             ^~~~~~~~~~~~
+external/protobuf+/src/google/protobuf/compiler/cpp/message.cc: In member function 'void google::protobuf::compiler::cpp::MessageGenerator::GenerateSerializeOneField(google::protobuf::io::Printer*, const google::protobuf::FieldDescriptor*, int)':
+external/protobuf+/src/google/protobuf/compiler/cpp/message.cc:4722:28: warning: 'bool google::protobuf::FieldOptions::weak() const' is deprecated [-Wdeprecated-declarations]
+ 4722 |   if (field->options().weak()) {
+      |       ~~~~~~~~~~~~~~~~~~~~~^~
+bazel-out/k8-opt-exec-ST-d57f47055a04/bin/external/protobuf+/src/google/protobuf/_virtual_includes/protobuf/google/protobuf/descriptor.pb.h:18861:13: note: declared here
+18861 | inline bool FieldOptions::weak() const {
+      |             ^~~~~~~~~~~~
+external/protobuf+/src/google/protobuf/compiler/cpp/message.cc: In lambda function:
+external/protobuf+/src/google/protobuf/compiler/cpp/message.cc:5029:43: warning: 'bool google::protobuf::FieldOptions::weak() const' is deprecated [-Wdeprecated-declarations]
+ 5029 |                  if (field->options().weak()) {
+      |                      ~~~~~~~~~~~~~~~~~~~~~^~
+bazel-out/k8-opt-exec-ST-d57f47055a04/bin/external/protobuf+/src/google/protobuf/_virtual_includes/protobuf/google/protobuf/descriptor.pb.h:18861:13: note: declared here
+18861 | inline bool FieldOptions::weak() const {
+      |             ^~~~~~~~~~~~
+external/protobuf+/src/google/protobuf/compiler/cpp/message.cc: In member function 'void google::protobuf::compiler::cpp::MessageGenerator::EmitCheckAndSerializeField(const google::protobuf::FieldDescriptor*, google::protobuf::io::Printer*) const':
+external/protobuf+/src/google/protobuf/compiler/cpp/message.cc:5572:28: warning: 'bool google::protobuf::FieldOptions::weak() const' is deprecated [-Wdeprecated-declarations]
+ 5572 |   if (field->options().weak()) {
+      |       ~~~~~~~~~~~~~~~~~~~~~^~
+bazel-out/k8-opt-exec-ST-d57f47055a04/bin/external/protobuf+/src/google/protobuf/_virtual_includes/protobuf/google/protobuf/descriptor.pb.h:18861:13: note: declared here
+18861 | inline bool FieldOptions::weak() const {
+      |             ^~~~~~~~~~~~
+external/protobuf+/src/google/protobuf/compiler/cpp/message.cc: In instantiation of 'void google::protobuf::compiler::cpp::MessageGenerator::EmitCheckAndUpdateByteSizeForField(const google::protobuf::FieldDescriptor*, google::protobuf::io::Printer*) const [with bool kIsV2 = false]':
+external/protobuf+/src/google/protobuf/compiler/cpp/message.cc:1418:62:   required from here
+external/protobuf+/src/google/protobuf/compiler/cpp/message.cc:1363:28: warning: 'bool google::protobuf::FieldOptions::weak() const' is deprecated [-Wdeprecated-declarations]
+ 1363 |   if (field->options().weak()) {
+      |       ~~~~~~~~~~~~~~~~~~~~~^~
+bazel-out/k8-opt-exec-ST-d57f47055a04/bin/external/protobuf+/src/google/protobuf/_virtual_includes/protobuf/google/protobuf/descriptor.pb.h:18861:13: note: declared here
+18861 | inline bool FieldOptions::weak() const {
+      |             ^~~~~~~~~~~~
+external/protobuf+/src/google/protobuf/compiler/cpp/message.cc:1363:28: warning: 'bool google::protobuf::FieldOptions::weak() const' is deprecated [-Wdeprecated-declarations]
+ 1363 |   if (field->options().weak()) {
+      |       ~~~~~~~~~~~~~~~~~~~~~^~
+bazel-out/k8-opt-exec-ST-d57f47055a04/bin/external/protobuf+/src/google/protobuf/_virtual_includes/protobuf/google/protobuf/descriptor.pb.h:18861:13: note: declared here
+18861 | inline bool FieldOptions::weak() const {
+      |             ^~~~~~~~~~~~
+[2,785 / 3,281] Compiling src/google/protobuf/compiler/cpp/file.cc [for tool]; 13s processwrapper-sandbox ... (4 actions, 3 running)
+[2,786 / 3,281] Compiling src/google/protobuf/compiler/cpp/field_generators/message_field.cc [for tool]; 2s processwrapper-sandbox ... (4 actions running)
+[2,787 / 3,281] Compiling src/google/protobuf/compiler/cpp/field_generators/message_field.cc [for tool]; 7s processwrapper-sandbox ... (4 actions, 3 running)
+[2,790 / 3,281] Compiling src/google/protobuf/compiler/cpp/field_chunk.cc [for tool]; 1s processwrapper-sandbox ... (4 actions, 3 running)
+[2,790 / 3,281] Compiling src/google/protobuf/compiler/cpp/field_chunk.cc [for tool]; 2s processwrapper-sandbox ... (4 actions running)
+[2,791 / 3,281] Compiling src/google/protobuf/compiler/cpp/field.cc [for tool]; 4s processwrapper-sandbox ... (4 actions, 3 running)
+[2,792 / 3,281] Compiling src/google/protobuf/compiler/cpp/extension.cc [for tool]; 5s processwrapper-sandbox ... (4 actions, 3 running)
+[2,792 / 3,281] Compiling src/google/protobuf/compiler/cpp/extension.cc [for tool]; 6s processwrapper-sandbox ... (4 actions running)
+INFO: From Compiling src/google/protobuf/compiler/cpp/extension.cc [for tool]:
+external/protobuf+/src/google/protobuf/compiler/cpp/extension.cc: In function 'void google::protobuf::compiler::cpp::{anonymous}::EmitVerifyFuncArgs(google::protobuf::io::Printer*, const google::protobuf::compiler::cpp::Options&)':
+external/protobuf+/src/google/protobuf/compiler/cpp/extension.cc:219:56: warning: unused parameter 'options' [-Wunused-parameter]
+  219 | void EmitVerifyFuncArgs(io::Printer* p, const Options& options) {
+      |                                         ~~~~~~~~~~~~~~~^~~~~~~
+[2,798 / 3,281] Compiling src/google/protobuf/compiler/cpp/enum.cc [for tool]; 7s processwrapper-sandbox ... (4 actions running)
+[2,799 / 3,281] Compiling src/google/protobuf/compiler/parser.cc [for tool]; 3s processwrapper-sandbox ... (4 actions, 3 running)
+[2,801 / 3,281] Compiling src/google/protobuf/compiler/parser.cc [for tool]; 5s processwrapper-sandbox ... (4 actions running)
+INFO: From Compiling src/google/protobuf/compiler/importer.cc [for tool]:
+external/protobuf+/src/google/protobuf/compiler/importer.cc: In function 'bool google::protobuf::compiler::IsWindowsAbsolutePath(absl::lts_20240722::string_view)':
+external/protobuf+/src/google/protobuf/compiler/importer.cc:63:53: warning: unused parameter 'text' [-Wunused-parameter]
+   63 | static bool IsWindowsAbsolutePath(absl::string_view text) {
+      |                                   ~~~~~~~~~~~~~~~~~~^~~~
+external/protobuf+/src/google/protobuf/compiler/importer.cc: In member function 'virtual bool google::protobuf::compiler::SourceTreeDescriptorDatabase::FindFileContainingSymbol(google::protobuf::DescriptorDatabase::StringViewArg, google::protobuf::FileDescriptorProto*)':
+external/protobuf+/src/google/protobuf/compiler/importer.cc:167:19: warning: unused parameter 'symbol_name' [-Wunused-parameter]
+  167 |     StringViewArg symbol_name, FileDescriptorProto* output) {
+      |     ~~~~~~~~~~~~~~^~~~~~~~~~~
+external/protobuf+/src/google/protobuf/compiler/importer.cc:167:53: warning: unused parameter 'output' [-Wunused-parameter]
+  167 |     StringViewArg symbol_name, FileDescriptorProto* output) {
+      |                                ~~~~~~~~~~~~~~~~~~~~~^~~~~~
+external/protobuf+/src/google/protobuf/compiler/importer.cc: In member function 'virtual bool google::protobuf::compiler::SourceTreeDescriptorDatabase::FindFileContainingExtension(google::protobuf::DescriptorDatabase::StringViewArg, int, google::protobuf::FileDescriptorProto*)':
+external/protobuf+/src/google/protobuf/compiler/importer.cc:172:19: warning: unused parameter 'containing_type' [-Wunused-parameter]
+  172 |     StringViewArg containing_type, int field_number,
+      |     ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+external/protobuf+/src/google/protobuf/compiler/importer.cc:172:40: warning: unused parameter 'field_number' [-Wunused-parameter]
+  172 |     StringViewArg containing_type, int field_number,
+      |                                    ~~~~^~~~~~~~~~~~
+external/protobuf+/src/google/protobuf/compiler/importer.cc:173:26: warning: unused parameter 'output' [-Wunused-parameter]
+  173 |     FileDescriptorProto* output) {
+      |     ~~~~~~~~~~~~~~~~~~~~~^~~~~~
+[2,812 / 3,281] Compiling src/google/protobuf/compiler/subprocess.cc [for tool]; 2s processwrapper-sandbox ... (4 actions running)
+[2,814 / 3,281] Compiling src/google/protobuf/compiler/command_line_interface.cc [for tool]; 1s processwrapper-sandbox ... (4 actions running)
+INFO: From Compiling upb/wire/eps_copy_input_stream.c [for tool]:
+external/protobuf+/upb/wire/eps_copy_input_stream.c: In function '_upb_EpsCopyInputStream_NoOpCallback':
+external/protobuf+/upb/wire/eps_copy_input_stream.c:11:29: warning: unused parameter 'e' [-Wunused-parameter]
+   11 |     upb_EpsCopyInputStream* e, const char* old_end, const char* new_start) {
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~^
+external/protobuf+/upb/wire/eps_copy_input_stream.c:11:44: warning: unused parameter 'old_end' [-Wunused-parameter]
+   11 |     upb_EpsCopyInputStream* e, const char* old_end, const char* new_start) {
+      |                                ~~~~~~~~~~~~^~~~~~~
+[2,819 / 3,281] Compiling src/google/protobuf/compiler/command_line_interface.cc [for tool]; 2s processwrapper-sandbox ... (4 actions running)
+INFO: From Compiling upb/mem/arena.c [for tool]:
+external/protobuf+/upb/mem/arena.c: In function 'upb_Arena_IncRefFor':
+external/protobuf+/upb/mem/arena.c:877:58: warning: unused parameter 'owner' [-Wunused-parameter]
+  877 | bool upb_Arena_IncRefFor(const upb_Arena* a, const void* owner) {
+      |                                              ~~~~~~~~~~~~^~~~~
+external/protobuf+/upb/mem/arena.c: In function 'upb_Arena_DecRefFor':
+external/protobuf+/upb/mem/arena.c:903:58: warning: unused parameter 'owner' [-Wunused-parameter]
+  903 | void upb_Arena_DecRefFor(const upb_Arena* a, const void* owner) {
+      |                                              ~~~~~~~~~~~~^~~~~
+[2,831 / 3,281] Compiling src/google/protobuf/compiler/command_line_interface.cc [for tool]; 3s processwrapper-sandbox ... (4 actions running)
+INFO: From Compiling upb/wire/decode_fast/select.c [for tool]:
+external/protobuf+/upb/wire/decode_fast/select.c: In function 'upb_DecodeFast_GetFieldType':
+external/protobuf+/upb/wire/decode_fast/select.c:95:62: warning: unused parameter 'm' [-Wunused-parameter]
+   95 | static bool upb_DecodeFast_GetFieldType(const upb_MiniTable* m,
+      |                                         ~~~~~~~~~~~~~~~~~~~~~^
+INFO: From Compiling upb/mini_descriptor/decode.c [for tool]:
+external/protobuf+/upb/mini_descriptor/decode.c: In function 'upb_MtDecoder_ModifyField':
+external/protobuf+/upb/mini_descriptor/decode.c:230:48: warning: unused parameter 'message_modifiers' [-Wunused-parameter]
+  230 |                                       uint32_t message_modifiers,
+      |                                       ~~~~~~~~~^~~~~~~~~~~~~~~~~
+external/protobuf+/upb/mini_descriptor/decode.c: In function 'upb_MtDecoder_ParseMessageSet':
+external/protobuf+/upb/mini_descriptor/decode.c:733:73: warning: unused parameter 'data' [-Wunused-parameter]
+  733 | static void upb_MtDecoder_ParseMessageSet(upb_MtDecoder* d, const char* data,
+      |                                                             ~~~~~~~~~~~~^~~~
+INFO: From Compiling upb/message/copy.c [for tool]:
+external/protobuf+/upb/message/copy.c: In function 'upb_Map_DeepClone':
+external/protobuf+/upb/message/copy.c:89:58: warning: unused parameter 'key_type' [-Wunused-parameter]
+   89 | upb_Map* upb_Map_DeepClone(const upb_Map* map, upb_CType key_type,
+      |                                                ~~~~~~~~~~^~~~~~~~
+external/protobuf+/upb/message/copy.c:90:38: warning: unused parameter 'value_type' [-Wunused-parameter]
+   90 |                            upb_CType value_type,
+      |                            ~~~~~~~~~~^~~~~~~~~~
+[2,840 / 3,281] Compiling src/google/protobuf/compiler/command_line_interface.cc [for tool]; 4s processwrapper-sandbox ... (4 actions running)
+[2,849 / 3,281] Compiling src/google/protobuf/compiler/command_line_interface.cc [for tool]; 6s processwrapper-sandbox ... (4 actions running)
+[2,851 / 3,281] Compiling src/google/protobuf/compiler/command_line_interface.cc [for tool]; 7s processwrapper-sandbox ... (4 actions running)
+[2,858 / 3,281] Compiling src/google/protobuf/compiler/command_line_interface.cc [for tool]; 9s processwrapper-sandbox ... (4 actions running)
+[2,862 / 3,281] Compiling src/google/protobuf/compiler/rust/crate_mapping.cc [for tool]; 2s processwrapper-sandbox ... (4 actions running)
+[2,863 / 3,281] Compiling src/google/protobuf/compiler/rust/crate_mapping.cc [for tool]; 3s processwrapper-sandbox ... (4 actions running)
+[2,865 / 3,281] Compiling src/google/protobuf/compiler/rust/oneof.cc [for tool]; 4s processwrapper-sandbox ... (4 actions running)
+INFO: From Generating proto_library @@sonic-dash-api+//:proto:
+bazel-out/k8-fastbuild/bin/external/sonic-dash-api+/_virtual_imports/proto/outbound_port_map.proto:5:1: warning: Import types.proto is unused.
+[2,868 / 3,281] Compiling upb_generator/c/generator.cc [for tool]; 3s processwrapper-sandbox ... (4 actions, 3 running)
+[2,901 / 3,281] Compiling upb_generator/c/generator.cc [for tool]; 5s processwrapper-sandbox ... (4 actions running)
+[2,904 / 3,281] Compiling src/google/protobuf/compiler/rust/accessors/accessors.cc [for tool]; 2s processwrapper-sandbox ... (4 actions running)
+[2,905 / 3,281] Compiling src/google/protobuf/compiler/rust/accessors/accessors.cc [for tool]; 4s processwrapper-sandbox ... (4 actions, 3 running)
+[2,907 / 3,281] Compiling upb_generator/minitable/main.cc [for tool]; 3s processwrapper-sandbox ... (4 actions running)
+[2,908 / 3,281] Compiling upb_generator/minitable/main.cc [for tool]; 4s processwrapper-sandbox ... (4 actions, 3 running)
+[2,909 / 3,281] Compiling src/google/protobuf/compiler/rust/naming.cc [for tool]; 4s processwrapper-sandbox ... (4 actions running)
+[2,914 / 3,281] Compiling upb_generator/plugin.cc [for tool]; 2s processwrapper-sandbox ... (4 actions, 3 running)
+[2,917 / 3,281] Compiling upb_generator/plugin.cc [for tool]; 3s processwrapper-sandbox ... (4 actions running)
+[2,918 / 3,281] Compiling external/sonic-dash-api+/_virtual_imports/proto/acl_rule.pb.cc; 2s processwrapper-sandbox ... (4 actions, 3 running)
+[2,920 / 3,281] Compiling src/google/protobuf/compiler/rust/accessors/map.cc [for tool]; 3s processwrapper-sandbox ... (4 actions, 3 running)
+[2,925 / 3,281] Compiling external/sonic-dash-api+/_virtual_imports/proto/appliance.pb.cc; 1s processwrapper-sandbox ... (4 actions, 3 running)
+[2,927 / 3,281] Compiling external/sonic-dash-api+/_virtual_imports/proto/appliance.pb.cc; 2s processwrapper-sandbox ... (4 actions, 3 running)
+[2,933 / 3,281] Compiling external/sonic-dash-api+/_virtual_imports/proto/appliance.pb.cc; 3s processwrapper-sandbox ... (4 actions, 3 running)
+INFO: From Compiling upb/reflection/enum_value_def.c [for tool]:
+external/protobuf+/upb/reflection/enum_value_def.c: In function '_upb_EnumValueDefs_Sorted':
+external/protobuf+/upb/reflection/enum_value_def.c:52:21: warning: comparison of integer expressions of different signedness: 'int' and 'size_t' {aka 'long unsigned int'} [-Wsign-compare]
+   52 |   for (int i = 0; i < n; i++) {
+      |                     ^
+[2,936 / 3,281] Compiling src/google/protobuf/compiler/php/php_generator.cc [for tool]; 4s processwrapper-sandbox ... (4 actions running)
+INFO: From Compiling upb/reflection/internal/def_builder.c [for tool]:
+external/protobuf+/upb/reflection/internal/def_builder.c: In function '_upb_DefBuilder_ResolveAny':
+external/protobuf+/upb/reflection/internal/def_builder.c:117:52: warning: unused parameter 'from_name_dbg' [-Wunused-parameter]
+  117 |                                        const char* from_name_dbg,
+      |                                        ~~~~~~~~~~~~^~~~~~~~~~~~~
+external/protobuf+/upb/reflection/internal/def_builder.c: In function 'upb_DefBuilder_ParseOctalEscape':
+external/protobuf+/upb/reflection/internal/def_builder.c:247:61: warning: unused parameter 'ctx' [-Wunused-parameter]
+  247 | static char upb_DefBuilder_ParseOctalEscape(upb_DefBuilder* ctx,
+      |                                             ~~~~~~~~~~~~~~~~^~~
+external/protobuf+/upb/reflection/internal/def_builder.c:248:65: warning: unused parameter 'f' [-Wunused-parameter]
+  248 |                                             const upb_FieldDef* f,
+      |                                             ~~~~~~~~~~~~~~~~~~~~^
+[2,941 / 3,281] Compiling src/google/protobuf/compiler/php/php_generator.cc [for tool]; 5s processwrapper-sandbox ... (4 actions, 3 running)
+INFO: From Compiling upb/reflection/message_def.c [for tool]:
+external/protobuf+/upb/reflection/message_def.c: In function '_upb_MessageDef_EncodeMap':
+external/protobuf+/upb/reflection/message_def.c:581:50: warning: unused parameter 'a' [-Wunused-parameter]
+  581 |                                       upb_Arena* a) {
+      |                                       ~~~~~~~~~~~^
+external/protobuf+/upb/reflection/message_def.c: In function '_upb_MessageDef_EncodeMessageSet':
+external/protobuf+/upb/reflection/message_def.c:637:68: warning: unused parameter 'm' [-Wunused-parameter]
+  637 |                                              const upb_MessageDef* m,
+      |                                              ~~~~~~~~~~~~~~~~~~~~~~^
+external/protobuf+/upb/reflection/message_def.c:638:57: warning: unused parameter 'a' [-Wunused-parameter]
+  638 |                                              upb_Arena* a) {
+      |                                              ~~~~~~~~~~~^
+INFO: From Compiling src/google/protobuf/compiler/php/php_generator.cc [for tool]:
+external/protobuf+/src/google/protobuf/compiler/php/php_generator.cc: In function 'void google::protobuf::compiler::php::{anonymous}::GenerateEnumDocComment(google::protobuf::io::Printer*, const google::protobuf::EnumDescriptor*, const google::protobuf::compiler::php::Options&)':
+external/protobuf+/src/google/protobuf/compiler/php/php_generator.cc:1639:44: warning: unused parameter 'options' [-Wunused-parameter]
+ 1639 |                             const Options& options) {
+      |                             ~~~~~~~~~~~~~~~^~~~~~~
+external/protobuf+/src/google/protobuf/compiler/php/php_generator.cc: In member function 'virtual bool google::protobuf::compiler::php::Generator::Generate(const google::protobuf::FileDescriptor*, const std::string&, google::protobuf::compiler::GeneratorContext*, std::string*) const':
+external/protobuf+/src/google/protobuf/compiler/php/php_generator.cc:2059:45: warning: unused parameter 'parameter' [-Wunused-parameter]
+ 2059 |                          const std::string& parameter,
+      |                          ~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+[2,950 / 3,281] Compiling src/google/protobuf/compiler/rust/accessors/singular_cord.cc [for tool]; 0s processwrapper-sandbox ... (4 actions, 3 running)
+INFO: From Compiling upb/wire/decode.c [for tool]:
+external/protobuf+/upb/wire/decode.c: In function '_upb_Decoder_DecodeFixedPacked':
+external/protobuf+/upb/wire/decode.c:415:70: warning: unused parameter 'field' [-Wunused-parameter]
+  415 |                                            const upb_MiniTableField* field,
+      |                                            ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+external/protobuf+/upb/wire/decode.c: In function '_upb_Decoder_DecodeField':
+external/protobuf+/upb/wire/decode.c:1313:47: warning: unused parameter 'last_field_index' [-Wunused-parameter]
+ 1313 |                                      uint64_t last_field_index, uint64_t data) {
+      |                                      ~~~~~~~~~^~~~~~~~~~~~~~~~
+external/protobuf+/upb/wire/decode.c:1313:74: warning: unused parameter 'data' [-Wunused-parameter]
+ 1313 |                                      uint64_t last_field_index, uint64_t data) {
+      |                                                                 ~~~~~~~~~^~~~
+[2,955 / 3,281] Compiling src/google/protobuf/compiler/rust/accessors/singular_cord.cc [for tool]; 1s processwrapper-sandbox ... (4 actions, 3 running)
+INFO: From Compiling upb/message/array.c [for tool]:
+In file included from external/protobuf+/upb/port/def.inc:72,
+                 from external/protobuf+/upb/message/array.c:21:
+external/protobuf+/upb/message/array.c: In function 'upb_Array_GetMutable':
+external/protobuf+/upb/message/array.c:40:24: warning: comparison of integer expressions of different signedness: 'size_t' {aka 'long unsigned int'} and 'int' [-Wsign-compare]
+   40 |   UPB_ASSERT(elem_size == (1 << UPB_PRIVATE(_upb_Array_ElemSizeLg2)(arr)));
+      |                        ^~
+[2,967 / 3,281] Compiling src/google/protobuf/compiler/rust/accessors/singular_cord.cc [for tool]; 2s processwrapper-sandbox ... (4 actions, 3 running)
+[2,976 / 3,281] Compiling src/google/protobuf/compiler/rust/accessors/singular_cord.cc [for tool]; 3s processwrapper-sandbox ... (4 actions running)
+INFO: From Compiling upb/hash/common.c [for tool]:
+external/protobuf+/upb/hash/common.c: In function 'upb_inttable_iter_key':
+external/protobuf+/upb/hash/common.c:951:16: warning: operand of '?:' changes signedness from 'intptr_t' {aka 'long int'} to 'uintptr_t' {aka 'long unsigned int'} due to unsignedness of other operand [-Wsign-compare]
+  951 |              ? iter
+      |                ^~~~
+[2,983 / 3,281] Compiling src/google/protobuf/compiler/rust/accessors/singular_cord.cc [for tool]; 4s processwrapper-sandbox ... (4 actions, 3 running)
+[2,987 / 3,281] Compiling src/google/protobuf/compiler/objectivec/enum_field.cc [for tool]; 3s processwrapper-sandbox ... (4 actions, 3 running)
+[2,992 / 3,281] Compiling src/google/protobuf/compiler/objectivec/enum_field.cc [for tool]; 5s processwrapper-sandbox ... (4 actions running)
+[2,993 / 3,281] Compiling src/google/protobuf/compiler/rust/accessors/singular_message.cc [for tool]; 3s processwrapper-sandbox ... (4 actions, 3 running)
+[2,994 / 3,281] Compiling src/google/protobuf/compiler/rust/accessors/singular_message.cc [for tool]; 5s processwrapper-sandbox ... (4 actions running)
+[2,995 / 3,281] Compiling src/google/protobuf/compiler/rust/message.cc [for tool]; 4s processwrapper-sandbox ... (4 actions running)
+[2,996 / 3,281] Compiling src/google/protobuf/compiler/rust/message.cc [for tool]; 5s processwrapper-sandbox ... (4 actions, 3 running)
+INFO: From Compiling src/google/protobuf/compiler/rust/message.cc [for tool]:
+external/protobuf+/src/google/protobuf/compiler/rust/message.cc: In function 'void google::protobuf::compiler::rust::{anonymous}::MessageDebug(google::protobuf::compiler::rust::Context&, const google::protobuf::Descriptor&)':
+external/protobuf+/src/google/protobuf/compiler/rust/message.cc:61:51: warning: unused parameter 'msg' [-Wunused-parameter]
+   61 | void MessageDebug(Context& ctx, const Descriptor& msg) {
+      |                                 ~~~~~~~~~~~~~~~~~~^~~
+external/protobuf+/src/google/protobuf/compiler/rust/message.cc: In function 'void google::protobuf::compiler::rust::{anonymous}::MessageDrop(google::protobuf::compiler::rust::Context&, const google::protobuf::Descriptor&)':
+external/protobuf+/src/google/protobuf/compiler/rust/message.cc:93:50: warning: unused parameter 'msg' [-Wunused-parameter]
+   93 | void MessageDrop(Context& ctx, const Descriptor& msg) {
+      |                                ~~~~~~~~~~~~~~~~~~^~~
+external/protobuf+/src/google/protobuf/compiler/rust/message.cc: In function 'void google::protobuf::compiler::rust::{anonymous}::IntoProxiedForMessage(google::protobuf::compiler::rust::Context&, const google::protobuf::Descriptor&)':
+external/protobuf+/src/google/protobuf/compiler/rust/message.cc:105:60: warning: unused parameter 'msg' [-Wunused-parameter]
+  105 | void IntoProxiedForMessage(Context& ctx, const Descriptor& msg) {
+      |                                          ~~~~~~~~~~~~~~~~~~^~~
+external/protobuf+/src/google/protobuf/compiler/rust/message.cc: In function 'void google::protobuf::compiler::rust::{anonymous}::CppGeneratedMessageTraitImpls(google::protobuf::compiler::rust::Context&, const google::protobuf::Descriptor&)':
+external/protobuf+/src/google/protobuf/compiler/rust/message.cc:196:68: warning: unused parameter 'msg' [-Wunused-parameter]
+  196 | void CppGeneratedMessageTraitImpls(Context& ctx, const Descriptor& msg) {
+      |                                                  ~~~~~~~~~~~~~~~~~~^~~
+[2,997 / 3,281] Compiling src/google/protobuf/compiler/objectivec/extension.cc [for tool]; 5s processwrapper-sandbox ... (4 actions, 3 running)
+[3,000 / 3,281] Compiling external/sonic-dash-api+/_virtual_imports/proto/ha_set.pb.cc; 2s processwrapper-sandbox ... (4 actions, 3 running)
+[3,001 / 3,281] Compiling src/google/protobuf/compiler/rust/enum.cc [for tool]; 2s processwrapper-sandbox ... (4 actions running)
+[3,002 / 3,281] Compiling src/google/protobuf/compiler/rust/enum.cc [for tool]; 3s processwrapper-sandbox ... (4 actions, 3 running)
+[3,002 / 3,281] Compiling src/google/protobuf/compiler/rust/enum.cc [for tool]; 5s processwrapper-sandbox ... (4 actions running)
+[3,003 / 3,281] Compiling src/google/protobuf/compiler/rust/enum.cc [for tool]; 6s processwrapper-sandbox ... (4 actions running)
+INFO: From Compiling src/google/protobuf/compiler/rust/enum.cc [for tool]:
+external/protobuf+/src/google/protobuf/compiler/rust/enum.cc: In function 'void google::protobuf::compiler::rust::{anonymous}::TypeConversions(google::protobuf::compiler::rust::Context&, const google::protobuf::EnumDescriptor&)':
+external/protobuf+/src/google/protobuf/compiler/rust/enum.cc:49:58: warning: unused parameter 'desc' [-Wunused-parameter]
+   49 | void TypeConversions(Context& ctx, const EnumDescriptor& desc) {
+      |                                    ~~~~~~~~~~~~~~~~~~~~~~^~~~
+external/protobuf+/src/google/protobuf/compiler/rust/enum.cc: In function 'std::vector<google::protobuf::compiler::rust::RustEnumValue> google::protobuf::compiler::rust::EnumValues(absl::lts_20240722::string_view, absl::lts_20240722::Span<const std::pair<std::basic_string_view<char>, int> >)':
+external/protobuf+/src/google/protobuf/compiler/rust/enum.cc:131:61: warning: missing initializer for member 'google::protobuf::compiler::rust::RustEnumValue::aliases' [-Wmissing-field-initializers]
+  131 |       result.push_back(RustEnumValue{rust_value_name, number});
+      |                                                             ^
+[3,006 / 3,281] Compiling src/google/protobuf/compiler/objectivec/field.cc [for tool]; 6s processwrapper-sandbox ... (4 actions running)
+INFO: From Compiling src/google/protobuf/compiler/objectivec/field.cc [for tool]:
+external/protobuf+/src/google/protobuf/compiler/objectivec/field.cc: In member function 'virtual void google::protobuf::compiler::objectivec::FieldGenerator::GenerateCFunctionDeclarations(google::protobuf::io::Printer*) const':
+external/protobuf+/src/google/protobuf/compiler/objectivec/field.cc:202:65: warning: unused parameter 'printer' [-Wunused-parameter]
+  202 | void FieldGenerator::GenerateCFunctionDeclarations(io::Printer* printer) const {
+      |                                                    ~~~~~~~~~~~~~^~~~~~~
+external/protobuf+/src/google/protobuf/compiler/objectivec/field.cc: In member function 'virtual void google::protobuf::compiler::objectivec::FieldGenerator::GenerateCFunctionImplementations(google::protobuf::io::Printer*) const':
+external/protobuf+/src/google/protobuf/compiler/objectivec/field.cc:207:18: warning: unused parameter 'printer' [-Wunused-parameter]
+  207 |     io::Printer* printer) const {
+      |     ~~~~~~~~~~~~~^~~~~~~
+external/protobuf+/src/google/protobuf/compiler/objectivec/field.cc: In member function 'virtual void google::protobuf::compiler::objectivec::FieldGenerator::DetermineForwardDeclarations(absl::lts_20240722::btree_set<std::__cxx11::basic_string<char> >*, bool) const':
+external/protobuf+/src/google/protobuf/compiler/objectivec/field.cc:212:35: warning: unused parameter 'fwd_decls' [-Wunused-parameter]
+  212 |     absl::btree_set<std::string>* fwd_decls,
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+external/protobuf+/src/google/protobuf/compiler/objectivec/field.cc:213:10: warning: unused parameter 'include_external_types' [-Wunused-parameter]
+  213 |     bool include_external_types) const {
+      |     ~~~~~^~~~~~~~~~~~~~~~~~~~~~
+external/protobuf+/src/google/protobuf/compiler/objectivec/field.cc: In member function 'virtual void google::protobuf::compiler::objectivec::FieldGenerator::DetermineObjectiveCClassDefinitions(absl::lts_20240722::btree_set<std::__cxx11::basic_string<char> >*) const':
+external/protobuf+/src/google/protobuf/compiler/objectivec/field.cc:218:35: warning: unused parameter 'fwd_decls' [-Wunused-parameter]
+  218 |     absl::btree_set<std::string>* fwd_decls) const {
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+external/protobuf+/src/google/protobuf/compiler/objectivec/field.cc: In member function 'virtual void google::protobuf::compiler::objectivec::FieldGenerator::DetermineNeededFiles(absl::lts_20240722::flat_hash_set<const google::protobuf::FileDescriptor*>*) const':
+external/protobuf+/src/google/protobuf/compiler/objectivec/field.cc:223:49: warning: unused parameter 'deps' [-Wunused-parameter]
+  223 |     absl::flat_hash_set<const FileDescriptor*>* deps) const {
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+external/protobuf+/src/google/protobuf/compiler/objectivec/field.cc: In member function 'virtual void google::protobuf::compiler::objectivec::FieldGenerator::SetExtraRuntimeHasBitsBase(int)':
+external/protobuf+/src/google/protobuf/compiler/objectivec/field.cc:263:53: warning: unused parameter 'index_base' [-Wunused-parameter]
+  263 | void FieldGenerator::SetExtraRuntimeHasBitsBase(int index_base) {
+      |                                                 ~~~~^~~~~~~~~~
+external/protobuf+/src/google/protobuf/compiler/objectivec/field.cc: In member function 'virtual void google::protobuf::compiler::objectivec::RepeatedFieldGenerator::EmitArrayComment(google::protobuf::io::Printer*) const':
+external/protobuf+/src/google/protobuf/compiler/objectivec/field.cc:431:60: warning: unused parameter 'printer' [-Wunused-parameter]
+  431 | void RepeatedFieldGenerator::EmitArrayComment(io::Printer* printer) const {
+      |                                               ~~~~~~~~~~~~~^~~~~~~
+[3,007 / 3,281] Compiling src/google/protobuf/compiler/rust/accessors/unsupported_field.cc [for tool]; 2s processwrapper-sandbox ... (4 actions running)
+INFO: From Compiling src/google/protobuf/compiler/rust/accessors/unsupported_field.cc [for tool]:
+external/protobuf+/src/google/protobuf/compiler/rust/accessors/unsupported_field.cc: In member function 'virtual void google::protobuf::compiler::rust::UnsupportedField::InMsgImpl(google::protobuf::compiler::rust::Context&, const google::protobuf::FieldDescriptor&, google::protobuf::compiler::rust::AccessorCase) const':
+external/protobuf+/src/google/protobuf/compiler/rust/accessors/unsupported_field.cc:19:71: warning: unused parameter 'field' [-Wunused-parameter]
+   19 | void UnsupportedField::InMsgImpl(Context& ctx, const FieldDescriptor& field,
+      |                                                ~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+external/protobuf+/src/google/protobuf/compiler/rust/accessors/unsupported_field.cc:20:47: warning: unused parameter 'accessor_case' [-Wunused-parameter]
+   20 |                                  AccessorCase accessor_case) const {
+      |                                  ~~~~~~~~~~~~~^~~~~~~~~~~~~
+[3,008 / 3,281] Compiling src/google/protobuf/compiler/rust/generator.cc [for tool]; 3s processwrapper-sandbox ... (4 actions, 3 running)
+[3,009 / 3,281] Compiling src/google/protobuf/compiler/rust/generator.cc [for tool]; 4s processwrapper-sandbox ... (4 actions running)
+[3,010 / 3,281] Compiling src/google/protobuf/compiler/rust/generator.cc [for tool]; 6s processwrapper-sandbox ... (4 actions, 3 running)
+[3,013 / 3,281] Compiling src/google/protobuf/compiler/objectivec/file.cc [for tool]; 7s processwrapper-sandbox ... (4 actions, 3 running)
+[3,016 / 3,281] Compiling upb_generator/plugin.cc [for tool]; 2s processwrapper-sandbox ... (4 actions, 3 running)
+[3,016 / 3,281] Compiling upb_generator/plugin.cc [for tool]; 3s processwrapper-sandbox ... (4 actions running)
+[3,019 / 3,281] Compiling src/google/protobuf/compiler/objectivec/helpers.cc [for tool]; 3s processwrapper-sandbox ... (4 actions, 3 running)
+[3,021 / 3,281] Compiling src/google/protobuf/compiler/objectivec/helpers.cc [for tool]; 4s processwrapper-sandbox ... (4 actions running)
+[3,024 / 3,281] Compiling src/google/protobuf/compiler/objectivec/names.cc [for tool]; 2s processwrapper-sandbox ... (4 actions running)
+[3,030 / 3,281] Compiling src/google/protobuf/compiler/objectivec/names.cc [for tool]; 3s processwrapper-sandbox ... (4 actions running)
+[3,032 / 3,281] Compiling src/google/protobuf/compiler/objectivec/names.cc [for tool]; 4s processwrapper-sandbox ... (4 actions running)
+INFO: From Compiling upb/reflection/enum_value_def.c [for tool]:
+external/protobuf+/upb/reflection/enum_value_def.c: In function '_upb_EnumValueDefs_Sorted':
+external/protobuf+/upb/reflection/enum_value_def.c:52:21: warning: comparison of integer expressions of different signedness: 'int' and 'size_t' {aka 'long unsigned int'} [-Wsign-compare]
+   52 |   for (int i = 0; i < n; i++) {
+      |                     ^
+INFO: From Compiling src/google/protobuf/compiler/objectivec/names.cc [for tool]:
+external/protobuf+/src/google/protobuf/compiler/objectivec/names.cc: In member function 'virtual bool google::protobuf::compiler::objectivec::{anonymous}::SimpleLineCollector::ConsumeLine(absl::lts_20240722::string_view, std::string*)':
+external/protobuf+/src/google/protobuf/compiler/objectivec/names.cc:55:57: warning: unused parameter 'out_error' [-Wunused-parameter]
+   55 |   bool ConsumeLine(absl::string_view line, std::string* out_error) override {
+      |                                            ~~~~~~~~~~~~~^~~~~~~~~
+external/protobuf+/src/google/protobuf/compiler/objectivec/names.cc: In function 'std::string google::protobuf::compiler::objectivec::{anonymous}::FragmentName(const google::protobuf::FieldDescriptor*, FragmentNameMode)':
+external/protobuf+/src/google/protobuf/compiler/objectivec/names.cc:925:7: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  925 |       switch (mode) {
+      |       ^~~~~~
+external/protobuf+/src/google/protobuf/compiler/objectivec/names.cc:935:5: note: here
+  935 |     case FieldDescriptor::TYPE_BYTES:
+      |     ^~~~
+INFO: From Compiling upb/reflection/internal/def_builder.c [for tool]:
+external/protobuf+/upb/reflection/internal/def_builder.c: In function '_upb_DefBuilder_ResolveAny':
+external/protobuf+/upb/reflection/internal/def_builder.c:117:52: warning: unused parameter 'from_name_dbg' [-Wunused-parameter]
+  117 |                                        const char* from_name_dbg,
+      |                                        ~~~~~~~~~~~~^~~~~~~~~~~~~
+external/protobuf+/upb/reflection/internal/def_builder.c: In function 'upb_DefBuilder_ParseOctalEscape':
+external/protobuf+/upb/reflection/internal/def_builder.c:247:61: warning: unused parameter 'ctx' [-Wunused-parameter]
+  247 | static char upb_DefBuilder_ParseOctalEscape(upb_DefBuilder* ctx,
+      |                                             ~~~~~~~~~~~~~~~~^~~
+external/protobuf+/upb/reflection/internal/def_builder.c:248:65: warning: unused parameter 'f' [-Wunused-parameter]
+  248 |                                             const upb_FieldDef* f,
+      |                                             ~~~~~~~~~~~~~~~~~~~~^
+[3,039 / 3,281] Compiling src/google/protobuf/compiler/objectivec/import_writer.cc [for tool]; 3s processwrapper-sandbox ... (4 actions, 3 running)
+INFO: From Compiling upb/reflection/message_def.c [for tool]:
+external/protobuf+/upb/reflection/message_def.c: In function '_upb_MessageDef_EncodeMap':
+external/protobuf+/upb/reflection/message_def.c:581:50: warning: unused parameter 'a' [-Wunused-parameter]
+  581 |                                       upb_Arena* a) {
+      |                                       ~~~~~~~~~~~^
+external/protobuf+/upb/reflection/message_def.c: In function '_upb_MessageDef_EncodeMessageSet':
+external/protobuf+/upb/reflection/message_def.c:637:68: warning: unused parameter 'm' [-Wunused-parameter]
+  637 |                                              const upb_MessageDef* m,
+      |                                              ~~~~~~~~~~~~~~~~~~~~~~^
+external/protobuf+/upb/reflection/message_def.c:638:57: warning: unused parameter 'a' [-Wunused-parameter]
+  638 |                                              upb_Arena* a) {
+      |                                              ~~~~~~~~~~~^
+[3,045 / 3,281] Compiling src/google/protobuf/compiler/objectivec/generator.cc [for tool]; 1s processwrapper-sandbox ... (4 actions, 3 running)
+[3,050 / 3,281] Compiling src/google/protobuf/compiler/objectivec/generator.cc [for tool]; 2s processwrapper-sandbox ... (4 actions, 3 running)
+[3,052 / 3,281] Compiling src/google/protobuf/compiler/objectivec/generator.cc [for tool]; 4s processwrapper-sandbox ... (4 actions, 3 running)
+[3,052 / 3,281] Compiling src/google/protobuf/compiler/objectivec/generator.cc [for tool]; 5s processwrapper-sandbox ... (4 actions running)
+INFO: From Compiling src/google/protobuf/compiler/objectivec/generator.cc [for tool]:
+external/protobuf+/src/google/protobuf/compiler/objectivec/generator.cc: In member function 'virtual bool google::protobuf::compiler::objectivec::ObjectiveCGenerator::Generate(const google::protobuf::FileDescriptor*, const std::string&, google::protobuf::compiler::GeneratorContext*, std::string*) const':
+external/protobuf+/src/google/protobuf/compiler/objectivec/generator.cc:67:58: warning: unused parameter 'file' [-Wunused-parameter]
+   67 | bool ObjectiveCGenerator::Generate(const FileDescriptor* file,
+      |                                    ~~~~~~~~~~~~~~~~~~~~~~^~~~
+external/protobuf+/src/google/protobuf/compiler/objectivec/generator.cc:68:55: warning: unused parameter 'parameter' [-Wunused-parameter]
+   68 |                                    const std::string& parameter,
+      |                                    ~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+external/protobuf+/src/google/protobuf/compiler/objectivec/generator.cc:69:54: warning: unused parameter 'context' [-Wunused-parameter]
+   69 |                                    GeneratorContext* context,
+      |                                    ~~~~~~~~~~~~~~~~~~^~~~~~~
+[3,053 / 3,281] Compiling src/google/protobuf/compiler/objectivec/map_field.cc [for tool]; 5s processwrapper-sandbox ... (4 actions running)
+[3,055 / 3,281] Compiling src/google/protobuf/compiler/objectivec/enum.cc [for tool]; 4s processwrapper-sandbox ... (4 actions, 3 running)
+[3,067 / 3,281] Compiling src/google/protobuf/compiler/objectivec/message.cc [for tool]; 2s processwrapper-sandbox ... (4 actions, 3 running)
+[3,068 / 3,281] Compiling src/google/protobuf/compiler/objectivec/message.cc [for tool]; 3s processwrapper-sandbox ... (4 actions running)
+[3,069 / 3,281] Compiling src/google/protobuf/compiler/objectivec/message.cc [for tool]; 4s processwrapper-sandbox ... (4 actions running)
+[3,070 / 3,281] Compiling src/google/protobuf/compiler/objectivec/message.cc [for tool]; 5s processwrapper-sandbox ... (4 actions running)
+[3,071 / 3,281] Compiling src/google/protobuf/compiler/java/name_resolver.cc [for tool]; 4s processwrapper-sandbox ... (4 actions running)
+[3,073 / 3,281] Compiling src/google/protobuf/compiler/java/helpers.cc [for tool]; 2s processwrapper-sandbox ... (4 actions, 3 running)
+[3,073 / 3,281] Compiling src/google/protobuf/compiler/java/helpers.cc [for tool]; 4s processwrapper-sandbox ... (4 actions running)
+[3,074 / 3,281] Compiling src/google/protobuf/compiler/java/helpers.cc [for tool]; 5s processwrapper-sandbox ... (4 actions running)
+[3,076 / 3,281] Compiling src/google/protobuf/compiler/objectivec/message_field.cc [for tool]; 5s processwrapper-sandbox ... (4 actions running)
+[3,077 / 3,281] Compiling src/google/protobuf/compiler/java/doc_comment.cc [for tool]; 5s processwrapper-sandbox ... (4 actions running)
+INFO: From Compiling src/google/protobuf/compiler/java/doc_comment.cc [for tool]:
+external/protobuf+/src/google/protobuf/compiler/java/doc_comment.cc: In function 'void google::protobuf::compiler::java::WriteDeprecatedJavadoc(google::protobuf::io::Printer*, const google::protobuf::FieldDescriptor*, FieldAccessorType, Options)':
+external/protobuf+/src/google/protobuf/compiler/java/doc_comment.cc:255:53: warning: unused parameter 'type' [-Wunused-parameter]
+  255 |                             const FieldAccessorType type,
+      |                             ~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+[3,085 / 3,281] Compiling src/google/protobuf/compiler/java/field_common.cc [for tool]; 2s processwrapper-sandbox ... (4 actions running)
+[3,086 / 3,281] Compiling src/google/protobuf/compiler/java/field_common.cc [for tool]; 4s processwrapper-sandbox ... (4 actions, 3 running)
+[3,087 / 3,281] Compiling src/google/protobuf/compiler/java/field_common.cc [for tool]; 6s processwrapper-sandbox ... (4 actions, 3 running)
+[3,101 / 3,281] Compiling external/sonic-dash-api+/_virtual_imports/proto/tunnel.pb.cc; 2s processwrapper-sandbox ... (4 actions running)
+[3,102 / 3,281] Compiling src/google/protobuf/compiler/java/internal_helpers.cc [for tool]; 2s processwrapper-sandbox ... (4 actions running)
+[3,103 / 3,281] Compiling src/google/protobuf/compiler/java/internal_helpers.cc [for tool]; 4s processwrapper-sandbox ... (4 actions, 3 running)
+INFO: From Compiling src/google/protobuf/compiler/java/lite/string_field.cc [for tool]:
+external/protobuf+/src/google/protobuf/compiler/java/lite/string_field.cc: In function 'void google::protobuf::compiler::java::{anonymous}::SetPrimitiveVariables(const google::protobuf::FieldDescriptor*, int, int, const google::protobuf::compiler::java::FieldGeneratorInfo*, google::protobuf::compiler::java::ClassNameResolver*, absl::lts_20240722::flat_hash_map<std::basic_string_view<char>, std::__cxx11::basic_string<char> >*, google::protobuf::compiler::java::Context*)':
+external/protobuf+/src/google/protobuf/compiler/java/lite/string_field.cc:41:65: warning: unused parameter 'builderBitIndex' [-Wunused-parameter]
+   41 |     const FieldDescriptor* descriptor, int messageBitIndex, int builderBitIndex,
+      |                                                             ~~~~^~~~~~~~~~~~~~~
+external/protobuf+/src/google/protobuf/compiler/java/lite/string_field.cc: In member function 'virtual void google::protobuf::compiler::java::ImmutableStringOneofFieldLiteGenerator::GenerateFieldInfo(google::protobuf::io::Printer*, std::vector<short unsigned int>*) const':
+external/protobuf+/src/google/protobuf/compiler/java/lite/string_field.cc:441:18: warning: unused parameter 'printer' [-Wunused-parameter]
+  441 |     io::Printer* printer, std::vector<uint16_t>* output) const {
+      |     ~~~~~~~~~~~~~^~~~~~~
+[3,104 / 3,281] Compiling src/google/protobuf/compiler/java/internal_helpers.cc [for tool]; 5s processwrapper-sandbox ... (4 actions, 3 running)
+[3,107 / 3,281] Compiling external/sonic-dash-api+/_virtual_imports/proto/vnet.pb.cc; 2s processwrapper-sandbox ... (4 actions running)
+[3,110 / 3,281] Compiling src/google/protobuf/compiler/java/lite/primitive_field.cc [for tool]; 2s processwrapper-sandbox ... (4 actions running)
+[3,111 / 3,281] Compiling src/google/protobuf/compiler/java/lite/primitive_field.cc [for tool]; 4s processwrapper-sandbox ... (4 actions, 3 running)
+[3,112 / 3,281] Compiling src/google/protobuf/compiler/java/lite/primitive_field.cc [for tool]; 5s processwrapper-sandbox ... (4 actions running)
+INFO: From Compiling src/google/protobuf/compiler/java/lite/primitive_field.cc [for tool]:
+external/protobuf+/src/google/protobuf/compiler/java/lite/primitive_field.cc: In function 'void google::protobuf::compiler::java::{anonymous}::SetPrimitiveVariables(const google::protobuf::FieldDescriptor*, int, int, const google::protobuf::compiler::java::FieldGeneratorInfo*, google::protobuf::compiler::java::ClassNameResolver*, absl::lts_20240722::flat_hash_map<std::basic_string_view<char>, std::__cxx11::basic_string<char> >*, google::protobuf::compiler::java::Context*)':
+external/protobuf+/src/google/protobuf/compiler/java/lite/primitive_field.cc:47:65: warning: unused parameter 'builderBitIndex' [-Wunused-parameter]
+   47 |     const FieldDescriptor* descriptor, int messageBitIndex, int builderBitIndex,
+      |                                                             ~~~~^~~~~~~~~~~~~~~
+external/protobuf+/src/google/protobuf/compiler/java/lite/primitive_field.cc: In member function 'virtual void google::protobuf::compiler::java::ImmutablePrimitiveOneofFieldLiteGenerator::GenerateFieldInfo(google::protobuf::io::Printer*, std::vector<short unsigned int>*) const':
+external/protobuf+/src/google/protobuf/compiler/java/lite/primitive_field.cc:412:18: warning: unused parameter 'printer' [-Wunused-parameter]
+  412 |     io::Printer* printer, std::vector<uint16_t>* output) const {
+      |     ~~~~~~~~~~~~~^~~~~~~
+[3,114 / 3,281] Compiling src/google/protobuf/compiler/java/lite/map_field.cc [for tool]; 4s processwrapper-sandbox ... (4 actions running)
+[3,117 / 3,281] Compiling src/google/protobuf/compiler/java/lite/map_field.cc [for tool]; 5s processwrapper-sandbox ... (4 actions, 3 running)
+[3,121 / 3,281] Compiling src/google/protobuf/compiler/java/lite/make_field_gens.cc [for tool]; 3s processwrapper-sandbox ... (4 actions running)
+[3,126 / 3,281] Compiling src/google/protobuf/compiler/java/lite/extension.cc [for tool]; 4s processwrapper-sandbox ... (4 actions running)
+[3,130 / 3,281] Compiling src/google/protobuf/compiler/java/lite/extension.cc [for tool]; 5s processwrapper-sandbox ... (4 actions running)
+[3,131 / 3,281] Compiling src/google/protobuf/compiler/java/lite/enum_field.cc [for tool]; 5s processwrapper-sandbox ... (4 actions running)
+[3,132 / 3,281] Compiling src/google/protobuf/compiler/java/lite/extension.cc [for tool]; 4s processwrapper-sandbox ... (4 actions, 3 running)
+[3,136 / 3,281] Compiling src/google/protobuf/compiler/java/lite/message_builder.cc [for tool]; 4s processwrapper-sandbox ... (4 actions running)
+[3,138 / 3,281] Compiling src/google/protobuf/compiler/java/lite/message_builder.cc [for tool]; 5s processwrapper-sandbox ... (4 actions running)
+[3,141 / 3,281] Compiling src/google/protobuf/compiler/java/lite/message.cc [for tool]; 3s processwrapper-sandbox ... (4 actions running)
+[3,145 / 3,281] Compiling src/google/protobuf/compiler/java/lite/enum.cc [for tool]; 2s processwrapper-sandbox ... (4 actions, 3 running)
+[3,151 / 3,281] Compiling src/google/protobuf/compiler/java/lite/enum.cc [for tool]; 3s processwrapper-sandbox ... (4 actions running)
+[3,152 / 3,281] Compiling src/google/protobuf/json/internal/parser.cc; 4s processwrapper-sandbox ... (4 actions, 3 running)
+[3,154 / 3,281] Compiling src/google/protobuf/json/internal/parser.cc; 5s processwrapper-sandbox ... (4 actions, 3 running)
+[3,157 / 3,281] Compiling src/google/protobuf/compiler/java/full/string_field.cc [for tool]; 5s processwrapper-sandbox ... (4 actions running)
+INFO: From Compiling src/google/protobuf/compiler/java/full/string_field.cc [for tool]:
+external/protobuf+/src/google/protobuf/compiler/java/full/string_field.cc: In member function 'virtual void google::protobuf::compiler::java::ImmutableStringFieldGenerator::GenerateFieldBuilderInitializationCode(google::protobuf::io::Printer*) const':
+external/protobuf+/src/google/protobuf/compiler/java/full/string_field.cc:361:18: warning: unused parameter 'printer' [-Wunused-parameter]
+  361 |     io::Printer* printer) const {
+      |     ~~~~~~~~~~~~~^~~~~~~
+external/protobuf+/src/google/protobuf/compiler/java/full/string_field.cc: In member function 'virtual void google::protobuf::compiler::java::ImmutableStringOneofFieldGenerator::GenerateBuilderClearCode(google::protobuf::io::Printer*) const':
+external/protobuf+/src/google/protobuf/compiler/java/full/string_field.cc:654:18: warning: unused parameter 'printer' [-Wunused-parameter]
+  654 |     io::Printer* printer) const {
+      |     ~~~~~~~~~~~~~^~~~~~~
+external/protobuf+/src/google/protobuf/compiler/java/full/string_field.cc: In member function 'virtual void google::protobuf::compiler::java::ImmutableStringOneofFieldGenerator::GenerateBuildingCode(google::protobuf::io::Printer*) const':
+external/protobuf+/src/google/protobuf/compiler/java/full/string_field.cc:669:18: warning: unused parameter 'printer' [-Wunused-parameter]
+  669 |     io::Printer* printer) const {
+      |     ~~~~~~~~~~~~~^~~~~~~
+external/protobuf+/src/google/protobuf/compiler/java/full/string_field.cc: In member function 'virtual void google::protobuf::compiler::java::RepeatedImmutableStringFieldGenerator::GenerateFieldBuilderInitializationCode(google::protobuf::io::Printer*) const':
+external/protobuf+/src/google/protobuf/compiler/java/full/string_field.cc:933:57: warning: unused parameter 'printer' [-Wunused-parameter]
+  933 |     GenerateFieldBuilderInitializationCode(io::Printer* printer) const {
+      |                                            ~~~~~~~~~~~~~^~~~~~~
+[3,158 / 3,281] Compiling src/google/protobuf/compiler/java/full/primitive_field.cc [for tool]; 4s processwrapper-sandbox ... (4 actions running)
+[3,159 / 3,281] Compiling src/google/protobuf/compiler/java/full/primitive_field.cc [for tool]; 5s processwrapper-sandbox ... (4 actions, 3 running)
+INFO: From Compiling src/google/protobuf/compiler/java/full/primitive_field.cc [for tool]:
+external/protobuf+/src/google/protobuf/compiler/java/full/primitive_field.cc: In member function 'virtual void google::protobuf::compiler::java::ImmutablePrimitiveFieldGenerator::GenerateFieldBuilderInitializationCode(google::protobuf::io::Printer*) const':
+external/protobuf+/src/google/protobuf/compiler/java/full/primitive_field.cc:326:18: warning: unused parameter 'printer' [-Wunused-parameter]
+  326 |     io::Printer* printer) const {
+      |     ~~~~~~~~~~~~~^~~~~~~
+external/protobuf+/src/google/protobuf/compiler/java/full/primitive_field.cc: In member function 'virtual void google::protobuf::compiler::java::ImmutablePrimitiveOneofFieldGenerator::GenerateBuilderClearCode(google::protobuf::io::Printer*) const':
+external/protobuf+/src/google/protobuf/compiler/java/full/primitive_field.cc:578:18: warning: unused parameter 'printer' [-Wunused-parameter]
+  578 |     io::Printer* printer) const {
+      |     ~~~~~~~~~~~~~^~~~~~~
+external/protobuf+/src/google/protobuf/compiler/java/full/primitive_field.cc: In member function 'virtual void google::protobuf::compiler::java::ImmutablePrimitiveOneofFieldGenerator::GenerateBuildingCode(google::protobuf::io::Printer*) const':
+external/protobuf+/src/google/protobuf/compiler/java/full/primitive_field.cc:584:18: warning: unused parameter 'printer' [-Wunused-parameter]
+  584 |     io::Printer* printer) const {
+      |     ~~~~~~~~~~~~~^~~~~~~
+external/protobuf+/src/google/protobuf/compiler/java/full/primitive_field.cc: In member function 'virtual void google::protobuf::compiler::java::RepeatedImmutablePrimitiveFieldGenerator::GenerateFieldBuilderInitializationCode(google::protobuf::io::Printer*) const':
+external/protobuf+/src/google/protobuf/compiler/java/full/primitive_field.cc:826:57: warning: unused parameter 'printer' [-Wunused-parameter]
+  826 |     GenerateFieldBuilderInitializationCode(io::Printer* printer) const {
+      |                                            ~~~~~~~~~~~~~^~~~~~~
+[3,161 / 3,281] Compiling misc/utils.cpp; 5s processwrapper-sandbox ... (4 actions running)
+[3,163 / 3,281] Compiling misc/utils.cpp; 6s processwrapper-sandbox ... (4 actions running)
+[3,165 / 3,281] Compiling src/google/protobuf/compiler/java/full/enum_field.cc [for tool]; 3s processwrapper-sandbox ... (4 actions running)
+[3,171 / 3,281] Compiling src/google/protobuf/compiler/java/full/enum_field.cc [for tool]; 4s processwrapper-sandbox ... (4 actions running)
+[3,173 / 3,281] Compiling src/google/protobuf/compiler/java/full/enum.cc [for tool]; 4s processwrapper-sandbox ... (4 actions running)
+[3,175 / 3,281] Compiling src/google/protobuf/compiler/java/full/enum.cc [for tool]; 5s processwrapper-sandbox ... (4 actions, 3 running)
+[3,178 / 3,281] Compiling src/google/protobuf/compiler/java/full/message_builder.cc [for tool]; 5s processwrapper-sandbox ... (4 actions running)
+[3,182 / 3,281] Compiling src/google/protobuf/json/json.cc; 2s processwrapper-sandbox ... (4 actions running)
+[3,184 / 3,281] Compiling src/google/protobuf/compiler/java/full/generator_factory.cc [for tool]; 3s processwrapper-sandbox ... (4 actions running)
+[3,185 / 3,281] Compiling src/google/protobuf/compiler/java/full/extension.cc [for tool]; 2s processwrapper-sandbox ... (4 actions running)
+[3,186 / 3,281] Compiling src/google/protobuf/compiler/java/full/extension.cc [for tool]; 3s processwrapper-sandbox ... (4 actions running)
+[3,187 / 3,281] Compiling src/google/protobuf/compiler/java/full/extension.cc [for tool]; 5s processwrapper-sandbox ... (4 actions, 3 running)
+[3,193 / 3,281] Compiling src/google/protobuf/compiler/java/file.cc [for tool]; 3s processwrapper-sandbox ... (4 actions, 3 running)
+[3,194 / 3,281] Compiling src/google/protobuf/compiler/java/file.cc [for tool]; 4s processwrapper-sandbox ... (4 actions running)
+[3,195 / 3,281] Compiling src/google/protobuf/compiler/java/context.cc [for tool]; 3s processwrapper-sandbox ... (4 actions running)
+[3,197 / 3,281] Compiling src/google/protobuf/compiler/kotlin/message.cc [for tool]; 3s processwrapper-sandbox ... (4 actions running)
+[3,198 / 3,281] Compiling src/google/protobuf/compiler/kotlin/message.cc [for tool]; 5s processwrapper-sandbox ... (4 actions, 3 running)
+[3,201 / 3,281] Compiling src/google/protobuf/compiler/kotlin/file.cc [for tool]; 4s processwrapper-sandbox ... (4 actions running)
+[3,203 / 3,281] Compiling src/google/protobuf/compiler/kotlin/field.cc [for tool]; 4s processwrapper-sandbox ... (4 actions running)
+[3,204 / 3,281] Compiling src/google/protobuf/util/type_resolver_util.cc; 3s processwrapper-sandbox ... (4 actions, 3 running)
+[3,227 / 3,281] Compiling src/google/protobuf/compiler/csharp/csharp_wrapper_field.cc [for tool]; 1s processwrapper-sandbox ... (4 actions, 3 running)
+[3,229 / 3,281] Compiling src/google/protobuf/compiler/csharp/csharp_wrapper_field.cc [for tool]; 2s processwrapper-sandbox ... (4 actions, 3 running)
+INFO: From Compiling src/google/protobuf/compiler/csharp/csharp_wrapper_field.cc [for tool]:
+external/protobuf+/src/google/protobuf/compiler/csharp/csharp_wrapper_field.cc: In member function 'virtual void google::protobuf::compiler::csharp::WrapperFieldGenerator::WriteToString(google::protobuf::io::Printer*)':
+external/protobuf+/src/google/protobuf/compiler/csharp/csharp_wrapper_field.cc:156:56: warning: unused parameter 'printer' [-Wunused-parameter]
+  156 | void WrapperFieldGenerator::WriteToString(io::Printer* printer) {
+      |                                           ~~~~~~~~~~~~~^~~~~~~
+[3,233 / 3,281] Compiling src/google/protobuf/compiler/csharp/csharp_repeated_primitive_field.cc [for tool]; 2s processwrapper-sandbox ... (4 actions, 3 running)
+INFO: From Compiling src/google/protobuf/compiler/csharp/csharp_repeated_primitive_field.cc [for tool]:
+external/protobuf+/src/google/protobuf/compiler/csharp/csharp_repeated_primitive_field.cc: In member function 'virtual void google::protobuf::compiler::csharp::RepeatedPrimitiveFieldGenerator::GenerateFreezingCode(google::protobuf::io::Printer*)':
+external/protobuf+/src/google/protobuf/compiler/csharp/csharp_repeated_primitive_field.cc:105:73: warning: unused parameter 'printer' [-Wunused-parameter]
+  105 | void RepeatedPrimitiveFieldGenerator::GenerateFreezingCode(io::Printer* printer) {
+      |                                                            ~~~~~~~~~~~~~^~~~~~~
+[3,234 / 3,281] Compiling src/google/protobuf/compiler/csharp/csharp_repeated_message_field.cc [for tool]; 2s processwrapper-sandbox ... (4 actions running)
+[3,235 / 3,281] Compiling src/google/protobuf/compiler/csharp/csharp_repeated_message_field.cc [for tool]; 4s processwrapper-sandbox ... (4 actions, 3 running)
+INFO: From Compiling src/google/protobuf/compiler/csharp/csharp_repeated_enum_field.cc [for tool]:
+external/protobuf+/src/google/protobuf/compiler/csharp/csharp_repeated_enum_field.cc: In member function 'virtual void google::protobuf::compiler::csharp::RepeatedEnumFieldGenerator::GenerateFreezingCode(google::protobuf::io::Printer*)':
+external/protobuf+/src/google/protobuf/compiler/csharp/csharp_repeated_enum_field.cc:117:68: warning: unused parameter 'printer' [-Wunused-parameter]
+  117 | void RepeatedEnumFieldGenerator::GenerateFreezingCode(io::Printer* printer) {
+      |                                                       ~~~~~~~~~~~~~^~~~~~~
+INFO: From Compiling src/google/protobuf/compiler/csharp/csharp_repeated_message_field.cc [for tool]:
+external/protobuf+/src/google/protobuf/compiler/csharp/csharp_repeated_message_field.cc: In member function 'virtual void google::protobuf::compiler::csharp::RepeatedMessageFieldGenerator::GenerateFreezingCode(google::protobuf::io::Printer*)':
+external/protobuf+/src/google/protobuf/compiler/csharp/csharp_repeated_message_field.cc:124:71: warning: unused parameter 'printer' [-Wunused-parameter]
+  124 | void RepeatedMessageFieldGenerator::GenerateFreezingCode(io::Printer* printer) {
+      |                                                          ~~~~~~~~~~~~~^~~~~~~
+[3,238 / 3,281] Compiling src/google/protobuf/compiler/csharp/csharp_message_field.cc [for tool]; 1s processwrapper-sandbox ... (4 actions, 3 running)
+[3,238 / 3,281] Compiling src/google/protobuf/compiler/csharp/csharp_message_field.cc [for tool]; 2s processwrapper-sandbox ... (4 actions running)
+INFO: From Compiling src/google/protobuf/compiler/csharp/csharp_message_field.cc [for tool]:
+external/protobuf+/src/google/protobuf/compiler/csharp/csharp_message_field.cc: In member function 'virtual void google::protobuf::compiler::csharp::MessageFieldGenerator::GenerateFreezingCode(google::protobuf::io::Printer*)':
+external/protobuf+/src/google/protobuf/compiler/csharp/csharp_message_field.cc:163:63: warning: unused parameter 'printer' [-Wunused-parameter]
+  163 | void MessageFieldGenerator::GenerateFreezingCode(io::Printer* printer) {
+      |                                                  ~~~~~~~~~~~~~^~~~~~~
+[3,239 / 3,281] Compiling src/google/protobuf/compiler/csharp/csharp_message.cc [for tool]; 4s processwrapper-sandbox ... (4 actions running)
+INFO: From Compiling src/google/protobuf/compiler/csharp/csharp_map_field.cc [for tool]:
+external/protobuf+/src/google/protobuf/compiler/csharp/csharp_map_field.cc: In member function 'virtual void google::protobuf::compiler::csharp::MapFieldGenerator::WriteToString(google::protobuf::io::Printer*)':
+external/protobuf+/src/google/protobuf/compiler/csharp/csharp_map_field.cc:110:52: warning: unused parameter 'printer' [-Wunused-parameter]
+  110 | void MapFieldGenerator::WriteToString(io::Printer* printer) {
+      |                                       ~~~~~~~~~~~~~^~~~~~~
+external/protobuf+/src/google/protobuf/compiler/csharp/csharp_map_field.cc: In member function 'virtual void google::protobuf::compiler::csharp::MapFieldGenerator::GenerateFreezingCode(google::protobuf::io::Printer*)':
+external/protobuf+/src/google/protobuf/compiler/csharp/csharp_map_field.cc:119:59: warning: unused parameter 'printer' [-Wunused-parameter]
+  119 | void MapFieldGenerator::GenerateFreezingCode(io::Printer* printer) {
+      |                                              ~~~~~~~~~~~~~^~~~~~~
+[3,243 / 3,281] Compiling src/google/protobuf/compiler/csharp/csharp_field_base.cc [for tool]; 1s processwrapper-sandbox ... (4 actions, 3 running)
+[3,244 / 3,281] Compiling src/google/protobuf/compiler/csharp/csharp_enum_field.cc [for tool]; 2s processwrapper-sandbox ... (4 actions running)
+[3,245 / 3,281] Compiling src/google/protobuf/compiler/csharp/csharp_enum.cc [for tool]; 3s processwrapper-sandbox ... (4 actions running)
+[3,249 / 3,281] Compiling src/google/protobuf/compiler/csharp/csharp_doc_comment.cc [for tool]; 3s processwrapper-sandbox ... (4 actions, 3 running)
+[3,253 / 3,281] Compiling googletest/src/gtest.cc; 2s processwrapper-sandbox ... (4 actions running)
+[3,256 / 3,281] Linking external/protobuf+/protoc [for tool]; 1s processwrapper-sandbox ... (4 actions running)
+INFO: From Generating Python proto_library @@sonic-dash-api+//:proto:
+bazel-out/k8-fastbuild/bin/external/sonic-dash-api+/_virtual_imports/proto/outbound_port_map.proto:5:1: warning: Import types.proto is unused.
+[3,266 / 3,281] Compiling googlemock/src/gmock.cc; 0s processwrapper-sandbox ... (4 actions, 3 running)
+[3,271 / 3,281] [Prepa] Linking external/googletest+/libgtest.a
+INFO: Found 1 target...
+Target //dockers/docker-database:load up-to-date:
+  bazel-bin/dockers/docker-database/load.sh
+INFO: Elapsed time: 430.691s, Critical Path: 29.06s
+INFO: 2848 processes: 433 action cache hit, 1348 internal, 1500 processwrapper-sandbox.
+INFO: Build completed successfully, 2848 total actions
+INFO: Running command line: bazel-bin/dockers/docker-database/load.sh
+Loaded image: docker-database:latest
+
+========================================
+RESULT: SUCCESS
+Finished: Tue Apr 21 22:25:43 CDT 2026
+========================================

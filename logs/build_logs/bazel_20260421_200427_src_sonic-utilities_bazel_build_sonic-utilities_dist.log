@@ -1,0 +1,74 @@
+========================================
+Step: src/sonic-utilities: bazel build :sonic-utilities :dist
+Repo: src/sonic-utilities
+Started: Tue Apr 21 20:04:27 CDT 2026
+Command: bazel build :sonic-utilities :dist
+========================================
+
+Starting local Bazel server (8.5.1) and connecting to it...
+Computing main repo mapping: 
+Computing main repo mapping: 
+Computing main repo mapping: 
+Computing main repo mapping: 
+Computing main repo mapping: 
+Computing main repo mapping: 
+Computing main repo mapping: 
+Loading: 
+Loading: 2 packages loaded
+Loading: 2 packages loaded
+    currently loading: 
+Analyzing: 2 targets (3 packages loaded, 0 targets configured)
+Analyzing: 2 targets (3 packages loaded, 0 targets configured)
+
+Analyzing: 2 targets (188 packages loaded, 320 targets configured)
+
+Analyzing: 2 targets (384 packages loaded, 572 targets configured)
+
+WARNING: Download from https://snapshot.debian.org/archive/debian/20251001T023456Z/dists/bookworm/main/Contents-amd64.bz2 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian/20251001T023456Z/dists/bookworm/main/Contents-amd64.xz failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+Analyzing: 2 targets (409 packages loaded, 2108 targets configured)
+
+WARNING: Download from https://snapshot.debian.org/archive/debian/20251001T023456Z/dists/bookworm/main/Contents-amd64 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian/20251001T023456Z/dists/bookworm-updates/main/Contents-amd64.xz failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian/20251001T023456Z/dists/bookworm-updates/main/Contents-amd64.bz2 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+Analyzing: 2 targets (420 packages loaded, 3139 targets configured)
+
+WARNING: Download from https://snapshot.debian.org/archive/debian/20251001T023456Z/dists/bookworm-updates/main/Contents-amd64 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian/20251001T023456Z/dists/bookworm-updates/main/binary-amd64/Packages failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+Analyzing: 2 targets (428 packages loaded, 3153 targets configured)
+
+WARNING: Download from https://snapshot.debian.org/archive/debian-security/20251001T023456Z/dists/bookworm-security/main/Contents-amd64.xz failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian-security/20251001T023456Z/dists/bookworm-security/main/Contents-amd64.bz2 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian-security/20251001T023456Z/dists/bookworm-security/main/Contents-amd64 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+Analyzing: 2 targets (434 packages loaded, 5779 targets configured)
+
+WARNING: Download from https://snapshot.debian.org/archive/debian/20251001T023456Z/dists/bookworm/main/binary-amd64/Packages failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+Analyzing: 2 targets (470 packages loaded, 6248 targets configured)
+
+Analyzing: 2 targets (527 packages loaded, 7360 targets configured)
+
+WARNING: Download from https://snapshot.debian.org/archive/debian-security/20251001T023456Z/dists/bookworm-security/main/binary-amd64/Packages failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+Analyzing: 2 targets (543 packages loaded, 7864 targets configured)
+
+Analyzing: 2 targets (543 packages loaded, 7864 targets configured)
+
+WARNING: Download from https://snapshot.debian.org/archive/debian-security/20251001T023456Z/dists/bookworm-security/main/binary-amd64/Packages.bz2 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian/20251001T023456Z/dists/bookworm/main/binary-amd64/Packages.bz2 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+WARNING: Download from https://snapshot.debian.org/archive/debian/20251001T023456Z/dists/bookworm-updates/main/binary-amd64/Packages.bz2 failed: class java.io.FileNotFoundException GET returned 404 NOT FOUND
+Analyzing: 2 targets (582 packages loaded, 8241 targets configured)
+
+ERROR: /home/bobo.linux/.cache/bazel/_bazel_bobo/4c311c2fb69232dda242e055378b4672/external/rules_distroless+/apt/extensions.bzl:89:34: Work pending after module extension @@rules_distroless+//apt:extensions.bzl%apt finished execution: downloading to '/home/bobo.linux/.cache/bazel/_bazel_bobo/4c311c2fb69232dda242e055378b4672/modextwd/rules_distroless++apt/bookworm-updates/main/amd64/0/gz/Packages.gz'
+ERROR: /home/bobo.linux/.cache/bazel/_bazel_bobo/4c311c2fb69232dda242e055378b4672/external/rules_distroless+/apt/extensions.bzl:89:34: Work pending after module extension @@rules_distroless+//apt:extensions.bzl%apt finished execution: downloading to '/home/bobo.linux/.cache/bazel/_bazel_bobo/4c311c2fb69232dda242e055378b4672/modextwd/rules_distroless++apt/bookworm-security/main/amd64/0/gz/Packages.gz'
+ERROR: Pending asynchronous work after module extension @@rules_distroless+//apt:extensions.bzl%apt finished execution
+Analyzing: 2 targets (582 packages loaded, 8241 targets configured)
+
+ERROR: Analysis of target '//:sonic-utilities' failed; build aborted: error evaluating module extension @@rules_distroless+//apt:extensions.bzl%apt
+INFO: Elapsed time: 22.867s, Critical Path: 0.03s
+INFO: 1 process: 1 internal.
+ERROR: Build did NOT complete successfully
+FAILED: 
+
+========================================
+RESULT: FAILURE (exit code 1)
+Finished: Tue Apr 21 20:04:50 CDT 2026
+========================================
