@@ -8,6 +8,7 @@ Designed to be run inside a [Lima](https://lima-vm.io/) VM for isolation and rep
 
 ```bash
 # 1. Create a fresh Lima VM
+# Note: running this deletes any current VM with same name
 ./lima-refresh.sh sonic-bazel
 
 # 2. Shell into the VM
