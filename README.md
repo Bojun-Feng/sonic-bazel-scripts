@@ -17,7 +17,7 @@ limactl shell sonic-bazel
 # 3. Port scripts over and chmod +x
 
 # 4 Run scripts in order
-./bash 01_install_bazel.sh >> log1.txt
+./01_install_bazel.sh >> log1.txt
 # ⚠️ This script spawns a new shell at the end (for Docker group).
 # You CANNOT chain it with other commands.
 # E.g. `bash 01_install_bazel.sh && bash 02_setup_environment.sh` would not work
